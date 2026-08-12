@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "file_date": {
+      "type": ["string", "null"]
+    },
+    "foreign_principal_name": {
+      "type": ["string", "null"]
+    },
+    "registrant_name": {
+      "type": ["string", "null"]
+    },
+    "registration_num": {
+      "type": ["string", "null"]
+    },
+    "signer_name": {
+      "type": ["string", "null"]
+    },
+    "signer_title": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": [
+    "file_date",
+    "foreign_principal_name",
+    "registrant_name",
+    "registration_num",
+    "signer_name",
+    "signer_title"
+  ],
+  "additionalProperties": false
+}

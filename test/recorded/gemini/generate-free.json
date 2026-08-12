@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [
+          {
+            "text": "```json\n{\"vendor\":{\"name\":\"ACME\"},\"line_items\":[{\"description\":\"Widget\",\"quantity\":2}],"
+          },
+          { "text": "\"tax\":null,\"total\":1240.5}\n```" }
+        ]
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1102,
+    "candidatesTokenCount": 41,
+    "totalTokenCount": 1143
+  },
+  "modelVersion": "gemini-2.5-flash",
+  "responseId": "resp-fixture-gemini-free"
+}

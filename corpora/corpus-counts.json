@@ -1,0 +1,672 @@
+{
+  "formatVersion": 1,
+  "conditionalPageLimit": 8,
+  "classes": {
+    "cord-v2": {
+      "full": {
+        "documents": 15,
+        "fields": 196,
+        "goldenAbsentFields": 66,
+        "pages": 15
+      },
+      "atOrBelowPageLimit": {
+        "documents": 15,
+        "fields": 196,
+        "goldenAbsentFields": 66,
+        "pages": 15
+      },
+      "pageHistogram": {
+        "1": 15
+      },
+      "pageCounts": [
+        {
+          "doc": "cord-011.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-015.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-025.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-027.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-044.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-047.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-056.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-066.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-068.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-073.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-076.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-084.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-086.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-087.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "cord-095.pdf",
+          "pages": 1
+        }
+      ],
+      "conditionalExclusions": []
+    },
+    "deepform": {
+      "full": {
+        "documents": 39,
+        "fields": 195,
+        "goldenAbsentFields": 1,
+        "pages": 159
+      },
+      "atOrBelowPageLimit": {
+        "documents": 36,
+        "fields": 180,
+        "goldenAbsentFields": 1,
+        "pages": 121
+      },
+      "pageHistogram": {
+        "1": 6,
+        "2": 8,
+        "3": 5,
+        "4": 8,
+        "5": 5,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "12": 2,
+        "14": 1
+      },
+      "pageCounts": [
+        {
+          "doc": "deepform-02804f3a-c189-34d1-81e9-619d4e7fbc4b.pdf",
+          "pages": 6
+        },
+        {
+          "doc": "deepform-05f4795c-be1c-1028-6c79-3e679b954976.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "deepform-106bbf1c-68c1-b235-ad60-966d96c7e6bd.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "deepform-10f0fd54-b6b9-5bb8-d884-bf562045948a.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-1b2e5a3c-abbd-0966-f102-c1b7b1907ec4.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-250e73dd-0070-72bf-683b-c57b7dd7a1de.pdf",
+          "pages": 6
+        },
+        {
+          "doc": "deepform-2eb5eaa6-3f56-cb68-b3c8-76abab26dc0c.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "deepform-4748ebc2-5694-3845-c655-9a7527cc2bcd.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-4af56131-8360-9587-cdea-73368e0f934a.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-4b15ddfe-e340-ab7b-9913-99104af87cfc.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "deepform-50e20ed6-1232-4272-a28a-4632d68679fc.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-5332c375-1c00-f2df-6d48-3f253a1ce712.pdf",
+          "pages": 5
+        },
+        {
+          "doc": "deepform-53c10b8d-b592-db3f-9a30-e6729046e7ce.pdf",
+          "pages": 12
+        },
+        {
+          "doc": "deepform-5bf05fd9-5be3-1dbc-6d63-47bf4935d0e8.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "deepform-5dad4456-7dae-0e81-8cd6-b782d72639a4.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "deepform-5ef87109-6c02-7747-55ce-3c17008883f4.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-64780ed0-180c-a77b-bfe0-478c2a48a3a0.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-64ce52a3-fe66-1822-3202-9729ba867b0c.pdf",
+          "pages": 5
+        },
+        {
+          "doc": "deepform-685a2568-66ec-e3e0-27a1-78b56402b8cb.pdf",
+          "pages": 5
+        },
+        {
+          "doc": "deepform-74f41ce7-1c4a-c1bf-7cfc-5906ef168644.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-7a8b6973-be56-db5c-6adb-918a45f5813a.pdf",
+          "pages": 5
+        },
+        {
+          "doc": "deepform-7b0e54d3-76bc-5e87-6c44-0fe4e534cf80.pdf",
+          "pages": 12
+        },
+        {
+          "doc": "deepform-8336cac1-6a6b-3d03-da02-406e5c5c02a3.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "deepform-88fa6e33-408f-6ac2-a253-d30e32bce302.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-8e9ae894-95ce-2b46-58c4-bd4748bd8e60.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "deepform-96758ed0-03a8-c4d3-97ad-7d4a8f14d465.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-98905496-5904-ec4a-c59a-7c6d297b4bfa.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-b81af886-ac0d-ed0b-8798-25a86885aaf5.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-b83b03c8-6bd6-61df-d90e-a91cfa2d4a3a.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-c3594f89-5f16-31ae-8b73-88c5520a4753.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "deepform-c442b691-e6c8-7e9d-3970-a205dc05b56d.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "deepform-ca2b81c1-ae0a-09ca-fded-9acc979c0e48.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-d42b3339-ef69-384f-3e5b-b21169b04816.pdf",
+          "pages": 14
+        },
+        {
+          "doc": "deepform-d6cd4fa8-fed8-1f57-c2f7-e5dea8529a3e.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "deepform-d9a04263-730c-db2b-2ae4-76b2b5e2e1bf.pdf",
+          "pages": 8
+        },
+        {
+          "doc": "deepform-dfe6f0ca-e735-60ff-3630-7c92239ddae2.pdf",
+          "pages": 5
+        },
+        {
+          "doc": "deepform-e8afd93c-9910-0551-6596-b6b8567dd01b.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "deepform-f27113a6-a13d-da0a-851f-e6e25b3c7547.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "deepform-f55b8467-7522-5456-a56d-896956759ebd.pdf",
+          "pages": 7
+        }
+      ],
+      "conditionalExclusions": [
+        {
+          "docClass": "deepform",
+          "doc": "deepform-53c10b8d-b592-db3f-9a30-e6729046e7ce.pdf",
+          "pages": 12,
+          "fields": 5,
+          "goldenAbsentFields": 0
+        },
+        {
+          "docClass": "deepform",
+          "doc": "deepform-7b0e54d3-76bc-5e87-6c44-0fe4e534cf80.pdf",
+          "pages": 12,
+          "fields": 5,
+          "goldenAbsentFields": 0
+        },
+        {
+          "docClass": "deepform",
+          "doc": "deepform-d42b3339-ef69-384f-3e5b-b21169b04816.pdf",
+          "pages": 14,
+          "fields": 5,
+          "goldenAbsentFields": 0
+        }
+      ]
+    },
+    "vrdu-ad-buy": {
+      "full": {
+        "documents": 22,
+        "fields": 1423,
+        "goldenAbsentFields": 26,
+        "pages": 57
+      },
+      "atOrBelowPageLimit": {
+        "documents": 21,
+        "fields": 1404,
+        "goldenAbsentFields": 25,
+        "pages": 46
+      },
+      "pageHistogram": {
+        "1": 6,
+        "2": 9,
+        "3": 4,
+        "4": 1,
+        "6": 1,
+        "11": 1
+      },
+      "pageCounts": [
+        {
+          "doc": "0189d309-8f8e-3064-d9fd-52009ba3d5cb.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+          "pages": 11
+        },
+        {
+          "doc": "030f7df7-6d1d-b6c7-3a36-39edb0725603.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "0719de4c-5538-0fe8-123b-f0aca437b53d.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "07bfa311-9fc7-c3d2-4e7a-94d7fd412599.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "08fe4888-65a4-3254-b5d2-dad9186a9694.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "090bd765-b37c-722c-5f15-05919a2051e8.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "103ccc17-356a-5f99-9c3b-920fc2dd023e.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "15262fcf-40c4-1ee6-6719-6ae834d12a4e.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "1672687e-ddc6-ce1d-8ab1-46acdc04953f.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "1a8e7b10-6823-dfdf-d398-0cd7740b9699.pdf",
+          "pages": 6
+        },
+        {
+          "doc": "1af023e1-3d51-7fe6-f8f1-70656181f5f1.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "1ddf64fb-65ba-f3db-eb89-8cb9a2802a5a.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "2093ee21-d0ee-3641-03b4-3025ae441836.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "23be2cf1-1313-58c9-6660-56cd0bd9d642.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "261cb425-6648-a8e8-db2b-798114109c9d.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "2aac88c6-7849-4aa6-5315-5ceeabbdcf73.pdf",
+          "pages": 4
+        },
+        {
+          "doc": "348812cb-8af7-56bc-8a19-c3c4f6682392.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "3874b015-8c4f-2a34-b461-ce049874dc07.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "38f02241-0fda-abeb-bdf9-032f40279e89.pdf",
+          "pages": 3
+        }
+      ],
+      "conditionalExclusions": [
+        {
+          "docClass": "vrdu-ad-buy",
+          "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+          "pages": 11,
+          "fields": 19,
+          "goldenAbsentFields": 1
+        }
+      ]
+    },
+    "vrdu-registration": {
+      "full": {
+        "documents": 48,
+        "fields": 288,
+        "goldenAbsentFields": 49,
+        "pages": 88
+      },
+      "atOrBelowPageLimit": {
+        "documents": 48,
+        "fields": 288,
+        "goldenAbsentFields": 49,
+        "pages": 88
+      },
+      "pageHistogram": {
+        "1": 15,
+        "2": 26,
+        "3": 7
+      },
+      "pageCounts": [
+        {
+          "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19631101_Tourism_Australia_Amendment_Amendment.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "19650901_Arab_Information_Center_Amendment_Amendment.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "19670801_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19670901_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19711201_Tourism_Australia_Amendment_Amendment.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19760701_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19770101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19770401_World_Zionist_Organization_-_American_Section,_Inc._Amendment_Amendment.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "19770501_Korea_National_Tourism_Organization,_New_Jersey_Amendment_Amendment.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19781201_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "19790101_IDA_Ireland_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19790101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19800101_Italian_Government_Travel_Office,_Chicago_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19800301_Quebec_Government_Office_Amendment_Amendment.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19820801_St._Lucia_Tourist_Board_Amendment_Amendment.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19830301_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19841001_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19870302_FCB_New_York_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19880501_Akin,_Gump,_Strauss,_Hauer___Feld,_LLP_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19890201_Arnold___Porter_Kaye_Scholer,_LLP_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19890501_Singapore_Tourism_Board_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "19910101_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19910201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19910601_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19910601_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19910601_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "19910801_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19910801_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19910801_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 3
+        },
+        {
+          "doc": "19911001_Arnold___Porter_Kaye_Scholer,_LLP_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19911001_Kobe_Trade_Information_Office_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19911101_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19911201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19911201_KOTRA_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19920301_Far_East_Trade_Services,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19920301_Hill_and_Knowlton_Strategies,_LLC_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19920301_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19920301_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19920301_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19920501_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 2
+        },
+        {
+          "doc": "19920501_Scottish_Enterprise_Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        },
+        {
+          "doc": "19920501_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+          "pages": 1
+        }
+      ],
+      "conditionalExclusions": []
+    }
+  },
+  "branches": {
+    "capRemoved": {
+      "documents": 124,
+      "fields": 2102,
+      "goldenAbsentFields": 142,
+      "pages": 319
+    },
+    "capConfirmed": {
+      "documents": 120,
+      "fields": 2068,
+      "goldenAbsentFields": 141,
+      "pages": 270
+    }
+  },
+  "conditionalExclusions": [
+    {
+      "docClass": "deepform",
+      "doc": "deepform-53c10b8d-b592-db3f-9a30-e6729046e7ce.pdf",
+      "pages": 12,
+      "fields": 5,
+      "goldenAbsentFields": 0
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-7b0e54d3-76bc-5e87-6c44-0fe4e534cf80.pdf",
+      "pages": 12,
+      "fields": 5,
+      "goldenAbsentFields": 0
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-d42b3339-ef69-384f-3e5b-b21169b04816.pdf",
+      "pages": 14,
+      "fields": 5,
+      "goldenAbsentFields": 0
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+      "pages": 11,
+      "fields": 19,
+      "goldenAbsentFields": 1
+    }
+  ]
+}

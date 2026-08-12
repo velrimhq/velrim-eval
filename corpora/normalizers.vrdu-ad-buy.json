@@ -1,0 +1,16 @@
+{
+  "docClass": "vrdu-ad-buy",
+  "normalizers": {
+    "/advertiser": "text",
+    "/agency": "text",
+    "/flight_from": "date",
+    "/flight_to": "date",
+    "/gross_amount": "currency",
+    "/line_items/*/program_desc": "text",
+    "/line_items/*/program_end_date": "date",
+    "/line_items/*/program_start_date": "date",
+    "/line_items/*/sub_amount": "currency",
+    "/product": "text",
+    "/tv_address": "text"
+  }
+}

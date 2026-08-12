@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "/vendor": { "state": "present", "value": "ACME", "confidence": 0.93 },
+    "/total": { "state": "present", "value": 1240.5, "confidence": 0.91 },
+    "/date": { "state": "present", "value": "2026-01-15", "confidence": 0.9 },
+    "/currency": { "state": "present", "value": "USD", "confidence": 0.94 },
+    "/invoice_number": { "state": "present", "value": "INV-0042", "confidence": 0.92 },
+    "/subtotal": { "state": "present", "value": 1180, "confidence": 0.88 },
+    "/bill_to": { "state": "present", "value": "Globex Corp", "confidence": 0.9 },
+    "/ship_to": { "state": "present", "value": "Globex Warehouse 4", "confidence": 0.86 },
+    "/due_date": { "state": "present", "value": "2026-02-14", "confidence": 0.89 },
+    "/line_items/0/desc": { "state": "present", "value": "Widget", "confidence": 0.9 },
+    "/line_items/0/qty": { "state": "present", "value": 10, "confidence": 0.92 },
+    "/line_items/0/unit_price": { "state": "present", "value": 118, "confidence": 0.9 },
+    "/tax": { "state": "null", "confidence": 0.81 },
+    "/discount": { "state": "null", "confidence": 0.79 },
+    "/a": { "state": "present", "value": 1, "confidence": 0.9 },
+    "/b": { "state": "null", "confidence": 0.8 }
+  },
+  "meta": {
+    "model": "velrim-extract",
+    "calibrator_version": "cal-2026.08-1",
+    "routing_policy_version": "rp-2026.07-1",
+    "request_id": "req_fixture_fitted_0001"
+  }
+}

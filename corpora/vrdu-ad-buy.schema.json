@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "advertiser": {
+      "type": ["string", "null"]
+    },
+    "agency": {
+      "type": ["string", "null"]
+    },
+    "contract_num": {
+      "type": ["string", "null"]
+    },
+    "flight_from": {
+      "type": ["string", "null"]
+    },
+    "flight_to": {
+      "type": ["string", "null"]
+    },
+    "gross_amount": {
+      "type": ["string", "null"]
+    },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "channel": {
+            "type": ["string", "null"]
+          },
+          "program_desc": {
+            "type": ["string", "null"]
+          },
+          "program_end_date": {
+            "type": ["string", "null"]
+          },
+          "program_start_date": {
+            "type": ["string", "null"]
+          },
+          "sub_amount": {
+            "type": ["string", "null"]
+          }
+        },
+        "required": [
+          "channel",
+          "program_desc",
+          "program_end_date",
+          "program_start_date",
+          "sub_amount"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "product": {
+      "type": ["string", "null"]
+    },
+    "property": {
+      "type": ["string", "null"]
+    },
+    "tv_address": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": [
+    "advertiser",
+    "agency",
+    "contract_num",
+    "flight_from",
+    "flight_to",
+    "gross_amount",
+    "line_items",
+    "product",
+    "property",
+    "tv_address"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "model": "mistral-ocr-4-0",
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "# Invoice\n\nACME — Widget x2, tax n/a"
+    }
+  ],
+  "document_annotation": "{\"vendor\":{\"name\":\"ACME\"},\"line_items\":[{\"description\":\"Widget\",\"quantity\":2}],\"tax\":null}",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 20481
+  }
+}

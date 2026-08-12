@@ -1,0 +1,10 @@
+{
+  "docClass": "vrdu-registration",
+  "normalizers": {
+    "/file_date": "date",
+    "/foreign_principal_name": "text",
+    "/registrant_name": "text",
+    "/signer_name": "text",
+    "/signer_title": "text"
+  }
+}

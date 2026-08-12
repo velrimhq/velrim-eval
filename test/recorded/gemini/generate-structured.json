@@ -1,0 +1,23 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [
+          {
+            "text": "{\"vendor\":{\"name\":\"ACME\"},\"line_items\":[{\"description\":\"Widget\",\"quantity\":2}],\"tax\":null,\"discount\":null,\"total\":1240.5}"
+          }
+        ]
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1102,
+    "candidatesTokenCount": 39,
+    "totalTokenCount": 1141
+  },
+  "modelVersion": "gemini-2.5-flash",
+  "responseId": "resp-fixture-gemini-structured"
+}

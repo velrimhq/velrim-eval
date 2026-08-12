@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tgz
+# CLI output dir at the package root ONLY — an unanchored "report/" silently ignored
+# src/report/ (the render layer was untracked from W8 until 2026-07-15; never repeat this).
+/report/

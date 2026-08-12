@@ -1,0 +1,40 @@
+{
+  "name": "velrim-eval",
+  "version": "0.0.1",
+  "private": false,
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Thin CLI to score document-extraction adapters (Velrim, OpenAI, Gemini, LlamaExtract, Mistral) on a 3-state golden set. Golden in -> per-field F1 + reliability curve out -> CI exit code. NOT a platform (POS rule 6).",
+  "bin": {
+    "velrim-eval": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "NOTICE",
+    "ATTRIBUTIONS.md",
+    "RIGHT-OF-REPLY.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "corpora:convert": "npm run build && node dist/corpora-cli.js",
+    "probes": "npm run build && node dist/probes-cli.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@velrim/scoring": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "pdfjs-serverless": "1.2.3",
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.4",
+    "eslint": "^9.18.0",
+    "typescript-eslint": "^8.18.0"
+  }
+}

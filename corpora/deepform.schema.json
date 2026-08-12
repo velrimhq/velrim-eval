@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "advertiser": {
+      "type": ["string", "null"]
+    },
+    "contract_number": {
+      "type": ["string", "null"]
+    },
+    "flight_from": {
+      "type": ["string", "null"]
+    },
+    "flight_to": {
+      "type": ["string", "null"]
+    },
+    "gross_amount": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": ["advertiser", "contract_number", "flight_from", "flight_to", "gross_amount"],
+  "additionalProperties": false
+}

@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "cash": {
+      "type": ["string", "null"]
+    },
+    "change": {
+      "type": ["string", "null"]
+    },
+    "credit_card": {
+      "type": ["string", "null"]
+    },
+    "discount": {
+      "type": ["string", "null"]
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": ["string", "null"]
+          },
+          "price": {
+            "type": ["string", "null"]
+          }
+        },
+        "required": ["name", "price"],
+        "additionalProperties": false
+      }
+    },
+    "service_charge": {
+      "type": ["string", "null"]
+    },
+    "subtotal": {
+      "type": ["string", "null"]
+    },
+    "tax": {
+      "type": ["string", "null"]
+    },
+    "total": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": [
+    "cash",
+    "change",
+    "credit_card",
+    "discount",
+    "items",
+    "service_charge",
+    "subtotal",
+    "tax",
+    "total"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,9 @@
+{
+  "docClass": "deepform",
+  "normalizers": {
+    "/advertiser": "text",
+    "/flight_from": "date",
+    "/flight_to": "date",
+    "/gross_amount": "currency"
+  }
+}

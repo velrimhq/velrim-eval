@@ -1,0 +1,345 @@
+{
+  "formatVersion": 1,
+  "seed": 20260712,
+  "probesPerClass": 3,
+  "candidatePools": {
+    "cord-v2": [
+      {
+        "field": "advertiser",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "contract_number",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "flight_from",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "flight_to",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "gross_amount",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "agency",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "contract_num",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "product",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "property",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "tv_address",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "file_date",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "foreign_principal_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "registrant_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "registration_num",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "signer_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "signer_title",
+        "sourceClass": "vrdu-registration"
+      }
+    ],
+    "deepform": [
+      {
+        "field": "cash",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "change",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "credit_card",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "discount",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "service_charge",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "subtotal",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "tax",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "total",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "agency",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "contract_num",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "product",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "property",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "tv_address",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "file_date",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "foreign_principal_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "registrant_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "registration_num",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "signer_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "signer_title",
+        "sourceClass": "vrdu-registration"
+      }
+    ],
+    "vrdu-ad-buy": [
+      {
+        "field": "cash",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "change",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "credit_card",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "discount",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "service_charge",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "subtotal",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "tax",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "total",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "contract_number",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "file_date",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "foreign_principal_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "registrant_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "registration_num",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "signer_name",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "signer_title",
+        "sourceClass": "vrdu-registration"
+      }
+    ],
+    "vrdu-registration": [
+      {
+        "field": "cash",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "change",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "credit_card",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "discount",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "service_charge",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "subtotal",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "tax",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "total",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "advertiser",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "contract_number",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "flight_from",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "flight_to",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "gross_amount",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "agency",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "contract_num",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "product",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "property",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "tv_address",
+        "sourceClass": "vrdu-ad-buy"
+      }
+    ]
+  },
+  "probes": {
+    "cord-v2": [
+      {
+        "field": "contract_num",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "property",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "flight_from",
+        "sourceClass": "deepform"
+      }
+    ],
+    "deepform": [
+      {
+        "field": "agency",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "registration_num",
+        "sourceClass": "vrdu-registration"
+      },
+      {
+        "field": "property",
+        "sourceClass": "vrdu-ad-buy"
+      }
+    ],
+    "vrdu-ad-buy": [
+      {
+        "field": "discount",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "credit_card",
+        "sourceClass": "cord-v2"
+      },
+      {
+        "field": "tax",
+        "sourceClass": "cord-v2"
+      }
+    ],
+    "vrdu-registration": [
+      {
+        "field": "tv_address",
+        "sourceClass": "vrdu-ad-buy"
+      },
+      {
+        "field": "flight_from",
+        "sourceClass": "deepform"
+      },
+      {
+        "field": "agency",
+        "sourceClass": "vrdu-ad-buy"
+      }
+    ]
+  }
+}

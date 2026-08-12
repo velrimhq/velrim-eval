@@ -1,0 +1,21 @@
+{
+  "id": "ext-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "status": "COMPLETED",
+  "file_input": "dfl-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "extract_result": {
+    "vendor": "ACME",
+    "total": 1240.5,
+    "date": "2026-01-15",
+    "currency": "USD",
+    "invoice_number": "INV-0042",
+    "subtotal": 1180,
+    "bill_to": "Globex Corp",
+    "ship_to": "Globex Warehouse 4",
+    "due_date": "2026-02-14",
+    "tax": null,
+    "discount": null,
+    "a": 1,
+    "b": null
+  },
+  "metadata": { "usage": { "num_pages_extracted": 1 } }
+}

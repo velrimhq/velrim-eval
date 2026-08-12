@@ -1,0 +1,15 @@
+{
+  "docClass": "cord-v2",
+  "normalizers": {
+    "/cash": "currency",
+    "/change": "currency",
+    "/credit_card": "currency",
+    "/discount": "currency",
+    "/items/*/name": "text",
+    "/items/*/price": "currency",
+    "/service_charge": "currency",
+    "/subtotal": "currency",
+    "/tax": "currency",
+    "/total": "currency"
+  }
+}

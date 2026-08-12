@@ -1,0 +1,31 @@
+{
+  "id": "chatcmpl-dogfood-openai",
+  "object": "chat.completion",
+  "model": "gpt-competitor",
+  "choices": [
+    {
+      "index": 0,
+      "finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\"vendor\":\"ACME\",\"total\":1240.5,\"date\":\"2026-01-15\",\"currency\":\"USD\",\"invoice_number\":\"INV-0042\",\"subtotal\":1180,\"bill_to\":\"Globex Corp\",\"ship_to\":\"Globex Warehouse 4\",\"due_date\":\"2026-02-14\",\"tax\":0,\"a\":1,\"b\":99}\n```"
+      },
+      "logprobs": {
+        "content": [
+          { "token": "ACME", "logprob": -0.02 },
+          { "token": "1240.5", "logprob": -0.05 },
+          { "token": "2026-01-15", "logprob": -0.11 },
+          { "token": "USD", "logprob": -0.03 },
+          { "token": "INV-0042", "logprob": -0.2 },
+          { "token": "1180", "logprob": -0.3 },
+          { "token": "Globex Corp", "logprob": -0.4 },
+          { "token": "Globex Warehouse 4", "logprob": -0.55 },
+          { "token": "2026-02-14", "logprob": -0.35 },
+          { "token": "0", "logprob": -1.2 },
+          { "token": "1", "logprob": -0.04 },
+          { "token": "99", "logprob": -1.5 }
+        ]
+      }
+    }
+  ]
+}
