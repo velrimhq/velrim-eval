@@ -30,10 +30,10 @@ committed before any money was spent, one open deterministic scorer for every ar
 ours), frozen inputs with published hashes, raw per-field outputs published for every arm so
 any cell can be re-derived by hand, and a standing right of reply for every vendor named.
 
-**Publish-regardless.** Once paid runs complete, the run data (predictions, scores, receipts,
-manifests) is published to this repository in full, no matter what it shows. The decision
-rules in §11 govern timing, framing, and amplification only; none of them can suppress a
-number. Losses print. Ties print as ties. The one outcome that cancels promotion (§11 K6) is
+**Publish-regardless.** Once paid runs complete, the run data (predictions, scores, request
+and job IDs, manifests) is published to this repository in full, no matter what it shows. The
+decision rules in §11 govern timing, framing, and amplification only; none of them can suppress
+a number. Losses print. Ties print as ties. The one outcome that cancels promotion (§11 K6) is
 pre-registered here, in advance, with its exact trigger.
 
 Signature: the public commit of this document by the Velrim repository is its execution.
@@ -64,7 +64,7 @@ measurement instead of a claim.
 
 | #   | arm                                               | frozen configuration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | role                                                                                      |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| A1  | **Velrim** (production, api.velrim.com)           | `POST /v1/extract`, standard non-ZDR API key (the default new-customer posture; disclosed). **One live pass** through the same public endpoint every customer uses, with the default request (§6.2): the served product (the fitted stack, Velrim's default served path). The served version stamp is read from every response and printed in the column label. Self-billed at list price (`$0.02/page`) through the real customer wallet; receipts and job IDs published.                                                | The product under test                                                                    |
+| A1  | **Velrim** (production, api.velrim.com)           | `POST /v1/extract`, standard non-ZDR API key (the default new-customer posture; disclosed). **One live pass** through the same public endpoint every customer uses, with the default request (§6.2): the served product (the fitted stack, Velrim's default served path). The served version stamp is read from every response and printed in the column label. Self-billed at list price (`$0.02/page`) through the real customer wallet; request and job IDs published.                                                 | The product under test                                                                    |
 | A2  | **Gemini 2.5 Flash, free-decode** (Google-direct) | Google AI Studio API, **paid quota**. Schema in the prompt via the one shared instruction (§5.4); PDF inline base64; vendor-default generation settings except `temperature: 0` (the one pre-registered decoding rule, applied to every model-prompt arm); output parsed by this CLI's own bundled repair parser, never Velrim's production parser. Auth via the `x-goog-api-key` header. Model pin: `gemini-2.5-flash` (never `-latest`). Docs: ai.google.dev/gemini-api/docs/document-processing (accessed 2026-07-06). | **Headline bare-model control**: Velrim runs this model; this column is the ablation base |
 | A3  | **Gemini 2.5 Flash, constrained** (same route)    | Identical prompt bytes to A2; the **only** difference is `generationConfig.responseJsonSchema` carrying the same frozen schema (2.5-flash acceptance is a smoke item, §12). Docs: ai.google.dev/gemini-api/docs/structured-output (accessed 2026-07-06).                                                                                                                                                                                                                                                                  | Constrained-vs-free split: independent replication of the ExtractBench 86.9→70.0 shape    |
 | A4  | **Mistral Document AI (OCR 4)**, paid tier        | `POST /v1/ocr` with `document_annotation_format` carrying the frozen class schema; model pin `mistral-ocr-4-0` (never `-latest`). Primary corpus per the §4.3 branch pair; in the cap-confirmed branch a loud-fail guard treats any over-cap document reaching this arm as a protocol error, never a red cell. Docs: docs.mistral.ai/capabilities/document_ai/annotations (accessed 2026-07-06).                                                                                                                          | Hosted competitor product arm; the OCR-pipeline design point; cheapest competitor         |
@@ -548,8 +548,8 @@ publication).
 ## 8. Cost column
 
 Per arm: list price per 1,000 pages for the configuration as run (vendor pricing-page URL +
-access date), and **actual measured spend** (receipts and job IDs retained; Velrim self-billed
-at list through the real customer wallet: "paid as a customer" receipts, published).
+access date), and **actual measured spend** (provider request and job IDs retained and
+published; Velrim self-billed at list through the real customer wallet).
 
 **No latency column**: async-poll arms are not comparable to sync arms; that exclusion and
 reason are stated in one sentence wherever cost renders.
@@ -559,9 +559,9 @@ alone.** The one combined headline table is **F1 + fabrication rate + error@cove
 `$/1k pages`** per arm; no published figure, table, or README render pairs cost with accuracy
 without the differentiating columns. The article body leads with what the delta buys
 (fabrication catch on absent fields, confidence measured against published reliability curves,
-span receipts, the open CLI), itemized inline, then owns the price that buys it before anyone
-derives it: Velrim lists at `$20/1k` pages against `~$2–3/1k` for the bare model it runs (A2),
-in this benchmark's own receipts, a ~7–10x multiple.
+span receipts, the open CLI), itemized inline, then prints the multiple before anyone derives
+it: Velrim at `$20/1k` pages against `~$2–3/1k` for Gemini 2.5 Flash run bare (A2), roughly
+7–10x.
 
 Reference list prices as of 2026-07-06 (re-verified at smoke): Velrim `$0.02/page`; Gemini
 2.5 Flash paid `$0.30/M` input, `$2.50/M` output; Mistral Document AI `$5/1k` pages; OpenAI
@@ -605,7 +605,7 @@ flaky.
   batch; a resumed run re-verifies the input and implementation fingerprint.
 - **Spend preflight:** every paid command prints its expected spend (with the pricing basis
   and its as-of date) and requires an explicit `--confirm-spend` before any transport can
-  send (the same printed figure §8 counts as the reproduction-cost receipt).
+  send (the same printed spend §8 counts as the reproduction-cost figure).
 - **Circuit breaker:** N consecutive whole-document contract failures on one arm (default =
   the repeat count, 3) **pauses that arm** for a manual check, checkpoint-safe; pausing an arm
   is protocol, not discretion. Mid-run health is a sidecar sweep, never only a run-end summary

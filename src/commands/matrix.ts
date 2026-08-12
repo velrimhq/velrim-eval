@@ -10,7 +10,8 @@
  * aggregates every cell manifest into matrix-manifest.json and computes publicationReady over
  * the WHOLE matrix (all cells completed + live + one clean commit + scoring 0.1.0 + every
  * per-cell gap resolved). Also writes cost-log.json — per-cell spend preflights and the
- * request-id receipts harvested from the run manifests (ANALYSIS-PLAN.md §8: "receipts and job IDs retained").
+ * request and job IDs harvested from the run manifests (ANALYSIS-PLAN.md §8: "provider request
+ * and job IDs retained and published").
  */
 
 import { parseArgs } from 'node:util';
