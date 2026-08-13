@@ -2,6 +2,8 @@
 
 **velrim-eval is a thin CLI, not a platform.** Golden set in → per-field F1 + reliability curve out → CI exit code. Five adapters (Velrim, OpenAI, Gemini, LlamaExtract, Mistral). It is deliberately NOT a hosted service, leaderboard, dashboard, or eval history store. It runs in your CI and writes files to your repo — your golden sets and baselines are yours. Every number it prints is YOUR measured result on YOUR golden set; it bakes in no Velrim accuracy claim.
 
+Maintained by [Velrim](https://velrim.com) — the document extraction API with calibrated per-field confidence. Docs: [velrim.com/docs](https://velrim.com/docs).
+
 ---
 
 ## What it does
