@@ -76,6 +76,12 @@ export interface Transport {
  */
 export interface EvalAdapterOpts {
   mode: 'fixture' | 'live';
+  /**
+   * The golden row's docClass, passed by the runner on every call. Velrim sends it as
+   * `options.doc_class` (selects the served per-class fitted calibrator); other adapters
+   * ignore it — their class information already rides in the per-class schema.
+   */
+  docClass?: string;
   structuredMode?: boolean;
   signal?: AbortSignal;
   /** Absolute outer doc-repeat deadline, used by async adapters to leave taxonomy headroom. */
@@ -99,6 +105,12 @@ export interface EvalAdapterOpts {
    * fixture/dogfood default — ⇒ no assertion (a fixture's stamp may be anything).
    */
   requireFittedStamp?: boolean;
+  /**
+   * Gemini only — route A2/A3 to this Google Cloud project's Vertex generateContent endpoint
+   * instead of AI Studio. URL-only substitution (body and auth header identical); recorded in
+   * run-meta and the manifest endpoint (⇒ fingerprinted). Why it exists: gemini.ts header.
+   */
+  geminiVertexProject?: string;
   transport: Transport;
 }
 

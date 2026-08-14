@@ -1,0 +1,1 @@
+{"kind":"prediction","doc":"cord-011.pdf","docClass":"cord-v2","repeat":1,"fields":{},"availability":"contract_failure","requestAttempts":1,"transportRetries":0,"error":"live transport 400 for https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/publishers/google/models/gemini-2.5-flash:generateContent"}

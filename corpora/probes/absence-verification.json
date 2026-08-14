@@ -1,0 +1,392 @@
+{
+  "formatVersion": 1,
+  "seed": 20260712,
+  "searchedProbeDocPairs": 372,
+  "note": "Text-layer search is the tool-independent FIRST pass only; the published visual manual-pass worksheet is authoritative (scan classes can carry values the text layer misses, and vice versa). A hit flags the pair for maintainer attention at the visual pass.",
+  "hits": [
+    {
+      "docClass": "deepform",
+      "doc": "deepform-02804f3a-c189-34d1-81e9-619d4e7fbc4b.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-05f4795c-be1c-1028-6c79-3e679b954976.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-05f4795c-be1c-1028-6c79-3e679b954976.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-10f0fd54-b6b9-5bb8-d884-bf562045948a.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-1b2e5a3c-abbd-0966-f102-c1b7b1907ec4.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-1b2e5a3c-abbd-0966-f102-c1b7b1907ec4.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-250e73dd-0070-72bf-683b-c57b7dd7a1de.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-250e73dd-0070-72bf-683b-c57b7dd7a1de.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-2eb5eaa6-3f56-cb68-b3c8-76abab26dc0c.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-4748ebc2-5694-3845-c655-9a7527cc2bcd.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-4af56131-8360-9587-cdea-73368e0f934a.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-4b15ddfe-e340-ab7b-9913-99104af87cfc.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-4b15ddfe-e340-ab7b-9913-99104af87cfc.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-50e20ed6-1232-4272-a28a-4632d68679fc.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-5332c375-1c00-f2df-6d48-3f253a1ce712.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-5332c375-1c00-f2df-6d48-3f253a1ce712.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-53c10b8d-b592-db3f-9a30-e6729046e7ce.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-5bf05fd9-5be3-1dbc-6d63-47bf4935d0e8.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-5dad4456-7dae-0e81-8cd6-b782d72639a4.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-5dad4456-7dae-0e81-8cd6-b782d72639a4.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-5ef87109-6c02-7747-55ce-3c17008883f4.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-64780ed0-180c-a77b-bfe0-478c2a48a3a0.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-64ce52a3-fe66-1822-3202-9729ba867b0c.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-64ce52a3-fe66-1822-3202-9729ba867b0c.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-685a2568-66ec-e3e0-27a1-78b56402b8cb.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-74f41ce7-1c4a-c1bf-7cfc-5906ef168644.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-74f41ce7-1c4a-c1bf-7cfc-5906ef168644.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-7a8b6973-be56-db5c-6adb-918a45f5813a.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-7b0e54d3-76bc-5e87-6c44-0fe4e534cf80.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-8336cac1-6a6b-3d03-da02-406e5c5c02a3.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-8336cac1-6a6b-3d03-da02-406e5c5c02a3.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-88fa6e33-408f-6ac2-a253-d30e32bce302.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-8e9ae894-95ce-2b46-58c4-bd4748bd8e60.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-96758ed0-03a8-c4d3-97ad-7d4a8f14d465.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-96758ed0-03a8-c4d3-97ad-7d4a8f14d465.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-98905496-5904-ec4a-c59a-7c6d297b4bfa.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-98905496-5904-ec4a-c59a-7c6d297b4bfa.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-b81af886-ac0d-ed0b-8798-25a86885aaf5.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-b83b03c8-6bd6-61df-d90e-a91cfa2d4a3a.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-c3594f89-5f16-31ae-8b73-88c5520a4753.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-c3594f89-5f16-31ae-8b73-88c5520a4753.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-c442b691-e6c8-7e9d-3970-a205dc05b56d.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-ca2b81c1-ae0a-09ca-fded-9acc979c0e48.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-ca2b81c1-ae0a-09ca-fded-9acc979c0e48.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-d42b3339-ef69-384f-3e5b-b21169b04816.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-d6cd4fa8-fed8-1f57-c2f7-e5dea8529a3e.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-d6cd4fa8-fed8-1f57-c2f7-e5dea8529a3e.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-d9a04263-730c-db2b-2ae4-76b2b5e2e1bf.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-d9a04263-730c-db2b-2ae4-76b2b5e2e1bf.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-dfe6f0ca-e735-60ff-3630-7c92239ddae2.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-e8afd93c-9910-0551-6596-b6b8567dd01b.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-e8afd93c-9910-0551-6596-b6b8567dd01b.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-f27113a6-a13d-da0a-851f-e6e25b3c7547.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-f55b8467-7522-5456-a56d-896956759ebd.pdf",
+      "field": "agency",
+      "token": "agency"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-f55b8467-7522-5456-a56d-896956759ebd.pdf",
+      "field": "property",
+      "token": "property"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+      "field": "tax",
+      "token": "tax"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "090bd765-b37c-722c-5f15-05919a2051e8.pdf",
+      "field": "tax",
+      "token": "tax"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1a8e7b10-6823-dfdf-d398-0cd7740b9699.pdf",
+      "field": "discount",
+      "token": "discount"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1a8e7b10-6823-dfdf-d398-0cd7740b9699.pdf",
+      "field": "tax",
+      "token": "tax"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "23be2cf1-1313-58c9-6660-56cd0bd9d642.pdf",
+      "field": "tax",
+      "token": "tax"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "261cb425-6648-a8e8-db2b-798114109c9d.pdf",
+      "field": "tax",
+      "token": "tax"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "348812cb-8af7-56bc-8a19-c3c4f6682392.pdf",
+      "field": "discount",
+      "token": "discount"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "348812cb-8af7-56bc-8a19-c3c4f6682392.pdf",
+      "field": "tax",
+      "token": "tax"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19920501_Scottish_Enterprise_Dissemination_Report_Dissemination_Report.pdf",
+      "field": "agency",
+      "token": "agency"
+    }
+  ]
+}

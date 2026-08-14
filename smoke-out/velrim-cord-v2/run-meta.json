@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "velrim",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "requireFittedStamp": true,
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/smoke/golden.cord-v2.smoke.jsonl",
+  "docs": 2,
+  "docsPath": "<local-pdfs>/cord-v2",
+  "generatedAt": "2026-08-13T15:12:22.868Z",
+  "updatedAt": "2026-08-13T15:12:22.868Z",
+  "runWindow": {
+    "fingerprint": "c4291be103ee63c98519113d54149d263dfd069791bf7f766a60b364c679de68",
+    "adapter": "velrim",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-13T15:12:13.666Z",
+    "completedAt": "2026-08-13T15:12:22.868Z",
+    "startedDate": "2026-08-13",
+    "completedDate": "2026-08-13"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "velrim",
+    "mode": "live",
+    "docs": 2,
+    "repeats": 1,
+    "plannedDocRepeats": 2,
+    "remainingDocRepeats": 2,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.5,
+    "expectedRemainingUsd": 0.5,
+    "pricingBasis": "ANALYSIS-PLAN ・ゑｽｧ9 reference list prices (re-verified at smoke)",
+    "pricingAsOf": "2026-08-13"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "c4291be103ee63c98519113d54149d263dfd069791bf7f766a60b364c679de68",
+    "implementationHash": "9a40afdecffcb8ac604fcb6c6cc50e8607d88816dc5096d5b5d592bb3d6015b4"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "velrim",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 2,
+    "aggregate": {
+      "attempted": 2,
+      "completed": 2,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 2,
+        "completed": 2,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-13T15:12:22.868Z"
+  }
+}

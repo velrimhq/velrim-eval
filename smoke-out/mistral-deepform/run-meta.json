@@ -1,0 +1,80 @@
+{
+  "version": 2,
+  "adapter": "mistral",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/smoke/golden.deepform.smoke.jsonl",
+  "docs": 2,
+  "docsPath": "<local-pdfs>/deepform",
+  "generatedAt": "2026-08-13T16:56:14.334Z",
+  "updatedAt": "2026-08-13T16:56:14.334Z",
+  "runWindow": {
+    "fingerprint": "23a431b31c1da379561bb633a71c26ba75b794904a9dd567cfb2f0fff706d778",
+    "adapter": "mistral",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-13T16:55:46.935Z",
+    "completedAt": "2026-08-13T16:56:14.334Z",
+    "startedDate": "2026-08-13",
+    "completedDate": "2026-08-13"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "mistral",
+    "mode": "live",
+    "docs": 2,
+    "repeats": 1,
+    "plannedDocRepeats": 2,
+    "remainingDocRepeats": 2,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.25,
+    "expectedRemainingUsd": 0.25,
+    "pricingBasis": "ANALYSIS-PLAN ・ゑｽｧ9 reference list prices (re-verified at smoke)",
+    "pricingAsOf": "2026-08-13"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "23a431b31c1da379561bb633a71c26ba75b794904a9dd567cfb2f0fff706d778",
+    "implementationHash": "f78b011fae997285756a375a5943916067095b887a36a7fb56424672f82c82c5"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "mistral",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 2,
+    "aggregate": {
+      "attempted": 2,
+      "completed": 2,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 2,
+        "completed": 2,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-13T16:56:14.334Z"
+  }
+}

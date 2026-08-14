@@ -71,6 +71,11 @@ OPTIONS
                       the smoke-resolved page-cap branch (mistral only). cap-confirmed ARMS
                       the loud-fail over-cap guard: an over-cap doc reaching the adapter stops
                       the run as a protocol error, never a red cell.
+  --gemini-vertex-project <gcp-project-id>
+                      route the gemini arm to this project's Vertex generateContent endpoint
+                      instead of AI Studio (gemini only). URL-only change — body, model pin,
+                      and auth identical. The route is recorded in run-meta and the manifest;
+                      the project id itself never appears in any output file.
   -h, --help          Show this help
 
 Velrim served-stamp assertion (automatic, velrim + --live only): every live response's served
@@ -97,7 +102,8 @@ OPTIONS
   --config <path>     matrix config JSON: { formatVersion: 1, capBranch, classes, repeats,
                       passes: ["main","probe"], armModes: [{ id, adapter, extraArgs?, spend? }],
                       calTestManifests? } [required]
-  --corpora <dir>     committed corpora dir (golden.<class>.jsonl, probes/, corpus-counts.json) [required]
+  --corpora <dir>     committed corpora dir (golden.<class>.jsonl, normalizers.<class>.json,
+                      probes/, corpus-counts.json) [required]
   --out <dir>         matrix output root; each cell writes to <out>/<armMode>/<class>/<pass> [required]
   --pdfs <dir>        docs root containing <class>/ dirs (default: <corpora>/pdfs)
   --live              real (paid) calls — every cell still runs its own spend preflight and
@@ -111,8 +117,10 @@ OPTIONS
 
 Cells run SEQUENTIALLY via the run command (checkpointed + resumable per cell); a failed or
 circuit-paused cell is recorded and the matrix continues with the other arms. Each completed
-cell is scored per repeat (score command) into <cell>/score.repeat-NNN/ plus a per-class
-<cell>/scores.json summary. Writes <out>/cost-log.json (spend preflights + request-id receipts)
+cell is scored per repeat (score command, with the class's frozen normalizers table — the
+FD-10 dual strict+normalized columns) into <cell>/score.repeat-NNN/ plus a per-class
+<cell>/scores.json summary carrying both columns' means. Every class REQUIRES its
+corpora/normalizers.<class>.json — validated up front, before any cell runs. Writes <out>/cost-log.json (spend preflights + request-id receipts)
 and <out>/matrix-manifest.json (the authoritative matrix validation + publicationReady).
 The cap branch is obeyed from the config: cap-confirmed derives capped goldens (frozen
 exclusions from corpus-counts.json), runs Mistral on them with the armed over-cap guard, scores
@@ -131,6 +139,11 @@ OPTIONS
   --predictions <path>  predictions.jsonl from \`velrim-eval run\` [required]
   --golden <path>       golden.jsonl [required]
   --out <dir>           output dir for scores.json [required]
+  --normalizers <path>  frozen per-class normalizers.<class>.json (FD-10). Adds the NORMALIZED
+                        column (primary at publication) to scores.json next to the strict one;
+                        the pre-existing fields stay the strict column, byte-identical. The
+                        table docClass must match every golden row. Malformed/missing table or
+                        class mismatch is a hard error — never a silent strict-only run.
   -h, --help            Show this help
 
 Runs scoreAgainstGolden (from @velrim/scoring) per doc, then micro-averages across the corpus.

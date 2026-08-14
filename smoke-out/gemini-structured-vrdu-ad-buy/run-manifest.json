@@ -1,0 +1,221 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation",
+    "code.cleanWorktree"
+  ],
+  "run": {
+    "fingerprint": "603edd52e00ef4175fe0ceb1aa69a3498721e44953e4b0d3390001126ee8f9ca",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": true,
+    "repeats": 1,
+    "startedAt": "2026-08-13T15:14:55.529Z",
+    "completedAt": "2026-08-13T15:15:20.363Z",
+    "startedDate": "2026-08-13",
+    "completedDate": "2026-08-13"
+  },
+  "code": {
+    "velrimEvalCommitSha": "0aef50c8a12204c806d061e69281ac59f23f11fe",
+    "worktreeDirty": true,
+    "implementationHash": "b029bb91ca459e77141b2ec9690f52472426f6e04660a243c9429acf2ee8d50e",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "a4dfd606089024bf8c65cfc1bd755e59b90a3edb27c8102297283f4c9a3217bc"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "e1c25bc1bb7e03d9939d3fcc4cd52698780d52eb0a40328d1e92b4645a4d9ec1"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "a4dfd606089024bf8c65cfc1bd755e59b90a3edb27c8102297283f4c9a3217bc"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "e1c25bc1bb7e03d9939d3fcc4cd52698780d52eb0a40328d1e92b4645a4d9ec1"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "vrdu-ad-buy",
+      "schema": {
+        "path": "../vrdu-ad-buy.schema.json",
+        "sha256": "29bec993070bd9610c2aab667e416b39089d3d0f9c11b04acabfd1554fbc439a"
+      },
+      "publicGolden": {
+        "path": "golden.vrdu-ad-buy.smoke.jsonl",
+        "sha256": "c4d38fe0741dae07dc1caa3174cd709185090707a9fb67c3c833dbfb97227c9f"
+      },
+      "sourceManifest": {
+        "path": "../../../calibration/corpora/manifests/vrdu-ad-buy.manifest.json",
+        "sha256": "2d71826e0e5eb553c302a3025e20e3373fd337d2bef45f06b51dac3905f62296"
+      },
+      "calTestGoldenHash": "1d0988f8e30f1f1e321fb1d15b96130b3de4ced2d7f2fecdf74aba344b173ed5"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/publishers/google/models/gemini-2.5-flash:generateContent",
+    "model": "gemini-2.5-flash",
+    "generationSettings": {
+      "temperature": 0,
+      "confidence": "not_requested",
+      "structuredMode": true,
+      "responseJsonSchema": true,
+      "trimmedParams": [],
+      "endpointRoute": "vertex"
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "surfaced",
+      "values": [
+        "gemini-2.5-flash"
+      ],
+      "missingRecords": 0
+    },
+    "vendor": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 2
+    },
+    "calibrator": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 2
+    },
+    "api": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 2
+    },
+    "requestIds": {
+      "status": "mixed",
+      "values": [
+        "b999as3lKIG_mPUPnbD_4AU",
+        "fd99apXWI4iCz_IP54rTmAw"
+      ],
+      "missingRecords": 0
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "0189d309-8f8e-3064-d9fd-52009ba3d5cb.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "277efc033283ec4a375fdb19975960ab9c0957001ff89f5373d1a6af286cc119",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "721b59edcd98a060ae7b55f12706bb7197240113e3b1d7664695429a122b2725"
+    },
+    {
+      "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "52eb00f10271ed41717c26e5a8235979ade57362cae551e1430e4a696d5a4b66",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "c1ac2077194f798b6847070c256526fa3cfdcadeb986cb42660900f27a83efea"
+    }
+  ]
+}

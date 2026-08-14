@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "adapter": "velrim",
+  "unit": "doc-repeat",
+  "status": "completed",
+  "planned": 2,
+  "aggregate": {
+    "attempted": 2,
+    "completed": 2,
+    "transportFailures": 0,
+    "contractFailures": 0,
+    "availability": 1
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 2,
+      "completed": 2,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    }
+  ],
+  "consecutiveContractFailures": 0,
+  "contractFailureLimit": 1,
+  "updatedAt": "2026-08-13T17:13:36.429Z"
+}

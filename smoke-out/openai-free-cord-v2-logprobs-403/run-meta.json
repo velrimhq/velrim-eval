@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "openai",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "repeats": 1,
+  "status": "stopped",
+  "golden": "corpora/smoke/golden.cord-v2.smoke.jsonl",
+  "docs": 2,
+  "docsPath": "<local-pdfs>/cord-v2",
+  "generatedAt": "2026-08-13T15:15:43.538Z",
+  "updatedAt": "2026-08-13T15:15:43.538Z",
+  "runWindow": {
+    "fingerprint": "609fca2cb146acfd813ebe5f1c697a6c929be865ab6d0e0bbaf4e6e8458b48fc",
+    "adapter": "openai",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-13T15:15:42.365Z",
+    "completedAt": null,
+    "startedDate": "2026-08-13",
+    "completedDate": null
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "openai",
+    "mode": "live",
+    "docs": 2,
+    "repeats": 1,
+    "plannedDocRepeats": 2,
+    "remainingDocRepeats": 2,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.5,
+    "expectedRemainingUsd": 0.5,
+    "pricingBasis": "ANALYSIS-PLAN ・ゑｽｧ9 reference list prices (re-verified at smoke)",
+    "pricingAsOf": "2026-08-13"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "609fca2cb146acfd813ebe5f1c697a6c929be865ab6d0e0bbaf4e6e8458b48fc",
+    "implementationHash": "bb38f4706c6192f74f8b2e734539068d57f06ec56e1a4f0c5adcce1096c2418a"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "openai",
+    "unit": "doc-repeat",
+    "status": "stopped",
+    "planned": 2,
+    "aggregate": {
+      "attempted": 0,
+      "completed": 0,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": null
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 0,
+        "completed": 0,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": null
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-13T15:15:43.538Z"
+  },
+  "stoppedReason": "non_retryable_runner_or_provider_error"
+}

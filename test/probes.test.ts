@@ -17,8 +17,11 @@ import {
   buildProbeSchema,
   buildWorksheetMarkdown,
   enumerateLeafFields,
+  parseWorksheetStrikes,
   probeSearchTokens,
   selectProbes,
+  survivingProbes,
+  type StrikeRecord,
 } from '../src/fabrication/probes.js';
 import { parseGoldenJsonl } from '../src/golden/loader.js';
 
@@ -195,6 +198,68 @@ describe('probe schema variant + probe golden (every probe leaf nullable)', () =
   });
 });
 
+describe('worksheet strikes (§7.7 — zero discretion, only from a complete pass)', () => {
+  const HEADER =
+    '| class | doc | probe field | source class | text-layer hits | visually absent? (y/n) | notes |\n' +
+    '| --- | --- | --- | --- | --- | --- | --- |\n';
+
+  it('derives strikes from visible rows and preserves worksheet doc order', () => {
+    const strikes = parseWorksheetStrikes(
+      HEADER +
+        '| a | d1.pdf | agency | b | 0 | n |  |\n' +
+        '| a | d2.pdf | agency | b | 1 (agency) | y |  |\n' +
+        '| a | d3.pdf | agency | b | 0 | n | re-checked — value printed on p2 |\n' +
+        '| a | d1.pdf | tax | b | 0 | y |  |\n',
+    );
+    expect(strikes).toEqual({
+      formatVersion: 1,
+      source: 'WORKSHEET.md',
+      struck: [{ docClass: 'a', field: 'agency', visibleDocs: ['d1.pdf', 'd3.pdf'] }],
+    });
+  });
+
+  it('refuses an incomplete or malformed visual cell', () => {
+    expect(() => parseWorksheetStrikes(HEADER + '| a | d1.pdf | agency | b | 0 |  |  |\n')).toThrow(
+      /visual pass must complete/,
+    );
+    expect(() =>
+      parseWorksheetStrikes(HEADER + '| a | d1.pdf | agency | b | 0 | maybe |  |\n'),
+    ).toThrow(/visual pass must complete/);
+    expect(() => parseWorksheetStrikes(HEADER)).toThrow(/no data rows/);
+  });
+
+  it('filters struck probes per class and rejects strikes on unselected probes', () => {
+    const selection = {
+      formatVersion: 1 as const,
+      seed: 1,
+      probesPerClass: 2,
+      candidatePools: {},
+      probes: {
+        a: [
+          { field: 'agency', sourceClass: 'b' },
+          { field: 'tax', sourceClass: 'b' },
+        ],
+        b: [{ field: 'total', sourceClass: 'a' }],
+      },
+    };
+    const strikes: StrikeRecord = {
+      formatVersion: 1,
+      source: 'WORKSHEET.md',
+      struck: [{ docClass: 'a', field: 'agency', visibleDocs: ['d1.pdf'] }],
+    };
+    expect(survivingProbes(selection, strikes)).toEqual({
+      a: [{ field: 'tax', sourceClass: 'b' }],
+      b: [{ field: 'total', sourceClass: 'a' }],
+    });
+    expect(() =>
+      survivingProbes(selection, {
+        ...strikes,
+        struck: [{ docClass: 'b', field: 'agency', visibleDocs: ['d9.pdf'] }],
+      }),
+    ).toThrow(/not a selected probe/);
+  });
+});
+
 describe('committed corpora/probes artifacts — drift tripwire (the probe list is pre-registered)', () => {
   it('probes.json regenerates bit-identically from the committed schemas at the published seed', () => {
     const committed = JSON.parse(readFileSync(join(PROBES_DIR, 'probes.json'), 'utf8')) as object;
@@ -206,14 +271,26 @@ describe('committed corpora/probes artifacts — drift tripwire (the probe list 
     expect(committed).toEqual(regenerated);
   });
 
-  it('every committed probe-schema variant and probe golden matches regeneration', () => {
+  it('committed strikes.json derives exactly from the committed completed WORKSHEET.md', () => {
+    const committed = JSON.parse(
+      readFileSync(join(PROBES_DIR, 'strikes.json'), 'utf8'),
+    ) as StrikeRecord;
+    const derived = parseWorksheetStrikes(readFileSync(join(PROBES_DIR, 'WORKSHEET.md'), 'utf8'));
+    expect(committed).toEqual(derived);
+  });
+
+  it('every committed probe-schema variant and probe golden matches strikes-applied regeneration', () => {
     const schemas = loadCommittedSchemas();
     const selection = selectProbes(schemas, PROBE_SELECTION_SEED, PROBES_PER_CLASS);
+    const strikes = JSON.parse(
+      readFileSync(join(PROBES_DIR, 'strikes.json'), 'utf8'),
+    ) as StrikeRecord;
+    const surviving = survivingProbes(selection, strikes);
     for (const [docClass, schema] of Object.entries(schemas)) {
       const committedVariant = JSON.parse(
         readFileSync(join(PROBES_DIR, `${docClass}.probe-schema.json`), 'utf8'),
       ) as object;
-      expect(committedVariant).toEqual(buildProbeSchema(schema, selection.probes[docClass]!));
+      expect(committedVariant).toEqual(buildProbeSchema(schema, surviving[docClass]!));
 
       const goldenRows = parseGoldenJsonl(
         readFileSync(join(CORPORA, `golden.${docClass}.jsonl`), 'utf8'),
@@ -223,17 +300,46 @@ describe('committed corpora/probes artifacts — drift tripwire (the probe list 
         'utf8',
       );
       expect(committedGolden).toBe(
-        buildProbeGoldenJsonl(
-          goldenRows,
-          selection.probes[docClass]!,
-          `${docClass}.probe-schema.json`,
-        ),
+        buildProbeGoldenJsonl(goldenRows, surviving[docClass]!, `${docClass}.probe-schema.json`),
       );
     }
   });
 
-  it('every probe golden row is scoreable: docs match the class golden, all cells missing', () => {
-    for (const docClass of Object.keys(loadCommittedSchemas())) {
+  it('the committed worksheet covers every probe×doc of the seeded selection, answered', () => {
+    const schemas = loadCommittedSchemas();
+    const selection = selectProbes(schemas, PROBE_SELECTION_SEED, PROBES_PER_CLASS);
+    const sheet = readFileSync(join(PROBES_DIR, 'WORKSHEET.md'), 'utf8');
+    const answeredPairs = new Set<string>();
+    for (const line of sheet.split('\n')) {
+      const cells = line.split('|').map((cell) => cell.trim());
+      if (cells.length !== 9 || cells[1] === 'class' || /^-+$/.test(cells[1]!)) continue;
+      if (cells[6] === 'y' || cells[6] === 'n') {
+        answeredPairs.add(`${cells[1]}|${cells[3]}|${cells[2]}`);
+      }
+    }
+    let expected = 0;
+    for (const docClass of Object.keys(schemas)) {
+      const docs = parseGoldenJsonl(
+        readFileSync(join(CORPORA, `golden.${docClass}.jsonl`), 'utf8'),
+      );
+      expected += docs.length * selection.probes[docClass]!.length;
+      for (const probe of selection.probes[docClass]!) {
+        for (const row of docs) {
+          expect(answeredPairs.has(`${docClass}|${probe.field}|${row.doc}`)).toBe(true);
+        }
+      }
+    }
+    expect(answeredPairs.size).toBe(expected);
+  });
+
+  it('every probe golden row is scoreable: docs match the class golden, surviving cells missing', () => {
+    const schemas = loadCommittedSchemas();
+    const selection = selectProbes(schemas, PROBE_SELECTION_SEED, PROBES_PER_CLASS);
+    const strikes = JSON.parse(
+      readFileSync(join(PROBES_DIR, 'strikes.json'), 'utf8'),
+    ) as StrikeRecord;
+    const surviving = survivingProbes(selection, strikes);
+    for (const docClass of Object.keys(schemas)) {
       const classDocs = new Set(
         parseGoldenJsonl(readFileSync(join(CORPORA, `golden.${docClass}.jsonl`), 'utf8')).map(
           (row) => row.doc,
@@ -243,9 +349,10 @@ describe('committed corpora/probes artifacts — drift tripwire (the probe list 
         readFileSync(join(PROBES_DIR, `golden.${docClass}.probe.jsonl`), 'utf8'),
       );
       expect(probeRows.length).toBe(classDocs.size);
+      expect(surviving[docClass]!.length).toBeGreaterThan(0);
       for (const row of probeRows) {
         expect(classDocs.has(row.doc)).toBe(true);
-        expect(Object.keys(row.golden.fields)).toHaveLength(PROBES_PER_CLASS);
+        expect(Object.keys(row.golden.fields)).toHaveLength(surviving[docClass]!.length);
         for (const cell of Object.values(row.golden.fields)) expect(cell.state).toBe('missing');
       }
     }

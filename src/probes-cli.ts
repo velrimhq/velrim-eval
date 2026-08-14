@@ -22,8 +22,10 @@ import {
   buildProbeGoldenJsonl,
   buildProbeSchema,
   buildWorksheetMarkdown,
+  parseWorksheetStrikes,
   probeSearchTokens,
   selectProbes,
+  survivingProbes,
   type ProbeSelection,
 } from './fabrication/probes.js';
 
@@ -32,6 +34,7 @@ const HELP = `Probe artifacts (zero network/spend; selection is seeded and deter
 USAGE
   node dist/probes-cli.js generate --corpora <dir> [--out <dir>]
   node dist/probes-cli.js verify --corpora <dir> --pdfs <dir> [--out <dir>]
+  node dist/probes-cli.js strike --corpora <dir> [--out <dir>]
 
 COMMANDS
   generate   Select probes mechanically (published seed ${PROBE_SELECTION_SEED}) from the
@@ -40,6 +43,10 @@ COMMANDS
   verify     Search each probe field's name tokens in each doc's PDF text layer; write
              absence-verification.json. A hit does NOT strike a probe by itself — the maintainer's
              visual worksheet pass is authoritative (text layers are unreliable on scans).
+  strike     Finalize strikes from the COMPLETED WORKSHEET.md (§7.7): derive strikes.json
+             mechanically (a probe is struck iff recorded visible on any doc), and rewrite the
+             probe schema variants + probe goldens with surviving probes only. probes.json and
+             WORKSHEET.md are never touched (the seeded selection and the pass stay auditable).
 
 OPTIONS
   --corpora <dir>   the committed corpora dir (schemas + golden.<class>.jsonl) [required]
@@ -99,6 +106,35 @@ async function generate(corporaDir: string, outDir: string): Promise<void> {
   await writeFile(join(outDir, 'WORKSHEET.md'), buildWorksheetMarkdown(selection, docsByClass));
   process.stdout.write(
     `probes: wrote selection (seed ${selection.seed}), ${classes.length} schema variants + goldens, and WORKSHEET.md to ${outDir}\n`,
+  );
+}
+
+async function strike(corporaDir: string, outDir: string): Promise<void> {
+  const selection = JSON.parse(
+    await readFile(join(outDir, 'probes.json'), 'utf8'),
+  ) as ProbeSelection;
+  const strikes = parseWorksheetStrikes(await readFile(join(outDir, 'WORKSHEET.md'), 'utf8'));
+  const surviving = survivingProbes(selection, strikes);
+
+  await writeFile(join(outDir, 'strikes.json'), JSON.stringify(strikes, null, 2) + '\n');
+  const classes = await loadClasses(corporaDir);
+  for (const { docClass, schema, goldens } of classes) {
+    const probes = surviving[docClass] ?? [];
+    const schemaFile = `${docClass}.probe-schema.json`;
+    await writeFile(
+      join(outDir, schemaFile),
+      JSON.stringify(buildProbeSchema(schema, probes), null, 2) + '\n',
+    );
+    await writeFile(
+      join(outDir, `golden.${docClass}.probe.jsonl`),
+      buildProbeGoldenJsonl(goldens, probes, schemaFile),
+    );
+  }
+  const summary = Object.entries(surviving)
+    .map(([docClass, probes]) => `${docClass}: ${probes.length} surviving`)
+    .join(', ');
+  process.stdout.write(
+    `probes: ${strikes.struck.length} struck (${strikes.struck.map((s) => `${s.docClass}|${s.field}`).join(', ') || 'none'}); rewrote schema variants + goldens — ${summary}\n`,
   );
 }
 
@@ -199,8 +235,8 @@ export async function main(argv: string[]): Promise<number> {
   }
   const verb = parsed.positionals[0];
   const corpora = parsed.values.corpora;
-  if ((verb !== 'generate' && verb !== 'verify') || !corpora) {
-    process.stderr.write(`probes: expected generate|verify with --corpora\n${HELP}`);
+  if ((verb !== 'generate' && verb !== 'verify' && verb !== 'strike') || !corpora) {
+    process.stderr.write(`probes: expected generate|verify|strike with --corpora\n${HELP}`);
     return 2;
   }
   const corporaDir = resolve(corpora);
@@ -208,6 +244,8 @@ export async function main(argv: string[]): Promise<number> {
   try {
     if (verb === 'generate') {
       await generate(corporaDir, outDir);
+    } else if (verb === 'strike') {
+      await strike(corporaDir, outDir);
     } else {
       if (!parsed.values.pdfs) {
         process.stderr.write(`probes: verify requires --pdfs\n${HELP}`);

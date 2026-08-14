@@ -26,7 +26,11 @@ import { OPENAI_CHAT_URL, OPENAI_MODEL } from '../adapters/openai.js';
 import { VELRIM_EXTRACT_URL, VELRIM_FITTED_STAMP_PATTERN } from '../adapters/velrim.js';
 import { LLAMAEXTRACT_EXTRACT_URL } from '../adapters/llamaextract.js';
 import { MISTRAL_MODEL, MISTRAL_OCR_URL, MISTRAL_PAGE_CAP } from '../adapters/mistral.js';
-import { GEMINI_GENERATE_URL, GEMINI_MODEL } from '../adapters/gemini.js';
+import {
+  GEMINI_GENERATE_URL,
+  GEMINI_MODEL,
+  GEMINI_VERTEX_URL_TEMPLATE,
+} from '../adapters/gemini.js';
 
 const ADAPTER_IDS: readonly EvalAdapterId[] = [
   'velrim',
@@ -293,6 +297,7 @@ export async function run(argv: string[]): Promise<number> {
         'structured-mode': { type: 'boolean' },
         'trim-param': { type: 'string', multiple: true },
         'mistral-cap-branch': { type: 'string' },
+        'gemini-vertex-project': { type: 'string' },
         'expected-spend-usd': { type: 'string' },
         'pricing-basis': { type: 'string' },
         'pricing-as-of': { type: 'string' },
@@ -374,6 +379,21 @@ export async function run(argv: string[]): Promise<number> {
     return 2;
   }
   const capBranch = capBranchRaw as PageCapBranch | undefined;
+  // The Vertex transport substitution only means anything to the Gemini arm (A2/A3).
+  const geminiVertexProject = values['gemini-vertex-project'];
+  if (geminiVertexProject !== undefined && adapterId !== 'gemini') {
+    process.stderr.write(`run: --gemini-vertex-project is only supported by --adapter gemini\n`);
+    return 2;
+  }
+  if (
+    geminiVertexProject !== undefined &&
+    !/^[a-z][a-z0-9-]{4,28}[a-z0-9]$/.test(geminiVertexProject)
+  ) {
+    process.stderr.write(
+      `run: --gemini-vertex-project "${geminiVertexProject}" is not a valid Google Cloud project id\n`,
+    );
+    return 2;
+  }
   // Velrim live runs always assert the served fitted stamp — not a flag, a protocol
   // invariant (ANALYSIS-PLAN.md §6.2): a live response not served by the shipped fitted stack
   // is a mislabeled column, a run-stopping protocol error. Fixture/dogfood runs never assert
@@ -628,7 +648,8 @@ export async function run(argv: string[]): Promise<number> {
         }
       : adapterId === 'gemini'
         ? {
-            endpoint: GEMINI_GENERATE_URL,
+            endpoint:
+              geminiVertexProject === undefined ? GEMINI_GENERATE_URL : GEMINI_VERTEX_URL_TEMPLATE,
             model: GEMINI_MODEL,
             generationSettings: {
               // A2/A3: vendor defaults everywhere except the one pre-registered rule.
@@ -637,6 +658,7 @@ export async function run(argv: string[]): Promise<number> {
               structuredMode: values['structured-mode'] === true,
               responseJsonSchema: values['structured-mode'] === true,
               trimmedParams: trimParams,
+              endpointRoute: geminiVertexProject === undefined ? 'aistudio' : 'vertex',
             },
             settingsAlpha: null,
             llamaExtractConfigurationVersion: null,
@@ -712,6 +734,7 @@ export async function run(argv: string[]): Promise<number> {
       trimParams,
       ...(capBranch === undefined ? {} : { capBranch }),
       ...(requireFittedStamp ? { requireFittedStamp } : {}),
+      ...(geminiVertexProject === undefined ? {} : { geminiVertexProject }),
       repeats,
       docs: prepared,
       outDir,

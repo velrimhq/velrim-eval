@@ -21,12 +21,6 @@
     },
     "tv_address": {
       "type": ["string", "null"]
-    },
-    "flight_from": {
-      "type": ["string", "null"]
-    },
-    "agency": {
-      "type": ["string", "null"]
     }
   },
   "required": [
@@ -36,9 +30,7 @@
     "registration_num",
     "signer_name",
     "signer_title",
-    "tv_address",
-    "flight_from",
-    "agency"
+    "tv_address"
   ],
   "additionalProperties": false
 }

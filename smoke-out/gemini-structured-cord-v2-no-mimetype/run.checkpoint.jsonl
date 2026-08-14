@@ -1,0 +1,3 @@
+{"kind":"header","version":3,"fingerprint":"079e7a9e227d3026f6d19a62d7c01e5256171a3a422219cd4323d5cba795fdbf","records":2,"startedAt":"2026-08-13T15:08:40.864Z","codeState":{"commitSha":"4b0101adb0efd0dfc9fd577d28099f0d5e12a9db","worktreeDirty":true}}
+{"kind":"prediction","doc":"cord-011.pdf","docClass":"cord-v2","repeat":1,"fields":{},"availability":"contract_failure","requestAttempts":1,"transportRetries":0,"error":"live transport 400 for https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/publishers/google/models/gemini-2.5-flash:generateContent"}
+{"kind":"event","event":"circuit_open","atRecord":1,"at":"2026-08-13T15:08:41.224Z"}

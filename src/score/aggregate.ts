@@ -25,6 +25,7 @@ import {
   type GoldenDoc,
   type CalibrationPoint,
   type RiskCoveragePoint,
+  type ValueNormalizer,
 } from '@velrim/scoring';
 
 /** A single doc's prediction map paired with its golden truth. */
@@ -61,14 +62,18 @@ export interface CorpusAggregate {
  * Derive the TP/FP/FN confusion cell for one (pred, gold) leaf — same definition as fieldScore in
  * @velrim/scoring, expressed via the exported isFieldCorrect primitive so the cell semantics stay
  * single-sourced. A field is "positive" iff a value was produced (state==='present').
+ *
+ * `kind` (FD-10, optional) threads to isFieldCorrect: the present-value match runs over
+ * normalizeValue on BOTH sides. Omitted → strict bytes (the strict column).
  */
 export function confusionCell(
   pred: ScoringField | undefined,
   gold: { state: GoldenDoc['fields'][string]['state']; value?: unknown },
+  kind?: ValueNormalizer,
 ): ConfusionCells {
   const predPresent = (pred?.state ?? 'missing') === 'present';
   const goldPresent = gold.state === 'present';
-  const correct = isFieldCorrect(pred, gold);
+  const correct = isFieldCorrect(pred, gold, kind);
   const tp = predPresent && goldPresent && correct ? 1 : 0;
   const fp = predPresent && !(goldPresent && correct) ? 1 : 0;
   const fn = goldPresent && !(predPresent && correct) ? 1 : 0;
@@ -77,8 +82,17 @@ export function confusionCell(
 
 const harmonic = (p: number, r: number): number => (p + r === 0 ? 0 : (2 * p * r) / (p + r));
 
-/** Micro-average across the corpus. Pure; deterministic. */
-export function aggregateCorpus(docs: ScoredDocInput[]): CorpusAggregate {
+/**
+ * Micro-average across the corpus. Pure; deterministic.
+ *
+ * `kindFor` (FD-10, optional) is the per-leaf normalizer lookup (concrete golden pointer →
+ * kind), producing the NORMALIZED column; omitting it is the strict column. The two published
+ * columns are two calls to this one function — never forked math.
+ */
+export function aggregateCorpus(
+  docs: ScoredDocInput[],
+  kindFor?: (pointer: string) => ValueNormalizer | undefined,
+): CorpusAggregate {
   const cells: ConfusionCells = { tp: 0, fp: 0, fn: 0 };
   const points: CalibrationPoint[] = [];
   let leaves = 0;
@@ -87,13 +101,14 @@ export function aggregateCorpus(docs: ScoredDocInput[]): CorpusAggregate {
     for (const key of Object.keys(d.gold.fields)) {
       const goldCell = d.gold.fields[key]!;
       const predField = Object.prototype.hasOwnProperty.call(d.pred, key) ? d.pred[key] : undefined;
-      const c = confusionCell(predField, goldCell);
+      const kind = kindFor?.(key);
+      const c = confusionCell(predField, goldCell, kind);
       cells.tp += c.tp;
       cells.fp += c.fp;
       cells.fn += c.fn;
       points.push({
         confidence: predField ? fieldConfidence(predField) : DEFAULT_CONFIDENCE,
-        correct: isFieldCorrect(predField, goldCell),
+        correct: isFieldCorrect(predField, goldCell, kind),
       });
       leaves += 1;
     }

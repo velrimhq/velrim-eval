@@ -67,6 +67,8 @@ export interface RunExecutionOptions {
   capBranch?: PageCapBranch;
   /** Velrim live runs — arms the served fitted-stamp assertion; recorded in run-meta. */
   requireFittedStamp?: boolean;
+  /** Gemini only — Vertex endpoint substitution; recorded in run-meta, fingerprinted via the manifest endpoint. */
+  geminiVertexProject?: string;
   repeats: number;
   docs: ReadonlyArray<PreparedRunDoc>;
   outDir: string;
@@ -297,6 +299,7 @@ export interface AdapterExtras {
   trimParams?: readonly TrimmableParam[];
   capBranch?: PageCapBranch;
   requireFittedStamp?: boolean;
+  geminiVertexProject?: string;
 }
 
 /** Execute one logical doc-repeat under one wall-clock deadline. */
@@ -334,6 +337,7 @@ export async function executeDocRepeat(
     const result = await Promise.race([
       adapter.extract(doc.bytes, doc.schema, {
         mode,
+        docClass: doc.docClass,
         structuredMode,
         signal: controller.signal,
         deadlineAt,
@@ -342,6 +346,9 @@ export async function executeDocRepeat(
         ...(extras.requireFittedStamp === undefined
           ? {}
           : { requireFittedStamp: extras.requireFittedStamp }),
+        ...(extras.geminiVertexProject === undefined
+          ? {}
+          : { geminiVertexProject: extras.geminiVertexProject }),
         transport,
       }),
       timeout,
@@ -721,6 +728,12 @@ async function writeDerivedState(
         // manifest's requestedConfiguration; an empty list means the full documented body ran.
         trimmedParams: options.trimParams ?? [],
         ...(options.capBranch === undefined ? {} : { pageCapBranch: options.capBranch }),
+        ...(options.adapter.id === 'gemini'
+          ? {
+              geminiEndpointRoute:
+                options.geminiVertexProject === undefined ? 'aistudio' : 'vertex',
+            }
+          : {}),
         // For the velrim arm the assertion state is ALWAYS recorded — whether the served
         // fitted stamp was asserted (live) or not (fixture/dogfood) is itself a fact
         // run-meta must state (the serving stack is proven by the stamp, never assumed).
@@ -1022,6 +1035,9 @@ export async function executeRun(options: RunExecutionOptions): Promise<RunExecu
               ...(options.requireFittedStamp === undefined
                 ? {}
                 : { requireFittedStamp: options.requireFittedStamp }),
+              ...(options.geminiVertexProject === undefined
+                ? {}
+                : { geminiVertexProject: options.geminiVertexProject }),
             },
           );
         } catch (error) {

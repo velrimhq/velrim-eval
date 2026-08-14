@@ -1,22 +1,25 @@
-# Analysis plan — pre-registration (DRAFT)
+# Analysis plan — pre-registration (FROZEN)
 
-> **STATUS: DRAFT pre-registration.** This document becomes binding at its public git commit.
-> Two commits govern the whole program, both public:
+> **STATUS: FROZEN pre-registration.** Two commits govern the whole program, both public:
 >
-> 1. **This DRAFT:** committed publicly **before any paid smoke call**. _No paid smoke before
->    this draft's public commit._
-> 2. **The FROZEN plan:** this draft with smoke-resolved trims applied (per the pre-written
->    rules in §12) and all artifact hashes finalized, committed publicly **before any paid
->    primary call**. _No paid primary call before the frozen plan's public commit._
+> 1. **The DRAFT:** committed publicly 2026-08-12 (root commit `54a11d0` of this repository)
+>    **before any paid smoke call**. _No paid smoke ran before that public commit._
+> 2. **This FROZEN plan:** the draft with the smoke-resolved outcomes recorded (per the
+>    pre-written rules in §12), the §4.3 branch selected, the §10 MDE table re-simulated at
+>    the frozen counts, and the artifact hashes finalized (appendix), committed publicly
+>    **before any paid primary call**. _No paid primary call before this revision's public
+>    commit._
 >
 > **How to verify this pre-registration:** git author dates are author-controlled; the public
 > push is the timestamp. Check the commit dates of this file on the public host against the run
 > window printed in the published results; every rule, metric, threshold, and branch below must
 > predate every number. The frozen evaluation materials promised to any third party (including
-> the vendors we contacted) ship only **after** this document's public commit, so no recipient
-> can front-run the registration. Values that depend on the pre-run smoke or on freeze-time
-> hashing are marked `[FINALIZED AT FREEZE]` throughout; for each, both possible resolutions are
-> pre-written here — none is decided after seeing results.
+> the vendors we contacted) ship only with this revision's public commit, after the draft's,
+> so no recipient could front-run the registration. Diff this revision against the draft
+> commit: every change is a §12 outcome the draft pre-wrote, the §4.3 branch selection, a
+> finalized hash or re-simulated value at a marker the draft declared, or the pre-run
+> transport amendment recorded in §2. None is decided after seeing results. Values resolved
+> at run time keep their markers (`[FINALIZED …]`) and say when they resolve.
 
 ---
 
@@ -62,13 +65,13 @@ _"same base model — deliberate ablation (A1–A3): the full pipeline vs its un
 It is the only design that can answer "what does the pipeline add?" with a controlled
 measurement instead of a claim.
 
-| #   | arm                                               | frozen configuration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | role                                                                                      |
-| --- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| A1  | **Velrim** (production, api.velrim.com)           | `POST /v1/extract`, standard non-ZDR API key (the default new-customer posture; disclosed). **One live pass** through the same public endpoint every customer uses, with the default request (§6.2): the served product (the fitted stack, Velrim's default served path). The served version stamp is read from every response and printed in the column label. Self-billed at list price (`$0.02/page`) through the real customer wallet; request and job IDs published.                                                 | The product under test                                                                    |
-| A2  | **Gemini 2.5 Flash, free-decode** (Google-direct) | Google AI Studio API, **paid quota**. Schema in the prompt via the one shared instruction (§5.4); PDF inline base64; vendor-default generation settings except `temperature: 0` (the one pre-registered decoding rule, applied to every model-prompt arm); output parsed by this CLI's own bundled repair parser, never Velrim's production parser. Auth via the `x-goog-api-key` header. Model pin: `gemini-2.5-flash` (never `-latest`). Docs: ai.google.dev/gemini-api/docs/document-processing (accessed 2026-07-06). | **Headline bare-model control**: Velrim runs this model; this column is the ablation base |
-| A3  | **Gemini 2.5 Flash, constrained** (same route)    | Identical prompt bytes to A2; the **only** difference is `generationConfig.responseJsonSchema` carrying the same frozen schema (2.5-flash acceptance is a smoke item, §12). Docs: ai.google.dev/gemini-api/docs/structured-output (accessed 2026-07-06).                                                                                                                                                                                                                                                                  | Constrained-vs-free split: independent replication of the ExtractBench 86.9→70.0 shape    |
-| A4  | **Mistral Document AI (OCR 4)**, paid tier        | `POST /v1/ocr` with `document_annotation_format` carrying the frozen class schema; model pin `mistral-ocr-4-0` (never `-latest`). Primary corpus per the §4.3 branch pair; in the cap-confirmed branch a loud-fail guard treats any over-cap document reaching this arm as a protocol error, never a red cell. Docs: docs.mistral.ai/capabilities/document_ai/annotations (accessed 2026-07-06).                                                                                                                          | Hosted competitor product arm; the OCR-pipeline design point; cheapest competitor         |
-| A5  | **OpenAI gpt-5.4-mini**, dated snapshot           | `gpt-5.4-mini-2026-03-17` pinned. Free-decode primary (schema in prompt, same shared instruction) + `--structured-mode` secondary (`response_format: json_schema, strict: true`) as the second model family for the constrained-vs-free replication. `temperature: 0`, `logprobs: true`; smoke decides parameter survival (§12). Labeled **"DIY baseline"** in every table. Docs: developers.openai.com/api/docs/guides/pdf-files, /models/gpt-5.4-mini (accessed 2026-07-06).                                            | The DIY path a real buyer tries first                                                     |
+| #   | arm                                               | frozen configuration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | role                                                                                      |
+| --- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| A1  | **Velrim** (production, api.velrim.com)           | `POST /v1/extract`, standard non-ZDR API key (the default new-customer posture; disclosed). **One live pass** through the same public endpoint every customer uses, with the default request (§6.2): the served product (the fitted stack, Velrim's default served path). The served version stamp is read from every response and printed in the column label. Self-billed at list price (`$0.02/page`) through the real customer wallet; request and job IDs published.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | The product under test                                                                    |
+| A2  | **Gemini 2.5 Flash, free-decode** (Google-direct) | **Vertex AI, paid billing** (pre-run transport amendment, recorded 2026-08-13, before any paid primary call: `gemini-2.5-flash` returns 404 "no longer available to new users" on the Gemini API route for new accounts; Vertex serves it; endpoint template `aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/publishers/google/models/gemini-2.5-flash:generateContent`; published artifacts carry the endpoint shape, never the project id; the transport route is recorded in run-meta and fingerprinted). Request body unchanged by the transport: schema in the prompt via the one shared instruction (§5.4); PDF inline base64; `contents[].role: "user"` (required on Vertex, accepted on the Gemini API; smoke-verified); vendor-default generation settings except `temperature: 0` (the one pre-registered decoding rule, applied to every model-prompt arm). On Vertex, model thinking is the vendor default and stays on; thought tokens land in the cost log. Output parsed by this CLI's own bundled repair parser, never Velrim's production parser. Auth via the `x-goog-api-key` header. Model pin: `gemini-2.5-flash` (never `-latest`). Docs: ai.google.dev/gemini-api/docs/document-processing (accessed 2026-07-06); cloud.google.com/vertex-ai/generative-ai/docs (accessed 2026-08-13). | **Headline bare-model control**: Velrim runs this model; this column is the ablation base |
+| A3  | **Gemini 2.5 Flash, constrained** (same route)    | Identical prompt bytes to A2, same Vertex transport; the **only** decoding difference is `generationConfig.responseJsonSchema` carrying the same frozen schema, with its vendor-required companion `generationConfig.responseMimeType: "application/json"` (the documented contract for schema-constrained output; smoke-verified, §12 item 3). Docs: ai.google.dev/gemini-api/docs/structured-output (accessed 2026-07-06).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Constrained-vs-free split: independent replication of the ExtractBench 86.9→70.0 shape    |
+| A4  | **Mistral Document AI (OCR 4)**, paid tier        | `POST /v1/ocr` with `document_annotation_format` carrying the frozen class schema; model pin `mistral-ocr-4-0` (never `-latest`). Primary corpus per the §4.3 branch pair; in the cap-confirmed branch a loud-fail guard treats any over-cap document reaching this arm as a protocol error, never a red cell. Docs: docs.mistral.ai/capabilities/document_ai/annotations (accessed 2026-07-06).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Hosted competitor product arm; the OCR-pipeline design point; cheapest competitor         |
+| A5  | **OpenAI gpt-5.4-mini**, dated snapshot           | `gpt-5.4-mini-2026-03-17` pinned. Free-decode primary (schema in prompt, same shared instruction) + `--structured-mode` secondary (`response_format: json_schema, strict: true`) as the second model family for the constrained-vs-free replication. `temperature: 0` (accepted at smoke); `logprobs` was declined at smoke and removed from the frozen body per §12 item 1 (the trim is recorded in run-meta). Labeled **"DIY baseline"** in every table. Docs: developers.openai.com/api/docs/guides/pdf-files, /models/gpt-5.4-mini (accessed 2026-07-06).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | The DIY path a real buyer tries first                                                     |
 
 Mode-choice rule, pre-registered: a mode choice within a vendor is part of "documented happy
 path" and carries a citation to the vendor document that makes it the default, frozen before
@@ -80,11 +83,16 @@ any paid run. The defensibility rule, verbatim:
 > construction for every arm is open source in this repository; any vendor may open a PR
 > correcting how their arm is called, and we will re-run and re-publish with the correction._
 
-**Paid-tier note, stated explicitly:** the Gemini arms run on **paid quota** because unpaid
-Gemini API quota licenses Google to use submitted content to improve its products; paid quota
-does not. The Mistral arm runs **paid** for the same reason (free-plan inputs feed training
+**Paid-tier note, stated explicitly:** the Gemini arms run on **paid billing** because unpaid
+Gemini quota licenses Google to use submitted content to improve its products; paid does not.
+The Mistral arm runs **paid** for the same reason (free-plan inputs feed training
 under their §4.2(a)). Publishability itself is unchanged by tier; the tier choice is a
 data-handling choice, disclosed.
+
+**Terms posture of the Vertex route, disclosed:** these benchmarks run under the GCP General
+Service Terms benchmarking clause (§7), accepted as written: published results carry enough
+detail to replicate them (this repository is that disclosure), and Google may publish
+benchmarks of Velrim's services in return.
 
 ---
 
@@ -168,7 +176,8 @@ The evaluation set (CAL-TEST) is the held-out half of a split whose manifests we
 document IDs, a salt commitment, and a per-class golden hash (`calTestGoldenHash`); the
 **salt is revealed at publication**, so any reader can verify after the fact that the published
 membership matches the pre-benchmark commitment. The golden and schema bytes are hashed into
-this plan at freeze `[FINALIZED AT FREEZE — hashes]` and into every run manifest. Numbers from
+this plan at freeze (`[FINALIZED AT FREEZE]` → the appendix hash table) and into every run
+manifest. Numbers from
 the split's other halves (the half Velrim's confidence stack was fit on, and the development
 split Velrim's pipeline was built against) are excluded entirely: not even a labeled appendix
 (FD-13).
@@ -181,7 +190,13 @@ removed."_ (docs.mistral.ai/resources/changelogs, accessed 2026-07-06). The cap 
 **contested**, and the pre-freeze smoke probe is **bidirectional**: one over-cap document is
 submitted to the Mistral arm at smoke; rejection selects the cap-confirmed branch, acceptance
 with usable output selects the cap-removed branch. Either way, the corpus decision was made
-here, before any result existed. `[FINALIZED AT FREEZE — branch selection]`
+here, before any result existed.
+
+**`[FINALIZED AT FREEZE]` → resolved 2026-08-13: the cap-REMOVED branch.** The over-cap probe
+document (12 pages) was accepted with usable annotation output (all 5 schema fields returned);
+the raw smoke responses are in `smoke-out/mistral-overcap-probe/`. All 124 documents are
+primary for every arm; the full-set appendix row is retired; the cap-confirmed machinery below
+stands as expressly conditional dead text, per the pre-written rule.
 
 - **Cap-confirmed branch:** documents over 8 pages are excluded from **all** primary contrasts
   for **all** arms: pairing preserved, no Velrim-authored chunking inside anyone's arm, no
@@ -280,7 +295,7 @@ cannot break a strict match. It only fails to add one.)
 
 The per-field pointer→kind tables are **not** part of the scoring package. They are frozen
 here, as four machine-readable files in this repository, whose hashes finalize with the frozen
-plan `[FINALIZED AT FREEZE — hashes]`:
+plan (`[FINALIZED AT FREEZE]` → the appendix hash table):
 
 - `corpora/normalizers.cord-v2.json`
 - `corpora/normalizers.deepform.json`
@@ -331,7 +346,8 @@ Extract the following fields from the document. Return JSON matching this schema
 The abstention license ("Use null for fields not present in the document.") is non-negotiable:
 without it, the fabrication section (§7) would measure the prompt, not the model. Constrained
 modes differ from their free-decode siblings **only** in decoding configuration. Temperature:
-`0` for every model-prompt arm (one rule, disclosed); smoke decides parameter survival per §12.
+`0` for every model-prompt arm (one rule, disclosed); smoke resolved parameter survival per
+§12 (`temperature: 0` survived on every arm; `logprobs` was removed per item 1).
 Hosted extraction APIs (A1, A4) take a schema, not a prompt; they receive the same frozen
 schema bytes.
 
@@ -384,11 +400,17 @@ their arm. We refuse and say why.
 ### 6.2 The Velrim served-version proof
 
 The Velrim arm runs live through the **same public endpoint every customer uses, with the
-default public request**: no internal builds, no special flags, no request parameter. The
-stack a response was actually served by is **proven by its served version stamp** (the wire
-field `meta.calibrator_version`): every response must stamp a minted version matching
-`cal-YYYY.MM-n` `[FINALIZED AT FREEZE — the run-date stamp value]`: proof the run was served
-by the shipped fitted stack, Velrim's default served path. The stamp is read from **every**
+default public request**: no internal builds, no special flags. The request carries the
+documented public field `options.doc_class` (frozen at smoke, §12 item 7): it selects the
+served per-class fitted confidence stack, and a request without it is served `identity-0` by
+production design. No arm is class-blind: every arm receives the class identity through its
+frozen per-class schema, and `options.doc_class` is the same fact on Velrim's documented wire
+shape. The stack a response was actually served by is **proven by its served version stamp**
+(the wire field `meta.calibrator_version`): every response must stamp a minted version
+matching `cal-YYYY.MM-n`: proof the run was served by the shipped fitted stack, Velrim's
+default served path. `[FINALIZED AT FREEZE]` → at freeze, production serves `cal-2026.08-2`
+(stamped on every smoke response); the run-date value is read live from the wire and is the
+authoritative one. The stamp is read from **every**
 response; a response whose served stamp does not match (including `identity-0`, which means
 the fitted stack was off) **aborts the run** (checkpoint preserved). A mislabeled column is
 a protocol error, never a red cell. The column label reads from the served stamp, never from
@@ -527,8 +549,16 @@ Absence is verified tool-independently **and** visually: text-layer search alone
 on scan classes, so a **visual manual pass per probe×document is required and published**
 (`corpora/probes/WORKSHEET.md` is the worksheet; the text-layer column is machine-filled, the
 visual column is authoritative). Any probe whose value is visibly present in any document
-image is **struck before the pre-registration hash** `[FINALIZED AT FREEZE — worksheet
-completed; struck probes recorded]`.
+image is **struck before the pre-registration hash**. FINALIZED 2026-08-14: the text-layer
+pass flagged 64 of 372 probe×doc pairs (`corpora/probes/absence-verification.json`); the
+visual manual pass then covered all 372 pairs. **Four probes are struck** — deepform `agency`
+(visible 38/39 docs), deepform `property` (39/39), vrdu-registration `agency` (4/48),
+vrdu-registration `flight_from` (4/48). The strike record derives mechanically from the
+completed worksheet (`corpora/probes/strikes.json`; a probe is struck iff recorded visible on
+any doc — zero discretion, pinned by a committed drift test), and the probe schema variants +
+probe goldens carry surviving probes only: cord-v2 3, deepform 1, vrdu-ad-buy 3,
+vrdu-registration 1. Per-class probe absent-n after strikes: cord-v2 45, deepform 39,
+vrdu-ad-buy 66, vrdu-registration 48 — all above the §7.6 floor of 20.
 
 Probes live in a **separate schema variant and a separate results table**: headline accuracy
 is computed on the untouched class schema only, so no arm's F1 is affected by probes. One
@@ -563,9 +593,12 @@ span receipts, the open CLI), itemized inline, then prints the multiple before a
 it: Velrim at `$20/1k` pages against `~$2–3/1k` for Gemini 2.5 Flash run bare (A2), roughly
 7–10x.
 
-Reference list prices as of 2026-07-06 (re-verified at smoke): Velrim `$0.02/page`; Gemini
-2.5 Flash paid `$0.30/M` input, `$2.50/M` output; Mistral Document AI `$5/1k` pages; OpenAI
-gpt-5.4-mini `$0.75/M` input, `$4.50/M` output.
+Reference list prices as of 2026-07-06, re-verified 2026-08-14 at freeze against the live
+vendor pricing pages (all four figures unchanged): Velrim `$0.02/page`; Gemini 2.5 Flash paid
+`$0.30/M` input, `$2.50/M` output; Mistral Document AI `$5/1k` pages; OpenAI gpt-5.4-mini
+`$0.75/M` input, `$4.50/M` output. One change since 2026-07-06: Mistral's pricing page now
+leads with OCR 4.1, at the same Document AI rate. The arm's pin stays `mistral-ocr-4-0`; the
+§9.4 re-run policy covers the version bump.
 
 **Reproduction cost, a feature of the design:** at these list prices, the entire primary run
 reruns for roughly `$50–$90` (Velrim arm `$19`; Gemini both modes `$4–$6`; Mistral `$4–$6`;
@@ -615,8 +648,10 @@ flaky.
 
 The run manifest records: the CLI commit SHA; adapter file hashes; per-class JSON Schema
 hashes; per-class golden hashes; the shared instruction string; `@velrim/scoring` 0.1.0; model
-pins: `gemini-2.5-flash` (deprecation horizon ≥2026-10-16 noted; the pre-written answer to
-"why not a newer Flash": 2.5-flash is what Velrim serves), `mistral-ocr-4-0`,
+pins: `gemini-2.5-flash` (deprecation horizon ≥2026-10-16 noted; closed to new Gemini-API-route
+accounts as of 2026-08-13, served via the §2 Vertex transport; the pre-written answer to
+"why not a newer Flash": 2.5-flash is what Velrim serves, and the successor re-run is a
+pre-committed §15 row), `mistral-ocr-4-0`,
 `gpt-5.4-mini-2026-03-17`; Velrim's served version stamp as returned on the run
 date; vendor version strings as returned ("no version surfaced" is itself reported); and the
 run window dates `[FINALIZED AT FREEZE — window recorded at run time]`. Declared re-run
@@ -647,23 +682,24 @@ honestly ("re-runs cost `~$X`; we re-run on request via PR").
   Prior-art anchor: Card, Henderson, Khandelwal, Jia, Mahowald & Jurafsky, _With Little Power
   Comes Great Responsibility_, EMNLP 2020.
 
-**Minimum detectable effects (current simulation; the simulation is re-run at the frozen
-primary counts, 124 or 120 documents per the §4.3 branch, before plan-freeze, and the
-re-simulated numbers are what the frozen plan and the article print `[FINALIZED AT FREEZE —
-re-simulated MDE table]`).** Assumptions: paired doc-level comparison, 80% power, α=.05
-two-sided, latent shared-difficulty fraction 0.60, document random effect τ=0.7 (probit
-scale):
+**Minimum detectable effects, re-simulated 2026-08-14 at the frozen primary counts
+(`[FINALIZED AT FREEZE]` resolved: cap-REMOVED branch, all 124 documents; per-doc golden
+field counts from the committed goldens).** The draft's table carried estimates; these are the frozen numbers,
+produced by the committed seeded harness (`src/stats/mde.ts`; seed 20260712, 600 simulations
+per grid point, 0.5 pp delta grid). Assumptions unchanged from the draft: paired doc-level
+comparison, 80% power, α=.05 two-sided, latent shared-difficulty fraction 0.60, document
+random effect τ=0.7 (probit scale):
 
 | class             | docs × fields/doc | MDE @ base acc ≈ .75 | MDE @ base acc ≈ .90 |
 | ----------------- | ----------------- | -------------------- | -------------------- |
-| cord-v2           | 15 × 13           | ~10 pp               | ~7 pp                |
-| deepform          | 39 × 5            | ~10 pp               | ~6.5 pp              |
-| vrdu-ad-buy       | 22 × 65           | ~4 pp                | ~3 pp                |
-| vrdu-registration | 48 × 6            | ~8 pp                | ~5.5 pp              |
-| pooled (124 docs) | —                 | ~4–5 pp              | —                    |
+| cord-v2           | 15 × 13           | ~10.5 pp             | ~7 pp                |
+| deepform          | 39 × 5            | ~10 pp               | ~6 pp                |
+| vrdu-ad-buy       | 22 × 65           | ~5.5 pp              | ~3.5 pp              |
+| vrdu-registration | 48 × 6            | ~8.5 pp              | ~5.5 pp              |
+| pooled (124 docs) | —                 | ~4.5 pp              | —                    |
 
 Implication, pre-committed: per class, this evaluation cannot distinguish arms closer than
-~4–10 pp. The expected accuracy outcome between Velrim and the bare model it runs on (A2) is a
+~5.5–10.5 pp. The expected accuracy outcome between Velrim and the bare model it runs on (A2) is a
 statistical tie, and that tie is signed as publishable here, before any money is spent. A
 design that needs Velrim to win the F1 column is a failed design; this one does not.
 
@@ -704,22 +740,34 @@ ever silent**: any change of scope lands in §12's pre-written framings or not a
 
 The pre-freeze smoke (2 documents/class × 1 repeat, exact frozen adapter bodies) resolves the
 items below. For each, the trim action **and the exact framing sentence** the publication uses
-are fixed now, so no column can quietly disappear. `[FINALIZED AT FREEZE — outcomes recorded
-per item]`
+were fixed in the draft, so no column could quietly disappear. `[FINALIZED AT FREEZE]` → the
+smoke ran 2026-08-13 on paid keys; every item's outcome is recorded inline below. The raw
+smoke responses for the completed smoke matrix and for every evidence run cited below are in
+`smoke-out/` in this repository.
 
 1. **gpt-5.4-mini rejects `logprobs`.** Trim: the parameter is removed from the frozen request
    body; the trim is recorded in run-meta. Framing sentence: _"gpt-5.4-mini declined the
    `logprobs` parameter at smoke; the parameter was removed and the trim is recorded in the
    run manifest — no confidence column is derived for this arm in round 1 either way (§6.1)."_
+   **Outcome: FIRED.** The parameter was declined (HTTP 403) with PDF-file input; the framing
+   sentence above ships as written. Evidence: `smoke-out/openai-free-cord-v2-logprobs-403/`.
 2. **gpt-5.4-mini rejects `temperature`.** Trim: the parameter is omitted (vendor-default
    decoding); recorded in run-meta. Framing sentence: _"gpt-5.4-mini declined `temperature: 0`
    at smoke; this arm runs vendor-default decoding, disclosed here — the one arm where the
    shared temperature rule could not be applied."_
+   **Outcome: did not fire.** `temperature: 0` was accepted; the shared rule holds on every
+   model-prompt arm.
 3. **gemini-2.5-flash rejects `responseJsonSchema`.** Trim: A3 (constrained Gemini) drops.
    Framing sentence: _"the constrained-decoding Gemini arm was dropped at smoke:
    gemini-2.5-flash declined `responseJsonSchema` under the frozen request shape; the
    constrained-vs-free comparison proceeds on the OpenAI family alone, and this table says
    so."_
+   **Outcome: did not fire, with a recorded request-shape completion.** `responseJsonSchema`
+   is accepted only alongside its documented companion `responseMimeType: "application/json"`;
+   the companion is frozen into the A3 body (§2). Likewise, `contents[].role: "user"` is
+   required on the Vertex route and frozen into both Gemini bodies. Evidence:
+   `smoke-out/gemini-structured-cord-v2-no-mimetype/` and
+   `smoke-out/gemini-free-cord-v2-no-role/`.
 4. **A constrained mode fails the null-abstention assertion.** The frozen schemas keep **every
    leaf nullable** (`"type": ["string", "null"]`), and the constrained-mode request carries
    the **same frozen schema bytes** (the only free-vs-constrained delta is decoding
@@ -729,18 +777,29 @@ per item]`
    that constrained mode drops. Framing sentence: _"the [arm] constrained mode was dropped at
    smoke: its decoder could not emit a null abstention on a known-absent field, so its
    fabrication cells would have measured the schema, not the model."_
+   **Outcome: passed, both constrained arms.** A3 and A5-structured each returned an explicit
+   `null` on the known-absent-field document; both constrained modes run.
 5. **Mistral annotation shape surprises.** Trim: the arm drops or trims to what the actual
    contract supports; the raw smoke responses publish. Framing sentence: _"the Mistral arm
    [was dropped / runs without X] because its annotation response at smoke did not match the
    documented contract; the raw smoke responses are in the repository."_
+   **Outcome: did not fire.** The annotation responses matched the documented contract on all
+   four classes; the arm runs in full.
 6. **Mistral bidirectional page-cap probe.** Not a trim, a branch selection (§4.3): rejection
    of an over-cap document selects the cap-confirmed branch; acceptance with usable output
    selects the cap-removed branch. Both branches, and the framing for each, are already
    written into §4.3.
+   **Outcome: cap-REMOVED branch selected.** Resolution recorded in §4.3; evidence:
+   `smoke-out/mistral-overcap-probe/`.
 7. **Velrim fitted-stamp capture fails.** Not a trim, a protocol stop: the Velrim arm does
    not run until the served stamp is a minted fitted version (§6.2). Framing sentence: _"the
    Velrim arm was held until the served version stamp was captured as a minted fitted
    version; a mismatch is a protocol failure and is disclosed, never scored."_
+   **Outcome: resolved without a hold.** Every Velrim smoke response carried the fitted
+   stamp `cal-2026.08-2`; the stamp assertion is armed for the primary run. The request
+   shape was completed at smoke with the documented `options.doc_class` field (§6.2); a
+   request without it is served `identity-0` by production design, and that ablation run is
+   in `smoke-out/velrim-deepform-no-docclass/`.
 
 ---
 
@@ -789,15 +848,16 @@ count; no threshold guidance; no correctness-prediction claims.
 
 Nothing below was cut after seeing results. This list predates every run:
 
-| slot                                               | trigger                                    | status                                                                                          |
-| -------------------------------------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| Reducto arm                                        | written consent                            | adapter spec ready; built only on consent                                                       |
-| LlamaExtract arm                                   | written consent                            | adapter built and wire-current; zero live calls without consent                                 |
-| Never-seen holdout class (§4.4)                    | round 2; protocol frozen now               | selected by the pre-registered criteria, never named candidates                                 |
-| Symmetric open Platt refit column (FD-5, deferred) | round 2                                    | the CLI `calibrate` command exists today; any reader can run the identical refit on any arm now |
-| OpenAI logprob-derived confidence column           | round 2; derivation pre-registered with it | raw logprobs already surfaced by the adapter                                                    |
-| Latency appendix                                   | round 2 (scope cut, stated)                | cheap re-run                                                                                    |
-| N=5 repeats                                        | only if instability becomes a headline     | cheap re-run                                                                                    |
+| slot                                               | trigger                                                                       | status                                                                                                                                                                             |
+| -------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reducto arm                                        | written consent                                                               | adapter spec ready; built only on consent                                                                                                                                          |
+| LlamaExtract arm                                   | written consent                                                               | adapter built and wire-current; zero live calls without consent                                                                                                                    |
+| Never-seen holdout class (§4.4)                    | round 2; protocol frozen now                                                  | selected by the pre-registered criteria, never named candidates                                                                                                                    |
+| Symmetric open Platt refit column (FD-5, deferred) | round 2                                                                       | the CLI `calibrate` command exists today; any reader can run the identical refit on any arm now                                                                                    |
+| OpenAI logprob-derived confidence column           | round 2; derivation pre-registered with it                                    | raw logprobs already surfaced by the adapter                                                                                                                                       |
+| Latency appendix                                   | round 2 (scope cut, stated)                                                   | cheap re-run                                                                                                                                                                       |
+| N=5 repeats                                        | only if instability becomes a headline                                        | cheap re-run                                                                                                                                                                       |
+| Gemini successor-model re-run (A2/A3)              | 2.5-flash retirement or forced migration (earliest stated horizon 2026-10-16) | pre-committed at freeze: both Gemini arms re-run under the designated successor model on this same frozen protocol; results publish as round-2 rows beside the 2.5-flash originals |
 
 ---
 
@@ -819,7 +879,52 @@ Nothing below was cut after seeing results. This list predates every run:
 
 ---
 
-_This draft becomes binding at its public commit. The frozen plan (with §12 trims applied,
-the §4.3 branch selected, the re-simulated MDE table, and all artifact hashes) follows before
-any paid primary call, and its run book carries the line, verbatim: **"No paid primary call
-before this commit exists publicly."**_
+## Appendix: frozen artifact hashes
+
+SHA-256 over the exact committed bytes of each file (verify with `sha256sum <file>`); the same
+values are re-recorded in every run manifest. The shared instruction hash is over the exact
+UTF-8 string in §5.4 (`SHARED_EXTRACTION_INSTRUCTION` in `src/protocol.ts`).
+
+| artifact                                     | sha256                                                             |
+| -------------------------------------------- | ------------------------------------------------------------------ |
+| `corpora/cord-v2.schema.json`                | `7090f850c913f8dc0623ae373d2eb02f7110676886e9abd9e6c5fecbb4456720` |
+| `corpora/deepform.schema.json`               | `c18167385f9590802949bee1d801c7fe4ae3dd19df9ac99df7bb7a5fc4872bf0` |
+| `corpora/vrdu-ad-buy.schema.json`            | `29bec993070bd9610c2aab667e416b39089d3d0f9c11b04acabfd1554fbc439a` |
+| `corpora/vrdu-registration.schema.json`      | `16efaea5ee68544ff8b3b3b1811a51200c3a107a98cad8e3491280db6044c91f` |
+| `corpora/golden.cord-v2.jsonl`               | `4961f4e5759d80608167b1ea3d6d35c5885049294bad1451d0bb3e1b85ab29a5` |
+| `corpora/golden.deepform.jsonl`              | `e76cefdc595b879e7045f191d469694e341e5ce67e471d2658215c0055130731` |
+| `corpora/golden.vrdu-ad-buy.jsonl`           | `182260d52d487e3c4220f608c6512d1da874cf794e75f7db7e81eb5e91b4081f` |
+| `corpora/golden.vrdu-registration.jsonl`     | `99a5731910941608f6b6822c67eb42b4b44b37e22cb841a53792f0f5a7dfa6fb` |
+| `corpora/normalizers.cord-v2.json`           | `d0e364d9ef14cd8bd08ad8c731d30b885f46d22c4cceae24308e77f461a77e3b` |
+| `corpora/normalizers.deepform.json`          | `7a5d319459b4b5c0e9ed3213f06c0a43975a4aa709f813eafec3337e6fb43be1` |
+| `corpora/normalizers.vrdu-ad-buy.json`       | `05e8d97041e6924e8ac401e0ff0702dc0b0e94a509ebb9ea9250f4fb157e7368` |
+| `corpora/normalizers.vrdu-registration.json` | `12efe2771959839d251da5b61eb813c77cc06a8c5db21a04983fc980a9844ea0` |
+| `corpora/corpus-counts.json`                 | `159759b48dc17ce03909c4bf8b3d4e50c361413f1c76a0eb680c1cd7656d025d` |
+| shared instruction string (§5.4)             | `ebfc2d59830cf7354880243032301661420d8f243265f6f7d6cb52f58fdd602f` |
+
+**Probe artifacts** — hashed after the §7.7 visual manual pass completed (2026-08-14) and the
+four struck probes were recorded; per §7.7, the strike happened before these hashes
+finalized. `strikes.json` is the mechanical strike record derived from the completed
+worksheet; `absence-verification.json` is the text-layer first pass.
+
+| artifact                                              | sha256                                                             |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| `corpora/probes/probes.json`                          | `80a159facf1d99839d24f67a5c2d36ab31bbf70debf31c4e58687bf771bfcd3d` |
+| `corpora/probes/WORKSHEET.md`                         | `04dc2d5f31547cbbfc3af90249a389d54c9f3aa56e4f3bc34794b64b63afd9f6` |
+| `corpora/probes/strikes.json`                         | `4be9b86c189edd49ba18b16955c50b61f55551107970742ef11e4529611f7bcc` |
+| `corpora/probes/absence-verification.json`            | `a54937bba0dd1c40d03a0cfefb9f7200469ef1d7027903da939921e6eee26813` |
+| `corpora/probes/cord-v2.probe-schema.json`            | `6ce55d02f8deb461b63179dfab61892b13d8ceea99c720267da6e8b3be9d860b` |
+| `corpora/probes/deepform.probe-schema.json`           | `7bd946bf9703927e826a6eb64b60fa3610094b9a338c139fe5f018594513fd41` |
+| `corpora/probes/vrdu-ad-buy.probe-schema.json`        | `71df15ffae627d1d05691d5d4ee68ad06b95748e79f4fbe521b6c59e72579c31` |
+| `corpora/probes/vrdu-registration.probe-schema.json`  | `8c8f24ed2f31fc64b9efe161c18e2b5770edbd049de90a8f0f60e0b8364907e5` |
+| `corpora/probes/golden.cord-v2.probe.jsonl`           | `1e69aea4f1fbe15c1d3ff21dd6c903441f10f5196fcbcc3a4d071daafa1633fc` |
+| `corpora/probes/golden.deepform.probe.jsonl`          | `57cc1ef846e7710047dbab3942a2e69b7d9dacb284efad865fabf99e905f813a` |
+| `corpora/probes/golden.vrdu-ad-buy.probe.jsonl`       | `7bcf74ebc8e5984ecfc5fb0358747bb879cce0778973d27a73230a9468e6f4e4` |
+| `corpora/probes/golden.vrdu-registration.probe.jsonl` | `5d13dd53e2de63090677df83158b443be269bccfa1ee4733c9af8946742e6012` |
+
+---
+
+_This plan is FROZEN at its public commit: the §12 outcomes are recorded, the §4.3 branch is
+selected, the §10 MDE table is re-simulated at the frozen counts, and the artifact hashes
+above are final. The run book carries the line, verbatim: **"No paid primary call before this
+commit exists publicly."**_

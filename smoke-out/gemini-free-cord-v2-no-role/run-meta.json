@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "adapter": "gemini",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "geminiEndpointRoute": "vertex",
+  "repeats": 1,
+  "status": "paused",
+  "golden": "corpora/smoke/golden.cord-v2.smoke.jsonl",
+  "docs": 2,
+  "docsPath": "<local-pdfs>/cord-v2",
+  "generatedAt": "2026-08-13T14:59:21.840Z",
+  "updatedAt": "2026-08-13T14:59:21.840Z",
+  "runWindow": {
+    "fingerprint": "1a3fc596552d16d7badd0a59b14aeb78e444c0142ce0be6cc294c8707317102b",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-13T14:59:21.113Z",
+    "completedAt": null,
+    "startedDate": "2026-08-13",
+    "completedDate": null
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "gemini",
+    "mode": "live",
+    "docs": 2,
+    "repeats": 1,
+    "plannedDocRepeats": 2,
+    "remainingDocRepeats": 2,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.25,
+    "expectedRemainingUsd": 0.25,
+    "pricingBasis": "ANALYSIS-PLAN ・ゑｽｧ9 reference list prices (re-verified at smoke)",
+    "pricingAsOf": "2026-08-13"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "1a3fc596552d16d7badd0a59b14aeb78e444c0142ce0be6cc294c8707317102b",
+    "implementationHash": "de2b094b5214b63ea0096a5312a5a60f94f9a9a90f0b9e90d76d79873c2ab1a9"
+  },
+  "events": [
+    {
+      "kind": "event",
+      "event": "circuit_open",
+      "atRecord": 1,
+      "at": "2026-08-13T14:59:21.839Z"
+    }
+  ],
+  "health": {
+    "version": 1,
+    "adapter": "gemini",
+    "unit": "doc-repeat",
+    "status": "paused",
+    "planned": 2,
+    "aggregate": {
+      "attempted": 1,
+      "completed": 0,
+      "transportFailures": 0,
+      "contractFailures": 1,
+      "availability": 0
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 1,
+        "completed": 0,
+        "transportFailures": 0,
+        "contractFailures": 1,
+        "availability": 0
+      }
+    ],
+    "consecutiveContractFailures": 1,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-13T14:59:21.840Z"
+  }
+}

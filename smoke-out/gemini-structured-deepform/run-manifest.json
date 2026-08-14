@@ -1,0 +1,221 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation",
+    "code.cleanWorktree"
+  ],
+  "run": {
+    "fingerprint": "6935b9874f5c74f49ab43e88549d860a41786eda95b475604b8f2d9642631fc1",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": true,
+    "repeats": 1,
+    "startedAt": "2026-08-13T15:14:07.880Z",
+    "completedAt": "2026-08-13T15:14:55.374Z",
+    "startedDate": "2026-08-13",
+    "completedDate": "2026-08-13"
+  },
+  "code": {
+    "velrimEvalCommitSha": "0aef50c8a12204c806d061e69281ac59f23f11fe",
+    "worktreeDirty": true,
+    "implementationHash": "b029bb91ca459e77141b2ec9690f52472426f6e04660a243c9429acf2ee8d50e",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "a4dfd606089024bf8c65cfc1bd755e59b90a3edb27c8102297283f4c9a3217bc"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "e1c25bc1bb7e03d9939d3fcc4cd52698780d52eb0a40328d1e92b4645a4d9ec1"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "a4dfd606089024bf8c65cfc1bd755e59b90a3edb27c8102297283f4c9a3217bc"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "e1c25bc1bb7e03d9939d3fcc4cd52698780d52eb0a40328d1e92b4645a4d9ec1"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "deepform",
+      "schema": {
+        "path": "../deepform.schema.json",
+        "sha256": "c18167385f9590802949bee1d801c7fe4ae3dd19df9ac99df7bb7a5fc4872bf0"
+      },
+      "publicGolden": {
+        "path": "golden.deepform.smoke.jsonl",
+        "sha256": "ff0842883cb7831d192927f6bc89c70b78de16571672b130728bff8afc5ed232"
+      },
+      "sourceManifest": {
+        "path": "../../../calibration/corpora/manifests/deepform.manifest.json",
+        "sha256": "12afafddb4729515eb0539b12d8be198cd5dbd96161291b76a5ef85166cd5d47"
+      },
+      "calTestGoldenHash": "2bb5067c08b1c072a00b4b45d7eb84b9823f822ce8fcb656c610ccd5fded2acf"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/publishers/google/models/gemini-2.5-flash:generateContent",
+    "model": "gemini-2.5-flash",
+    "generationSettings": {
+      "temperature": 0,
+      "confidence": "not_requested",
+      "structuredMode": true,
+      "responseJsonSchema": true,
+      "trimmedParams": [],
+      "endpointRoute": "vertex"
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "surfaced",
+      "values": [
+        "gemini-2.5-flash"
+      ],
+      "missingRecords": 0
+    },
+    "vendor": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 2
+    },
+    "calibrator": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 2
+    },
+    "api": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 2
+    },
+    "requestIds": {
+      "status": "mixed",
+      "values": [
+        "RN99atqEK73mz_IP3NWTqQI",
+        "WN99av7gDfaCz_IP5c_c6Qw"
+      ],
+      "missingRecords": 0
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "deepform-50e20ed6-1232-4272-a28a-4632d68679fc.pdf",
+      "docClass": "deepform",
+      "documentSha256": "cae01173039f1bdce24bcd6a26fb9e65cb617613d599a843c61c8b7df6818116",
+      "schemaSemanticSha256": "399725d1162275d6cc5c54ed88da26d8b1c2f2cbff9f4c5ee4a46cd517c51a39",
+      "goldenRowSemanticSha256": "98e281d68971045026ed57be124bff639dee599bfc134c12d8e11b339fb3bb2f"
+    },
+    {
+      "doc": "deepform-02804f3a-c189-34d1-81e9-619d4e7fbc4b.pdf",
+      "docClass": "deepform",
+      "documentSha256": "42f24e59f8c6016ae715157660509d937ee9f4c89b3e92c4aaa0adf3eeb1ef6a",
+      "schemaSemanticSha256": "399725d1162275d6cc5c54ed88da26d8b1c2f2cbff9f4c5ee4a46cd517c51a39",
+      "goldenRowSemanticSha256": "4e8534c506b15ab2ca974bf0e10eedb0c0a50327869f25816313af5f3f94fec4"
+    }
+  ]
+}

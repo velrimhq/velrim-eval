@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "gemini",
+  "mode": "live",
+  "structuredMode": true,
+  "trimmedParams": [],
+  "geminiEndpointRoute": "vertex",
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/smoke/golden.cord-v2.smoke.jsonl",
+  "docs": 2,
+  "docsPath": "<local-pdfs>/cord-v2",
+  "generatedAt": "2026-08-13T15:14:07.729Z",
+  "updatedAt": "2026-08-13T15:14:07.729Z",
+  "runWindow": {
+    "fingerprint": "ddab998afb1146521f9052a59c9d527fbb730948ccfdaa05836859cbc0c65e8c",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": true,
+    "repeats": 1,
+    "startedAt": "2026-08-13T15:13:59.724Z",
+    "completedAt": "2026-08-13T15:14:07.729Z",
+    "startedDate": "2026-08-13",
+    "completedDate": "2026-08-13"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "gemini",
+    "mode": "live",
+    "docs": 2,
+    "repeats": 1,
+    "plannedDocRepeats": 2,
+    "remainingDocRepeats": 2,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.25,
+    "expectedRemainingUsd": 0.25,
+    "pricingBasis": "ANALYSIS-PLAN ・ゑｽｧ9 reference list prices (re-verified at smoke)",
+    "pricingAsOf": "2026-08-13"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "ddab998afb1146521f9052a59c9d527fbb730948ccfdaa05836859cbc0c65e8c",
+    "implementationHash": "b029bb91ca459e77141b2ec9690f52472426f6e04660a243c9429acf2ee8d50e"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "gemini",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 2,
+    "aggregate": {
+      "attempted": 2,
+      "completed": 2,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 2,
+        "completed": 2,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-13T15:14:07.729Z"
+  }
+}

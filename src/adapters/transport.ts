@@ -41,6 +41,15 @@ export const LIVE_ENV_KEY = {
 /** How the live key rides on the wire (the auth-style seam extension — see the header comment). */
 export type LiveAuthStyle = 'bearer' | 'x-goog-api-key';
 
+/** Failure messages persist into published artifacts: no project id, no cf-ray colo suffix. */
+export function sanitizeFailureUrl(url: string): string {
+  return url.replace(/\/projects\/[^/]+\//, '/projects/<gcp-project>/');
+}
+
+export function sanitizeCfRay(ray: string): string {
+  return ray.slice(0, 64).replace(/-[A-Za-z]{3}$/, '');
+}
+
 /**
  * Per-adapter live auth style. Every arm is standard Bearer except Gemini: Google AI Studio
  * auths by the `x-goog-api-key` header. `run` threads this into `liveTransport`.
@@ -201,12 +210,27 @@ export function liveTransport(
         // disguising a fatal auth/configuration response as a retryable transport failure.
         // Undici response bodies must still be released; cancellation does not inspect or retain
         // the sensitive body, and a cancellation failure must not override the HTTP taxonomy.
-        try {
-          await res.body?.cancel();
-        } catch {
-          // Best effort: the status remains the authoritative failure classification.
+        const cfRay = getHeader('cf-ray');
+        if (res.status >= 500) {
+          // 5xx diagnostic (2026-08-13 incident): whether the body is an edge-synthesized error
+          // page or worker JSON is the decisive fact. Bounded, stderr-ONLY — thrown messages and
+          // persisted artifacts stay content-free.
+          try {
+            const text = (await res.text()).slice(0, 2048);
+            if (text.length > 0) process.stderr.write(`transport: ${res.status} body: ${text}\n`);
+          } catch {
+            // Best effort: the status remains the authoritative failure classification.
+          }
+        } else {
+          try {
+            await res.body?.cancel();
+          } catch {
+            // Best effort: the status remains the authoritative failure classification.
+          }
         }
-        const message = `live transport ${res.status} for ${req.url}`;
+        const message =
+          `live transport ${res.status} for ${sanitizeFailureUrl(req.url)}` +
+          (cfRay === null ? '' : ` (cf-ray ${sanitizeCfRay(cfRay)})`);
         if (res.status === 408 || res.status === 425 || res.status === 429 || res.status >= 500) {
           throw new TransportFailureError(message, res.status);
         }

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "adapter": "openai",
+  "unit": "doc-repeat",
+  "status": "stopped",
+  "planned": 2,
+  "aggregate": {
+    "attempted": 0,
+    "completed": 0,
+    "transportFailures": 0,
+    "contractFailures": 0,
+    "availability": null
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 0,
+      "completed": 0,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": null
+    }
+  ],
+  "consecutiveContractFailures": 0,
+  "contractFailureLimit": 1,
+  "updatedAt": "2026-08-13T15:15:43.538Z"
+}

@@ -52,6 +52,11 @@ beforeAll(async () => {
       '"fields":{"/agency":{"state":"missing"}}}\n',
   );
   await writeFile(join(corpora, 'pdfs', 'invoice', 'a.pdf'), '%PDF-1.7 matrix doc');
+  // FD-10: every class needs its frozen normalizers table — matrix hard-requires it.
+  await writeFile(
+    join(corpora, 'normalizers.invoice.json'),
+    JSON.stringify({ docClass: 'invoice', normalizers: { '/vendor': 'text' } }) + '\n',
+  );
 });
 
 afterAll(async () => {
@@ -245,15 +250,26 @@ describe('matrix end-to-end over fixtures (ZERO network)', () => {
     expect(existsSync(join(cellDir, 'predictions.repeat-002.jsonl'))).toBe(true);
     expect(existsSync(join(cellDir, 'score.repeat-001', 'scores.json'))).toBe(true);
 
-    // Per-class scores.json summary: per-repeat corpus stats + their mean.
+    // Per-repeat scoring received the class's frozen normalizers table (FD-10 dual columns).
+    const repeatScores = JSON.parse(
+      await readFile(join(cellDir, 'score.repeat-001', 'scores.json'), 'utf8'),
+    ) as { normalized?: { docClass: string; corpus: { f1: number } } };
+    expect(repeatScores.normalized).toBeDefined();
+    expect(repeatScores.normalized!.docClass).toBe('invoice');
+
+    // Per-class scores.json summary: per-repeat corpus stats + their mean, BOTH columns.
     const scores = JSON.parse(await readFile(join(cellDir, 'scores.json'), 'utf8')) as {
       cell: { armMode: string; pass: string };
-      repeats: Array<{ repeat: number; kind: string }>;
+      repeats: Array<{ repeat: number; kind: string; normalizedCorpus?: { f1: number } }>;
       meanOverRepeats: { f1: number };
+      meanOverRepeatsNormalized: { f1: number };
     };
     expect(scores.cell).toMatchObject({ armMode: 'velrim', pass: 'main' });
     expect(scores.repeats).toHaveLength(2);
     expect(scores.meanOverRepeats.f1).toBeGreaterThanOrEqual(0);
+    expect(scores.repeats.every((r) => r.normalizedCorpus !== undefined)).toBe(true);
+    // Normalization can only ADD matches, so the normalized mean never drops below strict.
+    expect(scores.meanOverRepeatsNormalized.f1).toBeGreaterThanOrEqual(scores.meanOverRepeats.f1);
 
     // The cell manifest records that fixture mode made no stamp assertion, and the Velrim
     // pin gap stays open (the default recording carries no calibrator stamp).
@@ -326,6 +342,46 @@ describe('matrix end-to-end over fixtures (ZERO network)', () => {
     );
     expect(r.value).toBe(2);
     expect(r.err).toContain('<armMode>/<class>/<pass>');
+  });
+
+  it('a missing normalizers table fails fast, BEFORE any cell runs (FD-10 hard requirement)', async () => {
+    const corpora = join(work, 'corpora-nonorm');
+    await mkdir(join(corpora, 'pdfs', 'invoice'), { recursive: true });
+    await writeFile(join(corpora, 'golden.invoice.jsonl'), GOLDEN_ROW + '\n');
+    await writeFile(join(corpora, 'pdfs', 'invoice', 'a.pdf'), '%PDF-1.7 matrix doc');
+    await writeFile(join(work, 'matrix-nonorm.json'), JSON.stringify(BASE_CONFIG));
+    const outDir = join(work, 'out-nonorm');
+    const r = await capture(() =>
+      matrix(['--config', join(work, 'matrix-nonorm.json'), '--corpora', corpora, '--out', outDir]),
+    );
+    expect(r.value).toBe(2);
+    expect(r.err).toContain('normalizers.invoice.json');
+    expect(existsSync(join(outDir, 'velrim'))).toBe(false); // nothing ran
+  });
+
+  it('a table frozen for another docClass fails fast with both class names', async () => {
+    const corpora = join(work, 'corpora-wrongnorm');
+    await mkdir(join(corpora, 'pdfs', 'invoice'), { recursive: true });
+    await writeFile(join(corpora, 'golden.invoice.jsonl'), GOLDEN_ROW + '\n');
+    await writeFile(join(corpora, 'pdfs', 'invoice', 'a.pdf'), '%PDF-1.7 matrix doc');
+    await writeFile(
+      join(corpora, 'normalizers.invoice.json'),
+      JSON.stringify({ docClass: 'receipt', normalizers: { '/vendor': 'text' } }) + '\n',
+    );
+    await writeFile(join(work, 'matrix-wrongnorm.json'), JSON.stringify(BASE_CONFIG));
+    const r = await capture(() =>
+      matrix([
+        '--config',
+        join(work, 'matrix-wrongnorm.json'),
+        '--corpora',
+        corpora,
+        '--out',
+        join(work, 'out-wrongnorm'),
+      ]),
+    );
+    expect(r.value).toBe(2);
+    expect(r.err).toContain('receipt');
+    expect(r.err).toContain('invoice');
   });
 
   it('a missing probe golden fails fast, pointing at probes-cli generate', async () => {

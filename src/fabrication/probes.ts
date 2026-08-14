@@ -197,3 +197,71 @@ export function probeSearchTokens(field: string): string[] {
   const spaced = field.replace(/_/g, ' ').trim();
   return spaced === field ? [field] : [field, spaced];
 }
+
+export interface StruckProbe {
+  docClass: string;
+  field: string;
+  /** Docs where the maintainer recorded the value as visible, in worksheet order. */
+  visibleDocs: string[];
+}
+
+export interface StrikeRecord {
+  formatVersion: 1;
+  /** The strike source is the published worksheet — the visual column is authoritative. */
+  source: 'WORKSHEET.md';
+  struck: StruckProbe[];
+}
+
+/**
+ * Derive the strike record from the COMPLETED worksheet — zero discretion: a probe is struck
+ * iff its value was recorded visible (`n`) on any doc. Throws on an unanswered or malformed
+ * visual cell, so strikes can only finalize from a complete pass.
+ */
+export function parseWorksheetStrikes(markdown: string): StrikeRecord {
+  const visible = new Map<string, StruckProbe>();
+  let dataRows = 0;
+  for (const line of markdown.split('\n')) {
+    const cells = line.split('|').map((cell) => cell.trim());
+    if (cells.length !== 9 || cells[1] === 'class' || /^-+$/.test(cells[1]!)) continue;
+    dataRows++;
+    const docClass = cells[1]!,
+      doc = cells[2]!,
+      field = cells[3]!,
+      visual = cells[6]!;
+    if (visual !== 'y' && visual !== 'n') {
+      throw new Error(
+        `probes: worksheet row "${docClass} / ${doc} / ${field}" has visual "${visual}" (want y|n) — the visual pass must complete before strikes finalize`,
+      );
+    }
+    if (visual === 'n') {
+      const key = `${docClass}|${field}`;
+      const entry = visible.get(key) ?? { docClass, field, visibleDocs: [] };
+      entry.visibleDocs.push(doc);
+      visible.set(key, entry);
+    }
+  }
+  if (dataRows === 0) throw new Error('probes: worksheet has no data rows');
+  const struck = [...visible.values()].sort(
+    (a, b) => a.docClass.localeCompare(b.docClass) || a.field.localeCompare(b.field),
+  );
+  return { formatVersion: 1, source: 'WORKSHEET.md', struck };
+}
+
+/** The selection minus struck probes — the set the probe pass actually runs. */
+export function survivingProbes(
+  selection: ProbeSelection,
+  strikes: StrikeRecord,
+): Record<string, ProbeField[]> {
+  const struckKeys = new Set(strikes.struck.map((s) => `${s.docClass}|${s.field}`));
+  for (const s of strikes.struck) {
+    const known = (selection.probes[s.docClass] ?? []).some((p) => p.field === s.field);
+    if (!known)
+      throw new Error(`probes: strike "${s.docClass}|${s.field}" is not a selected probe`);
+  }
+  return Object.fromEntries(
+    Object.entries(selection.probes).map(([docClass, probes]) => [
+      docClass,
+      probes.filter((p) => !struckKeys.has(`${docClass}|${p.field}`)),
+    ]),
+  );
+}

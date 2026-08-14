@@ -1,0 +1,217 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation",
+    "code.cleanWorktree",
+    "run.completedAt"
+  ],
+  "run": {
+    "fingerprint": "079e7a9e227d3026f6d19a62d7c01e5256171a3a422219cd4323d5cba795fdbf",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": true,
+    "repeats": 1,
+    "startedAt": "2026-08-13T15:08:40.864Z",
+    "completedAt": null,
+    "startedDate": "2026-08-13",
+    "completedDate": null
+  },
+  "code": {
+    "velrimEvalCommitSha": "4b0101adb0efd0dfc9fd577d28099f0d5e12a9db",
+    "worktreeDirty": true,
+    "implementationHash": "f6146bc8a8ca47cd43e61fcf99f018f3109ec94890208ff98528d0808d76f415",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "a4dfd606089024bf8c65cfc1bd755e59b90a3edb27c8102297283f4c9a3217bc"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "84c02ee8fac5f24eb29fe63844659370ed1711b62540b8677e5e32ed7db4e1b2"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "a4dfd606089024bf8c65cfc1bd755e59b90a3edb27c8102297283f4c9a3217bc"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "84c02ee8fac5f24eb29fe63844659370ed1711b62540b8677e5e32ed7db4e1b2"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "cord-v2",
+      "schema": {
+        "path": "../cord-v2.schema.json",
+        "sha256": "7090f850c913f8dc0623ae373d2eb02f7110676886e9abd9e6c5fecbb4456720"
+      },
+      "publicGolden": {
+        "path": "golden.cord-v2.smoke.jsonl",
+        "sha256": "332e8d07ee89041fc3768eeb1b38a60c4abada276394a00c671e2f7410e85f03"
+      },
+      "sourceManifest": {
+        "path": "../../../calibration/corpora/manifests/cord-v2.manifest.json",
+        "sha256": "d4d98d4c84a6441daf124f5c91353d0e0cdceca8fc8c27fdaf8e325a4248d2eb"
+      },
+      "calTestGoldenHash": "01ded8017fa3b8b81a6caffb1f3c2c139fe35c5e466b7fe649ae6f9fd7041f77"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/publishers/google/models/gemini-2.5-flash:generateContent",
+    "model": "gemini-2.5-flash",
+    "generationSettings": {
+      "temperature": 0,
+      "confidence": "not_requested",
+      "structuredMode": true,
+      "responseJsonSchema": true,
+      "trimmedParams": [],
+      "endpointRoute": "vertex"
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 1
+    },
+    "vendor": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 1
+    },
+    "calibrator": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 1
+    },
+    "api": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 1
+    },
+    "requestIds": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 1
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "cord-011.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "b9f95ce6e6d71fdd53cd114d9bb8d5e3b03410f45a9a8e290e2ec6b0dacd565e",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "0ff58c0465967a36b599ab73c607949b6cdc8696d2c81353adc321390cec4327"
+    },
+    {
+      "doc": "cord-015.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "c01774154712f8b41de76b2ba3260317bf39206fb02ac09c1ecc48d8fe962305",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "84e2d7369c5139fb606860e56793e6bff07b754795de95a99b20503e507224e3"
+    }
+  ]
+}

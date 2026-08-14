@@ -30,6 +30,8 @@ import {
   GEMINI_GENERATE_URL,
   GEMINI_MODEL,
   GEMINI_FIXTURE_KEY,
+  geminiVertexUrl,
+  GEMINI_VERTEX_URL_TEMPLATE,
 } from '../src/adapters/gemini.js';
 import type { GeminiGenerateResponse } from '../src/adapters/gemini.js';
 import { buildOpenAIPrompt } from '../src/adapters/openai.js';
@@ -72,6 +74,7 @@ function fakeTransport(responses: unknown[]): { transport: Transport; sent: Tran
 
 interface GeminiBody {
   contents: Array<{
+    role?: string;
     parts: Array<{ text: string } | { inline_data: { mime_type: string; data: string } }>;
   }>;
   generationConfig?: Record<string, unknown>;
@@ -103,6 +106,7 @@ describe('gemini adapter — A2 free-decode request construction', () => {
     expect(GEMINI_MODEL).not.toContain('latest');
 
     const body = req.body as GeminiBody;
+    expect(body.contents[0]!.role).toBe('user'); // Vertex requires it; AI Studio accepts it
     // Prompt parity: BYTE-identical to the one shared prompt builder (the openai adapter uses it too).
     expect(textPart(body)).toBe(buildOpenAIPrompt(SCHEMA));
     expect(textPart(body)).toContain('Use null for fields not present in the document.');
@@ -123,8 +127,37 @@ describe('gemini adapter — A2 free-decode request construction', () => {
   });
 });
 
+describe('gemini adapter — Vertex transport substitution (URL-only; body and auth unchanged)', () => {
+  it('geminiVertexUrl pins the same model on the Vertex global generateContent path', () => {
+    const url = geminiVertexUrl('my-proj-123');
+    expect(url).toBe(
+      `https://aiplatform.googleapis.com/v1/projects/my-proj-123/locations/global/publishers/google/models/${GEMINI_MODEL}:generateContent`,
+    );
+    expect(url).toContain('gemini-2.5-flash'); // the pin survives the route change
+    expect(url).not.toContain('latest');
+  });
+
+  it('opts.geminiVertexProject swaps ONLY the URL: fixture key and body bytes identical', async () => {
+    const aistudio = fakeTransport([recorded('gemini/generate-free.json')]);
+    await geminiAdapter.extract(DOC_BYTES, SCHEMA, { mode: 'live', transport: aistudio.transport });
+
+    const vertex = fakeTransport([recorded('gemini/generate-free.json')]);
+    await geminiAdapter.extract(DOC_BYTES, SCHEMA, {
+      mode: 'live',
+      geminiVertexProject: 'my-proj-123',
+      transport: vertex.transport,
+    });
+
+    expect(vertex.sent[0]!.url).toBe(geminiVertexUrl('my-proj-123'));
+    expect(aistudio.sent[0]!.url).toBe(GEMINI_GENERATE_URL);
+    // The substitution is endpoint-ONLY: same fixture key, byte-identical request body.
+    expect(vertex.sent[0]!.key).toBe(aistudio.sent[0]!.key);
+    expect(JSON.stringify(vertex.sent[0]!.body)).toBe(JSON.stringify(aistudio.sent[0]!.body));
+  });
+});
+
 describe('gemini adapter — A3 constrained mode (identical prompt bytes, decoding config only)', () => {
-  it('--structured-mode adds ONLY generationConfig.responseJsonSchema; prompt bytes unchanged', async () => {
+  it('--structured-mode adds ONLY the decoding-config pair (responseMimeType + responseJsonSchema); prompt bytes unchanged', async () => {
     const { transport, sent } = fakeTransport([recorded('gemini/generate-structured.json')]);
     await geminiAdapter.extract(DOC_BYTES, SCHEMA, {
       mode: 'live',
@@ -136,7 +169,11 @@ describe('gemini adapter — A3 constrained mode (identical prompt bytes, decodi
     expect(req.key).toBe(GEMINI_FIXTURE_KEY.structured);
     expect(req.url).toBe(GEMINI_GENERATE_URL); // same route as A2
     const body = req.body as GeminiBody;
-    expect(body.generationConfig).toEqual({ temperature: 0, responseJsonSchema: SCHEMA });
+    expect(body.generationConfig).toEqual({
+      temperature: 0,
+      responseMimeType: 'application/json', // required WITH responseJsonSchema (smoke-verified)
+      responseJsonSchema: SCHEMA,
+    });
 
     // The A2/A3 split is decoding config ONLY: everything outside generationConfig is identical.
     const free = buildGeminiRequestBody(DOC_BYTES, SCHEMA, false);
@@ -161,7 +198,10 @@ describe('gemini adapter — smoke-driven param trim (temperature only)', () => 
     expect('generationConfig' in trimmedFree).toBe(false); // pure vendor defaults
 
     const trimmedStructured = buildGeminiRequestBody(DOC_BYTES, SCHEMA, true, ['temperature']);
-    expect(trimmedStructured['generationConfig']).toEqual({ responseJsonSchema: SCHEMA });
+    expect(trimmedStructured['generationConfig']).toEqual({
+      responseMimeType: 'application/json',
+      responseJsonSchema: SCHEMA,
+    });
   });
 
   it('extract() threads the trim onto the wire and records it in raw', async () => {
@@ -508,6 +548,80 @@ describe('run — gemini CLI wiring (fixture round-trips + live header proof, ze
     expect(manifest.requestedConfiguration.generationSettings['temperature']).toBe(
       'trimmed_at_smoke',
     );
+  });
+
+  it('fixture run with --gemini-vertex-project records the vertex route but NEVER the id', async () => {
+    const outDir = join(work, 'out-vertex');
+    const r = await capture(() =>
+      run([...baseArgs(), '--out', outDir, '--gemini-vertex-project', 'my-proj-123']),
+    );
+    expect(r.err).toBe('');
+    expect(r.value).toBe(0);
+    const meta = JSON.parse(await readFile(join(outDir, 'run-meta.json'), 'utf8')) as Record<
+      string,
+      unknown
+    >;
+    expect(meta['geminiEndpointRoute']).toBe('vertex');
+    const manifest = JSON.parse(await readFile(join(outDir, 'run-manifest.json'), 'utf8')) as {
+      requestedConfiguration: { endpoint: string; generationSettings: Record<string, unknown> };
+    };
+    expect(manifest.requestedConfiguration.endpoint).toBe(GEMINI_VERTEX_URL_TEMPLATE);
+    expect(manifest.requestedConfiguration.generationSettings['endpointRoute']).toBe('vertex');
+    for (const file of ['run-meta.json', 'run-manifest.json']) {
+      expect(await readFile(join(outDir, file), 'utf8')).not.toContain('my-proj-123');
+    }
+  });
+
+  it('default (no flag) records the aistudio route in run-meta + manifest', async () => {
+    const outDir = join(work, 'out-aistudio-route');
+    const r = await capture(() => run([...baseArgs(), '--out', outDir]));
+    expect(r.err).toBe('');
+    expect(r.value).toBe(0);
+    const meta = JSON.parse(await readFile(join(outDir, 'run-meta.json'), 'utf8')) as Record<
+      string,
+      unknown
+    >;
+    expect(meta['geminiEndpointRoute']).toBe('aistudio');
+    expect(meta).not.toHaveProperty('geminiVertexProject');
+    const manifest = JSON.parse(await readFile(join(outDir, 'run-manifest.json'), 'utf8')) as {
+      requestedConfiguration: { endpoint: string; generationSettings: Record<string, unknown> };
+    };
+    expect(manifest.requestedConfiguration.endpoint).toBe(GEMINI_GENERATE_URL);
+    expect(manifest.requestedConfiguration.generationSettings['endpointRoute']).toBe('aistudio');
+  });
+
+  it('rejects --gemini-vertex-project for a non-gemini adapter at PARSE time', async () => {
+    const calls = stubFetch(200, '{}');
+    const args = baseArgs();
+    args[args.indexOf('gemini')] = 'openai';
+    const r = await capture(() =>
+      run([
+        ...args,
+        '--out',
+        join(work, 'out-vertex-openai'),
+        '--gemini-vertex-project',
+        'my-proj-123',
+      ]),
+    );
+    expect(r.value).toBe(2);
+    expect(r.err).toContain('only supported by --adapter gemini');
+    expect(calls).toHaveLength(0);
+  });
+
+  it('rejects a malformed --gemini-vertex-project id at PARSE time (lands verbatim in the URL)', async () => {
+    const calls = stubFetch(200, '{}');
+    const r = await capture(() =>
+      run([
+        ...baseArgs(),
+        '--out',
+        join(work, 'out-vertex-bad'),
+        '--gemini-vertex-project',
+        'Bad_Project',
+      ]),
+    );
+    expect(r.value).toBe(2);
+    expect(r.err).toContain('not a valid Google Cloud project id');
+    expect(calls).toHaveLength(0);
   });
 
   it('rejects --trim-param logprobs for gemini at PARSE time (not a gemini request param)', async () => {

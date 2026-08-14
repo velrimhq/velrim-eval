@@ -104,6 +104,18 @@ describe('velrim adapter — request construction (the /v1/extract envelope)', (
     const body = req.body as { schema: object; document: { bytes_base64: string } };
     expect(body.schema).toBe(SCHEMA); // the caller's JSON Schema object, verbatim
     expect(body.document.bytes_base64).toBe(DOC_B64); // the doc actually rides in the request
+    expect(body).not.toHaveProperty('options'); // no docClass given → no options block
+  });
+
+  it('sends opts.docClass as options.doc_class — the per-class fitted-calibrator hint', async () => {
+    const { transport, sent } = fakeTransport([{ fields: {} }]);
+    await velrimAdapter.extract(DOC_BYTES, SCHEMA, {
+      mode: 'live',
+      docClass: 'cord-v2',
+      transport,
+    });
+    const body = sent[0]!.body as { options?: { doc_class?: string } };
+    expect(body.options).toEqual({ doc_class: 'cord-v2' });
   });
 
   it('rejects malformed 2xx leaf contracts with a typed contract failure', async () => {
@@ -901,6 +913,64 @@ describe('liveTransport — env keys only, fail fast, exact request', () => {
       transport.send({ key: 'x/y', url: 'https://api.example.test/v1/extract', body: {} }),
     ).rejects.toBeInstanceOf(FatalRunError);
     expect(bodyReads).toBe(0);
+  });
+
+  it('reads a BOUNDED 5xx body to stderr only; message carries cf-ray, never the body', async () => {
+    const stderrWrites: string[] = [];
+    const realWrite = process.stderr.write.bind(process.stderr);
+    process.stderr.write = ((chunk: string) => {
+      stderrWrites.push(String(chunk));
+      return true;
+    }) as typeof process.stderr.write;
+    try {
+      const response = {
+        ok: false,
+        status: 503,
+        headers: new Headers({ 'cf-ray': 'abc123-MAD' }),
+        text: () => Promise.resolve('error code: 1102 ' + 'x'.repeat(5000)),
+      } as unknown as Response;
+      const fetchImpl = (() => Promise.resolve(response)) as typeof fetch;
+      const transport = liveTransport(ENV, { fetchImpl });
+      const thrown = await transport
+        .send({ key: 'x/y', url: 'https://api.example.test/v1/extract', body: {} })
+        .then(
+          () => undefined,
+          (e: Error) => e,
+        );
+      expect(thrown).toBeInstanceOf(TransportFailureError);
+      expect(thrown!.message).toContain('cf-ray abc123');
+      expect(thrown!.message).not.toContain('-MAD');
+      expect(thrown!.message).not.toContain('1102'); // body never leaks into the taxonomy
+      const diag = stderrWrites.join('');
+      expect(diag).toContain('error code: 1102');
+      expect(diag.length).toBeLessThan(2300); // bounded read
+    } finally {
+      process.stderr.write = realWrite;
+    }
+  });
+
+  it('failure messages carry the endpoint shape, never the GCP project id', async () => {
+    const response = {
+      ok: false,
+      status: 400,
+      headers: new Headers(),
+      body: { cancel: () => Promise.resolve() },
+    } as unknown as Response;
+    const fetchImpl = (() => Promise.resolve(response)) as typeof fetch;
+    const transport = liveTransport(ENV, { fetchImpl });
+    const thrown = await transport
+      .send({
+        key: 'x/y',
+        url: 'https://aiplatform.googleapis.com/v1/projects/my-proj-123/locations/global/publishers/google/models/gemini-2.5-flash:generateContent',
+        body: {},
+      })
+      .then(
+        () => undefined,
+        (e: Error) => e,
+      );
+    expect(thrown).toBeInstanceOf(ContractFailureError);
+    expect(thrown!.message).toContain('/projects/<gcp-project>/');
+    expect(thrown!.message).not.toContain('my-proj-123');
   });
 
   it('cancels an unread retryable error body before classifying its status', async () => {

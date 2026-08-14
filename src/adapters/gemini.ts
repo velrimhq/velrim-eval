@@ -1,8 +1,12 @@
 /**
  * Gemini bake-off adapter (A2/A3) — the HEADLINE bare-model control ("Gemini reseller"
- * answer), Google AI Studio direct, never Vertex: Vertex's terms attach replication-disclosure
- * and reciprocity conditions to publishing benchmark results; the AI Studio terms carry no
- * benchmark clause at all (the arms table pins the AI Studio route: ANALYSIS-PLAN.md §2).
+ * answer). Two transports, same pinned model, same body, same auth header: AI Studio (the
+ * default; no benchmark clause in its terms — but Google closed `gemini-2.5-flash` to new
+ * Gemini-API accounts ~2026-08-13) and Vertex (`opts.geminiVertexProject`; still serves the
+ * pin — publishing results is permitted by the Google Cloud General Service Terms §7 subject
+ * to full replication disclosure and letting Google reciprocally benchmark the publisher).
+ * The FROZEN plan pins one route; the arms table originally pinned AI Studio
+ * (ANALYSIS-PLAN.md §2).
  *
  * Two modes, ONE prompt (prompt parity, ANALYSIS-PLAN.md §5.4 — byte-identical across A2/A3/A5,
  * built by the shared `buildOpenAIPrompt` so the bytes can never fork):
@@ -42,6 +46,14 @@ export const GEMINI_MODEL = 'gemini-2.5-flash';
 
 /** Google AI Studio generateContent endpoint (model in the PATH, key in the header — never here). */
 export const GEMINI_GENERATE_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+
+/** Vertex generateContent endpoint for one Google Cloud project (global location). */
+export function geminiVertexUrl(project: string): string {
+  return `https://aiplatform.googleapis.com/v1/projects/${project}/locations/global/publishers/google/models/${GEMINI_MODEL}:generateContent`;
+}
+
+/** Published artifacts record this shape; the caller's project id never leaves the live URL. */
+export const GEMINI_VERTEX_URL_TEMPLATE = geminiVertexUrl('<gcp-project>');
 
 /** Fixture keys: A2 free-decode vs the A3 `--structured-mode` re-run (distinct recordings). */
 export const GEMINI_FIXTURE_KEY = {
@@ -90,11 +102,15 @@ export function buildGeminiRequestBody(
 ): Record<string, unknown> {
   const generationConfig: Record<string, unknown> = {
     ...(trims.includes('temperature') ? {} : { temperature: 0 }),
-    ...(structured ? { responseJsonSchema: jsonSchema } : {}),
+    // responseMimeType is required WITH responseJsonSchema (smoke-verified vendor contract);
+    // the pair is the whole free-vs-constrained delta.
+    ...(structured ? { responseMimeType: 'application/json', responseJsonSchema: jsonSchema } : {}),
   };
   return {
     contents: [
       {
+        // Vertex requires an explicit role; AI Studio accepts it. One body serves both routes.
+        role: 'user',
         parts: [
           { text: buildOpenAIPrompt(jsonSchema) },
           {
@@ -237,7 +253,10 @@ export const geminiAdapter: EvalAdapter = {
     // shared prompt bytes, structured mode adding ONLY the responseJsonSchema decoding config.
     const raw = await opts.transport.send({
       key,
-      url: GEMINI_GENERATE_URL,
+      url:
+        opts.geminiVertexProject === undefined
+          ? GEMINI_GENERATE_URL
+          : geminiVertexUrl(opts.geminiVertexProject),
       method: 'POST',
       body: buildGeminiRequestBody(docBytes, jsonSchema, structured, trims),
     });

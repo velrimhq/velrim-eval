@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "adapter": "gemini",
+  "unit": "doc-repeat",
+  "status": "paused",
+  "planned": 2,
+  "aggregate": {
+    "attempted": 1,
+    "completed": 0,
+    "transportFailures": 0,
+    "contractFailures": 1,
+    "availability": 0
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 1,
+      "completed": 0,
+      "transportFailures": 0,
+      "contractFailures": 1,
+      "availability": 0
+    }
+  ],
+  "consecutiveContractFailures": 1,
+  "contractFailureLimit": 1,
+  "updatedAt": "2026-08-13T15:08:41.226Z"
+}

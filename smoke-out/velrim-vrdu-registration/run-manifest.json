@@ -1,0 +1,215 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation"
+  ],
+  "run": {
+    "fingerprint": "3b7ae1802766767b8d9dcc6f164bd9d7451e089a57a61ade7ef7e8b051ecf585",
+    "adapter": "velrim",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-13T16:51:34.579Z",
+    "completedAt": "2026-08-13T16:51:47.128Z",
+    "startedDate": "2026-08-13",
+    "completedDate": "2026-08-13"
+  },
+  "code": {
+    "velrimEvalCommitSha": "255081cc4783f85b2b8c4babbce2360879216513",
+    "worktreeDirty": false,
+    "implementationHash": "6240e582dba553ca78751e5455aa9335770c7e9e17f755efb0ab3a8bd6b71303",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "19a901742dcd8af648191cee33fad865c3ad7214894e371d2a6cf0d7715f1448"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/velrim.js",
+        "sha256": "5ef1b11d249bade047c355cc99bcb8000bf69dc1f92738a5e0e685f5d95a4919"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "19a901742dcd8af648191cee33fad865c3ad7214894e371d2a6cf0d7715f1448"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/velrim.js",
+        "sha256": "5ef1b11d249bade047c355cc99bcb8000bf69dc1f92738a5e0e685f5d95a4919"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "vrdu-registration",
+      "schema": {
+        "path": "../vrdu-registration.schema.json",
+        "sha256": "16efaea5ee68544ff8b3b3b1811a51200c3a107a98cad8e3491280db6044c91f"
+      },
+      "publicGolden": {
+        "path": "golden.vrdu-registration.smoke.jsonl",
+        "sha256": "c0be9d7e7015eb558619f29bc9fdc8be1b7abc0894b63d8844c682f4a2ecbc47"
+      },
+      "sourceManifest": {
+        "path": "../../../calibration/corpora/manifests/vrdu-registration.manifest.json",
+        "sha256": "596a7b324407e7ceab7db555827a419c55b5e91c35a0f402022ae3fac9c7b30d"
+      },
+      "calTestGoldenHash": "5664481d9b5ff9e1acca8a1c78efcd71c6613234fabba3f0db54d50b6b525c24"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://api.velrim.com/v1/extract",
+    "model": null,
+    "generationSettings": {
+      "providerManaged": true,
+      "requireFittedStamp": true,
+      "expectedCalibratorStamp": "^cal-\\d{4}\\.\\d{2}-\\d+$"
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "surfaced",
+      "values": [
+        "gemini-2.5-flash"
+      ],
+      "missingRecords": 0
+    },
+    "vendor": {
+      "status": "surfaced",
+      "values": [
+        "dp-sel-1"
+      ],
+      "missingRecords": 0
+    },
+    "calibrator": {
+      "status": "surfaced",
+      "values": [
+        "cal-2026.08-2"
+      ],
+      "missingRecords": 0
+    },
+    "api": {
+      "status": "surfaced",
+      "values": [
+        "2026-08-10"
+      ],
+      "missingRecords": 0
+    },
+    "requestIds": {
+      "status": "mixed",
+      "values": [
+        "req_4c3be855-2edb-4afb-8eaa-75779a7c5fd3",
+        "req_89e2ac01-57a4-411b-a286-e31e27dbf0fc"
+      ],
+      "missingRecords": 0
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "a4daf88c8db3be5acd4e8575d8a9445843c23078be65a9c0b0b6f7510ec1c934",
+      "schemaSemanticSha256": "6c6435268bbb9e205cd3fd1c0d91ce05625ded6eb2a92348c5f665b6e08b5493",
+      "goldenRowSemanticSha256": "2454acb0b8d7c89878dfe103e7646fa658210eaacff63d750a39c7468798ab22"
+    },
+    {
+      "doc": "19631101_Tourism_Australia_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "add58cf5ab3e09b40df63e43f0559963a5669745a2913d4b64b4c5b2ad3228be",
+      "schemaSemanticSha256": "6c6435268bbb9e205cd3fd1c0d91ce05625ded6eb2a92348c5f665b6e08b5493",
+      "goldenRowSemanticSha256": "3c3975fb7756ba0bbc25c0f22b90d310feeacb2a3d7ae66c95067a608f798d58"
+    }
+  ]
+}

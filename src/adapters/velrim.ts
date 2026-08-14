@@ -15,8 +15,11 @@
  * Live wire contract (verified against the production /v1/extract route and its responder):
  *   POST https://api.velrim.com/v1/extract
  *   Authorization: Bearer $VELRIM_API_KEY   (added by liveTransport, never here)
- *   { schema: <JSON Schema object>, document: { bytes_base64: <base64 PDF bytes> } }
+ *   { schema: <JSON Schema object>, options: { doc_class: <golden docClass> },
+ *     document: { bytes_base64: <base64 PDF bytes> } }
  *   → { data, fields: { "/ptr": { state, value?, confidence?, anchor?, reason } }, meta }
+ *   doc_class selects the served per-class fitted calibrator; a request without it is served
+ *   identity-0 by production design (non-corpus scoping).
  *
  * Fixture-backed by default (`run` wires `--live` → liveTransport, env key `VELRIM_API_KEY`).
  * The SAME body is constructed in both modes — the fixture transport simply never sends it.
@@ -165,7 +168,9 @@ export const velrimAdapter: EvalAdapter = {
     jsonSchema: object,
     opts: EvalAdapterOpts,
   ): Promise<AdapterExtractResult> {
-    // The REAL /v1/extract envelope the production route parses: schema + inline base64 doc.
+    // The REAL /v1/extract envelope the production route parses: schema + inline base64 doc +
+    // options.doc_class (the documented per-class calibration hint — without it the server
+    // routes to identity-0 and the fitted-stamp assertion below correctly stops the run).
     // Constructed identically in fixture mode (the fixture transport ignores the body) so the
     // request the reader's live run sends is the one the tests assert on. The stamp assertion
     // never changes the request — the body/URL/headers are the default public request always.
@@ -175,6 +180,7 @@ export const velrimAdapter: EvalAdapter = {
       method: 'POST',
       body: {
         schema: jsonSchema,
+        ...(opts.docClass === undefined ? {} : { options: { doc_class: opts.docClass } }),
         document: { bytes_base64: bytesToBase64(docBytes) },
       },
     });

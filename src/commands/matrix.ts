@@ -19,6 +19,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { errorMessage } from '../adapters/errors.js';
 import { parseGoldenJsonl } from '../golden/loader.js';
+import { parseNormalizerTable } from '../score/normalizers.js';
 import { MATRIX_HELP } from '../help.js';
 import {
   buildMatrixPlan,
@@ -113,9 +114,12 @@ export async function matrix(argv: string[]): Promise<number> {
   }
 
   // Load goldens (row counts feed spend math), the probe goldens when the probe pass is on,
-  // and the frozen exclusions when the cap-confirmed branch needs them.
+  // the per-class frozen normalizers tables (FD-10 — validated BEFORE any cell runs, so a bad
+  // table can never surface after paid spend), and the frozen exclusions when the
+  // cap-confirmed branch needs them.
   const docCounts: Record<string, { main: number; probe: number }> = {};
   const goldenTexts = new Map<string, string>(); // committed golden path -> text (for derivation)
+  const normalizersPaths = new Map<string, string>(); // docClass -> normalizers table path
   try {
     for (const docClass of config.classes) {
       const mainPath = join(corporaDir, `golden.${docClass}.jsonl`);
@@ -136,6 +140,28 @@ export async function matrix(argv: string[]): Promise<number> {
         goldenTexts.set(probePath, probeText);
         probe = parseGoldenJsonl(probeText).length;
       }
+      const normPath = join(corporaDir, `normalizers.${docClass}.json`);
+      let normText: string;
+      try {
+        normText = await readFile(normPath, 'utf8');
+      } catch {
+        throw new Error(
+          `missing normalizers table for "${docClass}" (expected ${normPath}) — ` +
+            'FD-10: both scoring columns publish for every arm, the frozen table is required',
+        );
+      }
+      let tableDocClass: string;
+      try {
+        tableDocClass = parseNormalizerTable(normText).docClass;
+      } catch (error) {
+        throw new Error(`${normPath}: ${errorMessage(error)}`);
+      }
+      if (tableDocClass !== docClass) {
+        throw new Error(
+          `${normPath}: table is frozen for docClass "${tableDocClass}" but the class is "${docClass}"`,
+        );
+      }
+      normalizersPaths.set(docClass, normPath);
       docCounts[docClass] = { main, probe };
     }
   } catch (error) {
@@ -248,13 +274,20 @@ export async function matrix(argv: string[]): Promise<number> {
     }
     const cellDir = join(outDir, cell.relativeDir);
     let scoringFailed = false;
-    const repeatSummaries: Array<{ repeat: number; kind: string; corpus: unknown }> = [];
+    const repeatSummaries: Array<{
+      repeat: number;
+      kind: string;
+      corpus: unknown;
+      normalizedCorpus: unknown;
+    }> = [];
     for (const job of cell.scoring) {
       const scoreExit = await score([
         '--predictions',
         join(cellDir, job.predictionsFile),
         '--golden',
         job.goldenPath,
+        '--normalizers',
+        normalizersPaths.get(cell.docClass)!,
         '--out',
         join(cellDir, job.outDir),
       ]);
@@ -265,21 +298,30 @@ export async function matrix(argv: string[]): Promise<number> {
       }
       const scores = (await readJson(join(cellDir, job.outDir, 'scores.json'))) as {
         corpus: unknown;
+        normalized?: { corpus: unknown };
       };
-      repeatSummaries.push({ repeat: job.repeat, kind: job.kind, corpus: scores.corpus });
+      repeatSummaries.push({
+        repeat: job.repeat,
+        kind: job.kind,
+        corpus: scores.corpus,
+        normalizedCorpus: scores.normalized?.corpus ?? null,
+      });
     }
-    // The per-class scores.json: per-repeat primary corpus stats + their mean (repeat noise
-    // itself is the instability metric's job, reported separately — never folded in here).
+    // The per-class scores.json: per-repeat primary corpus stats + their mean, once per column
+    // (strict + normalized, FD-10). Repeat noise itself is the instability metric's job,
+    // reported separately — never folded in here.
     const primary = repeatSummaries.filter((s) => s.kind === 'primary');
     const metricKeys = ['precision', 'recall', 'f1', 'ece', 'brier', 'auroc'] as const;
-    const mean: Record<string, number> = {};
-    if (primary.length > 0) {
+    const meanOf = (column: (s: (typeof primary)[number]) => unknown): Record<string, number> => {
+      const mean: Record<string, number> = {};
+      if (primary.length === 0) return mean;
       for (const key of metricKeys) {
         mean[key] =
-          primary.reduce((sum, s) => sum + (s.corpus as Record<string, number>)[key]!, 0) /
+          primary.reduce((sum, s) => sum + (column(s) as Record<string, number>)[key]!, 0) /
           primary.length;
       }
-    }
+      return mean;
+    };
     await writeFile(
       join(cellDir, 'scores.json'),
       JSON.stringify(
@@ -294,7 +336,8 @@ export async function matrix(argv: string[]): Promise<number> {
           },
           excludedDocs: cell.excludedDocs,
           repeats: repeatSummaries,
-          meanOverRepeats: mean,
+          meanOverRepeats: meanOf((s) => s.corpus),
+          meanOverRepeatsNormalized: meanOf((s) => s.normalizedCorpus),
         },
         null,
         2,

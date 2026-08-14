@@ -58,4 +58,41 @@ describe('confusionCell ⇔ @velrim/scoring.fieldScore — cell seam pin (no sil
     // 3 gold states × (present×2 value cases + null×1 + missing×1) = 3 × 4 = 12 combinations.
     expect(checked).toBe(12);
   });
+
+  it('agrees across the same matrix WITH a normalizer kind (FD-10 dual-column seam)', () => {
+    // Values chosen so strict and normalized labels DIVERGE: "$1,880.00" ≠ "1880" byte-wise but
+    // both normalize (currency) to "1880" — the kind must reach both sides in both functions.
+    let checked = 0;
+    for (const goldState of STATES) {
+      const gold =
+        goldState === 'present' ? { state: goldState, value: '1880' } : { state: goldState };
+      for (const predState of STATES) {
+        const predValues =
+          predState === 'present'
+            ? ['$1,880.00' /* normalized match, strict mismatch */, 'nonsense' /* mismatch */]
+            : [undefined];
+        for (const v of predValues) {
+          const pred: ScoringField | undefined =
+            predState === 'missing' && v === undefined
+              ? undefined
+              : { state: predState, ...(v === undefined ? {} : { value: v }) };
+          const fromCli = cellsToScore(confusionCell(pred, gold, 'currency'));
+          const fromScoring = fieldScore(pred, gold, 'currency');
+          expect(fromCli, `pred=${predState}:${String(v)} gold=${goldState}`).toEqual(fromScoring);
+          checked += 1;
+        }
+      }
+    }
+    expect(checked).toBe(12);
+  });
+
+  it('the kind flips a formatting-only mismatch from FP+FN to TP — and only when given', () => {
+    const pred: ScoringField = { state: 'present', value: '$1,880.00' };
+    const gold = { state: 'present' as FieldState, value: '1880' };
+    expect(confusionCell(pred, gold)).toEqual({ tp: 0, fp: 1, fn: 1 });
+    expect(confusionCell(pred, gold, 'currency')).toEqual({ tp: 1, fp: 0, fn: 0 });
+    // A kind can only ADD matches: identical bytes stay equal under it.
+    const exact: ScoringField = { state: 'present', value: '1880' };
+    expect(confusionCell(exact, gold, 'currency')).toEqual({ tp: 1, fp: 0, fn: 0 });
+  });
 });

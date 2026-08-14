@@ -16,13 +16,7 @@
     "gross_amount": {
       "type": ["string", "null"]
     },
-    "agency": {
-      "type": ["string", "null"]
-    },
     "registration_num": {
-      "type": ["string", "null"]
-    },
-    "property": {
       "type": ["string", "null"]
     }
   },
@@ -32,9 +26,7 @@
     "flight_from",
     "flight_to",
     "gross_amount",
-    "agency",
-    "registration_num",
-    "property"
+    "registration_num"
   ],
   "additionalProperties": false
 }
