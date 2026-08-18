@@ -1,0 +1,16 @@
+# Normalize all text to LF in the repo AND the working tree (prettier emits LF; without this,
+# Windows autocrlf checkouts flag every file at format:check).
+* text=auto eol=lf
+
+# Binaries — never normalize
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.7z binary
+*.zip binary
+*.gz binary

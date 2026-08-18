@@ -1,0 +1,376 @@
+{
+  "formatVersion": 1,
+  "source": "NATURAL-ABSENT-AUDIT.md",
+  "auditedCells": 142,
+  "rule": "A golden missing cell is struck from the fabrication denominator when a value for the field is visibly present in the document (visible) or when the region that would carry it is illegible or redacted (unverifiable). Strikes apply to every arm identically. Golden bytes do not change.",
+  "struck": [
+    {
+      "docClass": "cord-v2",
+      "doc": "cord-047.pdf",
+      "field": "/credit_card",
+      "reason": "unverifiable",
+      "page": 1,
+      "seen": null
+    },
+    {
+      "docClass": "cord-v2",
+      "doc": "cord-056.pdf",
+      "field": "/cash",
+      "reason": "visible",
+      "page": 1,
+      "seen": "100,000"
+    },
+    {
+      "docClass": "cord-v2",
+      "doc": "cord-095.pdf",
+      "field": "/tax",
+      "reason": "visible",
+      "page": 1,
+      "seen": "6,818"
+    },
+    {
+      "docClass": "deepform",
+      "doc": "deepform-50e20ed6-1232-4272-a28a-4632d68679fc.pdf",
+      "field": "/contract_number",
+      "reason": "visible",
+      "page": 1,
+      "seen": "89015 (top edge clipped; last digit 3/5 ambiguous)"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Canal Partners Media / POL"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "030f7df7-6d1d-b6c7-3a36-39edb0725603.pdf",
+      "field": "/property",
+      "reason": "visible",
+      "page": 1,
+      "seen": "WHP"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "0719de4c-5538-0fe8-123b-f0aca437b53d.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Grassroots Media LLC"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "08fe4888-65a4-3254-b5d2-dad9186a9694.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Amplify Media"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "103ccc17-356a-5f99-9c3b-920fc2dd023e.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Adelstein and Associates"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "15262fcf-40c4-1ee6-6719-6ae834d12a4e.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "AL Media"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Matrix LLC"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf",
+      "field": "/flight_from",
+      "reason": "visible",
+      "page": 1,
+      "seen": "03/31/20"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf",
+      "field": "/flight_to",
+      "reason": "visible",
+      "page": 1,
+      "seen": "04/03/20"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1672687e-ddc6-ce1d-8ab1-46acdc04953f.pdf",
+      "field": "/flight_from",
+      "reason": "visible",
+      "page": 1,
+      "seen": "11/25/2019"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1672687e-ddc6-ce1d-8ab1-46acdc04953f.pdf",
+      "field": "/flight_to",
+      "reason": "visible",
+      "page": 1,
+      "seen": "12/29/2019"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1a8e7b10-6823-dfdf-d398-0cd7740b9699.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Medium Buying LLC"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1af023e1-3d51-7fe6-f8f1-70656181f5f1.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Waterfront Strategies"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1ddf64fb-65ba-f3db-eb89-8cb9a2802a5a.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Buying Time LLC"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Assembly"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf",
+      "field": "/flight_from",
+      "reason": "visible",
+      "page": 1,
+      "seen": "02/10/20"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf",
+      "field": "/flight_to",
+      "reason": "visible",
+      "page": 1,
+      "seen": "02/21/20"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "2093ee21-d0ee-3641-03b4-3025ae441836.pdf",
+      "field": "/flight_to",
+      "reason": "visible",
+      "page": 1,
+      "seen": "06/09/20"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "2aac88c6-7849-4aa6-5315-5ceeabbdcf73.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Canal Partners Media LLC"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "348812cb-8af7-56bc-8a19-c3c4f6682392.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Assembly Media"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "3874b015-8c4f-2a34-b461-ce049874dc07.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "American Media and Advocacy Group"
+    },
+    {
+      "docClass": "vrdu-ad-buy",
+      "doc": "38f02241-0fda-abeb-bdf9-032f40279e89.pdf",
+      "field": "/agency",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Canal Partners Media"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Government of the Republic of Turkey"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+      "field": "/signer_name",
+      "reason": "visible",
+      "page": 2,
+      "seen": "John Zentay"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+      "field": "/signer_title",
+      "reason": "visible",
+      "page": 2,
+      "seen": "Partner"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19631101_Tourism_Australia_Amendment_Amendment.pdf",
+      "field": "/file_date",
+      "reason": "visible",
+      "page": 1,
+      "seen": "November 4, 1963"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19670801_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Japan External Trade Organization, Tokyo"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19670901_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "JETRO, Tokyo"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf",
+      "field": "/signer_name",
+      "reason": "unverifiable",
+      "page": 1,
+      "seen": null
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf",
+      "field": "/signer_title",
+      "reason": "unverifiable",
+      "page": 1,
+      "seen": null
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19770401_World_Zionist_Organization_-_American_Section,_Inc._Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 2,
+      "seen": "World Zionist Organization (W.Z.O.)"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19790101_IDA_Ireland_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Industrial Development Authority Ireland, Dublin Ireland"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19830301_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Tourism Authority of Thailand, Bangkok, Thailand"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf",
+      "field": "/signer_name",
+      "reason": "unverifiable",
+      "page": 1,
+      "seen": null
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "the Republic of Greece"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf",
+      "field": "/signer_name",
+      "reason": "visible",
+      "page": 2,
+      "seen": "Stephen K. Cook"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19870302_FCB_New_York_Amendment_Amendment.pdf",
+      "field": "/signer_name",
+      "reason": "unverifiable",
+      "page": 2,
+      "seen": null
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19880501_Akin,_Gump,_Strauss,_Hauer___Feld,_LLP_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Tate & Lyle, PLC"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19890201_Arnold___Porter_Kaye_Scholer,_LLP_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Banco Central do Brasil; Government of Brazil"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19890501_Singapore_Tourism_Board_Amendment_Amendment.pdf",
+      "field": "/file_date",
+      "reason": "visible",
+      "page": 2,
+      "seen": "May 1, 1989"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf",
+      "field": "/foreign_principal_name",
+      "reason": "visible",
+      "page": 1,
+      "seen": "Moscow Narodny Bank; Government of the Cayman Islands"
+    },
+    {
+      "docClass": "vrdu-registration",
+      "doc": "19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf",
+      "field": "/signer_name",
+      "reason": "unverifiable",
+      "page": 2,
+      "seen": null
+    }
+  ]
+}

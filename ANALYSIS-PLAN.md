@@ -928,3 +928,45 @@ _This plan is FROZEN at its public commit: the §12 outcomes are recorded, the �
 selected, the §10 MDE table is re-simulated at the frozen counts, and the artifact hashes
 above are final. The run book carries the line, verbatim: **"No paid primary call before this
 commit exists publicly."**_
+
+---
+
+## Amendment 1: natural absent-label audit (2026-08-18, pre-primary-run)
+
+This amendment lands after the freeze commit and before any paid primary call. No frozen
+byte changes. It adds a strike overlay that narrows the fabrication denominator, and it is
+committed publicly before any competitor arm runs.
+
+**Trigger.** A review of the vrdu-ad-buy absent labels found supposedly absent values
+printed in the documents. Every natural golden-missing cell was then audited. No
+competitor arm has run.
+
+**Method.** All 142 natural absent cells were audited. The digital class (vrdu-ad-buy) got
+a text-layer search first. The scan classes were judged from 150dpi page renders, since
+their text layers are empty or carry only cover-sheet metadata. Verdicts were drafted with
+model assistance over the renders and maintainer-verified, each with its evidence. The full
+per-cell table is `corpora/NATURAL-ABSENT-AUDIT.md`.
+
+**Result.** 40 labels are wrong: a value for the field is visibly printed in the document.
+6 cells are unverifiable: the deciding region is illegible or redacted. 96 labels are
+confirmed correct.
+
+**Rule, symmetric.** The 46 wrong or unverifiable cells are struck from the fabrication
+denominator for every arm identically. Golden bytes do not change. The strike record is
+`corpora/natural-strikes.json`. Corrected absent-cell counts: cord-v2 63, deepform 0,
+vrdu-ad-buy 4, vrdu-registration 29, pooled 96. deepform and vrdu-ad-buy now sit under the
+per-class floor (n >= 20) and print "see probe table". The §7.7 probe set, visually
+verified before the freeze, is unaffected and remains the contamination-free fabrication
+instrument.
+
+**Repo packaging, same commit.** `.gitattributes` pins LF normalization. Without it a
+default Windows clone checks the goldens out CRLF and `npm test` fails on a byte-compare.
+`package-lock.json` is committed so `npm install` leaves a clean tree, which the run
+manifest requires.
+
+**Amendment artifact hashes.**
+
+| artifact                           | sha256                                                             |
+| ---------------------------------- | ------------------------------------------------------------------ |
+| `corpora/natural-strikes.json`     | `e3e6a91df8781de5c791116df7dfd490025b051a1cc6eee66383c44914f75fc3` |
+| `corpora/NATURAL-ABSENT-AUDIT.md`  | `ff8504eb3741f23edfa9faccd7b711ecd3cce0a026b9e770ef13c3bc034a2f1c` |
