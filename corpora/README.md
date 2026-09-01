@@ -31,8 +31,10 @@ Classes: `cord-v2` (receipts, scans) · `deepform` (FCC political ad-buy invoice
 
 ## Label provenance
 
-The golden labels are third-party annotations on noisy real-world documents; their noise rate
-is unmeasured and they were not visually re-audited for this comparison. Corrections follow
+The golden labels are third-party annotations on noisy real-world documents. Every "absent"
+label (142) was hand-checked against the page before any competitor arm ran; 46 were struck
+for every arm identically (`NATURAL-ABSENT-AUDIT.md`, `natural-strikes.json`). Present-value
+labels were not re-audited and their noise rate is unmeasured. Corrections follow
 the symmetric rule in [`../RIGHT-OF-REPLY.md`](../RIGHT-OF-REPLY.md): a golden label shown to
 be wrong is reclassified or excluded **for every arm identically**, with the count disclosed
 in the changelog.

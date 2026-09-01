@@ -1,0 +1,4410 @@
+{
+  "version": 1,
+  "corpus": {
+    "docs": 15,
+    "leaves": 196,
+    "cells": {
+      "tp": 98,
+      "fp": 26,
+      "fn": 32
+    },
+    "precision": 0.7903225806451613,
+    "recall": 0.7538461538461538,
+    "f1": 0.7716535433070866,
+    "ece": 0.17574934416732613,
+    "brier": 0.17195563461694183,
+    "auroc": 0.6645833333333333,
+    "riskCoverage": [
+      {
+        "coverage": 0,
+        "error": 0
+      },
+      {
+        "coverage": 0.01020408163265306,
+        "error": 0
+      },
+      {
+        "coverage": 0.02040816326530612,
+        "error": 0
+      },
+      {
+        "coverage": 0.030612244897959183,
+        "error": 0
+      },
+      {
+        "coverage": 0.04081632653061224,
+        "error": 0
+      },
+      {
+        "coverage": 0.05102040816326531,
+        "error": 0
+      },
+      {
+        "coverage": 0.05612244897959184,
+        "error": 0
+      },
+      {
+        "coverage": 0.061224489795918366,
+        "error": 0
+      },
+      {
+        "coverage": 0.0663265306122449,
+        "error": 0
+      },
+      {
+        "coverage": 0.07142857142857142,
+        "error": 0
+      },
+      {
+        "coverage": 0.07653061224489796,
+        "error": 0.06666666666666667
+      },
+      {
+        "coverage": 0.08163265306122448,
+        "error": 0.0625
+      },
+      {
+        "coverage": 0.08673469387755102,
+        "error": 0.11764705882352941
+      },
+      {
+        "coverage": 0.09183673469387756,
+        "error": 0.1111111111111111
+      },
+      {
+        "coverage": 0.09693877551020408,
+        "error": 0.10526315789473684
+      },
+      {
+        "coverage": 0.15816326530612246,
+        "error": 0.06451612903225806
+      },
+      {
+        "coverage": 0.16326530612244897,
+        "error": 0.0625
+      },
+      {
+        "coverage": 0.1683673469387755,
+        "error": 0.06060606060606061
+      },
+      {
+        "coverage": 0.17857142857142858,
+        "error": 0.05714285714285714
+      },
+      {
+        "coverage": 0.19387755102040816,
+        "error": 0.05263157894736842
+      },
+      {
+        "coverage": 0.1989795918367347,
+        "error": 0.07692307692307693
+      },
+      {
+        "coverage": 0.20408163265306123,
+        "error": 0.075
+      },
+      {
+        "coverage": 0.22448979591836735,
+        "error": 0.06818181818181818
+      },
+      {
+        "coverage": 0.22959183673469388,
+        "error": 0.08888888888888889
+      },
+      {
+        "coverage": 0.2602040816326531,
+        "error": 0.09803921568627451
+      },
+      {
+        "coverage": 0.2755102040816326,
+        "error": 0.09259259259259259
+      },
+      {
+        "coverage": 0.28061224489795916,
+        "error": 0.09090909090909091
+      },
+      {
+        "coverage": 0.29081632653061223,
+        "error": 0.10526315789473684
+      },
+      {
+        "coverage": 0.29591836734693877,
+        "error": 0.10344827586206896
+      },
+      {
+        "coverage": 0.3010204081632653,
+        "error": 0.1016949152542373
+      },
+      {
+        "coverage": 0.30612244897959184,
+        "error": 0.1
+      },
+      {
+        "coverage": 0.3163265306122449,
+        "error": 0.11290322580645161
+      },
+      {
+        "coverage": 0.32142857142857145,
+        "error": 0.1111111111111111
+      },
+      {
+        "coverage": 0.32653061224489793,
+        "error": 0.109375
+      },
+      {
+        "coverage": 0.3520408163265306,
+        "error": 0.10144927536231885
+      },
+      {
+        "coverage": 0.35714285714285715,
+        "error": 0.1
+      },
+      {
+        "coverage": 0.3622448979591837,
+        "error": 0.09859154929577464
+      },
+      {
+        "coverage": 0.3673469387755102,
+        "error": 0.09722222222222222
+      },
+      {
+        "coverage": 0.37244897959183676,
+        "error": 0.0958904109589041
+      },
+      {
+        "coverage": 0.37755102040816324,
+        "error": 0.0945945945945946
+      },
+      {
+        "coverage": 0.3826530612244898,
+        "error": 0.09333333333333334
+      },
+      {
+        "coverage": 0.3877551020408163,
+        "error": 0.09210526315789473
+      },
+      {
+        "coverage": 0.39285714285714285,
+        "error": 0.09090909090909091
+      },
+      {
+        "coverage": 0.3979591836734694,
+        "error": 0.08974358974358974
+      },
+      {
+        "coverage": 0.42346938775510207,
+        "error": 0.08433734939759036
+      },
+      {
+        "coverage": 0.42857142857142855,
+        "error": 0.08333333333333333
+      },
+      {
+        "coverage": 0.4387755102040816,
+        "error": 0.09302325581395349
+      },
+      {
+        "coverage": 0.44387755102040816,
+        "error": 0.10344827586206896
+      },
+      {
+        "coverage": 0.4489795918367347,
+        "error": 0.10227272727272728
+      },
+      {
+        "coverage": 0.4642857142857143,
+        "error": 0.13186813186813187
+      },
+      {
+        "coverage": 0.46938775510204084,
+        "error": 0.13043478260869565
+      },
+      {
+        "coverage": 0.4744897959183674,
+        "error": 0.13978494623655913
+      },
+      {
+        "coverage": 0.47959183673469385,
+        "error": 0.13829787234042554
+      },
+      {
+        "coverage": 0.4846938775510204,
+        "error": 0.1368421052631579
+      },
+      {
+        "coverage": 0.4897959183673469,
+        "error": 0.13541666666666666
+      },
+      {
+        "coverage": 0.49489795918367346,
+        "error": 0.13402061855670103
+      },
+      {
+        "coverage": 0.5051020408163265,
+        "error": 0.13131313131313133
+      },
+      {
+        "coverage": 0.5102040816326531,
+        "error": 0.13
+      },
+      {
+        "coverage": 0.5153061224489796,
+        "error": 0.12871287128712872
+      },
+      {
+        "coverage": 0.5204081632653061,
+        "error": 0.13725490196078433
+      },
+      {
+        "coverage": 0.5255102040816326,
+        "error": 0.13592233009708737
+      },
+      {
+        "coverage": 0.5306122448979592,
+        "error": 0.1346153846153846
+      },
+      {
+        "coverage": 0.5357142857142857,
+        "error": 0.13333333333333333
+      },
+      {
+        "coverage": 0.5408163265306123,
+        "error": 0.1320754716981132
+      },
+      {
+        "coverage": 0.5459183673469388,
+        "error": 0.14018691588785046
+      },
+      {
+        "coverage": 0.5510204081632653,
+        "error": 0.1388888888888889
+      },
+      {
+        "coverage": 0.5561224489795918,
+        "error": 0.13761467889908258
+      },
+      {
+        "coverage": 0.5612244897959183,
+        "error": 0.13636363636363635
+      },
+      {
+        "coverage": 0.5663265306122449,
+        "error": 0.14414414414414414
+      },
+      {
+        "coverage": 0.5714285714285714,
+        "error": 0.14285714285714285
+      },
+      {
+        "coverage": 0.576530612244898,
+        "error": 0.1504424778761062
+      },
+      {
+        "coverage": 0.5816326530612245,
+        "error": 0.14912280701754385
+      },
+      {
+        "coverage": 0.5867346938775511,
+        "error": 0.14782608695652175
+      },
+      {
+        "coverage": 0.9540816326530612,
+        "error": 0.1443850267379679
+      },
+      {
+        "coverage": 0.9744897959183674,
+        "error": 0.16230366492146597
+      },
+      {
+        "coverage": 0.9795918367346939,
+        "error": 0.16666666666666666
+      },
+      {
+        "coverage": 0.9846938775510204,
+        "error": 0.17098445595854922
+      },
+      {
+        "coverage": 0.9897959183673469,
+        "error": 0.17525773195876287
+      },
+      {
+        "coverage": 0.9948979591836735,
+        "error": 0.1794871794871795
+      },
+      {
+        "coverage": 1,
+        "error": 0.1836734693877551
+      }
+    ]
+  },
+  "points": [
+    {
+      "confidence": 0.8482163029027173,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.6903856127074179,
+      "correct": true
+    },
+    {
+      "confidence": 0.8620736119643739,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5029516253195474,
+      "correct": true
+    },
+    {
+      "confidence": 0.8656755628627699,
+      "correct": true
+    },
+    {
+      "confidence": 0.8933070780051271,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8840328803414241,
+      "correct": true
+    },
+    {
+      "confidence": 0.8510447568653999,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8460008837787291,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.8460008837787291,
+      "correct": true
+    },
+    {
+      "confidence": 0.873571323801104,
+      "correct": false
+    },
+    {
+      "confidence": 0.8781554510214733,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.7729082731358672,
+      "correct": true
+    },
+    {
+      "confidence": 0.5854329676031507,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8463207669719515,
+      "correct": true
+    },
+    {
+      "confidence": 0.8574450947175614,
+      "correct": true
+    },
+    {
+      "confidence": 0.8460008837787291,
+      "correct": true
+    },
+    {
+      "confidence": 0.8574450947175614,
+      "correct": true
+    },
+    {
+      "confidence": 0.8460008837787291,
+      "correct": true
+    },
+    {
+      "confidence": 0.8574450947175614,
+      "correct": true
+    },
+    {
+      "confidence": 0.9366467896265955,
+      "correct": true
+    },
+    {
+      "confidence": 0.9338481510322996,
+      "correct": true
+    },
+    {
+      "confidence": 0.8979592130323752,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5661327216761379,
+      "correct": false
+    },
+    {
+      "confidence": 0.8892433053828352,
+      "correct": true
+    },
+    {
+      "confidence": 0.9335673556956975,
+      "correct": true
+    },
+    {
+      "confidence": 0.8689045253660896,
+      "correct": true
+    },
+    {
+      "confidence": 0.9335673556956975,
+      "correct": true
+    },
+    {
+      "confidence": 0.8733313673287857,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8840328803414241,
+      "correct": true
+    },
+    {
+      "confidence": 0.8748851144531369,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.7346142598251574,
+      "correct": false
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.7136580773375533,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.7481016611196004,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.6850712574064862,
+      "correct": false
+    },
+    {
+      "confidence": 0.8576400407920628,
+      "correct": true
+    },
+    {
+      "confidence": 0.9144649268810024,
+      "correct": true
+    },
+    {
+      "confidence": 0.9087231948353954,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.9243851253254661,
+      "correct": true
+    },
+    {
+      "confidence": 0.9243851253254661,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.7623033342123359,
+      "correct": true
+    },
+    {
+      "confidence": 0.9205945569307762,
+      "correct": true
+    },
+    {
+      "confidence": 0.9366467896265955,
+      "correct": true
+    },
+    {
+      "confidence": 0.9338481510322996,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.9070762141996486,
+      "correct": false
+    },
+    {
+      "confidence": 0.9432787354707328,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8480508123158781,
+      "correct": true
+    },
+    {
+      "confidence": 0.9112374575761553,
+      "correct": true
+    },
+    {
+      "confidence": 0.8408699924735756,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8313929203641782,
+      "correct": true
+    },
+    {
+      "confidence": 0.5605776671603927,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.7518523460548868,
+      "correct": true
+    },
+    {
+      "confidence": 0.7474557456084028,
+      "correct": true
+    },
+    {
+      "confidence": 0.8668580125226025,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8868672329401994,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8432259689601324,
+      "correct": true
+    },
+    {
+      "confidence": 0.4795070971996232,
+      "correct": false
+    },
+    {
+      "confidence": 0.8401171233172665,
+      "correct": false
+    },
+    {
+      "confidence": 0.8401171233172665,
+      "correct": false
+    },
+    {
+      "confidence": 0.4795070971996232,
+      "correct": false
+    },
+    {
+      "confidence": 0.3741243018447427,
+      "correct": false
+    },
+    {
+      "confidence": 0.4795070971996232,
+      "correct": false
+    },
+    {
+      "confidence": 0.32921137656623084,
+      "correct": false
+    },
+    {
+      "confidence": 0.4795070971996232,
+      "correct": false
+    },
+    {
+      "confidence": 0.8401171233172665,
+      "correct": false
+    },
+    {
+      "confidence": 0.8432259689601324,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.8418581370314973,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.8313740682915682,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.7603332299437967,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.8668580125226025,
+      "correct": false
+    },
+    {
+      "confidence": 0.8649546881839985,
+      "correct": true
+    },
+    {
+      "confidence": 0.8733313673287857,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8596298488696608,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.7918457185929382,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.756939218206308,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.8110498264928354,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.7942028129540694,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.7924037309589063,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.9060572024948005,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.9181451106113186,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.3199763917106694,
+      "correct": false
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.21000671240621202,
+      "correct": false
+    },
+    {
+      "confidence": 0.8493144531588882,
+      "correct": true
+    },
+    {
+      "confidence": 0.8733313673287857,
+      "correct": true
+    },
+    {
+      "confidence": 0.8715133607110428,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8748851144531369,
+      "correct": true
+    },
+    {
+      "confidence": 0.7976293832464574,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.3509902674188862,
+      "correct": false
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.7918457185929382,
+      "correct": true
+    },
+    {
+      "confidence": 0.8972586622199081,
+      "correct": true
+    },
+    {
+      "confidence": 0.8733313673287857,
+      "correct": true
+    },
+    {
+      "confidence": 0.8715133607110428,
+      "correct": true
+    },
+    {
+      "confidence": 0.8616323184748584,
+      "correct": true
+    },
+    {
+      "confidence": 0.8840328803414241,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.8460008837787291,
+      "correct": true
+    },
+    {
+      "confidence": 0.8574450947175614,
+      "correct": true
+    },
+    {
+      "confidence": 0.8733313673287857,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.9432787354707328,
+      "correct": true
+    },
+    {
+      "confidence": 0.9093989687994062,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.847550349871289,
+      "correct": true
+    },
+    {
+      "confidence": 0.8574450947175614,
+      "correct": true
+    },
+    {
+      "confidence": 0.8487648749265129,
+      "correct": true
+    },
+    {
+      "confidence": 0.8444749319907366,
+      "correct": true
+    },
+    {
+      "confidence": 0.8733313673287857,
+      "correct": true
+    },
+    {
+      "confidence": 0.8715133607110428,
+      "correct": true
+    },
+    {
+      "confidence": 0.8616323184748584,
+      "correct": false
+    },
+    {
+      "confidence": 0.8748851144531369,
+      "correct": true
+    },
+    {
+      "confidence": 0.8748851144531369,
+      "correct": true
+    },
+    {
+      "confidence": 0.8868672329401994,
+      "correct": true
+    },
+    {
+      "confidence": 0.8837708662296346,
+      "correct": false
+    },
+    {
+      "confidence": 0.8566841429462091,
+      "correct": true
+    },
+    {
+      "confidence": 0.7036382506918512,
+      "correct": true
+    },
+    {
+      "confidence": 0.8563131373525981,
+      "correct": true
+    }
+  ],
+  "perDoc": [
+    {
+      "doc": "cord-011.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.37306972842431735,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.37306972842431735,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-015.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.37943207008597457,
+      "auroc": 0.475,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.37943207008597457,
+        "auroc": 0.475
+      }
+    },
+    {
+      "doc": "cord-025.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2966318206826726,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2966318206826726,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-027.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.26436633548704563,
+      "auroc": 0.775,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.26436633548704563,
+        "auroc": 0.775
+      }
+    },
+    {
+      "doc": "cord-044.pdf",
+      "perField": {
+        "/total": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/3/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/3/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.37643269524105794,
+      "auroc": 0.5128205128205128,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/3/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/3/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.37643269524105794,
+        "auroc": 0.5128205128205128
+      }
+    },
+    {
+      "doc": "cord-047.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.26451437364895575,
+      "auroc": 0.8333333333333334,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.26451437364895575,
+        "auroc": 0.8333333333333334
+      }
+    },
+    {
+      "doc": "cord-056.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/cash": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3334014268177987,
+      "auroc": 0.65625,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/cash": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3334014268177987,
+        "auroc": 0.65625
+      }
+    },
+    {
+      "doc": "cord-066.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.42671594200018537,
+      "auroc": 0.6875,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.42671594200018537,
+        "auroc": 0.6875
+      }
+    },
+    {
+      "doc": "cord-068.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/1/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/2/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/2/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/3/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/3/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/4/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/4/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/5/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/6/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/6/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/7/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/7/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/8/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/8/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/9/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/9/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.4618198329441877,
+      "auroc": 0.6699346405228758,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/1/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/2/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/2/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/3/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/3/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/4/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/4/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/5/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/6/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/6/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/7/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/7/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/8/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/8/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/9/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/9/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.4618198329441877,
+        "auroc": 0.6699346405228758
+      }
+    },
+    {
+      "doc": "cord-073.pdf",
+      "perField": {
+        "/total": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/3/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/3/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/4/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/4/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/5/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/5/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.27194744138078264,
+      "auroc": 0.3684210526315789,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/3/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/3/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/4/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/4/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/5/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/5/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.27194744138078264,
+        "auroc": 0.3684210526315789
+      }
+    },
+    {
+      "doc": "cord-076.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3299339729693304,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3299339729693304,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "cord-084.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2789389998872257,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2789389998872257,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "cord-086.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2806044094647599,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2806044094647599,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-087.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.34954613454114897,
+      "auroc": 0.09090909090909091,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.34954613454114897,
+        "auroc": 0.09090909090909091
+      }
+    },
+    {
+      "doc": "cord-095.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2947285463827533,
+      "auroc": 0.375,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2947285463827533,
+        "auroc": 0.375
+      }
+    }
+  ],
+  "normalized": {
+    "docClass": "cord-v2",
+    "tableSha256": "d0e364d9ef14cd8bd08ad8c731d30b885f46d22c4cceae24308e77f461a77e3b",
+    "corpus": {
+      "docs": 15,
+      "leaves": 196,
+      "cells": {
+        "tp": 98,
+        "fp": 26,
+        "fn": 32
+      },
+      "precision": 0.7903225806451613,
+      "recall": 0.7538461538461538,
+      "f1": 0.7716535433070866,
+      "ece": 0.17574934416732613,
+      "brier": 0.17195563461694183,
+      "auroc": 0.6645833333333333,
+      "riskCoverage": [
+        {
+          "coverage": 0,
+          "error": 0
+        },
+        {
+          "coverage": 0.01020408163265306,
+          "error": 0
+        },
+        {
+          "coverage": 0.02040816326530612,
+          "error": 0
+        },
+        {
+          "coverage": 0.030612244897959183,
+          "error": 0
+        },
+        {
+          "coverage": 0.04081632653061224,
+          "error": 0
+        },
+        {
+          "coverage": 0.05102040816326531,
+          "error": 0
+        },
+        {
+          "coverage": 0.05612244897959184,
+          "error": 0
+        },
+        {
+          "coverage": 0.061224489795918366,
+          "error": 0
+        },
+        {
+          "coverage": 0.0663265306122449,
+          "error": 0
+        },
+        {
+          "coverage": 0.07142857142857142,
+          "error": 0
+        },
+        {
+          "coverage": 0.07653061224489796,
+          "error": 0.06666666666666667
+        },
+        {
+          "coverage": 0.08163265306122448,
+          "error": 0.0625
+        },
+        {
+          "coverage": 0.08673469387755102,
+          "error": 0.11764705882352941
+        },
+        {
+          "coverage": 0.09183673469387756,
+          "error": 0.1111111111111111
+        },
+        {
+          "coverage": 0.09693877551020408,
+          "error": 0.10526315789473684
+        },
+        {
+          "coverage": 0.15816326530612246,
+          "error": 0.06451612903225806
+        },
+        {
+          "coverage": 0.16326530612244897,
+          "error": 0.0625
+        },
+        {
+          "coverage": 0.1683673469387755,
+          "error": 0.06060606060606061
+        },
+        {
+          "coverage": 0.17857142857142858,
+          "error": 0.05714285714285714
+        },
+        {
+          "coverage": 0.19387755102040816,
+          "error": 0.05263157894736842
+        },
+        {
+          "coverage": 0.1989795918367347,
+          "error": 0.07692307692307693
+        },
+        {
+          "coverage": 0.20408163265306123,
+          "error": 0.075
+        },
+        {
+          "coverage": 0.22448979591836735,
+          "error": 0.06818181818181818
+        },
+        {
+          "coverage": 0.22959183673469388,
+          "error": 0.08888888888888889
+        },
+        {
+          "coverage": 0.2602040816326531,
+          "error": 0.09803921568627451
+        },
+        {
+          "coverage": 0.2755102040816326,
+          "error": 0.09259259259259259
+        },
+        {
+          "coverage": 0.28061224489795916,
+          "error": 0.09090909090909091
+        },
+        {
+          "coverage": 0.29081632653061223,
+          "error": 0.10526315789473684
+        },
+        {
+          "coverage": 0.29591836734693877,
+          "error": 0.10344827586206896
+        },
+        {
+          "coverage": 0.3010204081632653,
+          "error": 0.1016949152542373
+        },
+        {
+          "coverage": 0.30612244897959184,
+          "error": 0.1
+        },
+        {
+          "coverage": 0.3163265306122449,
+          "error": 0.11290322580645161
+        },
+        {
+          "coverage": 0.32142857142857145,
+          "error": 0.1111111111111111
+        },
+        {
+          "coverage": 0.32653061224489793,
+          "error": 0.109375
+        },
+        {
+          "coverage": 0.3520408163265306,
+          "error": 0.10144927536231885
+        },
+        {
+          "coverage": 0.35714285714285715,
+          "error": 0.1
+        },
+        {
+          "coverage": 0.3622448979591837,
+          "error": 0.09859154929577464
+        },
+        {
+          "coverage": 0.3673469387755102,
+          "error": 0.09722222222222222
+        },
+        {
+          "coverage": 0.37244897959183676,
+          "error": 0.0958904109589041
+        },
+        {
+          "coverage": 0.37755102040816324,
+          "error": 0.0945945945945946
+        },
+        {
+          "coverage": 0.3826530612244898,
+          "error": 0.09333333333333334
+        },
+        {
+          "coverage": 0.3877551020408163,
+          "error": 0.09210526315789473
+        },
+        {
+          "coverage": 0.39285714285714285,
+          "error": 0.09090909090909091
+        },
+        {
+          "coverage": 0.3979591836734694,
+          "error": 0.08974358974358974
+        },
+        {
+          "coverage": 0.42346938775510207,
+          "error": 0.08433734939759036
+        },
+        {
+          "coverage": 0.42857142857142855,
+          "error": 0.08333333333333333
+        },
+        {
+          "coverage": 0.4387755102040816,
+          "error": 0.09302325581395349
+        },
+        {
+          "coverage": 0.44387755102040816,
+          "error": 0.10344827586206896
+        },
+        {
+          "coverage": 0.4489795918367347,
+          "error": 0.10227272727272728
+        },
+        {
+          "coverage": 0.4642857142857143,
+          "error": 0.13186813186813187
+        },
+        {
+          "coverage": 0.46938775510204084,
+          "error": 0.13043478260869565
+        },
+        {
+          "coverage": 0.4744897959183674,
+          "error": 0.13978494623655913
+        },
+        {
+          "coverage": 0.47959183673469385,
+          "error": 0.13829787234042554
+        },
+        {
+          "coverage": 0.4846938775510204,
+          "error": 0.1368421052631579
+        },
+        {
+          "coverage": 0.4897959183673469,
+          "error": 0.13541666666666666
+        },
+        {
+          "coverage": 0.49489795918367346,
+          "error": 0.13402061855670103
+        },
+        {
+          "coverage": 0.5051020408163265,
+          "error": 0.13131313131313133
+        },
+        {
+          "coverage": 0.5102040816326531,
+          "error": 0.13
+        },
+        {
+          "coverage": 0.5153061224489796,
+          "error": 0.12871287128712872
+        },
+        {
+          "coverage": 0.5204081632653061,
+          "error": 0.13725490196078433
+        },
+        {
+          "coverage": 0.5255102040816326,
+          "error": 0.13592233009708737
+        },
+        {
+          "coverage": 0.5306122448979592,
+          "error": 0.1346153846153846
+        },
+        {
+          "coverage": 0.5357142857142857,
+          "error": 0.13333333333333333
+        },
+        {
+          "coverage": 0.5408163265306123,
+          "error": 0.1320754716981132
+        },
+        {
+          "coverage": 0.5459183673469388,
+          "error": 0.14018691588785046
+        },
+        {
+          "coverage": 0.5510204081632653,
+          "error": 0.1388888888888889
+        },
+        {
+          "coverage": 0.5561224489795918,
+          "error": 0.13761467889908258
+        },
+        {
+          "coverage": 0.5612244897959183,
+          "error": 0.13636363636363635
+        },
+        {
+          "coverage": 0.5663265306122449,
+          "error": 0.14414414414414414
+        },
+        {
+          "coverage": 0.5714285714285714,
+          "error": 0.14285714285714285
+        },
+        {
+          "coverage": 0.576530612244898,
+          "error": 0.1504424778761062
+        },
+        {
+          "coverage": 0.5816326530612245,
+          "error": 0.14912280701754385
+        },
+        {
+          "coverage": 0.5867346938775511,
+          "error": 0.14782608695652175
+        },
+        {
+          "coverage": 0.9540816326530612,
+          "error": 0.1443850267379679
+        },
+        {
+          "coverage": 0.9744897959183674,
+          "error": 0.16230366492146597
+        },
+        {
+          "coverage": 0.9795918367346939,
+          "error": 0.16666666666666666
+        },
+        {
+          "coverage": 0.9846938775510204,
+          "error": 0.17098445595854922
+        },
+        {
+          "coverage": 0.9897959183673469,
+          "error": 0.17525773195876287
+        },
+        {
+          "coverage": 0.9948979591836735,
+          "error": 0.1794871794871795
+        },
+        {
+          "coverage": 1,
+          "error": 0.1836734693877551
+        }
+      ]
+    },
+    "points": [
+      {
+        "confidence": 0.8482163029027173,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.6903856127074179,
+        "correct": true
+      },
+      {
+        "confidence": 0.8620736119643739,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5029516253195474,
+        "correct": true
+      },
+      {
+        "confidence": 0.8656755628627699,
+        "correct": true
+      },
+      {
+        "confidence": 0.8933070780051271,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8840328803414241,
+        "correct": true
+      },
+      {
+        "confidence": 0.8510447568653999,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8460008837787291,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.8460008837787291,
+        "correct": true
+      },
+      {
+        "confidence": 0.873571323801104,
+        "correct": false
+      },
+      {
+        "confidence": 0.8781554510214733,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.7729082731358672,
+        "correct": true
+      },
+      {
+        "confidence": 0.5854329676031507,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8463207669719515,
+        "correct": true
+      },
+      {
+        "confidence": 0.8574450947175614,
+        "correct": true
+      },
+      {
+        "confidence": 0.8460008837787291,
+        "correct": true
+      },
+      {
+        "confidence": 0.8574450947175614,
+        "correct": true
+      },
+      {
+        "confidence": 0.8460008837787291,
+        "correct": true
+      },
+      {
+        "confidence": 0.8574450947175614,
+        "correct": true
+      },
+      {
+        "confidence": 0.9366467896265955,
+        "correct": true
+      },
+      {
+        "confidence": 0.9338481510322996,
+        "correct": true
+      },
+      {
+        "confidence": 0.8979592130323752,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5661327216761379,
+        "correct": false
+      },
+      {
+        "confidence": 0.8892433053828352,
+        "correct": true
+      },
+      {
+        "confidence": 0.9335673556956975,
+        "correct": true
+      },
+      {
+        "confidence": 0.8689045253660896,
+        "correct": true
+      },
+      {
+        "confidence": 0.9335673556956975,
+        "correct": true
+      },
+      {
+        "confidence": 0.8733313673287857,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8840328803414241,
+        "correct": true
+      },
+      {
+        "confidence": 0.8748851144531369,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.7346142598251574,
+        "correct": false
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.7136580773375533,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.7481016611196004,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.6850712574064862,
+        "correct": false
+      },
+      {
+        "confidence": 0.8576400407920628,
+        "correct": true
+      },
+      {
+        "confidence": 0.9144649268810024,
+        "correct": true
+      },
+      {
+        "confidence": 0.9087231948353954,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.9243851253254661,
+        "correct": true
+      },
+      {
+        "confidence": 0.9243851253254661,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.7623033342123359,
+        "correct": true
+      },
+      {
+        "confidence": 0.9205945569307762,
+        "correct": true
+      },
+      {
+        "confidence": 0.9366467896265955,
+        "correct": true
+      },
+      {
+        "confidence": 0.9338481510322996,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.9070762141996486,
+        "correct": false
+      },
+      {
+        "confidence": 0.9432787354707328,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8480508123158781,
+        "correct": true
+      },
+      {
+        "confidence": 0.9112374575761553,
+        "correct": true
+      },
+      {
+        "confidence": 0.8408699924735756,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8313929203641782,
+        "correct": true
+      },
+      {
+        "confidence": 0.5605776671603927,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.7518523460548868,
+        "correct": true
+      },
+      {
+        "confidence": 0.7474557456084028,
+        "correct": true
+      },
+      {
+        "confidence": 0.8668580125226025,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8868672329401994,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8432259689601324,
+        "correct": true
+      },
+      {
+        "confidence": 0.4795070971996232,
+        "correct": false
+      },
+      {
+        "confidence": 0.8401171233172665,
+        "correct": false
+      },
+      {
+        "confidence": 0.8401171233172665,
+        "correct": false
+      },
+      {
+        "confidence": 0.4795070971996232,
+        "correct": false
+      },
+      {
+        "confidence": 0.3741243018447427,
+        "correct": false
+      },
+      {
+        "confidence": 0.4795070971996232,
+        "correct": false
+      },
+      {
+        "confidence": 0.32921137656623084,
+        "correct": false
+      },
+      {
+        "confidence": 0.4795070971996232,
+        "correct": false
+      },
+      {
+        "confidence": 0.8401171233172665,
+        "correct": false
+      },
+      {
+        "confidence": 0.8432259689601324,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.8418581370314973,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.8313740682915682,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.7603332299437967,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.8668580125226025,
+        "correct": false
+      },
+      {
+        "confidence": 0.8649546881839985,
+        "correct": true
+      },
+      {
+        "confidence": 0.8733313673287857,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8596298488696608,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.7918457185929382,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.756939218206308,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.8110498264928354,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.7942028129540694,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.7924037309589063,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.9060572024948005,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.9181451106113186,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.3199763917106694,
+        "correct": false
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.21000671240621202,
+        "correct": false
+      },
+      {
+        "confidence": 0.8493144531588882,
+        "correct": true
+      },
+      {
+        "confidence": 0.8733313673287857,
+        "correct": true
+      },
+      {
+        "confidence": 0.8715133607110428,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8748851144531369,
+        "correct": true
+      },
+      {
+        "confidence": 0.7976293832464574,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.3509902674188862,
+        "correct": false
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.7918457185929382,
+        "correct": true
+      },
+      {
+        "confidence": 0.8972586622199081,
+        "correct": true
+      },
+      {
+        "confidence": 0.8733313673287857,
+        "correct": true
+      },
+      {
+        "confidence": 0.8715133607110428,
+        "correct": true
+      },
+      {
+        "confidence": 0.8616323184748584,
+        "correct": true
+      },
+      {
+        "confidence": 0.8840328803414241,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.8460008837787291,
+        "correct": true
+      },
+      {
+        "confidence": 0.8574450947175614,
+        "correct": true
+      },
+      {
+        "confidence": 0.8733313673287857,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.9432787354707328,
+        "correct": true
+      },
+      {
+        "confidence": 0.9093989687994062,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.847550349871289,
+        "correct": true
+      },
+      {
+        "confidence": 0.8574450947175614,
+        "correct": true
+      },
+      {
+        "confidence": 0.8487648749265129,
+        "correct": true
+      },
+      {
+        "confidence": 0.8444749319907366,
+        "correct": true
+      },
+      {
+        "confidence": 0.8733313673287857,
+        "correct": true
+      },
+      {
+        "confidence": 0.8715133607110428,
+        "correct": true
+      },
+      {
+        "confidence": 0.8616323184748584,
+        "correct": false
+      },
+      {
+        "confidence": 0.8748851144531369,
+        "correct": true
+      },
+      {
+        "confidence": 0.8748851144531369,
+        "correct": true
+      },
+      {
+        "confidence": 0.8868672329401994,
+        "correct": true
+      },
+      {
+        "confidence": 0.8837708662296346,
+        "correct": false
+      },
+      {
+        "confidence": 0.8566841429462091,
+        "correct": true
+      },
+      {
+        "confidence": 0.7036382506918512,
+        "correct": true
+      },
+      {
+        "confidence": 0.8563131373525981,
+        "correct": true
+      }
+    ]
+  }
+}

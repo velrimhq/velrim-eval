@@ -1,0 +1,1537 @@
+{
+  "version": 1,
+  "corpus": {
+    "docs": 22,
+    "leaves": 66,
+    "cells": {
+      "tp": 0,
+      "fp": 11,
+      "fn": 0
+    },
+    "precision": 0,
+    "recall": 1,
+    "f1": 0,
+    "ece": 0.36363636363636354,
+    "brier": 0.25,
+    "auroc": 0.5,
+    "riskCoverage": [
+      {
+        "coverage": 0,
+        "error": 0
+      },
+      {
+        "coverage": 1,
+        "error": 0.16666666666666666
+      }
+    ]
+  },
+  "points": [
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    }
+  ],
+  "perDoc": [
+    {
+      "doc": "0189d309-8f8e-3064-d9fd-52009ba3d5cb.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "030f7df7-6d1d-b6c7-3a36-39edb0725603.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "0719de4c-5538-0fe8-123b-f0aca437b53d.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "07bfa311-9fc7-c3d2-4e7a-94d7fd412599.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "08fe4888-65a4-3254-b5d2-dad9186a9694.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "090bd765-b37c-722c-5f15-05919a2051e8.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "103ccc17-356a-5f99-9c3b-920fc2dd023e.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "15262fcf-40c4-1ee6-6719-6ae834d12a4e.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "1672687e-ddc6-ce1d-8ab1-46acdc04953f.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "1a8e7b10-6823-dfdf-d398-0cd7740b9699.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "1af023e1-3d51-7fe6-f8f1-70656181f5f1.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "1ddf64fb-65ba-f3db-eb89-8cb9a2802a5a.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "2093ee21-d0ee-3641-03b4-3025ae441836.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "23be2cf1-1313-58c9-6660-56cd0bd9d642.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "261cb425-6648-a8e8-db2b-798114109c9d.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "2aac88c6-7849-4aa6-5315-5ceeabbdcf73.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "348812cb-8af7-56bc-8a19-c3c4f6682392.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "3874b015-8c4f-2a34-b461-ce049874dc07.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "38f02241-0fda-abeb-bdf9-032f40279e89.pdf",
+      "perField": {
+        "/discount": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/discount": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    }
+  ],
+  "normalized": {
+    "docClass": "vrdu-ad-buy",
+    "tableSha256": "05e8d97041e6924e8ac401e0ff0702dc0b0e94a509ebb9ea9250f4fb157e7368",
+    "corpus": {
+      "docs": 22,
+      "leaves": 66,
+      "cells": {
+        "tp": 0,
+        "fp": 11,
+        "fn": 0
+      },
+      "precision": 0,
+      "recall": 1,
+      "f1": 0,
+      "ece": 0.36363636363636354,
+      "brier": 0.25,
+      "auroc": 0.5,
+      "riskCoverage": [
+        {
+          "coverage": 0,
+          "error": 0
+        },
+        {
+          "coverage": 1,
+          "error": 0.16666666666666666
+        }
+      ]
+    },
+    "points": [
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      }
+    ]
+  }
+}

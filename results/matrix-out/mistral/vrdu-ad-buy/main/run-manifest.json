@@ -1,0 +1,348 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation"
+  ],
+  "run": {
+    "fingerprint": "88e728ca415d478121a3d1bf711670621eeed2aa092aa85551c5b0bedc25a2ec",
+    "adapter": "mistral",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 3,
+    "startedAt": "2026-08-18T15:58:33.579Z",
+    "completedAt": "2026-08-18T16:07:43.433Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "code": {
+    "velrimEvalCommitSha": "e6c713b8bdbc8ac8d23a93d90aae4c660429439b",
+    "worktreeDirty": false,
+    "implementationHash": "dc8db3aed26879197309b0ac1846d6b9ccb031a8ccfc26fc60b3bee997da6473",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/mistral.js",
+        "sha256": "e96fe197c9df30d364eb0d2aee31c8f83f835887e3e1c8550302a9c8ca35e1db"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/mistral.js",
+        "sha256": "e96fe197c9df30d364eb0d2aee31c8f83f835887e3e1c8550302a9c8ca35e1db"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "vrdu-ad-buy",
+      "schema": {
+        "path": "vrdu-ad-buy.schema.json",
+        "sha256": "29bec993070bd9610c2aab667e416b39089d3d0f9c11b04acabfd1554fbc439a"
+      },
+      "publicGolden": {
+        "path": "golden.vrdu-ad-buy.jsonl",
+        "sha256": "182260d52d487e3c4220f608c6512d1da874cf794e75f7db7e81eb5e91b4081f"
+      },
+      "sourceManifest": {
+        "path": "../../velrim-run/manifests/vrdu-ad-buy.manifest.json",
+        "sha256": "2d71826e0e5eb553c302a3025e20e3373fd337d2bef45f06b51dac3905f62296"
+      },
+      "calTestGoldenHash": "1d0988f8e30f1f1e321fb1d15b96130b3de4ced2d7f2fecdf74aba344b173ed5"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://api.mistral.ai/v1/ocr",
+    "model": "mistral-ocr-4-0",
+    "generationSettings": {
+      "documentAnnotationFormat": "json_schema",
+      "confidence": "none_surfaced",
+      "structuredMode": false,
+      "pageCapBranch": "cap-removed",
+      "conditionalPageLimit": 8
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "surfaced",
+      "values": [
+        "mistral-ocr-4-0"
+      ],
+      "missingRecords": 0
+    },
+    "vendor": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 66
+    },
+    "calibrator": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 66
+    },
+    "api": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 66
+    },
+    "requestIds": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 66
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "0189d309-8f8e-3064-d9fd-52009ba3d5cb.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "277efc033283ec4a375fdb19975960ab9c0957001ff89f5373d1a6af286cc119",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "721b59edcd98a060ae7b55f12706bb7197240113e3b1d7664695429a122b2725"
+    },
+    {
+      "doc": "030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "52eb00f10271ed41717c26e5a8235979ade57362cae551e1430e4a696d5a4b66",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "c1ac2077194f798b6847070c256526fa3cfdcadeb986cb42660900f27a83efea"
+    },
+    {
+      "doc": "030f7df7-6d1d-b6c7-3a36-39edb0725603.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "39096e7849a3a428398894c07e9926e6648d0cf2fd640bc64e36f42498f82e5f",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "26632d59311074d6c70a2a720021e03a61074976fffa384ee1e83fb00b8c345d"
+    },
+    {
+      "doc": "0719de4c-5538-0fe8-123b-f0aca437b53d.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "40dcb54fab2b5dd0a2573badeaf90c51fc910d282cbe35bd376f1075d7e2637d",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "d1563d1e7616879434a036e23070a79fd72c977efe734435e363266a1058f689"
+    },
+    {
+      "doc": "07bfa311-9fc7-c3d2-4e7a-94d7fd412599.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "b03b9d916fb5e0404a7434ce23e3529f55f8dba9cdbd1238a3ab38cd92c98458",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "ad8119545fadf1b24f1d267fe6e1d7fd6fc65d1fb395e8d6df025169e03ded77"
+    },
+    {
+      "doc": "08fe4888-65a4-3254-b5d2-dad9186a9694.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "8cb586cab911f5dd50496770c1ef72758119dba4b331c30037bc634eec3fa953",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "dc653e424df525ea060b2ed6230db9b5f87269194ff6e58c5c2864448704ca36"
+    },
+    {
+      "doc": "090bd765-b37c-722c-5f15-05919a2051e8.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "eebf2c5bc7db6999498b0e5534d73c9df60f62333a2d5730c18a6fbdc7ca2152",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "fdd3d205f48dc78beeeb4f290219a1a64b69a0b662839337177e8bbd766f033f"
+    },
+    {
+      "doc": "103ccc17-356a-5f99-9c3b-920fc2dd023e.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "4b91651e66ac1b00ee7bd3257549862929d098f9e8c6a890d316f2d5c9d8d9a5",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "9d252a3b48c9a1fa95440eb4aa6661108c0e71f2bb42514a737287529d33297e"
+    },
+    {
+      "doc": "15262fcf-40c4-1ee6-6719-6ae834d12a4e.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "df87a047128bbe35a0f780e659b37af22f329b12c3e5299994bd82b2aafc36c0",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "0ae3af89f9ce70bca10db70a3db024bef39cd7a3d4159133daaa0b13e2b443bc"
+    },
+    {
+      "doc": "15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "19c95e8a99525eddea7cc820ecbe5d2fc715d34358a0070af42d60bc4d48652a",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "bc92d932c499f1c9941e36f9151a0eb9445e9f7e7adde4eb33640f4afc45dfaf"
+    },
+    {
+      "doc": "1672687e-ddc6-ce1d-8ab1-46acdc04953f.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "a5b2e1f7c7cbc05b944348097d88324c6825671efa4c568682b53676c64e3896",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "f469f6e4ebcf10909f3fada9e95536cee7d18a6ebf436a5e6d72998043ff22c1"
+    },
+    {
+      "doc": "1a8e7b10-6823-dfdf-d398-0cd7740b9699.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "0141622de02458269027bb180986f0db2382762b5b5beb2bd06b4329e30ba27b",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "7ce14d0c6c832138dd69e1a57c95be952c6694725ac44bb6ad56668291f407dc"
+    },
+    {
+      "doc": "1af023e1-3d51-7fe6-f8f1-70656181f5f1.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "12775d4cd836d4e7561056dd6db31316cbb3ca799d4deb7477f2190a03982135",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "7670cdcd3cac19a2144baf33cfeeb7194ab84d183661d23ec2d8bdd8d13e6fb4"
+    },
+    {
+      "doc": "1ddf64fb-65ba-f3db-eb89-8cb9a2802a5a.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "862a6adb3355ffd3a757dc730526d826f26cb08476ae9fdb291073ae3b61bfcb",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "fbc43994348c86e487bc3c2084653ef940336c1becc4b45b5e2ff14e8d2a06b6"
+    },
+    {
+      "doc": "1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "c44e2e471bb9f45bb8496f7cda1ad3e42a128de4fd54066054e892a53a963935",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "917add76da0bba8614792f6ce762a310c612dc6773ab832c1c56af6343b8eec5"
+    },
+    {
+      "doc": "2093ee21-d0ee-3641-03b4-3025ae441836.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "a325cc0a11e3df3475acf7ebcf918580708c7ae8796362a7cb843a6870bcf968",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "50c2d00ac0baa432b75d7485e01b6456611c2c77d4472247bd5aa7684dc4cf9b"
+    },
+    {
+      "doc": "23be2cf1-1313-58c9-6660-56cd0bd9d642.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "6fc62af8e2808fd4f0fd99c8445a0b45bac31738c660839fcfa0cca994757857",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "cb46393330dc5f60aee266b12cc82dbe65d9a9110bf95408f56f1da89c14234e"
+    },
+    {
+      "doc": "261cb425-6648-a8e8-db2b-798114109c9d.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "2345190cf7aa375b074eaf92d5c0af9a529e1dd635805bdfaec1ea5af952ac01",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "5860c40c2fbb5065bd5a98c2dd8e561ed23832bb06910616302e4ea54875516c"
+    },
+    {
+      "doc": "2aac88c6-7849-4aa6-5315-5ceeabbdcf73.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "065199d26a417e2004e00a4c1c50210bb345a05202b50f38289714a7c7359957",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "4bce5d1614c3b58bc8c154801f3c203c28c47924897783977071a7d84c7507b7"
+    },
+    {
+      "doc": "348812cb-8af7-56bc-8a19-c3c4f6682392.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "8662155c2c8eea4da70ef04f9fe839c28047987f5d7fb43a3d7c3769d03dd1ca",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "76e6b18382e2029323214d5b23d0d1c1f73c06b8f7bdf299b87edd629e78bd2a"
+    },
+    {
+      "doc": "3874b015-8c4f-2a34-b461-ce049874dc07.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "ac74f3d9728cc0093a455818ecf914d676bb97157a8c006aa85b5a2b46d615a8",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "69dc861b4d407f554473fcefecffce55adb75a64617f14ac6c253b98c3e6e8f9"
+    },
+    {
+      "doc": "38f02241-0fda-abeb-bdf9-032f40279e89.pdf",
+      "docClass": "vrdu-ad-buy",
+      "documentSha256": "00af9ec9594520a61f852e0ccfd93441f068b38fc120625a0571e04941eb1060",
+      "schemaSemanticSha256": "153f14c006d661958b6f620c388e069385ba8865c5a2b1290dad41081bbec243",
+      "goldenRowSemanticSha256": "6572f53f48bc392ea55ec75ec490f0fd78fb5704ef3356cf40d072b64aff6862"
+    }
+  ]
+}

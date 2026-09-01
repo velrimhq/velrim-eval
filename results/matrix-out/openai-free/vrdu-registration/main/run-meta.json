@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "adapter": "openai",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [
+    "logprobs"
+  ],
+  "repeats": 3,
+  "status": "completed",
+  "golden": "corpora/golden.vrdu-registration.jsonl",
+  "docs": 48,
+  "docsPath": "<local-pdfs>/vrdu-registration",
+  "generatedAt": "2026-08-19T12:36:26.928Z",
+  "updatedAt": "2026-08-19T12:36:26.928Z",
+  "runWindow": {
+    "fingerprint": "feffc51f64e9c43d946fe8d496d44622b87eac57418392a1329288d5e6d98a7f",
+    "adapter": "openai",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 3,
+    "startedAt": "2026-08-19T12:31:20.763Z",
+    "completedAt": "2026-08-19T12:36:26.928Z",
+    "startedDate": "2026-08-19",
+    "completedDate": "2026-08-19"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "openai",
+    "mode": "live",
+    "docs": 48,
+    "repeats": 3,
+    "plannedDocRepeats": 144,
+    "remainingDocRepeats": 144,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 2.88,
+    "expectedRemainingUsd": 2.88,
+    "pricingBasis": "OpenAI gpt-5.4-mini-2026-03-17 token pricing, free-decode mode",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "feffc51f64e9c43d946fe8d496d44622b87eac57418392a1329288d5e6d98a7f",
+    "implementationHash": "786586a3904842bc4ff5707c791635655fa155671db2fd6c72d14bf4cdc7034a"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "openai",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 144,
+    "aggregate": {
+      "attempted": 144,
+      "completed": 144,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 2,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 3,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 3,
+    "updatedAt": "2026-08-19T12:36:26.928Z"
+  }
+}

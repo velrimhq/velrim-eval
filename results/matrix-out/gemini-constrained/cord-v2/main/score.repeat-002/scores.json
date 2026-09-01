@@ -1,0 +1,3786 @@
+{
+  "version": 1,
+  "corpus": {
+    "docs": 15,
+    "leaves": 196,
+    "cells": {
+      "tp": 108,
+      "fp": 22,
+      "fn": 22
+    },
+    "precision": 0.8307692307692308,
+    "recall": 0.8307692307692308,
+    "f1": 0.8307692307692308,
+    "ece": 0.42346938775510207,
+    "brier": 0.25,
+    "auroc": 0.5,
+    "riskCoverage": [
+      {
+        "coverage": 0,
+        "error": 0
+      },
+      {
+        "coverage": 1,
+        "error": 0.14285714285714285
+      }
+    ]
+  },
+  "points": [
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    }
+  ],
+  "perDoc": [
+    {
+      "doc": "cord-011.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-015.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-025.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999983,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999983,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-027.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-044.pdf",
+      "perField": {
+        "/total": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/3/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/3/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/3/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/3/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-047.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-056.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/cash": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/cash": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-066.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-068.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/2/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/2/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/3/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/3/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/4/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/4/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/5/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/6/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/6/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/7/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/7/price": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/8/name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/8/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/9/name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/9/price": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.4999999999999999,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/2/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/2/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/3/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/3/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/4/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/4/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/5/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/6/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/6/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/7/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/7/price": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/8/name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/8/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/9/name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/9/price": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.4999999999999999,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-073.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/2/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/3/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/3/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/4/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/4/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/5/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/5/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5000000000000001,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/2/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/3/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/3/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/4/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/4/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/5/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/5/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5000000000000001,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-076.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-084.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-086.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-087.pdf",
+      "perField": {
+        "/total": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/1/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/1/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-095.pdf",
+      "perField": {
+        "/total": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/subtotal": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/tax": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/cash": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/change": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/credit_card": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/service_charge": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/discount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/items/0/price": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/total": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/subtotal": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/tax": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/cash": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/change": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/credit_card": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/service_charge": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/discount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/items/0/price": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    }
+  ],
+  "normalized": {
+    "docClass": "cord-v2",
+    "tableSha256": "d0e364d9ef14cd8bd08ad8c731d30b885f46d22c4cceae24308e77f461a77e3b",
+    "corpus": {
+      "docs": 15,
+      "leaves": 196,
+      "cells": {
+        "tp": 108,
+        "fp": 22,
+        "fn": 22
+      },
+      "precision": 0.8307692307692308,
+      "recall": 0.8307692307692308,
+      "f1": 0.8307692307692308,
+      "ece": 0.42346938775510207,
+      "brier": 0.25,
+      "auroc": 0.5,
+      "riskCoverage": [
+        {
+          "coverage": 0,
+          "error": 0
+        },
+        {
+          "coverage": 1,
+          "error": 0.14285714285714285
+        }
+      ]
+    },
+    "points": [
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "formatVersion": 1,
+  "cell": {
+    "armMode": "mistral",
+    "adapter": "mistral",
+    "docClass": "vrdu-registration",
+    "pass": "probe",
+    "repeats": 1
+  },
+  "excludedDocs": [],
+  "repeats": [
+    {
+      "repeat": 1,
+      "kind": "primary",
+      "corpus": {
+        "docs": 48,
+        "leaves": 48,
+        "cells": {
+          "tp": 0,
+          "fp": 41,
+          "fn": 0
+        },
+        "precision": 0,
+        "recall": 1,
+        "f1": 0,
+        "ece": 0.3541666666666667,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.8541666666666666
+          }
+        ]
+      },
+      "normalizedCorpus": {
+        "docs": 48,
+        "leaves": 48,
+        "cells": {
+          "tp": 0,
+          "fp": 41,
+          "fn": 0
+        },
+        "precision": 0,
+        "recall": 1,
+        "f1": 0,
+        "ece": 0.3541666666666667,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.8541666666666666
+          }
+        ]
+      }
+    }
+  ],
+  "meanOverRepeats": {
+    "precision": 0,
+    "recall": 1,
+    "f1": 0,
+    "ece": 0.3541666666666667,
+    "brier": 0.25,
+    "auroc": 0.5
+  },
+  "meanOverRepeatsNormalized": {
+    "precision": 0,
+    "recall": 1,
+    "f1": 0,
+    "ece": 0.3541666666666667,
+    "brier": 0.25,
+    "auroc": 0.5
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "adapter": "velrim",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "requireFittedStamp": true,
+  "repeats": 3,
+  "status": "completed",
+  "golden": "corpora/golden.vrdu-registration.jsonl",
+  "docs": 48,
+  "docsPath": "<local-pdfs>/vrdu-registration",
+  "generatedAt": "2026-08-18T15:42:14.616Z",
+  "updatedAt": "2026-08-18T15:42:14.616Z",
+  "runWindow": {
+    "fingerprint": "d119dec32d39c3613fc99fe5a3f376d93d8858ba8d0954aa1af918aed34081e4",
+    "adapter": "velrim",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 3,
+    "startedAt": "2026-08-18T15:26:58.240Z",
+    "completedAt": "2026-08-18T15:42:14.616Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "velrim",
+    "mode": "live",
+    "docs": 48,
+    "repeats": 3,
+    "plannedDocRepeats": 144,
+    "remainingDocRepeats": 144,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 7.488,
+    "expectedRemainingUsd": 7.488,
+    "pricingBasis": "Velrim list, USD 20 per 1k pages (velrim.com/pricing)",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "d119dec32d39c3613fc99fe5a3f376d93d8858ba8d0954aa1af918aed34081e4",
+    "implementationHash": "762da9f423f891b782b50550922885a698f98b2335462ab5d67f3f591b09d813"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "velrim",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 144,
+    "aggregate": {
+      "attempted": 144,
+      "completed": 144,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 2,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 3,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 3,
+    "updatedAt": "2026-08-18T15:42:14.616Z"
+  }
+}

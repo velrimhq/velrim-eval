@@ -1,0 +1,1068 @@
+{
+  "version": 1,
+  "corpus": {
+    "docs": 15,
+    "leaves": 45,
+    "cells": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "ece": 0.49999999999999994,
+    "brier": 0.25,
+    "auroc": 0.5,
+    "riskCoverage": [
+      {
+        "coverage": 0,
+        "error": 0
+      },
+      {
+        "coverage": 1,
+        "error": 0
+      }
+    ]
+  },
+  "points": [
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    }
+  ],
+  "perDoc": [
+    {
+      "doc": "cord-011.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-015.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-025.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-027.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-044.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-047.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-056.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-066.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-068.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-073.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-076.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-084.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-086.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-087.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "cord-095.pdf",
+      "perField": {
+        "/contract_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/property": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/property": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5,
+        "auroc": 0.5
+      }
+    }
+  ],
+  "normalized": {
+    "docClass": "cord-v2",
+    "tableSha256": "d0e364d9ef14cd8bd08ad8c731d30b885f46d22c4cceae24308e77f461a77e3b",
+    "corpus": {
+      "docs": 15,
+      "leaves": 45,
+      "cells": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "ece": 0.49999999999999994,
+      "brier": 0.25,
+      "auroc": 0.5,
+      "riskCoverage": [
+        {
+          "coverage": 0,
+          "error": 0
+        },
+        {
+          "coverage": 1,
+          "error": 0
+        }
+      ]
+    },
+    "points": [
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      }
+    ]
+  }
+}

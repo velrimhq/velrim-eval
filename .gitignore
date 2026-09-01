@@ -1,6 +1,9 @@
 node_modules/
 dist/
 *.tgz
+# No lockfile by design: dependencies resolve the way a fresh install would (a committed
+# lockfile also trips npm/cli#4828 when a local tarball is installed on top).
+package-lock.json
 # CLI output dir at the package root ONLY — an unanchored "report/" silently ignored
-# src/report/ (the render layer was untracked from W8 until 2026-07-15; never repeat this).
+# src/report/ (the render layer was silently untracked for weeks; never repeat this).
 /report/

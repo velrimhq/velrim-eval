@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "mistral",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "pageCapBranch": "cap-removed",
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/probes/golden.vrdu-ad-buy.probe.jsonl",
+  "docs": 22,
+  "docsPath": "<local-pdfs>/vrdu-ad-buy",
+  "generatedAt": "2026-08-18T21:09:12.444Z",
+  "updatedAt": "2026-08-18T21:09:12.444Z",
+  "runWindow": {
+    "fingerprint": "ebdb639cb4362ba40c5456d697e6e451a32118a087d933d542a774e7518d1bd4",
+    "adapter": "mistral",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-18T21:06:25.203Z",
+    "completedAt": "2026-08-18T21:09:12.444Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "mistral",
+    "mode": "live",
+    "docs": 22,
+    "repeats": 1,
+    "plannedDocRepeats": 22,
+    "remainingDocRepeats": 22,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.242,
+    "expectedRemainingUsd": 0.242,
+    "pricingBasis": "Mistral OCR 4 (mistral-ocr-4-0), USD 5 per 1k pages (mistral.ai/pricing)",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "ebdb639cb4362ba40c5456d697e6e451a32118a087d933d542a774e7518d1bd4",
+    "implementationHash": "dc8db3aed26879197309b0ac1846d6b9ccb031a8ccfc26fc60b3bee997da6473"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "mistral",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 22,
+    "aggregate": {
+      "attempted": 22,
+      "completed": 22,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 22,
+        "completed": 22,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-18T21:09:12.444Z"
+  }
+}

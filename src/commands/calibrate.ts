@@ -159,6 +159,18 @@ export async function calibrate(argv: string[]): Promise<number> {
     if (values['allow-stub']) return 0;
     return 3;
   }
+  // A column where every confidence is the same value carries no signal to fit — it is what an
+  // arm that surfaces NO confidence looks like after the scorer's neutral placeholder. Fitting it
+  // would print a curve for a score that does not exist.
+  const first = points[0]!.confidence;
+  if (points.every((p) => p.confidence === first)) {
+    process.stdout.write(
+      `calibrate: every one of the ${points.length} points carries the same confidence (${first}); ` +
+        'this arm surfaces no confidence signal. No tau/curve emitted.\n',
+    );
+    if (values['allow-stub']) return 0;
+    return 3;
+  }
 
   // REAL PATH: fit the generic 1-D Platt logistic on (confidence, correct), pure + deterministic.
   const model = fitPlatt1D(points);

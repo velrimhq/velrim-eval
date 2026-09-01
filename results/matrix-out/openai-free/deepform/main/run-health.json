@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "adapter": "openai",
+  "unit": "doc-repeat",
+  "status": "completed",
+  "planned": 117,
+  "aggregate": {
+    "attempted": 117,
+    "completed": 117,
+    "transportFailures": 0,
+    "contractFailures": 0,
+    "availability": 1
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 39,
+      "completed": 39,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    {
+      "repeat": 2,
+      "attempted": 39,
+      "completed": 39,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    {
+      "repeat": 3,
+      "attempted": 39,
+      "completed": 39,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    }
+  ],
+  "consecutiveContractFailures": 0,
+  "contractFailureLimit": 3,
+  "updatedAt": "2026-08-19T12:22:17.390Z"
+}

@@ -1,0 +1,191 @@
+{
+  "formatVersion": 1,
+  "cell": {
+    "armMode": "gemini-constrained",
+    "adapter": "gemini",
+    "docClass": "vrdu-ad-buy",
+    "pass": "main",
+    "repeats": 3
+  },
+  "excludedDocs": [],
+  "repeats": [
+    {
+      "repeat": 1,
+      "kind": "primary",
+      "corpus": {
+        "docs": 22,
+        "leaves": 1423,
+        "cells": {
+          "tp": 748,
+          "fp": 580,
+          "fn": 649
+        },
+        "precision": 0.5632530120481928,
+        "recall": 0.5354330708661418,
+        "f1": 0.5489908256880733,
+        "ece": 0.10857343640196766,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.4708362614195362
+          }
+        ]
+      },
+      "normalizedCorpus": {
+        "docs": 22,
+        "leaves": 1423,
+        "cells": {
+          "tp": 787,
+          "fp": 541,
+          "fn": 610
+        },
+        "precision": 0.5926204819277109,
+        "recall": 0.5633500357909806,
+        "f1": 0.5776146788990826,
+        "ece": 0.1156008432888264,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.44342937456078707
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "kind": "primary",
+      "corpus": {
+        "docs": 22,
+        "leaves": 1423,
+        "cells": {
+          "tp": 798,
+          "fp": 564,
+          "fn": 599
+        },
+        "precision": 0.5859030837004405,
+        "recall": 0.5712240515390121,
+        "f1": 0.5784704603117071,
+        "ece": 0.0987350667603654,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.43569922698524244
+          }
+        ]
+      },
+      "normalizedCorpus": {
+        "docs": 22,
+        "leaves": 1423,
+        "cells": {
+          "tp": 832,
+          "fp": 530,
+          "fn": 565
+        },
+        "precision": 0.6108663729809104,
+        "recall": 0.595561918396564,
+        "f1": 0.6031170714026821,
+        "ece": 0.12122276879831341,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.4118060435699227
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "kind": "primary",
+      "corpus": {
+        "docs": 22,
+        "leaves": 1423,
+        "cells": {
+          "tp": 810,
+          "fp": 553,
+          "fn": 587
+        },
+        "precision": 0.5942773294203962,
+        "recall": 0.5798138869005011,
+        "f1": 0.5869565217391305,
+        "ece": 0.13035839775122982,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.4279690794096978
+          }
+        ]
+      },
+      "normalizedCorpus": {
+        "docs": 22,
+        "leaves": 1423,
+        "cells": {
+          "tp": 885,
+          "fp": 478,
+          "fn": 512
+        },
+        "precision": 0.6493030080704328,
+        "recall": 0.6335003579098067,
+        "f1": 0.6413043478260869,
+        "ece": 0.15495432185523544,
+        "brier": 0.25,
+        "auroc": 0.5,
+        "riskCoverage": [
+          {
+            "coverage": 0,
+            "error": 0
+          },
+          {
+            "coverage": 1,
+            "error": 0.3752635277582572
+          }
+        ]
+      }
+    }
+  ],
+  "meanOverRepeats": {
+    "precision": 0.5811444750563431,
+    "recall": 0.562157003101885,
+    "f1": 0.571472602579637,
+    "ece": 0.1125556336378543,
+    "brier": 0.25,
+    "auroc": 0.5
+  },
+  "meanOverRepeatsNormalized": {
+    "precision": 0.617596620993018,
+    "recall": 0.5974707706991172,
+    "f1": 0.6073453660426172,
+    "ece": 0.13059264464745843,
+    "brier": 0.25,
+    "auroc": 0.5
+  }
+}

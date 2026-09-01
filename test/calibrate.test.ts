@@ -156,6 +156,25 @@ describe('calibrate — guardrail preserved (no fabricated number on absent/dege
     expect(r.out).toMatch(/degenerate/);
   });
 
+  it('exit 3 — a constant-confidence column (a no-confidence arm after the scorer placeholder) → no number', async () => {
+    const f = join(work, 'constant.json');
+    await writeFile(
+      f,
+      JSON.stringify({
+        points: [
+          { confidence: 0.5, correct: true },
+          { confidence: 0.5, correct: false },
+          { confidence: 0.5, correct: true },
+        ],
+      }),
+    );
+    const r = await capture(() => calibrate(['--scores', f]));
+    expect(r.value).toBe(3);
+    expect(r.out).toMatch(/surfaces no confidence signal/);
+    expect(r.out).not.toMatch(/tau=/);
+    expect(r.out).not.toMatch(/"coef"/);
+  });
+
   it('exit 0 — --allow-stub on empty input wires the pipeline without a number', async () => {
     const f = join(work, 'empty2.json');
     await writeFile(f, JSON.stringify({ points: [] }));

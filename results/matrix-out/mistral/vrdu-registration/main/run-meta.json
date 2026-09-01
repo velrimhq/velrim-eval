@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "adapter": "mistral",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "pageCapBranch": "cap-removed",
+  "repeats": 3,
+  "status": "completed",
+  "golden": "corpora/golden.vrdu-registration.jsonl",
+  "docs": 48,
+  "docsPath": "<local-pdfs>/vrdu-registration",
+  "generatedAt": "2026-08-18T16:13:47.482Z",
+  "updatedAt": "2026-08-18T16:13:47.482Z",
+  "runWindow": {
+    "fingerprint": "1373ac846b80cd29ce0ff22baba0b8b5dfac510c1167de6f60d0a038e04a3199",
+    "adapter": "mistral",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 3,
+    "startedAt": "2026-08-18T16:07:43.595Z",
+    "completedAt": "2026-08-18T16:13:47.482Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "mistral",
+    "mode": "live",
+    "docs": 48,
+    "repeats": 3,
+    "plannedDocRepeats": 144,
+    "remainingDocRepeats": 144,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 1.584,
+    "expectedRemainingUsd": 1.584,
+    "pricingBasis": "Mistral OCR 4 (mistral-ocr-4-0), USD 5 per 1k pages (mistral.ai/pricing)",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "1373ac846b80cd29ce0ff22baba0b8b5dfac510c1167de6f60d0a038e04a3199",
+    "implementationHash": "dc8db3aed26879197309b0ac1846d6b9ccb031a8ccfc26fc60b3bee997da6473"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "mistral",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 144,
+    "aggregate": {
+      "attempted": 144,
+      "completed": 144,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 2,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 3,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 3,
+    "updatedAt": "2026-08-18T16:13:47.482Z"
+  }
+}

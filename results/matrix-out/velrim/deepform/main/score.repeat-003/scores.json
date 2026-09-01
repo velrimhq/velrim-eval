@@ -1,0 +1,5016 @@
+{
+  "version": 1,
+  "corpus": {
+    "docs": 39,
+    "leaves": 195,
+    "cells": {
+      "tp": 152,
+      "fp": 36,
+      "fn": 42
+    },
+    "precision": 0.8085106382978723,
+    "recall": 0.7835051546391752,
+    "f1": 0.7958115183246073,
+    "ece": 0.14193586484531268,
+    "brier": 0.14720955354021653,
+    "auroc": 0.7955182072829131,
+    "riskCoverage": [
+      {
+        "coverage": 0,
+        "error": 0
+      },
+      {
+        "coverage": 0.010256410256410256,
+        "error": 0
+      },
+      {
+        "coverage": 0.020512820512820513,
+        "error": 0
+      },
+      {
+        "coverage": 0.041025641025641026,
+        "error": 0
+      },
+      {
+        "coverage": 0.046153846153846156,
+        "error": 0
+      },
+      {
+        "coverage": 0.06666666666666667,
+        "error": 0.07692307692307693
+      },
+      {
+        "coverage": 0.07179487179487179,
+        "error": 0.07142857142857142
+      },
+      {
+        "coverage": 0.07692307692307693,
+        "error": 0.06666666666666667
+      },
+      {
+        "coverage": 0.08205128205128205,
+        "error": 0.0625
+      },
+      {
+        "coverage": 0.08717948717948718,
+        "error": 0.058823529411764705
+      },
+      {
+        "coverage": 0.1282051282051282,
+        "error": 0.08
+      },
+      {
+        "coverage": 0.1641025641025641,
+        "error": 0.09375
+      },
+      {
+        "coverage": 0.16923076923076924,
+        "error": 0.09090909090909091
+      },
+      {
+        "coverage": 0.17435897435897435,
+        "error": 0.08823529411764706
+      },
+      {
+        "coverage": 0.20512820512820512,
+        "error": 0.1
+      },
+      {
+        "coverage": 0.21025641025641026,
+        "error": 0.0975609756097561
+      },
+      {
+        "coverage": 0.22564102564102564,
+        "error": 0.09090909090909091
+      },
+      {
+        "coverage": 0.23076923076923078,
+        "error": 0.08888888888888889
+      },
+      {
+        "coverage": 0.27692307692307694,
+        "error": 0.09259259259259259
+      },
+      {
+        "coverage": 0.28717948717948716,
+        "error": 0.08928571428571429
+      },
+      {
+        "coverage": 0.2923076923076923,
+        "error": 0.08771929824561403
+      },
+      {
+        "coverage": 0.3384615384615385,
+        "error": 0.07575757575757576
+      },
+      {
+        "coverage": 0.3435897435897436,
+        "error": 0.07462686567164178
+      },
+      {
+        "coverage": 0.358974358974359,
+        "error": 0.07142857142857142
+      },
+      {
+        "coverage": 0.36923076923076925,
+        "error": 0.06944444444444445
+      },
+      {
+        "coverage": 0.37948717948717947,
+        "error": 0.06756756756756757
+      },
+      {
+        "coverage": 0.38461538461538464,
+        "error": 0.06666666666666667
+      },
+      {
+        "coverage": 0.39487179487179486,
+        "error": 0.06493506493506493
+      },
+      {
+        "coverage": 0.40512820512820513,
+        "error": 0.06329113924050633
+      },
+      {
+        "coverage": 0.41025641025641024,
+        "error": 0.0625
+      },
+      {
+        "coverage": 0.4205128205128205,
+        "error": 0.06097560975609756
+      },
+      {
+        "coverage": 0.4307692307692308,
+        "error": 0.05952380952380952
+      },
+      {
+        "coverage": 0.4358974358974359,
+        "error": 0.058823529411764705
+      },
+      {
+        "coverage": 0.441025641025641,
+        "error": 0.06976744186046512
+      },
+      {
+        "coverage": 0.4512820512820513,
+        "error": 0.06818181818181818
+      },
+      {
+        "coverage": 0.4564102564102564,
+        "error": 0.06741573033707865
+      },
+      {
+        "coverage": 0.46153846153846156,
+        "error": 0.06666666666666667
+      },
+      {
+        "coverage": 0.4666666666666667,
+        "error": 0.06593406593406594
+      },
+      {
+        "coverage": 0.4717948717948718,
+        "error": 0.06521739130434782
+      },
+      {
+        "coverage": 0.47692307692307695,
+        "error": 0.06451612903225806
+      },
+      {
+        "coverage": 0.48205128205128206,
+        "error": 0.06382978723404255
+      },
+      {
+        "coverage": 0.48717948717948717,
+        "error": 0.07368421052631578
+      },
+      {
+        "coverage": 0.49230769230769234,
+        "error": 0.07291666666666667
+      },
+      {
+        "coverage": 0.49743589743589745,
+        "error": 0.07216494845360824
+      },
+      {
+        "coverage": 0.5025641025641026,
+        "error": 0.07142857142857142
+      },
+      {
+        "coverage": 0.5076923076923077,
+        "error": 0.0707070707070707
+      },
+      {
+        "coverage": 0.5128205128205128,
+        "error": 0.07
+      },
+      {
+        "coverage": 0.517948717948718,
+        "error": 0.06930693069306931
+      },
+      {
+        "coverage": 0.5230769230769231,
+        "error": 0.06862745098039216
+      },
+      {
+        "coverage": 0.5282051282051282,
+        "error": 0.06796116504854369
+      },
+      {
+        "coverage": 0.5435897435897435,
+        "error": 0.0660377358490566
+      },
+      {
+        "coverage": 0.5487179487179488,
+        "error": 0.06542056074766354
+      },
+      {
+        "coverage": 0.558974358974359,
+        "error": 0.06422018348623854
+      },
+      {
+        "coverage": 0.5641025641025641,
+        "error": 0.06363636363636363
+      },
+      {
+        "coverage": 0.5692307692307692,
+        "error": 0.06306306306306306
+      },
+      {
+        "coverage": 0.5743589743589743,
+        "error": 0.0625
+      },
+      {
+        "coverage": 0.6,
+        "error": 0.06837606837606838
+      },
+      {
+        "coverage": 0.6051282051282051,
+        "error": 0.06779661016949153
+      },
+      {
+        "coverage": 0.6102564102564103,
+        "error": 0.06722689075630252
+      },
+      {
+        "coverage": 0.6256410256410256,
+        "error": 0.06557377049180328
+      },
+      {
+        "coverage": 0.6358974358974359,
+        "error": 0.07258064516129033
+      },
+      {
+        "coverage": 0.6410256410256411,
+        "error": 0.072
+      },
+      {
+        "coverage": 0.6461538461538462,
+        "error": 0.07142857142857142
+      },
+      {
+        "coverage": 0.6512820512820513,
+        "error": 0.07086614173228346
+      },
+      {
+        "coverage": 0.6564102564102564,
+        "error": 0.0703125
+      },
+      {
+        "coverage": 0.6615384615384615,
+        "error": 0.06976744186046512
+      },
+      {
+        "coverage": 0.6666666666666666,
+        "error": 0.06923076923076923
+      },
+      {
+        "coverage": 0.6717948717948717,
+        "error": 0.06870229007633588
+      },
+      {
+        "coverage": 0.676923076923077,
+        "error": 0.06818181818181818
+      },
+      {
+        "coverage": 0.6820512820512821,
+        "error": 0.06766917293233082
+      },
+      {
+        "coverage": 0.6871794871794872,
+        "error": 0.06716417910447761
+      },
+      {
+        "coverage": 0.6923076923076923,
+        "error": 0.06666666666666667
+      },
+      {
+        "coverage": 0.6974358974358974,
+        "error": 0.07352941176470588
+      },
+      {
+        "coverage": 0.7025641025641025,
+        "error": 0.08029197080291971
+      },
+      {
+        "coverage": 0.7076923076923077,
+        "error": 0.07971014492753623
+      },
+      {
+        "coverage": 0.7435897435897436,
+        "error": 0.11724137931034483
+      },
+      {
+        "coverage": 0.7487179487179487,
+        "error": 0.11643835616438356
+      },
+      {
+        "coverage": 0.7589743589743589,
+        "error": 0.11486486486486487
+      },
+      {
+        "coverage": 0.764102564102564,
+        "error": 0.12080536912751678
+      },
+      {
+        "coverage": 0.7692307692307693,
+        "error": 0.12
+      },
+      {
+        "coverage": 0.7743589743589744,
+        "error": 0.11920529801324503
+      },
+      {
+        "coverage": 0.7794871794871795,
+        "error": 0.11842105263157894
+      },
+      {
+        "coverage": 0.7846153846153846,
+        "error": 0.11764705882352941
+      },
+      {
+        "coverage": 0.7897435897435897,
+        "error": 0.11688311688311688
+      },
+      {
+        "coverage": 0.7948717948717948,
+        "error": 0.11612903225806452
+      },
+      {
+        "coverage": 0.8,
+        "error": 0.11538461538461539
+      },
+      {
+        "coverage": 0.8051282051282052,
+        "error": 0.12101910828025478
+      },
+      {
+        "coverage": 0.8102564102564103,
+        "error": 0.12658227848101267
+      },
+      {
+        "coverage": 0.8153846153846154,
+        "error": 0.1320754716981132
+      },
+      {
+        "coverage": 0.8205128205128205,
+        "error": 0.13125
+      },
+      {
+        "coverage": 0.8256410256410256,
+        "error": 0.13664596273291926
+      },
+      {
+        "coverage": 0.8307692307692308,
+        "error": 0.13580246913580246
+      },
+      {
+        "coverage": 0.8358974358974359,
+        "error": 0.13496932515337423
+      },
+      {
+        "coverage": 0.841025641025641,
+        "error": 0.1402439024390244
+      },
+      {
+        "coverage": 0.8461538461538461,
+        "error": 0.14545454545454545
+      },
+      {
+        "coverage": 0.8512820512820513,
+        "error": 0.15060240963855423
+      },
+      {
+        "coverage": 0.8564102564102564,
+        "error": 0.15568862275449102
+      },
+      {
+        "coverage": 0.8615384615384616,
+        "error": 0.16071428571428573
+      },
+      {
+        "coverage": 0.8666666666666667,
+        "error": 0.16568047337278108
+      },
+      {
+        "coverage": 0.8717948717948718,
+        "error": 0.17058823529411765
+      },
+      {
+        "coverage": 0.8769230769230769,
+        "error": 0.1695906432748538
+      },
+      {
+        "coverage": 0.882051282051282,
+        "error": 0.1686046511627907
+      },
+      {
+        "coverage": 0.8871794871794871,
+        "error": 0.17341040462427745
+      },
+      {
+        "coverage": 0.8923076923076924,
+        "error": 0.1781609195402299
+      },
+      {
+        "coverage": 0.8974358974358975,
+        "error": 0.17714285714285713
+      },
+      {
+        "coverage": 0.9025641025641026,
+        "error": 0.18181818181818182
+      },
+      {
+        "coverage": 0.9076923076923077,
+        "error": 0.1864406779661017
+      },
+      {
+        "coverage": 0.9128205128205128,
+        "error": 0.19101123595505617
+      },
+      {
+        "coverage": 0.9179487179487179,
+        "error": 0.19553072625698323
+      },
+      {
+        "coverage": 0.9230769230769231,
+        "error": 0.2
+      },
+      {
+        "coverage": 0.9282051282051282,
+        "error": 0.20441988950276244
+      },
+      {
+        "coverage": 0.9333333333333333,
+        "error": 0.2087912087912088
+      },
+      {
+        "coverage": 0.9384615384615385,
+        "error": 0.20765027322404372
+      },
+      {
+        "coverage": 0.9435897435897436,
+        "error": 0.20652173913043478
+      },
+      {
+        "coverage": 0.9487179487179487,
+        "error": 0.20540540540540542
+      },
+      {
+        "coverage": 0.9692307692307692,
+        "error": 0.20634920634920634
+      },
+      {
+        "coverage": 0.9897435897435898,
+        "error": 0.20725388601036268
+      },
+      {
+        "coverage": 0.9948717948717949,
+        "error": 0.211340206185567
+      },
+      {
+        "coverage": 1,
+        "error": 0.2153846153846154
+      }
+    ]
+  },
+  "points": [
+    {
+      "confidence": 0.3012956177509953,
+      "correct": true
+    },
+    {
+      "confidence": 0.624974891328565,
+      "correct": true
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.626642121664063,
+      "correct": true
+    },
+    {
+      "confidence": 0.9131480325532774,
+      "correct": true
+    },
+    {
+      "confidence": 0.9146818144531788,
+      "correct": true
+    },
+    {
+      "confidence": 0.9182594278706159,
+      "correct": true
+    },
+    {
+      "confidence": 0.16455240518718953,
+      "correct": true
+    },
+    {
+      "confidence": 0.10093929389222298,
+      "correct": false
+    },
+    {
+      "confidence": 0.40118679290038123,
+      "correct": false
+    },
+    {
+      "confidence": 0.4078200350157933,
+      "correct": false
+    },
+    {
+      "confidence": 0.5592692297787762,
+      "correct": false
+    },
+    {
+      "confidence": 0.15447511811410272,
+      "correct": true
+    },
+    {
+      "confidence": 0.6244038310108204,
+      "correct": true
+    },
+    {
+      "confidence": 0.7847451372835957,
+      "correct": true
+    },
+    {
+      "confidence": 0.7903703710354972,
+      "correct": true
+    },
+    {
+      "confidence": 0.9182594278706159,
+      "correct": true
+    },
+    {
+      "confidence": 0.16252626853856159,
+      "correct": true
+    },
+    {
+      "confidence": 0.219505328601514,
+      "correct": false
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9216825244040414,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.6317686222418193,
+      "correct": true
+    },
+    {
+      "confidence": 0.9131480325532774,
+      "correct": true
+    },
+    {
+      "confidence": 0.9146818144531788,
+      "correct": true
+    },
+    {
+      "confidence": 0.9216825244040414,
+      "correct": true
+    },
+    {
+      "confidence": 0.5740479013378932,
+      "correct": true
+    },
+    {
+      "confidence": 0.6302748545218988,
+      "correct": true
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9215811879167258,
+      "correct": true
+    },
+    {
+      "confidence": 0.15447511811410272,
+      "correct": true
+    },
+    {
+      "confidence": 0.3328505768469917,
+      "correct": false
+    },
+    {
+      "confidence": 0.792663344875812,
+      "correct": true
+    },
+    {
+      "confidence": 0.7982284959083474,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": true
+    },
+    {
+      "confidence": 0.15447511811410272,
+      "correct": false
+    },
+    {
+      "confidence": 0.6330418625539709,
+      "correct": false
+    },
+    {
+      "confidence": 0.9128601435334535,
+      "correct": true
+    },
+    {
+      "confidence": 0.5056040966394797,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.6330418625539709,
+      "correct": true
+    },
+    {
+      "confidence": 0.760250885968598,
+      "correct": true
+    },
+    {
+      "confidence": 0.9146818144531788,
+      "correct": true
+    },
+    {
+      "confidence": 0.9200431284507296,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.6302748545218988,
+      "correct": false
+    },
+    {
+      "confidence": 0.7611950135275434,
+      "correct": true
+    },
+    {
+      "confidence": 0.76711032292668,
+      "correct": true
+    },
+    {
+      "confidence": 0.9182594278706159,
+      "correct": true
+    },
+    {
+      "confidence": 0.4794447446470934,
+      "correct": true
+    },
+    {
+      "confidence": 0.6330418625539709,
+      "correct": true
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9216825244040414,
+      "correct": true
+    },
+    {
+      "confidence": 0.27358638561616966,
+      "correct": true
+    },
+    {
+      "confidence": 0.6343339348090968,
+      "correct": true
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9216072388216755,
+      "correct": true
+    },
+    {
+      "confidence": 0.6743355488664439,
+      "correct": true
+    },
+    {
+      "confidence": 0.16765096428227366,
+      "correct": false
+    },
+    {
+      "confidence": 0.792663344875812,
+      "correct": true
+    },
+    {
+      "confidence": 0.7982284959083474,
+      "correct": true
+    },
+    {
+      "confidence": 0.9215052066449502,
+      "correct": true
+    },
+    {
+      "confidence": 0.4080349537996054,
+      "correct": false
+    },
+    {
+      "confidence": 0.6330418625539709,
+      "correct": true
+    },
+    {
+      "confidence": 0.9156061161160676,
+      "correct": true
+    },
+    {
+      "confidence": 0.9171042506829661,
+      "correct": true
+    },
+    {
+      "confidence": 0.9213575526904144,
+      "correct": true
+    },
+    {
+      "confidence": 0.6752255061949982,
+      "correct": true
+    },
+    {
+      "confidence": 0.2457140102690575,
+      "correct": false
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": true
+    },
+    {
+      "confidence": 0.15447511811410272,
+      "correct": true
+    },
+    {
+      "confidence": 0.2790559450996605,
+      "correct": false
+    },
+    {
+      "confidence": 0.7840714151478805,
+      "correct": true
+    },
+    {
+      "confidence": 0.789696648899782,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": true
+    },
+    {
+      "confidence": 0.6752255061949982,
+      "correct": true
+    },
+    {
+      "confidence": 0.6330418625539709,
+      "correct": true
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": false
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": true
+    },
+    {
+      "confidence": 0.1553182930397544,
+      "correct": true
+    },
+    {
+      "confidence": 0.27457012853650337,
+      "correct": false
+    },
+    {
+      "confidence": 0.7973858140147997,
+      "correct": true
+    },
+    {
+      "confidence": 0.7837592071178695,
+      "correct": true
+    },
+    {
+      "confidence": 0.9236191952587671,
+      "correct": true
+    },
+    {
+      "confidence": 0.5672294260232049,
+      "correct": false
+    },
+    {
+      "confidence": 0.6373646883251952,
+      "correct": true
+    },
+    {
+      "confidence": 0.7697151261825332,
+      "correct": true
+    },
+    {
+      "confidence": 0.7742128879958321,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": true
+    },
+    {
+      "confidence": 0.6752255061949982,
+      "correct": true
+    },
+    {
+      "confidence": 0.21181701803604697,
+      "correct": false
+    },
+    {
+      "confidence": 0.7699238757897042,
+      "correct": true
+    },
+    {
+      "confidence": 0.778037963957999,
+      "correct": true
+    },
+    {
+      "confidence": 0.6251560589448315,
+      "correct": true
+    },
+    {
+      "confidence": 0.16548497857503525,
+      "correct": true
+    },
+    {
+      "confidence": 0.6303403332550703,
+      "correct": true
+    },
+    {
+      "confidence": 0.9190841011187683,
+      "correct": false
+    },
+    {
+      "confidence": 0.9208001856354823,
+      "correct": false
+    },
+    {
+      "confidence": 0.9244660904424833,
+      "correct": true
+    },
+    {
+      "confidence": 0.4794447446470934,
+      "correct": true
+    },
+    {
+      "confidence": 0.4338638831814288,
+      "correct": true
+    },
+    {
+      "confidence": 0.9126254349499163,
+      "correct": true
+    },
+    {
+      "confidence": 0.9141592168498176,
+      "correct": true
+    },
+    {
+      "confidence": 0.9176707235919697,
+      "correct": true
+    },
+    {
+      "confidence": 0.1553182930397544,
+      "correct": true
+    },
+    {
+      "confidence": 0.21357097389185897,
+      "correct": false
+    },
+    {
+      "confidence": 0.7975633154594742,
+      "correct": true
+    },
+    {
+      "confidence": 0.8037226883049208,
+      "correct": true
+    },
+    {
+      "confidence": 0.9236806110347203,
+      "correct": true
+    },
+    {
+      "confidence": 0.6750981545351847,
+      "correct": true
+    },
+    {
+      "confidence": 0.4235789644970258,
+      "correct": true
+    },
+    {
+      "confidence": 0.9190841011187683,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208001856354823,
+      "correct": true
+    },
+    {
+      "confidence": 0.9244660904424833,
+      "correct": true
+    },
+    {
+      "confidence": 0.6743355488664439,
+      "correct": true
+    },
+    {
+      "confidence": 0.6295615932229858,
+      "correct": true
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208517531828724,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5750769475357653,
+      "correct": true
+    },
+    {
+      "confidence": 0.4577170021898259,
+      "correct": true
+    },
+    {
+      "confidence": 0.46366814855376254,
+      "correct": true
+    },
+    {
+      "confidence": 0.4002785938547964,
+      "correct": true
+    },
+    {
+      "confidence": 0.1553182930397544,
+      "correct": true
+    },
+    {
+      "confidence": 0.185365278260959,
+      "correct": false
+    },
+    {
+      "confidence": 0.7975633154594742,
+      "correct": true
+    },
+    {
+      "confidence": 0.8037226883049208,
+      "correct": true
+    },
+    {
+      "confidence": 0.9236806110347203,
+      "correct": true
+    },
+    {
+      "confidence": 0.4512752271173926,
+      "correct": true
+    },
+    {
+      "confidence": 0.4200404595678918,
+      "correct": true
+    },
+    {
+      "confidence": 0.9190841011187683,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208001856354823,
+      "correct": true
+    },
+    {
+      "confidence": 0.9236806110347203,
+      "correct": true
+    },
+    {
+      "confidence": 0.39029298931391204,
+      "correct": false
+    },
+    {
+      "confidence": 0.6252449348501392,
+      "correct": true
+    },
+    {
+      "confidence": 0.9190841011187683,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208001856354823,
+      "correct": true
+    },
+    {
+      "confidence": 0.9243851253254661,
+      "correct": true
+    },
+    {
+      "confidence": 0.40576492345906684,
+      "correct": true
+    },
+    {
+      "confidence": 0.3227993944464459,
+      "correct": false
+    },
+    {
+      "confidence": 0.3482965492034749,
+      "correct": false
+    },
+    {
+      "confidence": 0.9195796639508076,
+      "correct": true
+    },
+    {
+      "confidence": 0.5696106533414725,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.6244973466331245,
+      "correct": true
+    },
+    {
+      "confidence": 0.916448267275136,
+      "correct": true
+    },
+    {
+      "confidence": 0.9179464018420347,
+      "correct": true
+    },
+    {
+      "confidence": 0.9216825244040414,
+      "correct": false
+    },
+    {
+      "confidence": 0.36796651585467466,
+      "correct": false
+    },
+    {
+      "confidence": 0.6303403332550703,
+      "correct": true
+    },
+    {
+      "confidence": 0.9190841011187683,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208001856354823,
+      "correct": true
+    },
+    {
+      "confidence": 0.443572877848707,
+      "correct": true
+    },
+    {
+      "confidence": 0.33242644123252096,
+      "correct": false
+    },
+    {
+      "confidence": 0.6231799629789614,
+      "correct": true
+    },
+    {
+      "confidence": 0.9126254349499163,
+      "correct": true
+    },
+    {
+      "confidence": 0.9141592168498176,
+      "correct": true
+    },
+    {
+      "confidence": 0.9181451106113186,
+      "correct": true
+    },
+    {
+      "confidence": 0.399683016686456,
+      "correct": true
+    },
+    {
+      "confidence": 0.09281400378704621,
+      "correct": false
+    },
+    {
+      "confidence": 0.9190841011187683,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208001856354823,
+      "correct": true
+    },
+    {
+      "confidence": 0.9236806110347203,
+      "correct": true
+    },
+    {
+      "confidence": 0.1553182930397544,
+      "correct": false
+    },
+    {
+      "confidence": 0.6312799922829976,
+      "correct": true
+    },
+    {
+      "confidence": 0.7924105881528759,
+      "correct": true
+    },
+    {
+      "confidence": 0.798669602800631,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.4667599272388331,
+      "correct": false
+    },
+    {
+      "confidence": 0.6303403332550703,
+      "correct": true
+    },
+    {
+      "confidence": 0.9190173390687549,
+      "correct": true
+    },
+    {
+      "confidence": 0.9208001856354823,
+      "correct": true
+    },
+    {
+      "confidence": 0.9243851253254661,
+      "correct": true
+    },
+    {
+      "confidence": 0.6693545537136358,
+      "correct": true
+    },
+    {
+      "confidence": 0.18508754197594376,
+      "correct": false
+    },
+    {
+      "confidence": 0.4143176754159354,
+      "correct": false
+    },
+    {
+      "confidence": 0.3481596851876196,
+      "correct": false
+    },
+    {
+      "confidence": 0.772442234066478,
+      "correct": true
+    },
+    {
+      "confidence": 0.48178631075168754,
+      "correct": true
+    },
+    {
+      "confidence": 0.3092673828464136,
+      "correct": true
+    },
+    {
+      "confidence": 0.7938031363185054,
+      "correct": false
+    },
+    {
+      "confidence": 0.7792538147588307,
+      "correct": false
+    },
+    {
+      "confidence": 0.9176707235919697,
+      "correct": true
+    }
+  ],
+  "perDoc": [
+    {
+      "doc": "deepform-02804f3a-c189-34d1-81e9-619d4e7fbc4b.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2636966137240794,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2636966137240794,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-05f4795c-be1c-1028-6c79-3e679b954976.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.22545372069177302,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.22545372069177302,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-106bbf1c-68c1-b235-ad60-966d96c7e6bd.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_to": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/gross_amount": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.46093258927999686,
+      "auroc": 0.25,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_to": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.43722489736848635,
+        "auroc": 0.6666666666666666
+      }
+    },
+    {
+      "doc": "deepform-10f0fd54-b6b9-5bb8-d884-bf562045948a.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3455492229370736,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3455492229370736,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-1b2e5a3c-abbd-0966-f102-c1b7b1907ec4.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2601803733083481,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2601803733083481,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "deepform-250e73dd-0070-72bf-683b-c57b7dd7a1de.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.22374380126953664,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.22374380126953664,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-2eb5eaa6-3f56-cb68-b3c8-76abab26dc0c.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2079402774212623,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2079402774212623,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-4748ebc2-5694-3845-c655-9a7527cc2bcd.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.33332637295317147,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.33332637295317147,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "deepform-4af56131-8360-9587-cdea-73368e0f934a.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.4579808987356026,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.4579808987356026,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-4b15ddfe-e340-ab7b-9913-99104af87cfc.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2543964617147046,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2543964617147046,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-50e20ed6-1232-4272-a28a-4632d68679fc.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3367420180394119,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3367420180394119,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "deepform-5332c375-1c00-f2df-6d48-3f253a1ce712.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.22628723985554475,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.22628723985554475,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-53c10b8d-b592-db3f-9a30-e6729046e7ce.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2672155543271775,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2672155543271775,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-5bf05fd9-5be3-1dbc-6d63-47bf4935d0e8.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.19618367359734404,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.19618367359734404,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-5dad4456-7dae-0e81-8cd6-b782d72639a4.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2041850343512373,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2041850343512373,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-5ef87109-6c02-7747-55ce-3c17008883f4.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.16304841635480324,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.16304841635480324,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-64780ed0-180c-a77b-bfe0-478c2a48a3a0.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3259922019510046,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3259922019510046,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "deepform-64ce52a3-fe66-1822-3202-9729ba867b0c.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.35447580252701144,
+      "auroc": 0.25,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.35447580252701144,
+        "auroc": 0.25
+      }
+    },
+    {
+      "doc": "deepform-685a2568-66ec-e3e0-27a1-78b56402b8cb.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.32289752382106257,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.32289752382106257,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "deepform-74f41ce7-1c4a-c1bf-7cfc-5906ef168644.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.29301699406735443,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.29301699406735443,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-7a8b6973-be56-db5c-6adb-918a45f5813a.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.27269472262970285,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.27269472262970285,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-7b0e54d3-76bc-5e87-6c44-0fe4e534cf80.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_to": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.6239185768963325,
+      "auroc": 0.3333333333333333,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_to": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.6239185768963325,
+        "auroc": 0.3333333333333333
+      }
+    },
+    {
+      "doc": "deepform-8336cac1-6a6b-3d03-da02-406e5c5c02a3.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.26844719935595485,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.26844719935595485,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-88fa6e33-408f-6ac2-a253-d30e32bce302.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.30665721321059786,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.30665721321059786,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "deepform-8e9ae894-95ce-2b46-58c4-bd4748bd8e60.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2273945007542111,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2273945007542111,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-96758ed0-03a8-c4d3-97ad-7d4a8f14d465.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.18817128712210549,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.18817128712210549,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-98905496-5904-ec4a-c59a-7c6d297b4bfa.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5206518615731699,
+      "auroc": 0.25,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5206518615731699,
+        "auroc": 0.25
+      }
+    },
+    {
+      "doc": "deepform-b81af886-ac0d-ed0b-8798-25a86885aaf5.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3010160740844179,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3010160740844179,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "deepform-b83b03c8-6bd6-61df-d90e-a91cfa2d4a3a.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.27302388310514897,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.27302388310514897,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-c3594f89-5f16-31ae-8b73-88c5520a4753.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2001557284768112,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2001557284768112,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-c442b691-e6c8-7e9d-3970-a205dc05b56d.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.35522814057971475,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.35522814057971475,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-ca2b81c1-ae0a-09ca-fded-9acc979c0e48.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.3925581017307493,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.3925581017307493,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "deepform-d42b3339-ef69-384f-3e5b-b21169b04816.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.29083380359932937,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.29083380359932937,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-d6cd4fa8-fed8-1f57-c2f7-e5dea8529a3e.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.19286334316850143,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.19286334316850143,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-d9a04263-730c-db2b-2ae4-76b2b5e2e1bf.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.18591321786232387,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.18591321786232387,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-dfe6f0ca-e735-60ff-3630-7c92239ddae2.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.28659162196065,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.28659162196065,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-e8afd93c-9910-0551-6596-b6b8567dd01b.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_to": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2144433887908119,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_to": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2144433887908119,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-f27113a6-a13d-da0a-851f-e6e25b3c7547.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_from": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_to": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.301153622959877,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_from": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_to": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.301153622959877,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "deepform-f55b8467-7522-5456-a56d-896956759ebd.pdf",
+      "perField": {
+        "/contract_number": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/advertiser": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/flight_from": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/flight_to": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/gross_amount": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5728665067774531,
+      "auroc": 0.3333333333333333,
+      "normalized": {
+        "perField": {
+          "/contract_number": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/advertiser": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/flight_from": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/flight_to": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/gross_amount": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5728665067774531,
+        "auroc": 0.3333333333333333
+      }
+    }
+  ],
+  "normalized": {
+    "docClass": "deepform",
+    "tableSha256": "7a5d319459b4b5c0e9ed3213f06c0a43975a4aa709f813eafec3337e6fb43be1",
+    "corpus": {
+      "docs": 39,
+      "leaves": 195,
+      "cells": {
+        "tp": 153,
+        "fp": 35,
+        "fn": 41
+      },
+      "precision": 0.8138297872340425,
+      "recall": 0.788659793814433,
+      "f1": 0.8010471204188482,
+      "ece": 0.14605461306432427,
+      "brier": 0.14660166400402397,
+      "auroc": 0.7945834653151727,
+      "riskCoverage": [
+        {
+          "coverage": 0,
+          "error": 0
+        },
+        {
+          "coverage": 0.010256410256410256,
+          "error": 0
+        },
+        {
+          "coverage": 0.020512820512820513,
+          "error": 0
+        },
+        {
+          "coverage": 0.041025641025641026,
+          "error": 0
+        },
+        {
+          "coverage": 0.046153846153846156,
+          "error": 0
+        },
+        {
+          "coverage": 0.06666666666666667,
+          "error": 0.07692307692307693
+        },
+        {
+          "coverage": 0.07179487179487179,
+          "error": 0.07142857142857142
+        },
+        {
+          "coverage": 0.07692307692307693,
+          "error": 0.06666666666666667
+        },
+        {
+          "coverage": 0.08205128205128205,
+          "error": 0.0625
+        },
+        {
+          "coverage": 0.08717948717948718,
+          "error": 0.058823529411764705
+        },
+        {
+          "coverage": 0.1282051282051282,
+          "error": 0.08
+        },
+        {
+          "coverage": 0.1641025641025641,
+          "error": 0.09375
+        },
+        {
+          "coverage": 0.16923076923076924,
+          "error": 0.09090909090909091
+        },
+        {
+          "coverage": 0.17435897435897435,
+          "error": 0.08823529411764706
+        },
+        {
+          "coverage": 0.20512820512820512,
+          "error": 0.1
+        },
+        {
+          "coverage": 0.21025641025641026,
+          "error": 0.0975609756097561
+        },
+        {
+          "coverage": 0.22564102564102564,
+          "error": 0.09090909090909091
+        },
+        {
+          "coverage": 0.23076923076923078,
+          "error": 0.08888888888888889
+        },
+        {
+          "coverage": 0.27692307692307694,
+          "error": 0.09259259259259259
+        },
+        {
+          "coverage": 0.28717948717948716,
+          "error": 0.08928571428571429
+        },
+        {
+          "coverage": 0.2923076923076923,
+          "error": 0.08771929824561403
+        },
+        {
+          "coverage": 0.3384615384615385,
+          "error": 0.07575757575757576
+        },
+        {
+          "coverage": 0.3435897435897436,
+          "error": 0.07462686567164178
+        },
+        {
+          "coverage": 0.358974358974359,
+          "error": 0.07142857142857142
+        },
+        {
+          "coverage": 0.36923076923076925,
+          "error": 0.06944444444444445
+        },
+        {
+          "coverage": 0.37948717948717947,
+          "error": 0.06756756756756757
+        },
+        {
+          "coverage": 0.38461538461538464,
+          "error": 0.06666666666666667
+        },
+        {
+          "coverage": 0.39487179487179486,
+          "error": 0.06493506493506493
+        },
+        {
+          "coverage": 0.40512820512820513,
+          "error": 0.06329113924050633
+        },
+        {
+          "coverage": 0.41025641025641024,
+          "error": 0.0625
+        },
+        {
+          "coverage": 0.4205128205128205,
+          "error": 0.06097560975609756
+        },
+        {
+          "coverage": 0.4307692307692308,
+          "error": 0.05952380952380952
+        },
+        {
+          "coverage": 0.4358974358974359,
+          "error": 0.058823529411764705
+        },
+        {
+          "coverage": 0.441025641025641,
+          "error": 0.06976744186046512
+        },
+        {
+          "coverage": 0.4512820512820513,
+          "error": 0.06818181818181818
+        },
+        {
+          "coverage": 0.4564102564102564,
+          "error": 0.06741573033707865
+        },
+        {
+          "coverage": 0.46153846153846156,
+          "error": 0.06666666666666667
+        },
+        {
+          "coverage": 0.4666666666666667,
+          "error": 0.06593406593406594
+        },
+        {
+          "coverage": 0.4717948717948718,
+          "error": 0.06521739130434782
+        },
+        {
+          "coverage": 0.47692307692307695,
+          "error": 0.06451612903225806
+        },
+        {
+          "coverage": 0.48205128205128206,
+          "error": 0.06382978723404255
+        },
+        {
+          "coverage": 0.48717948717948717,
+          "error": 0.07368421052631578
+        },
+        {
+          "coverage": 0.49230769230769234,
+          "error": 0.07291666666666667
+        },
+        {
+          "coverage": 0.49743589743589745,
+          "error": 0.07216494845360824
+        },
+        {
+          "coverage": 0.5025641025641026,
+          "error": 0.07142857142857142
+        },
+        {
+          "coverage": 0.5076923076923077,
+          "error": 0.0707070707070707
+        },
+        {
+          "coverage": 0.5128205128205128,
+          "error": 0.07
+        },
+        {
+          "coverage": 0.517948717948718,
+          "error": 0.06930693069306931
+        },
+        {
+          "coverage": 0.5230769230769231,
+          "error": 0.06862745098039216
+        },
+        {
+          "coverage": 0.5282051282051282,
+          "error": 0.06796116504854369
+        },
+        {
+          "coverage": 0.5435897435897435,
+          "error": 0.0660377358490566
+        },
+        {
+          "coverage": 0.5487179487179488,
+          "error": 0.06542056074766354
+        },
+        {
+          "coverage": 0.558974358974359,
+          "error": 0.06422018348623854
+        },
+        {
+          "coverage": 0.5641025641025641,
+          "error": 0.06363636363636363
+        },
+        {
+          "coverage": 0.5692307692307692,
+          "error": 0.06306306306306306
+        },
+        {
+          "coverage": 0.5743589743589743,
+          "error": 0.0625
+        },
+        {
+          "coverage": 0.6,
+          "error": 0.06837606837606838
+        },
+        {
+          "coverage": 0.6051282051282051,
+          "error": 0.06779661016949153
+        },
+        {
+          "coverage": 0.6102564102564103,
+          "error": 0.06722689075630252
+        },
+        {
+          "coverage": 0.6256410256410256,
+          "error": 0.06557377049180328
+        },
+        {
+          "coverage": 0.6358974358974359,
+          "error": 0.07258064516129033
+        },
+        {
+          "coverage": 0.6410256410256411,
+          "error": 0.072
+        },
+        {
+          "coverage": 0.6461538461538462,
+          "error": 0.07142857142857142
+        },
+        {
+          "coverage": 0.6512820512820513,
+          "error": 0.07086614173228346
+        },
+        {
+          "coverage": 0.6564102564102564,
+          "error": 0.0703125
+        },
+        {
+          "coverage": 0.6615384615384615,
+          "error": 0.06976744186046512
+        },
+        {
+          "coverage": 0.6666666666666666,
+          "error": 0.06923076923076923
+        },
+        {
+          "coverage": 0.6717948717948717,
+          "error": 0.06870229007633588
+        },
+        {
+          "coverage": 0.676923076923077,
+          "error": 0.06818181818181818
+        },
+        {
+          "coverage": 0.6820512820512821,
+          "error": 0.06766917293233082
+        },
+        {
+          "coverage": 0.6871794871794872,
+          "error": 0.06716417910447761
+        },
+        {
+          "coverage": 0.6923076923076923,
+          "error": 0.06666666666666667
+        },
+        {
+          "coverage": 0.6974358974358974,
+          "error": 0.07352941176470588
+        },
+        {
+          "coverage": 0.7025641025641025,
+          "error": 0.072992700729927
+        },
+        {
+          "coverage": 0.7076923076923077,
+          "error": 0.07246376811594203
+        },
+        {
+          "coverage": 0.7435897435897436,
+          "error": 0.1103448275862069
+        },
+        {
+          "coverage": 0.7487179487179487,
+          "error": 0.1095890410958904
+        },
+        {
+          "coverage": 0.7589743589743589,
+          "error": 0.10810810810810811
+        },
+        {
+          "coverage": 0.764102564102564,
+          "error": 0.11409395973154363
+        },
+        {
+          "coverage": 0.7692307692307693,
+          "error": 0.11333333333333333
+        },
+        {
+          "coverage": 0.7743589743589744,
+          "error": 0.11258278145695365
+        },
+        {
+          "coverage": 0.7794871794871795,
+          "error": 0.1118421052631579
+        },
+        {
+          "coverage": 0.7846153846153846,
+          "error": 0.1111111111111111
+        },
+        {
+          "coverage": 0.7897435897435897,
+          "error": 0.11038961038961038
+        },
+        {
+          "coverage": 0.7948717948717948,
+          "error": 0.10967741935483871
+        },
+        {
+          "coverage": 0.8,
+          "error": 0.10897435897435898
+        },
+        {
+          "coverage": 0.8051282051282052,
+          "error": 0.11464968152866242
+        },
+        {
+          "coverage": 0.8102564102564103,
+          "error": 0.12025316455696203
+        },
+        {
+          "coverage": 0.8153846153846154,
+          "error": 0.12578616352201258
+        },
+        {
+          "coverage": 0.8205128205128205,
+          "error": 0.125
+        },
+        {
+          "coverage": 0.8256410256410256,
+          "error": 0.13043478260869565
+        },
+        {
+          "coverage": 0.8307692307692308,
+          "error": 0.12962962962962962
+        },
+        {
+          "coverage": 0.8358974358974359,
+          "error": 0.12883435582822086
+        },
+        {
+          "coverage": 0.841025641025641,
+          "error": 0.13414634146341464
+        },
+        {
+          "coverage": 0.8461538461538461,
+          "error": 0.1393939393939394
+        },
+        {
+          "coverage": 0.8512820512820513,
+          "error": 0.14457831325301204
+        },
+        {
+          "coverage": 0.8564102564102564,
+          "error": 0.1497005988023952
+        },
+        {
+          "coverage": 0.8615384615384616,
+          "error": 0.15476190476190477
+        },
+        {
+          "coverage": 0.8666666666666667,
+          "error": 0.15976331360946747
+        },
+        {
+          "coverage": 0.8717948717948718,
+          "error": 0.16470588235294117
+        },
+        {
+          "coverage": 0.8769230769230769,
+          "error": 0.16374269005847952
+        },
+        {
+          "coverage": 0.882051282051282,
+          "error": 0.16279069767441862
+        },
+        {
+          "coverage": 0.8871794871794871,
+          "error": 0.1676300578034682
+        },
+        {
+          "coverage": 0.8923076923076924,
+          "error": 0.1724137931034483
+        },
+        {
+          "coverage": 0.8974358974358975,
+          "error": 0.17142857142857143
+        },
+        {
+          "coverage": 0.9025641025641026,
+          "error": 0.17613636363636365
+        },
+        {
+          "coverage": 0.9076923076923077,
+          "error": 0.1807909604519774
+        },
+        {
+          "coverage": 0.9128205128205128,
+          "error": 0.1853932584269663
+        },
+        {
+          "coverage": 0.9179487179487179,
+          "error": 0.18994413407821228
+        },
+        {
+          "coverage": 0.9230769230769231,
+          "error": 0.19444444444444445
+        },
+        {
+          "coverage": 0.9282051282051282,
+          "error": 0.19889502762430938
+        },
+        {
+          "coverage": 0.9333333333333333,
+          "error": 0.2032967032967033
+        },
+        {
+          "coverage": 0.9384615384615385,
+          "error": 0.20218579234972678
+        },
+        {
+          "coverage": 0.9435897435897436,
+          "error": 0.20108695652173914
+        },
+        {
+          "coverage": 0.9487179487179487,
+          "error": 0.2
+        },
+        {
+          "coverage": 0.9692307692307692,
+          "error": 0.20105820105820105
+        },
+        {
+          "coverage": 0.9897435897435898,
+          "error": 0.20207253886010362
+        },
+        {
+          "coverage": 0.9948717948717949,
+          "error": 0.20618556701030927
+        },
+        {
+          "coverage": 1,
+          "error": 0.21025641025641026
+        }
+      ]
+    },
+    "points": [
+      {
+        "confidence": 0.3012956177509953,
+        "correct": true
+      },
+      {
+        "confidence": 0.624974891328565,
+        "correct": true
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.626642121664063,
+        "correct": true
+      },
+      {
+        "confidence": 0.9131480325532774,
+        "correct": true
+      },
+      {
+        "confidence": 0.9146818144531788,
+        "correct": true
+      },
+      {
+        "confidence": 0.9182594278706159,
+        "correct": true
+      },
+      {
+        "confidence": 0.16455240518718953,
+        "correct": true
+      },
+      {
+        "confidence": 0.10093929389222298,
+        "correct": false
+      },
+      {
+        "confidence": 0.40118679290038123,
+        "correct": false
+      },
+      {
+        "confidence": 0.4078200350157933,
+        "correct": false
+      },
+      {
+        "confidence": 0.5592692297787762,
+        "correct": true
+      },
+      {
+        "confidence": 0.15447511811410272,
+        "correct": true
+      },
+      {
+        "confidence": 0.6244038310108204,
+        "correct": true
+      },
+      {
+        "confidence": 0.7847451372835957,
+        "correct": true
+      },
+      {
+        "confidence": 0.7903703710354972,
+        "correct": true
+      },
+      {
+        "confidence": 0.9182594278706159,
+        "correct": true
+      },
+      {
+        "confidence": 0.16252626853856159,
+        "correct": true
+      },
+      {
+        "confidence": 0.219505328601514,
+        "correct": false
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9216825244040414,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.6317686222418193,
+        "correct": true
+      },
+      {
+        "confidence": 0.9131480325532774,
+        "correct": true
+      },
+      {
+        "confidence": 0.9146818144531788,
+        "correct": true
+      },
+      {
+        "confidence": 0.9216825244040414,
+        "correct": true
+      },
+      {
+        "confidence": 0.5740479013378932,
+        "correct": true
+      },
+      {
+        "confidence": 0.6302748545218988,
+        "correct": true
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9215811879167258,
+        "correct": true
+      },
+      {
+        "confidence": 0.15447511811410272,
+        "correct": true
+      },
+      {
+        "confidence": 0.3328505768469917,
+        "correct": false
+      },
+      {
+        "confidence": 0.792663344875812,
+        "correct": true
+      },
+      {
+        "confidence": 0.7982284959083474,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": true
+      },
+      {
+        "confidence": 0.15447511811410272,
+        "correct": false
+      },
+      {
+        "confidence": 0.6330418625539709,
+        "correct": false
+      },
+      {
+        "confidence": 0.9128601435334535,
+        "correct": true
+      },
+      {
+        "confidence": 0.5056040966394797,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.6330418625539709,
+        "correct": true
+      },
+      {
+        "confidence": 0.760250885968598,
+        "correct": true
+      },
+      {
+        "confidence": 0.9146818144531788,
+        "correct": true
+      },
+      {
+        "confidence": 0.9200431284507296,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.6302748545218988,
+        "correct": false
+      },
+      {
+        "confidence": 0.7611950135275434,
+        "correct": true
+      },
+      {
+        "confidence": 0.76711032292668,
+        "correct": true
+      },
+      {
+        "confidence": 0.9182594278706159,
+        "correct": true
+      },
+      {
+        "confidence": 0.4794447446470934,
+        "correct": true
+      },
+      {
+        "confidence": 0.6330418625539709,
+        "correct": true
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9216825244040414,
+        "correct": true
+      },
+      {
+        "confidence": 0.27358638561616966,
+        "correct": true
+      },
+      {
+        "confidence": 0.6343339348090968,
+        "correct": true
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9216072388216755,
+        "correct": true
+      },
+      {
+        "confidence": 0.6743355488664439,
+        "correct": true
+      },
+      {
+        "confidence": 0.16765096428227366,
+        "correct": false
+      },
+      {
+        "confidence": 0.792663344875812,
+        "correct": true
+      },
+      {
+        "confidence": 0.7982284959083474,
+        "correct": true
+      },
+      {
+        "confidence": 0.9215052066449502,
+        "correct": true
+      },
+      {
+        "confidence": 0.4080349537996054,
+        "correct": false
+      },
+      {
+        "confidence": 0.6330418625539709,
+        "correct": true
+      },
+      {
+        "confidence": 0.9156061161160676,
+        "correct": true
+      },
+      {
+        "confidence": 0.9171042506829661,
+        "correct": true
+      },
+      {
+        "confidence": 0.9213575526904144,
+        "correct": true
+      },
+      {
+        "confidence": 0.6752255061949982,
+        "correct": true
+      },
+      {
+        "confidence": 0.2457140102690575,
+        "correct": false
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": true
+      },
+      {
+        "confidence": 0.15447511811410272,
+        "correct": true
+      },
+      {
+        "confidence": 0.2790559450996605,
+        "correct": false
+      },
+      {
+        "confidence": 0.7840714151478805,
+        "correct": true
+      },
+      {
+        "confidence": 0.789696648899782,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": true
+      },
+      {
+        "confidence": 0.6752255061949982,
+        "correct": true
+      },
+      {
+        "confidence": 0.6330418625539709,
+        "correct": true
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": false
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": true
+      },
+      {
+        "confidence": 0.1553182930397544,
+        "correct": true
+      },
+      {
+        "confidence": 0.27457012853650337,
+        "correct": false
+      },
+      {
+        "confidence": 0.7973858140147997,
+        "correct": true
+      },
+      {
+        "confidence": 0.7837592071178695,
+        "correct": true
+      },
+      {
+        "confidence": 0.9236191952587671,
+        "correct": true
+      },
+      {
+        "confidence": 0.5672294260232049,
+        "correct": false
+      },
+      {
+        "confidence": 0.6373646883251952,
+        "correct": true
+      },
+      {
+        "confidence": 0.7697151261825332,
+        "correct": true
+      },
+      {
+        "confidence": 0.7742128879958321,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": true
+      },
+      {
+        "confidence": 0.6752255061949982,
+        "correct": true
+      },
+      {
+        "confidence": 0.21181701803604697,
+        "correct": false
+      },
+      {
+        "confidence": 0.7699238757897042,
+        "correct": true
+      },
+      {
+        "confidence": 0.778037963957999,
+        "correct": true
+      },
+      {
+        "confidence": 0.6251560589448315,
+        "correct": true
+      },
+      {
+        "confidence": 0.16548497857503525,
+        "correct": true
+      },
+      {
+        "confidence": 0.6303403332550703,
+        "correct": true
+      },
+      {
+        "confidence": 0.9190841011187683,
+        "correct": false
+      },
+      {
+        "confidence": 0.9208001856354823,
+        "correct": false
+      },
+      {
+        "confidence": 0.9244660904424833,
+        "correct": true
+      },
+      {
+        "confidence": 0.4794447446470934,
+        "correct": true
+      },
+      {
+        "confidence": 0.4338638831814288,
+        "correct": true
+      },
+      {
+        "confidence": 0.9126254349499163,
+        "correct": true
+      },
+      {
+        "confidence": 0.9141592168498176,
+        "correct": true
+      },
+      {
+        "confidence": 0.9176707235919697,
+        "correct": true
+      },
+      {
+        "confidence": 0.1553182930397544,
+        "correct": true
+      },
+      {
+        "confidence": 0.21357097389185897,
+        "correct": false
+      },
+      {
+        "confidence": 0.7975633154594742,
+        "correct": true
+      },
+      {
+        "confidence": 0.8037226883049208,
+        "correct": true
+      },
+      {
+        "confidence": 0.9236806110347203,
+        "correct": true
+      },
+      {
+        "confidence": 0.6750981545351847,
+        "correct": true
+      },
+      {
+        "confidence": 0.4235789644970258,
+        "correct": true
+      },
+      {
+        "confidence": 0.9190841011187683,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208001856354823,
+        "correct": true
+      },
+      {
+        "confidence": 0.9244660904424833,
+        "correct": true
+      },
+      {
+        "confidence": 0.6743355488664439,
+        "correct": true
+      },
+      {
+        "confidence": 0.6295615932229858,
+        "correct": true
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208517531828724,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5750769475357653,
+        "correct": true
+      },
+      {
+        "confidence": 0.4577170021898259,
+        "correct": true
+      },
+      {
+        "confidence": 0.46366814855376254,
+        "correct": true
+      },
+      {
+        "confidence": 0.4002785938547964,
+        "correct": true
+      },
+      {
+        "confidence": 0.1553182930397544,
+        "correct": true
+      },
+      {
+        "confidence": 0.185365278260959,
+        "correct": false
+      },
+      {
+        "confidence": 0.7975633154594742,
+        "correct": true
+      },
+      {
+        "confidence": 0.8037226883049208,
+        "correct": true
+      },
+      {
+        "confidence": 0.9236806110347203,
+        "correct": true
+      },
+      {
+        "confidence": 0.4512752271173926,
+        "correct": true
+      },
+      {
+        "confidence": 0.4200404595678918,
+        "correct": true
+      },
+      {
+        "confidence": 0.9190841011187683,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208001856354823,
+        "correct": true
+      },
+      {
+        "confidence": 0.9236806110347203,
+        "correct": true
+      },
+      {
+        "confidence": 0.39029298931391204,
+        "correct": false
+      },
+      {
+        "confidence": 0.6252449348501392,
+        "correct": true
+      },
+      {
+        "confidence": 0.9190841011187683,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208001856354823,
+        "correct": true
+      },
+      {
+        "confidence": 0.9243851253254661,
+        "correct": true
+      },
+      {
+        "confidence": 0.40576492345906684,
+        "correct": true
+      },
+      {
+        "confidence": 0.3227993944464459,
+        "correct": false
+      },
+      {
+        "confidence": 0.3482965492034749,
+        "correct": false
+      },
+      {
+        "confidence": 0.9195796639508076,
+        "correct": true
+      },
+      {
+        "confidence": 0.5696106533414725,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.6244973466331245,
+        "correct": true
+      },
+      {
+        "confidence": 0.916448267275136,
+        "correct": true
+      },
+      {
+        "confidence": 0.9179464018420347,
+        "correct": true
+      },
+      {
+        "confidence": 0.9216825244040414,
+        "correct": false
+      },
+      {
+        "confidence": 0.36796651585467466,
+        "correct": false
+      },
+      {
+        "confidence": 0.6303403332550703,
+        "correct": true
+      },
+      {
+        "confidence": 0.9190841011187683,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208001856354823,
+        "correct": true
+      },
+      {
+        "confidence": 0.443572877848707,
+        "correct": true
+      },
+      {
+        "confidence": 0.33242644123252096,
+        "correct": false
+      },
+      {
+        "confidence": 0.6231799629789614,
+        "correct": true
+      },
+      {
+        "confidence": 0.9126254349499163,
+        "correct": true
+      },
+      {
+        "confidence": 0.9141592168498176,
+        "correct": true
+      },
+      {
+        "confidence": 0.9181451106113186,
+        "correct": true
+      },
+      {
+        "confidence": 0.399683016686456,
+        "correct": true
+      },
+      {
+        "confidence": 0.09281400378704621,
+        "correct": false
+      },
+      {
+        "confidence": 0.9190841011187683,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208001856354823,
+        "correct": true
+      },
+      {
+        "confidence": 0.9236806110347203,
+        "correct": true
+      },
+      {
+        "confidence": 0.1553182930397544,
+        "correct": false
+      },
+      {
+        "confidence": 0.6312799922829976,
+        "correct": true
+      },
+      {
+        "confidence": 0.7924105881528759,
+        "correct": true
+      },
+      {
+        "confidence": 0.798669602800631,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.4667599272388331,
+        "correct": false
+      },
+      {
+        "confidence": 0.6303403332550703,
+        "correct": true
+      },
+      {
+        "confidence": 0.9190173390687549,
+        "correct": true
+      },
+      {
+        "confidence": 0.9208001856354823,
+        "correct": true
+      },
+      {
+        "confidence": 0.9243851253254661,
+        "correct": true
+      },
+      {
+        "confidence": 0.6693545537136358,
+        "correct": true
+      },
+      {
+        "confidence": 0.18508754197594376,
+        "correct": false
+      },
+      {
+        "confidence": 0.4143176754159354,
+        "correct": false
+      },
+      {
+        "confidence": 0.3481596851876196,
+        "correct": false
+      },
+      {
+        "confidence": 0.772442234066478,
+        "correct": true
+      },
+      {
+        "confidence": 0.48178631075168754,
+        "correct": true
+      },
+      {
+        "confidence": 0.3092673828464136,
+        "correct": true
+      },
+      {
+        "confidence": 0.7938031363185054,
+        "correct": false
+      },
+      {
+        "confidence": 0.7792538147588307,
+        "correct": false
+      },
+      {
+        "confidence": 0.9176707235919697,
+        "correct": true
+      }
+    ]
+  }
+}

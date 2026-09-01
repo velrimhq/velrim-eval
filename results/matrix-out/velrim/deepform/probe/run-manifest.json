@@ -1,0 +1,511 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation"
+  ],
+  "run": {
+    "fingerprint": "78dddb42d7aa0b25c597a00c99d3ccd3f4e2934111d97d10ae49621a52dadca8",
+    "adapter": "velrim",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-18T18:33:40.183Z",
+    "completedAt": "2026-08-18T18:37:07.556Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "code": {
+    "velrimEvalCommitSha": "e6c713b8bdbc8ac8d23a93d90aae4c660429439b",
+    "worktreeDirty": false,
+    "implementationHash": "762da9f423f891b782b50550922885a698f98b2335462ab5d67f3f591b09d813",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/velrim.js",
+        "sha256": "5ef1b11d249bade047c355cc99bcb8000bf69dc1f92738a5e0e685f5d95a4919"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/velrim.js",
+        "sha256": "5ef1b11d249bade047c355cc99bcb8000bf69dc1f92738a5e0e685f5d95a4919"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "deepform",
+      "schema": {
+        "path": "deepform.probe-schema.json",
+        "sha256": "7bd946bf9703927e826a6eb64b60fa3610094b9a338c139fe5f018594513fd41"
+      },
+      "publicGolden": {
+        "path": "golden.deepform.probe.jsonl",
+        "sha256": "57cc1ef846e7710047dbab3942a2e69b7d9dacb284efad865fabf99e905f813a"
+      },
+      "sourceManifest": {
+        "path": "../../../velrim-run/manifests/deepform.manifest.json",
+        "sha256": "12afafddb4729515eb0539b12d8be198cd5dbd96161291b76a5ef85166cd5d47"
+      },
+      "calTestGoldenHash": "2bb5067c08b1c072a00b4b45d7eb84b9823f822ce8fcb656c610ccd5fded2acf"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://api.velrim.com/v1/extract",
+    "model": null,
+    "generationSettings": {
+      "providerManaged": true,
+      "requireFittedStamp": true,
+      "expectedCalibratorStamp": "^cal-\\d{4}\\.\\d{2}-\\d+$"
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "surfaced",
+      "values": [
+        "gemini-2.5-flash"
+      ],
+      "missingRecords": 0
+    },
+    "vendor": {
+      "status": "surfaced",
+      "values": [
+        "dp-sel-1"
+      ],
+      "missingRecords": 0
+    },
+    "calibrator": {
+      "status": "surfaced",
+      "values": [
+        "cal-2026.08-4"
+      ],
+      "missingRecords": 0
+    },
+    "api": {
+      "status": "surfaced",
+      "values": [
+        "2026-08-10"
+      ],
+      "missingRecords": 0
+    },
+    "requestIds": {
+      "status": "mixed",
+      "values": [
+        "req_04f7b3b1-dde3-43da-87ab-5004bd730ab3",
+        "req_07debf4e-4554-4692-a061-48105a609067",
+        "req_206945aa-81e1-4107-8c39-a08f4d782e2e",
+        "req_233f0013-fe26-412a-af33-c67e68094643",
+        "req_263718ef-c559-4b9e-b732-6fb6ae2084cd",
+        "req_2e7c0f80-4e90-4d24-a570-73f51e86b92a",
+        "req_321620ad-7eac-4328-86d0-e54b86233245",
+        "req_34f1f052-feba-4e1e-8802-0f0de510d7f2",
+        "req_385e39df-0edf-4d0e-8d0f-abbe934c6d43",
+        "req_3cff8c21-7ee4-41f1-afed-279253c60cd9",
+        "req_414de388-5a49-4215-98ca-4654c5ee43f1",
+        "req_450ac181-e47e-4cf4-8723-a87d3ef743ab",
+        "req_47f6f547-06d7-469c-bea3-71721875a6fb",
+        "req_482684f1-2b16-46c5-8572-ec3b362eefbe",
+        "req_4addbaaa-6050-4d8d-a48d-e9c57b540375",
+        "req_4c58268e-1e92-472e-9124-ce0c4bcdb531",
+        "req_4e8f2ba6-38af-4f82-95a3-9e4613334785",
+        "req_55371511-a387-4885-bbae-a736f61d7d3e",
+        "req_643e8139-9418-4229-8e82-6756ea6ec955",
+        "req_6b35bce6-b04e-44aa-bdac-ffd1c373251d",
+        "req_725ef816-e96e-4c17-a540-e631b24ad0bb",
+        "req_87f6e062-2ede-4873-9467-5b7dafb025e3",
+        "req_8db425af-90cb-4b46-9eb0-b6dc394a3c30",
+        "req_90d98ddd-db34-4df3-b1c2-afb5cd9bda14",
+        "req_96194b38-f5da-4afd-9cdb-07e576008c59",
+        "req_989bf4e6-9b49-40db-84a3-b46adaab6bd8",
+        "req_9d816f8d-c6a2-440c-b37d-ab5862b5bbe3",
+        "req_a4bcbdfd-bcc0-4b94-bb8e-0bcadc41227b",
+        "req_a904be5a-6b6a-4704-8915-df52783fbb1b",
+        "req_a9b7e8de-d75c-455a-9a23-fd8f65a682d0",
+        "req_bd68b49d-4284-4452-9648-9f1b2b343b9e",
+        "req_c6c04b02-3cba-4df5-af15-72b78da84c33",
+        "req_d11245c7-bed0-4d32-9393-716a23ce5348",
+        "req_dd1a54b5-d823-4b48-9558-a676c462283e",
+        "req_e1af26cc-efe8-4b87-b0af-3ebc48d61785",
+        "req_e382bd37-90d6-4536-a109-87e0b7f62a56",
+        "req_e9648a48-ed3f-4477-a8da-c514feb49ef1",
+        "req_f27255c1-eab0-41d5-b121-d29a9c4dff00",
+        "req_f48771a8-ade6-43ae-88a1-456ef2742d33"
+      ],
+      "missingRecords": 0
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "deepform-02804f3a-c189-34d1-81e9-619d4e7fbc4b.pdf",
+      "docClass": "deepform",
+      "documentSha256": "42f24e59f8c6016ae715157660509d937ee9f4c89b3e92c4aaa0adf3eeb1ef6a",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-05f4795c-be1c-1028-6c79-3e679b954976.pdf",
+      "docClass": "deepform",
+      "documentSha256": "56c2d0909e86d21a6793bbd2a7d3e1e449393089897dd76b35705f38570b567d",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-106bbf1c-68c1-b235-ad60-966d96c7e6bd.pdf",
+      "docClass": "deepform",
+      "documentSha256": "2424d61eef6a481562a849dd0f202ce538d1b0bcd2bf5cd74c9309171575e622",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-10f0fd54-b6b9-5bb8-d884-bf562045948a.pdf",
+      "docClass": "deepform",
+      "documentSha256": "55bf67cc406d243a4ae56f6857af5ba7c885b551fd83dc020d108f6667c5de6e",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-1b2e5a3c-abbd-0966-f102-c1b7b1907ec4.pdf",
+      "docClass": "deepform",
+      "documentSha256": "ddbb0c01eb0bd49f8ae4de3a5322878e47e2266fc00a0d3f112829a4f03b6430",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-250e73dd-0070-72bf-683b-c57b7dd7a1de.pdf",
+      "docClass": "deepform",
+      "documentSha256": "dec1444d9a256c39500f8fcb49ead34f379b2eda817b41cca650d60ce55da2e6",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-2eb5eaa6-3f56-cb68-b3c8-76abab26dc0c.pdf",
+      "docClass": "deepform",
+      "documentSha256": "b8884cbe5be0bf0a0409d2ef5e4aa179f9f2b76e1760a681490c5748dfea2bb3",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-4748ebc2-5694-3845-c655-9a7527cc2bcd.pdf",
+      "docClass": "deepform",
+      "documentSha256": "99446798acab09f01f8939e635db24406d9909ae1c1a55ed057d5364d065421c",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-4af56131-8360-9587-cdea-73368e0f934a.pdf",
+      "docClass": "deepform",
+      "documentSha256": "bd2398fc9f94c69783069d59837894af4b60cdd3039cfce6bfff642869e2839f",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-4b15ddfe-e340-ab7b-9913-99104af87cfc.pdf",
+      "docClass": "deepform",
+      "documentSha256": "9c9aacc94a8c051e5f12c8b5759a66acd33157bb07ac5940420b3ae678bedc48",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-50e20ed6-1232-4272-a28a-4632d68679fc.pdf",
+      "docClass": "deepform",
+      "documentSha256": "cae01173039f1bdce24bcd6a26fb9e65cb617613d599a843c61c8b7df6818116",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-5332c375-1c00-f2df-6d48-3f253a1ce712.pdf",
+      "docClass": "deepform",
+      "documentSha256": "41f26b0a58f6381e68d2c697619dd17fb0c3e503b41810c239b62842b3b23d54",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-53c10b8d-b592-db3f-9a30-e6729046e7ce.pdf",
+      "docClass": "deepform",
+      "documentSha256": "4cc8e32c2077ba720177a8abbcd4749fd0e0001015e53a7d84b8de6f89bcd9ca",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-5bf05fd9-5be3-1dbc-6d63-47bf4935d0e8.pdf",
+      "docClass": "deepform",
+      "documentSha256": "7d7569a4349be3a35c68a1ed1621c51e34eccc061af784ef732e7d2545d62ec6",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-5dad4456-7dae-0e81-8cd6-b782d72639a4.pdf",
+      "docClass": "deepform",
+      "documentSha256": "21eeb94f8ca2191979e245a9aec583e6bf608cb58128279692be428b52ed1071",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-5ef87109-6c02-7747-55ce-3c17008883f4.pdf",
+      "docClass": "deepform",
+      "documentSha256": "1e76bed3225a7d5ece7c2dabb2182a2e5f35e4ccda706b8a1a6bde4c765e642a",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-64780ed0-180c-a77b-bfe0-478c2a48a3a0.pdf",
+      "docClass": "deepform",
+      "documentSha256": "752565dcb737cf47f957953c18094d3f4f144e586e094f9968403df37dcb353d",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-64ce52a3-fe66-1822-3202-9729ba867b0c.pdf",
+      "docClass": "deepform",
+      "documentSha256": "8789bce0cad05a617b95346a5f0ba562df161f9a1bfb7afec8f111b7f9bdb12d",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-685a2568-66ec-e3e0-27a1-78b56402b8cb.pdf",
+      "docClass": "deepform",
+      "documentSha256": "660bf3e8649f456ba35bc326f8ced8edef1b6c78bbf13734dd42eb821b42dd7c",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-74f41ce7-1c4a-c1bf-7cfc-5906ef168644.pdf",
+      "docClass": "deepform",
+      "documentSha256": "f1aede8fd5a12c1a2a3a7b0ecd9fc02ae0ec85ec18465c4851fe46ed8d9489de",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-7a8b6973-be56-db5c-6adb-918a45f5813a.pdf",
+      "docClass": "deepform",
+      "documentSha256": "31223285d3b640123102b8a189486911b30c152d2d1e952fd276e40231b3ae85",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-7b0e54d3-76bc-5e87-6c44-0fe4e534cf80.pdf",
+      "docClass": "deepform",
+      "documentSha256": "6b87bae2b6d0c58286d4d667aa303b277d1ce5864b4b6f4c4a285084ce1b772c",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-8336cac1-6a6b-3d03-da02-406e5c5c02a3.pdf",
+      "docClass": "deepform",
+      "documentSha256": "e23514bef5e9dd70685dcb2794f85ae9e74f6d8ab48d55d04b1ddb79a590f9d2",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-88fa6e33-408f-6ac2-a253-d30e32bce302.pdf",
+      "docClass": "deepform",
+      "documentSha256": "c26b491aa67877eee1d01c7036d055bfd8fbfecfb036c2e01e8eb9b542ae68c8",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-8e9ae894-95ce-2b46-58c4-bd4748bd8e60.pdf",
+      "docClass": "deepform",
+      "documentSha256": "dc0cc8ca68f9175929755a05774968c4f1b0991dd8dbf24834d0644983936818",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-96758ed0-03a8-c4d3-97ad-7d4a8f14d465.pdf",
+      "docClass": "deepform",
+      "documentSha256": "2a0e41e3ed5ac300800eec42d4efca52900617e8768c803902c65fef735c212f",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-98905496-5904-ec4a-c59a-7c6d297b4bfa.pdf",
+      "docClass": "deepform",
+      "documentSha256": "f5fe6c69b9cb26799d9fa338dc52a499e70b0bbe3725fe886348b475f81f9912",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-b81af886-ac0d-ed0b-8798-25a86885aaf5.pdf",
+      "docClass": "deepform",
+      "documentSha256": "03326c80a778b15490762f80f063ed0f73a36d0770135949b6dc18fa8b8e3314",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-b83b03c8-6bd6-61df-d90e-a91cfa2d4a3a.pdf",
+      "docClass": "deepform",
+      "documentSha256": "944b040ab74460f66f098fe31633f350dc35c9ee464d143fb41d759d3641aaa4",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-c3594f89-5f16-31ae-8b73-88c5520a4753.pdf",
+      "docClass": "deepform",
+      "documentSha256": "ddb4a9f69fb64886b44866c069dcdbdec2b9fb6550ea8251105cbb2cf99dd2ea",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-c442b691-e6c8-7e9d-3970-a205dc05b56d.pdf",
+      "docClass": "deepform",
+      "documentSha256": "a92b904209a2375e33dea1ac56ce27d27d48bccc704248ddeda36430eaeb6fb6",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-ca2b81c1-ae0a-09ca-fded-9acc979c0e48.pdf",
+      "docClass": "deepform",
+      "documentSha256": "374f6f7d03bcc9ea84fe07c76905a759c2d98660e26a20d0ee84628bd187964a",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-d42b3339-ef69-384f-3e5b-b21169b04816.pdf",
+      "docClass": "deepform",
+      "documentSha256": "2c7c1aa2d6cb2f08d58353b50f91a575936f5508124a56fd915f8b94dbe82ea8",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-d6cd4fa8-fed8-1f57-c2f7-e5dea8529a3e.pdf",
+      "docClass": "deepform",
+      "documentSha256": "275f6afaf1921b1817b88ecd4ed7ffb9dd6e3640ef61ad3bbb545f3672d66d1e",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-d9a04263-730c-db2b-2ae4-76b2b5e2e1bf.pdf",
+      "docClass": "deepform",
+      "documentSha256": "edcbd949deffd52c012c2dc90e1cbe776f2c25e8ac3e1544efe884ecb9d6ad4b",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-dfe6f0ca-e735-60ff-3630-7c92239ddae2.pdf",
+      "docClass": "deepform",
+      "documentSha256": "4f345ba1ac3ffa1b8a978f9f4c5cf06664bd05266c6f52bea3a6430e05c9fe39",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-e8afd93c-9910-0551-6596-b6b8567dd01b.pdf",
+      "docClass": "deepform",
+      "documentSha256": "53fcefde013c5e495b68030490e45f0d3a93fd3d428e9200b8cc58cdca6731f7",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-f27113a6-a13d-da0a-851f-e6e25b3c7547.pdf",
+      "docClass": "deepform",
+      "documentSha256": "fa72a4587ac26ba1d3a298d67b27caf65d9f7b89f558259e20b76793c3726391",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    },
+    {
+      "doc": "deepform-f55b8467-7522-5456-a56d-896956759ebd.pdf",
+      "docClass": "deepform",
+      "documentSha256": "255c379d29ac7adecd1a31ea562089915ef29fdb2ab3041055fb903459262797",
+      "schemaSemanticSha256": "239225ac2b1537ca24c33c5049a06dfaca017ddf5d52ad1bbf634f6033be1472",
+      "goldenRowSemanticSha256": "d0acd78aef145889a92c0ab3191b8e68ce076c91144c146cf6a8699e23dc6f8f"
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation"
+  ],
+  "run": {
+    "fingerprint": "4002d11b76e4f223015209031a14e3f451491168e6b8dbf98d4c96f5e38008f9",
+    "adapter": "openai",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-19T12:36:27.066Z",
+    "completedAt": "2026-08-19T12:38:06.426Z",
+    "startedDate": "2026-08-19",
+    "completedDate": "2026-08-19"
+  },
+  "code": {
+    "velrimEvalCommitSha": "e6c713b8bdbc8ac8d23a93d90aae4c660429439b",
+    "worktreeDirty": false,
+    "implementationHash": "786586a3904842bc4ff5707c791635655fa155671db2fd6c72d14bf4cdc7034a",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "vrdu-registration",
+      "schema": {
+        "path": "vrdu-registration.probe-schema.json",
+        "sha256": "8c8f24ed2f31fc64b9efe161c18e2b5770edbd049de90a8f0f60e0b8364907e5"
+      },
+      "publicGolden": {
+        "path": "golden.vrdu-registration.probe.jsonl",
+        "sha256": "5d13dd53e2de63090677df83158b443be269bccfa1ee4733c9af8946742e6012"
+      },
+      "sourceManifest": {
+        "path": "../../../velrim-run/manifests/vrdu-registration.manifest.json",
+        "sha256": "596a7b324407e7ceab7db555827a419c55b5e91c35a0f402022ae3fac9c7b30d"
+      },
+      "calTestGoldenHash": "5664481d9b5ff9e1acca8a1c78efcd71c6613234fabba3f0db54d50b6b525c24"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://api.openai.com/v1/chat/completions",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "generationSettings": {
+      "temperature": 0,
+      "logprobs": "trimmed_at_smoke",
+      "structuredMode": false,
+      "trimmedParams": [
+        "logprobs"
+      ]
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "surfaced",
+      "values": [
+        "gpt-5.4-mini-2026-03-17"
+      ],
+      "missingRecords": 0
+    },
+    "vendor": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 48
+    },
+    "calibrator": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 48
+    },
+    "api": {
+      "status": "surfaced",
+      "values": [
+        "2020-10-01"
+      ],
+      "missingRecords": 0
+    },
+    "requestIds": {
+      "status": "mixed",
+      "values": [
+        "chatcmpl-EEZorxJ9wV0MaKottQscfBGBbfHs9",
+        "chatcmpl-EEZotiqzG7BjGYW8KG17qbELSEahL",
+        "chatcmpl-EEZow6huAHj5oMkjr1RmiCW04WG5r",
+        "chatcmpl-EEZoybJ6jBMAkmFP6clqK64i03Kci",
+        "chatcmpl-EEZp0b8Qn8Y9eA2rTUuiShSpaZpnT",
+        "chatcmpl-EEZp1XXFZfSvk4I4d42uDPQ9K5MBb",
+        "chatcmpl-EEZp3q164z3qC34sAHVXXEAZyL1Ka",
+        "chatcmpl-EEZp5nWc78lOrBhUudMPN4FUF2m5L",
+        "chatcmpl-EEZp8AdTfo5Ae2uwNsKS7E42Cfzjf",
+        "chatcmpl-EEZpA5I3M25YU1bWlSWwXQsG749ip",
+        "chatcmpl-EEZpBmuhntr2JppECiZslW7TS1wOf",
+        "chatcmpl-EEZpEltaBjJXoE4UxwDDRFaKGTAoK",
+        "chatcmpl-EEZpGAERTWsJS4tNNuygPm8j7FZqJ",
+        "chatcmpl-EEZpIEPOjwxqvl9G4xdGyw0VR3rwZ",
+        "chatcmpl-EEZpKBbjt860dRrOwL02bxZKxVFhw",
+        "chatcmpl-EEZpM94ES6Eh10M1kytIuwVWGwbig",
+        "chatcmpl-EEZpOplGxEcrmTI9Rs8bVN2TAd4oU",
+        "chatcmpl-EEZpQs2Tdl6xgkHjSsmS2vmYHRYVW",
+        "chatcmpl-EEZpRgFS0hpGlqZfJVwcNdBOBtkle",
+        "chatcmpl-EEZpTd1Z7GmxzZBgSa9HbQ2Ba3EYS",
+        "chatcmpl-EEZpWPEiyw9VB7U64V4tRNuHfqmx3",
+        "chatcmpl-EEZpYZZmz3qEgJaWOHuXvO2D3OpxD",
+        "chatcmpl-EEZpaOOx0t7gH49T19YSda7wi9suN",
+        "chatcmpl-EEZpcdFpRzWv0pzCh3czuJWqwaTbO",
+        "chatcmpl-EEZpest5kx1rPrJ2pyoJ5uTo9j1CC",
+        "chatcmpl-EEZpgftYHtrNd99C1LCV5DmbwmpuE",
+        "chatcmpl-EEZpiybqv1iwz3c5XIW3aKs20vGel",
+        "chatcmpl-EEZpk2NumJcZS70w0eZ9ijrZhAs6q",
+        "chatcmpl-EEZpnqDk53w8AFwxsROOc8n1ZkmP0",
+        "chatcmpl-EEZppi5wHqewccOM4ly05ZEUBXbnl",
+        "chatcmpl-EEZprtK8doUwkO51sP7dohXoZp5uW",
+        "chatcmpl-EEZpt13U540af4ZOLX0G80Y3D6MPy",
+        "chatcmpl-EEZpvJIlOO2ivcBcqMc0cs1GMRGC4",
+        "chatcmpl-EEZpxBF71xCZKUurAQpnxZs2jW8Lj",
+        "chatcmpl-EEZpzB4KFuPj6MBVKmBoq2B3uwGIE",
+        "chatcmpl-EEZq1vwMDgiKS9sHzbd0rhMjwP1ru",
+        "chatcmpl-EEZq3BElr5HILgYlJCJP5g813oabE",
+        "chatcmpl-EEZq5N5rJxtJIxZZ7WKIWDLauDBSX",
+        "chatcmpl-EEZq7evIEQrcY8n4Ug29maKZdAg8Y",
+        "chatcmpl-EEZq9BrbfoknSqt0WoWHj8b7xt0bd",
+        "chatcmpl-EEZqBJPJegCpnZT7gLe5gZuCOCWyJ",
+        "chatcmpl-EEZqCPQRIHQrGaBd552AI63gbXN34",
+        "chatcmpl-EEZqFoqBbNOnRqwpce7F47pgeN6ww",
+        "chatcmpl-EEZqHtZdDKcsb1ouMThcK7HA2QCQT",
+        "chatcmpl-EEZqKhVwPh9cNwP716IA8yWlhDB8t",
+        "chatcmpl-EEZqMxNB29M9js8mUTNwPwPUyj7ta",
+        "chatcmpl-EEZqOYfTMcm4kBiBr6MvAm3qtRYb6",
+        "chatcmpl-EEZqQa0QI3qXU0m1QaAKrw8C5IxsT"
+      ],
+      "missingRecords": 0
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "a4daf88c8db3be5acd4e8575d8a9445843c23078be65a9c0b0b6f7510ec1c934",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19631101_Tourism_Australia_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "add58cf5ab3e09b40df63e43f0559963a5669745a2913d4b64b4c5b2ad3228be",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19650901_Arab_Information_Center_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "41db3a0ed4a87fbb176e4b8b62a48b1b8988da9d464acd16596d506412c99bae",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19670801_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "5bd83796f4fe14ed0f983a6e4dc58fe91612e28f846ae7d38d6d7e578b6060cb",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19670901_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "0603a455dc3642f2e98cc1e2b7d9d7bd03bf8d07a930f0241d3fbed2e9276251",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "27e88927dde04d6ecc6e440ee35465773dfaa6bb7359600be38bac8286af8b4d",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19711201_Tourism_Australia_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "e99f6203116f60476f0c774c2f56a5d3641a2f816aba7e83da7b49ff48ee880c",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19760701_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "5009baea303caae04fe7ce5fdffb98479ecca452e19b2c5d0efd0e58d3e74223",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19770101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "e4d45b9e2051700c4f1b4d4f66814cb289b60d68096f6b2e27e1a17ccc530dfd",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19770401_World_Zionist_Organization_-_American_Section,_Inc._Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "f1782b9784362d696de2f7481e01bd88547fd23a7baf1ce372880d8032070cc6",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19770501_Korea_National_Tourism_Organization,_New_Jersey_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "e497b8b9b0f83334faa3ebe5104e47056c542616cddba70edd86fd17f16a5c0e",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19781201_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "9a565822eca76ec4c9d1363ba17e49f0620c7ab2515c095d670c493902779e39",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19790101_IDA_Ireland_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "0bced27ba07d2130d04029bef319a898011a4ae509d70c14553220c2ea56f4a1",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19790101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "a19bbb75c4f61f713087b99915c1b3e74113bf37c0abd581ab0e71e9417449fa",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19800101_Italian_Government_Travel_Office,_Chicago_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "a782711a77f671274b57a584d5e1f5232e38cfb3b1f5aa6839099913480220b6",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19800301_Quebec_Government_Office_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "38cb515ba6c9d038a0ed4e80cf6d7d15a449aa2f2b5f51801fc4e178f622c86d",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19820801_St._Lucia_Tourist_Board_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "609b871bb53c1c64601b0b6bbf6eb0223c78d927ede4cb76616214cf6cf67ea5",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19830301_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "f5ee986b3177de6580d1ac63335a90754acc6dab16778dc9d0165832ef904db5",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "52817d31faa912b5083ac7784773f1a0ff070ef4a95055ad57d6afad4912de77",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19841001_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "6fa4366793aa93e6ccee1132b34c5d4d361877dd79d3976b1fc965016a954f8f",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "9bacf1cdf308dd58fa3f92f759aed3caa6ea3b017dd09e8c1960b41644beb6f7",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19870302_FCB_New_York_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "cd921eb20de523778b43e6fdbc57a208d50a23cb633ad92102e0bed68923cbb0",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19880501_Akin,_Gump,_Strauss,_Hauer___Feld,_LLP_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "cb636d02333cea7a7787dd6311652d4c499dceb693c529cd0c9375176b5de997",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19890201_Arnold___Porter_Kaye_Scholer,_LLP_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "d12254c4b532fe7d20400038e90343ebfb6d1e43b1426da319b864ce6c62ebd4",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19890501_Singapore_Tourism_Board_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "2328ee92de0835ef78dc0438ab579edf209d60dc7b8484273a8d356ae434441f",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "73d333277dab50f480fe2450f621aac8631724111ee3876d2d9b5bc53f9a9487",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910101_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "9389fb4f5c1c943d00c2158fc4a249b9fe8d2c7bae1b35c68d53c680a51e9641",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "e4bea7f16b42ff3f04ecd8b31d552caab4bfd5b1284958342703410c62a4746e",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910601_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "ae919e7df2b41ab0c2d0933cbbe3c24cf4da7f24f088e1cb7c0799017d25c4cb",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910601_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "e4ea53ecdd234252a6c98841f140b8496d5fd4c5743c2d2b27c070bb1fbce5f1",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910601_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "3bf1dbc2230ee78622583a56c839b21b359cc24fa307bcef576e2c7d29efed47",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910801_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "fb80160b86532ac0774e46f2c2f70175d2868bc59c53bbd92ed5f5ab11c53533",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910801_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "07d3290abdcb370a9f568c692dda91624f3beeb58572e303d05a3628568abb00",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19910801_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "b14c14529ae2755cdc26bdabeac834568166974c287d820189d8ef0d551e7ae1",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19911001_Arnold___Porter_Kaye_Scholer,_LLP_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "2f1e1e781f2168ae03e47a95254400e7f8551bb761ec8a1fdf199588cef31f6f",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19911001_Kobe_Trade_Information_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "c419da2c1125fffad6cfdea3c919b40b08eadc1ac1383072f50bdae15ef40be7",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19911101_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "40312864f530eae63c0068bc6d84a3ebf58f9e3913d3aa42fb73aba7b44f76b7",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19911201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "92c9aef4d86a980b1436876ac256201a1ed940b0ca616daace138ceb3a63388a",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19911201_KOTRA_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "c0e26c3fa488662c883baba9d179567691b145601fd5b7d74028d8952da1ed4d",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "b3237bc32100d76bd653ef320d0c11783ede2dad9d887749508723a97c745b03",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920301_Far_East_Trade_Services,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "02cf1ed20eb93f6d7b7175184a11406065cf9a5d9ebef88455679442fdcdb9d2",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920301_Hill_and_Knowlton_Strategies,_LLC_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "d792f45add843c26da04729c26af79b141198697af5cbafa09d37c814c2a357e",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920301_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "9b61ab5d73e190345d4956279572077b260c3a09040767a87e765eb0012a5f91",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920301_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "4790f674b6c5d3808ffd97b25b4607fe272bfc4a8a216146f4484a5c0c324cd3",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920301_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "2f1de84135ffc98368b18b96f53318c0c403442aa89d61a0b0903a8f888fc253",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920501_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "68d7424ace132033beabfc7326fa86d9e9313618eeb0856a31758fe44b622714",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920501_Scottish_Enterprise_Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "31ff2f96a42713ce4189edabe6d22ef22de2256edf7cd38e928a7a31f1d08429",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    },
+    {
+      "doc": "19920501_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "docClass": "vrdu-registration",
+      "documentSha256": "3eb2a16a7cd1b20e133ba1c74c0d6a34adada008740b31f4599cce8bd81b8d19",
+      "schemaSemanticSha256": "236a21a05583d898184aa7e879df7d95de6abf9e9b50f72ac5a6adfa1660f83c",
+      "goldenRowSemanticSha256": "331e80c1177dd880bffc26cfcb254bee8cdc57900a66445db0e6ea3b5f33d264"
+    }
+  ]
+}

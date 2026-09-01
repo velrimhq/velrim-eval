@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "adapter": "velrim",
+  "unit": "doc-repeat",
+  "status": "completed",
+  "planned": 66,
+  "aggregate": {
+    "attempted": 66,
+    "completed": 66,
+    "transportFailures": 0,
+    "contractFailures": 0,
+    "availability": 1
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 22,
+      "completed": 22,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    {
+      "repeat": 2,
+      "attempted": 22,
+      "completed": 22,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    {
+      "repeat": 3,
+      "attempted": 22,
+      "completed": 22,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    }
+  ],
+  "consecutiveContractFailures": 0,
+  "contractFailureLimit": 3,
+  "updatedAt": "2026-08-18T15:26:58.055Z"
+}

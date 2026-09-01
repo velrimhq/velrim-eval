@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "gemini",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "geminiEndpointRoute": "vertex",
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/probes/golden.vrdu-ad-buy.probe.jsonl",
+  "docs": 22,
+  "docsPath": "<local-pdfs>/vrdu-ad-buy",
+  "generatedAt": "2026-08-18T19:41:14.398Z",
+  "updatedAt": "2026-08-18T19:41:14.398Z",
+  "runWindow": {
+    "fingerprint": "92579e251d9391cf371e42a7d3b5b6c825af3183fc09688b1727418866ffdd99",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-18T19:34:38.553Z",
+    "completedAt": "2026-08-18T19:41:14.398Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "gemini",
+    "mode": "live",
+    "docs": 22,
+    "repeats": 1,
+    "plannedDocRepeats": 22,
+    "remainingDocRepeats": 22,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.154,
+    "expectedRemainingUsd": 0.154,
+    "pricingBasis": "Gemini 2.5 Flash paid-tier token pricing, free-decode mode",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "92579e251d9391cf371e42a7d3b5b6c825af3183fc09688b1727418866ffdd99",
+    "implementationHash": "a558ba65815c909435eabf233fe4981f6aeb4e88b163eb07773457d40a4e0d7b"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "gemini",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 22,
+    "aggregate": {
+      "attempted": 22,
+      "completed": 20,
+      "transportFailures": 2,
+      "contractFailures": 0,
+      "availability": 0.9090909090909091
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 22,
+        "completed": 20,
+        "transportFailures": 2,
+        "contractFailures": 0,
+        "availability": 0.9090909090909091
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-18T19:41:14.398Z"
+  }
+}

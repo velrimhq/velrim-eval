@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "mistral",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "pageCapBranch": "cap-removed",
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/probes/golden.deepform.probe.jsonl",
+  "docs": 39,
+  "docsPath": "<local-pdfs>/deepform",
+  "generatedAt": "2026-08-18T21:06:25.107Z",
+  "updatedAt": "2026-08-18T21:06:25.107Z",
+  "runWindow": {
+    "fingerprint": "b79b00534d630e323249c16641c4fe2d3f9f3ad137262eca377e7c41b2c5df37",
+    "adapter": "mistral",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-18T20:58:41.083Z",
+    "completedAt": "2026-08-18T21:06:25.107Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "mistral",
+    "mode": "live",
+    "docs": 39,
+    "repeats": 1,
+    "plannedDocRepeats": 39,
+    "remainingDocRepeats": 39,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.429,
+    "expectedRemainingUsd": 0.429,
+    "pricingBasis": "Mistral OCR 4 (mistral-ocr-4-0), USD 5 per 1k pages (mistral.ai/pricing)",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "b79b00534d630e323249c16641c4fe2d3f9f3ad137262eca377e7c41b2c5df37",
+    "implementationHash": "dc8db3aed26879197309b0ac1846d6b9ccb031a8ccfc26fc60b3bee997da6473"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "mistral",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 39,
+    "aggregate": {
+      "attempted": 39,
+      "completed": 39,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 39,
+        "completed": 39,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-18T21:06:25.107Z"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "adapter": "openai",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [
+    "logprobs"
+  ],
+  "repeats": 3,
+  "status": "completed",
+  "golden": "corpora/golden.deepform.jsonl",
+  "docs": 39,
+  "docsPath": "<local-pdfs>/deepform",
+  "generatedAt": "2026-08-19T12:22:17.390Z",
+  "updatedAt": "2026-08-19T12:22:17.390Z",
+  "runWindow": {
+    "fingerprint": "2b671b9c6fd6862d21df97313fb2f93493f8cb4c91c1e0d6f92667b1760bc9ac",
+    "adapter": "openai",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 3,
+    "startedAt": "2026-08-19T12:17:11.118Z",
+    "completedAt": "2026-08-19T12:22:17.390Z",
+    "startedDate": "2026-08-19",
+    "completedDate": "2026-08-19"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "openai",
+    "mode": "live",
+    "docs": 39,
+    "repeats": 3,
+    "plannedDocRepeats": 117,
+    "remainingDocRepeats": 117,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 2.34,
+    "expectedRemainingUsd": 2.34,
+    "pricingBasis": "OpenAI gpt-5.4-mini-2026-03-17 token pricing, free-decode mode",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "2b671b9c6fd6862d21df97313fb2f93493f8cb4c91c1e0d6f92667b1760bc9ac",
+    "implementationHash": "786586a3904842bc4ff5707c791635655fa155671db2fd6c72d14bf4cdc7034a"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "openai",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 117,
+    "aggregate": {
+      "attempted": 117,
+      "completed": 117,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 39,
+        "completed": 39,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 2,
+        "attempted": 39,
+        "completed": 39,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 3,
+        "attempted": 39,
+        "completed": 39,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 3,
+    "updatedAt": "2026-08-19T12:22:17.390Z"
+  }
+}

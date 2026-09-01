@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "adapter": "mistral",
+  "unit": "doc-repeat",
+  "status": "completed",
+  "planned": 39,
+  "aggregate": {
+    "attempted": 39,
+    "completed": 39,
+    "transportFailures": 0,
+    "contractFailures": 0,
+    "availability": 1
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 39,
+      "completed": 39,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    }
+  ],
+  "consecutiveContractFailures": 0,
+  "contractFailureLimit": 1,
+  "updatedAt": "2026-08-18T21:06:25.107Z"
+}

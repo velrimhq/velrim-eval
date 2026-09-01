@@ -1,0 +1,351 @@
+{
+  "formatVersion": 2,
+  "publicationReady": false,
+  "readinessOwner": "matrix-orchestrator",
+  "missingFields": [
+    "matrix.authoritativeValidation"
+  ],
+  "run": {
+    "fingerprint": "9b4d9df4478e7b88393bacd9d9803eb7d5f73dcc82bf521189fdf7cccea4e47c",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": true,
+    "repeats": 3,
+    "startedAt": "2026-08-18T19:59:12.533Z",
+    "completedAt": "2026-08-18T20:02:59.318Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "code": {
+    "velrimEvalCommitSha": "e6c713b8bdbc8ac8d23a93d90aae4c660429439b",
+    "worktreeDirty": false,
+    "implementationHash": "a558ba65815c909435eabf233fe4981f6aeb4e88b163eb07773457d40a4e0d7b",
+    "adapterFiles": [
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "e1c25bc1bb7e03d9939d3fcc4cd52698780d52eb0a40328d1e92b4645a4d9ec1"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ],
+    "executedFiles": [
+      {
+        "path": "commands/run.js",
+        "sha256": "c6e42dd1fce51cb1165ff2bede6e552dd2025a915337fbb1fa4006b278d4bbcc"
+      },
+      {
+        "path": "run/runner.js",
+        "sha256": "529b17757af9cce7a29c186808d9dc5813c5ff0f93f16aea9f8bbf2b8315d7f9"
+      },
+      {
+        "path": "run/checkpoint.js",
+        "sha256": "462482899c0e9fe8f18c6b0499268d52b144727740734a6de33f82ad582b057a"
+      },
+      {
+        "path": "run/lock.js",
+        "sha256": "8ddbfd039b8abb594bbe6cb1fb5455697e98eef5ec2da8708a7f8899b771d66c"
+      },
+      {
+        "path": "protocol.js",
+        "sha256": "11fa960f546694b16d04391cceccf6f740bd87a17922f97ed4c8ef20e0266652"
+      },
+      {
+        "path": "adapters/index.js",
+        "sha256": "71c52555c0ede60f56474effa2e10704bff24be3cefefd2191440369dcf9edc0"
+      },
+      {
+        "path": "adapters/types.js",
+        "sha256": "560e55c877eb9d96fac940ce4abd11db433df8589a9c6074dd09bddb56d0a618"
+      },
+      {
+        "path": "adapters/errors.js",
+        "sha256": "e7d6ba2bfd6dc258e81a7ef829dbb56f901cf64dae1478af6886bcb6ecbe1be7"
+      },
+      {
+        "path": "adapters/transport.js",
+        "sha256": "c73dcbb45420966a38ae4ed989c00d3a02f305921bc51d31ceb3b292c0cc1cf5"
+      },
+      {
+        "path": "adapters/sleep.js",
+        "sha256": "8c89dbefef8975487e1376b2347017998a7e43f60ac27e575eb4589d69c1d597"
+      },
+      {
+        "path": "adapters/bytes.js",
+        "sha256": "e366538a759424dd7bc0914efd004b30d398aa2a6a65ab7fbcf8e1175a05b7cf"
+      },
+      {
+        "path": "adapters/flatten.js",
+        "sha256": "631ddf45f9a48040aed8464b58988878c4219bbcae92b4b68d83a68c434751d3"
+      },
+      {
+        "path": "adapters/gemini.js",
+        "sha256": "e1c25bc1bb7e03d9939d3fcc4cd52698780d52eb0a40328d1e92b4645a4d9ec1"
+      },
+      {
+        "path": "adapters/openai.js",
+        "sha256": "eef2d31da64276f0515a40e537f5d86244b2fb9128d2c55e6b54a0d548afbf6f"
+      }
+    ]
+  },
+  "protocol": {
+    "sharedInstruction": "Extract the following fields from the document. Return JSON matching this schema. Use null for fields not present in the document.",
+    "scoring": {
+      "package": "@velrim/scoring",
+      "version": "0.1.0"
+    },
+    "rerunPolicy": "Major competitor version bump or vendor PR triggers a budget-capped re-run requested via PR."
+  },
+  "classes": [
+    {
+      "docClass": "cord-v2",
+      "schema": {
+        "path": "cord-v2.schema.json",
+        "sha256": "7090f850c913f8dc0623ae373d2eb02f7110676886e9abd9e6c5fecbb4456720"
+      },
+      "publicGolden": {
+        "path": "golden.cord-v2.jsonl",
+        "sha256": "4961f4e5759d80608167b1ea3d6d35c5885049294bad1451d0bb3e1b85ab29a5"
+      },
+      "sourceManifest": {
+        "path": "../../velrim-run/manifests/cord-v2.manifest.json",
+        "sha256": "d4d98d4c84a6441daf124f5c91353d0e0cdceca8fc8c27fdaf8e325a4248d2eb"
+      },
+      "calTestGoldenHash": "01ded8017fa3b8b81a6caffb1f3c2c139fe35c5e466b7fe649ae6f9fd7041f77"
+    }
+  ],
+  "fixtureInput": {
+    "status": "not_applicable"
+  },
+  "requestedConfiguration": {
+    "endpoint": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/publishers/google/models/gemini-2.5-flash:generateContent",
+    "model": "gemini-2.5-flash",
+    "generationSettings": {
+      "temperature": 0,
+      "confidence": "not_requested",
+      "structuredMode": true,
+      "responseJsonSchema": true,
+      "trimmedParams": [],
+      "endpointRoute": "vertex"
+    },
+    "settingsAlpha": null,
+    "llamaExtractConfigurationVersion": null
+  },
+  "observedVersions": {
+    "model": {
+      "status": "mixed",
+      "values": [
+        "gemini-2.5-flash"
+      ],
+      "missingRecords": 3
+    },
+    "vendor": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 45
+    },
+    "calibrator": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 45
+    },
+    "api": {
+      "status": "not_surfaced",
+      "values": [],
+      "missingRecords": 45
+    },
+    "requestIds": {
+      "status": "mixed",
+      "values": [
+        "-bmEaqKZEfrAtfAP3Ky7kAE",
+        "0rmEauqTEMTdvNkP_d6hmQw",
+        "2LmEavHfKdeFtfAPrI3z6A0",
+        "3rmEaoHNO4_j2fMP7rP_oAE",
+        "4rmEasb0CIjltfAPjcuNiAM",
+        "5rmEaozYBPrAtfAP3Ky7kAE",
+        "6rmEatqeGNeFtfAPrI3z6A0",
+        "7rmEaun1HY_j2fMP7rP_oAE",
+        "8rmEaoOzMIjltfAPjcuNiAM",
+        "ArqEaqa_A8Ps2fMPwdmR-A0",
+        "CLqEatSDMd6hmLAPxrHv8Q4",
+        "DrqEarS3Oc70mLAPgtjJiQo",
+        "E7qEaqr6GMz5mLAPrZC6uQc",
+        "FrqEau3gOJmPhcIPh4OGmAk",
+        "GrqEaun-LLrxhcIP7M_euQc",
+        "H7qEatXJDMqL8uMPpL2g6Qw",
+        "JbqEavz1LMz5mLAPrZC6uQc",
+        "K7qEapORLs70mLAPgtjJiQo",
+        "MLqEaoPvPMqL8uMPpL2g6Qw",
+        "N7qEap6-FbrxhcIP7M_euQc",
+        "QLqEavv3Ot6hmLAPxrHv8Q4",
+        "R7qEau6NEMqL8uMPpL2g6Qw",
+        "S7qEasiPKZmPhcIPh4OGmAk",
+        "UbqEapBYzvSYsA-C2MmJCg",
+        "V7qEasLWGsz5mLAPrZC6uQc",
+        "W7qEatenOJrrmLAPsZSb8AE",
+        "XrqEau77MMqL8uMPpL2g6Qw",
+        "Y7qEatrSF_6LmLAP-ID-2As",
+        "arqEatPJEM70mLAPgtjJiQo",
+        "k7mEatzYIqDpkbwP1N-GyAg",
+        "kLmEarnTGMPs2fMPwdmR-A0",
+        "l7mEaqX4G8TdvNkP_d6hmQw",
+        "n7mEaojMOI_j2fMP7rP_oAE",
+        "nLmEau65E_rAtfAP3Ky7kAE",
+        "pLmEavX4A9eFtfAPrI3z6A0",
+        "qrmEaqaPHpfjtfAPidXt2Ak",
+        "rrmEavrHEojltfAPjcuNiAM",
+        "tLmEavn3BteFtfAPrI3z6A0",
+        "ubmEatCAO5fjtfAPidXt2Ak",
+        "vrmEasryCojltfAPjcuNiAM",
+        "yrmEaovbCfrAtfAP3Ky7kAE",
+        "zbmEaqqRO8Ps2fMPwdmR-A0"
+      ],
+      "missingRecords": 3
+    }
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "semanticInputs": [
+    {
+      "doc": "cord-011.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "b9f95ce6e6d71fdd53cd114d9bb8d5e3b03410f45a9a8e290e2ec6b0dacd565e",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "0ff58c0465967a36b599ab73c607949b6cdc8696d2c81353adc321390cec4327"
+    },
+    {
+      "doc": "cord-015.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "c01774154712f8b41de76b2ba3260317bf39206fb02ac09c1ecc48d8fe962305",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "84e2d7369c5139fb606860e56793e6bff07b754795de95a99b20503e507224e3"
+    },
+    {
+      "doc": "cord-025.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "3c512c51796fc85c9f1fbc8daf77e39def5e2336658bb6d7f7433b139a0fb071",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "a544422feae95e665415b873c79865630f65dac331259f42f697273dde494b2b"
+    },
+    {
+      "doc": "cord-027.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "35c65bd5bd15a0de805842470e892c6ad95734bde3025e206c559c721441e0f6",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "16f27c1cdebe8cf43b83265c2671b7eb8964b7ddfe8ce9d453f590c4ff5210f9"
+    },
+    {
+      "doc": "cord-044.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "5e10a7097d4960c9f5228177d25ff53dde5507e6110a0114467c17c05d974971",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "c8119645432b4047d2b9abbd5871a9c95d79989ae88f9412234987f4cecf3d11"
+    },
+    {
+      "doc": "cord-047.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "3642fe4ed0c8acf5f1ffc4b1d7b84d7c10bdc2278144ca67a2b016e945cb0a86",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "1a51c9cb59be8b770d20ebea5cfdea80c2a2f4a1a7bd1147d473776c30593ce5"
+    },
+    {
+      "doc": "cord-056.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "2533368d53addbe331a56cc713b14dbfa6021564151708f9f1e29f08e43fc7bd",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "73768ab68822b8a5f7c45c5c09fc5d6bdd11239311eb1ebdaa6c66f179d2876d"
+    },
+    {
+      "doc": "cord-066.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "1c374432190d5193d22bd300c80aa229953f4df1e75342926bba7c85bdf49aad",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "583a0765f931f67c7b3234622a01241f61051174fc2b7920f3fd6fb69a5fb2e4"
+    },
+    {
+      "doc": "cord-068.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "d0bb7b6b3cc75da6bd53f74b716145f3d7c9b3d79eea5b127900ed875af1c707",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "2c5b50aa536b7b26919df1c0567da127254274f40a5566020da7182c2fdb6f78"
+    },
+    {
+      "doc": "cord-073.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "8d16bb621796721cd59bd9f646e30886fc341132f596f93ea8edbc617a784471",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "0bb1ef6e20b2bd23a88394196c59fdd63ccb273c95341bb229387e588730af92"
+    },
+    {
+      "doc": "cord-076.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "91d58eeb88c6919024127d0c1afcd252ebbb83df2a01a4c59ff4fa6eafe4016e",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "13d3fdf686160ade1726343a2647520424a1b6c637f9993fcc1edc0dd0ae5ec1"
+    },
+    {
+      "doc": "cord-084.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "716a84dc9c0648127fab406c8e107457304385da08ae933d66e2014043393faf",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "dc5216047a915899dd4b02c45dd48ad3e479fa8259b93328cbb4065cc1cb0c50"
+    },
+    {
+      "doc": "cord-086.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "ef2a85b25737d14f99215a14b50f513904b03a5e4ec6fa6d285f6edffe4f98ea",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "4e717f5186f2eb14c0e8172a0b108aa4d3fa30190ae7cbee76726f4271cb9603"
+    },
+    {
+      "doc": "cord-087.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "97f829c25608bb607ee02c51473035eedcfc058f7eff24a174bf0d15f392cc92",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "f55fab7929bd3a3a609960d9b8ace1a242dca442f2c9c56395516700bfe50988"
+    },
+    {
+      "doc": "cord-095.pdf",
+      "docClass": "cord-v2",
+      "documentSha256": "fbf393037e1dcc0f9fee885d3c6fbcafe032708f54deab4490f83ff9d7264ade",
+      "schemaSemanticSha256": "b1eddf9a9fb607ca23dfb099f22c0c2020a5d539fc6c3d2b8415bdb476268793",
+      "goldenRowSemanticSha256": "759651f822e9acd4b819f69b8ed126a526cd92fc3760f5b0cfdb10f9a1188d84"
+    }
+  ]
+}

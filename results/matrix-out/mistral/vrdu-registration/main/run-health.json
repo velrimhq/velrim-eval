@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "adapter": "mistral",
+  "unit": "doc-repeat",
+  "status": "completed",
+  "planned": 144,
+  "aggregate": {
+    "attempted": 144,
+    "completed": 144,
+    "transportFailures": 0,
+    "contractFailures": 0,
+    "availability": 1
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 48,
+      "completed": 48,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    {
+      "repeat": 2,
+      "attempted": 48,
+      "completed": 48,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    {
+      "repeat": 3,
+      "attempted": 48,
+      "completed": 48,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    }
+  ],
+  "consecutiveContractFailures": 0,
+  "contractFailureLimit": 3,
+  "updatedAt": "2026-08-18T16:13:47.482Z"
+}

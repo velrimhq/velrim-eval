@@ -1,6 +1,6 @@
 {
   "name": "velrim-eval",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "type": "module",
   "license": "Apache-2.0",
@@ -27,14 +27,18 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@velrim/scoring": "^0.1.0"
+    "@observablehq/plot": "^0.6.17",
+    "@velrim/scoring": "^0.1.0",
+    "jsdom": "^29.1.1"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/jsdom": "^30.0.0",
     "@types/node": "^25.9.2",
+    "eslint": "^9.18.0",
     "pdfjs-serverless": "1.2.3",
     "typescript": "^6.0.3",
-    "vitest": "^3.2.4",
-    "eslint": "^9.18.0",
-    "typescript-eslint": "^8.18.0"
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^3.2.4"
   }
 }

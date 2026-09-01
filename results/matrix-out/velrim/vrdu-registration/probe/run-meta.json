@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "velrim",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "requireFittedStamp": true,
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/probes/golden.vrdu-registration.probe.jsonl",
+  "docs": 48,
+  "docsPath": "<local-pdfs>/vrdu-registration",
+  "generatedAt": "2026-08-18T18:49:58.903Z",
+  "updatedAt": "2026-08-18T18:49:58.903Z",
+  "runWindow": {
+    "fingerprint": "084921b12c410d368fedfa0a8769ea2f75e2e97f9c8d749ce21de965cd2e6078",
+    "adapter": "velrim",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-18T18:46:10.690Z",
+    "completedAt": "2026-08-18T18:49:58.903Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "velrim",
+    "mode": "live",
+    "docs": 48,
+    "repeats": 1,
+    "plannedDocRepeats": 48,
+    "remainingDocRepeats": 48,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 2.496,
+    "expectedRemainingUsd": 2.496,
+    "pricingBasis": "Velrim list, USD 20 per 1k pages (velrim.com/pricing)",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "084921b12c410d368fedfa0a8769ea2f75e2e97f9c8d749ce21de965cd2e6078",
+    "implementationHash": "762da9f423f891b782b50550922885a698f98b2335462ab5d67f3f591b09d813"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "velrim",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 48,
+    "aggregate": {
+      "attempted": 48,
+      "completed": 48,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 48,
+        "completed": 48,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-18T18:49:58.903Z"
+  }
+}

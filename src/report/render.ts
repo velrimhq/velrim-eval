@@ -4,7 +4,9 @@
  * (via score/aggregate). render.ts never derives a metric.
  */
 
+import * as Plot from '@observablehq/plot';
 import type { CalibrationPoint, RiskCoveragePoint } from '@velrim/scoring';
+import { ACCENT, INK, INK_2, RULE, SURFACE, composeFigure, plot } from './plot-svg.js';
 
 export interface ReportMetrics {
   corpusPrecision: number;
@@ -68,11 +70,13 @@ export function renderReliabilitySvg(
   rc: RiskCoveragePoint[],
   bins = 15,
   bands?: ReliabilityBand[],
+  opts: { title?: string; note?: string } = {},
 ): string {
-  const W = 520;
-  const H = 260;
-  const pad = 36;
-  const panel = (W - 3 * pad) / 2; // two square panels
+  const W = 760;
+  const PANEL = 300;
+  const marginLeft = 48;
+  const marginBottom = 44;
+  const gap = 24;
 
   // Equal-mass binning (mirrors expectedCalibrationError's binning; presentation only).
   const sorted = points
@@ -96,68 +100,144 @@ export function renderReliabilitySvg(
     dots.push({ conf: cs / slice.length, acc: cc / slice.length });
   }
 
-  const x0 = pad;
-  const y0 = pad;
-  const sx = (v: number, base: number): number => base + v * panel;
-  const sy = (v: number): number => y0 + panel - v * panel;
-
-  const parts: string[] = [];
-  parts.push(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" font-family="monospace" font-size="9">`,
-  );
-  parts.push(`<rect width="${W}" height="${H}" fill="white"/>`);
+  const ticks = [0, 0.5, 1];
+  const scaffold = (xLabel: string, yLabel: string): Plot.Markish[] => [
+    Plot.gridX(ticks, { stroke: RULE, strokeOpacity: 1 }),
+    Plot.gridY(ticks, { stroke: RULE, strokeOpacity: 1 }),
+    Plot.axisX(ticks, {
+      tickFormat: (v: number) => v.toFixed(1),
+      tickSize: 0,
+      fontSize: 10,
+      fill: INK_2,
+      label: xLabel,
+      labelAnchor: 'center',
+      labelArrow: 'none',
+      labelOffset: 30,
+    }),
+    Plot.axisY(ticks, {
+      tickFormat: (v: number) => v.toFixed(1),
+      tickSize: 0,
+      fontSize: 10,
+      fill: INK_2,
+      label: yLabel,
+      labelAnchor: 'center',
+      labelArrow: 'none',
+      labelOffset: 40,
+    }),
+  ];
+  const frame = {
+    width: PANEL + marginLeft,
+    height: PANEL + marginBottom + 8,
+    marginLeft,
+    marginRight: 0,
+    marginTop: 8,
+    marginBottom,
+    x: { domain: [0, 1], axis: null },
+    y: { domain: [0, 1], axis: null },
+  } as const;
 
   // Panel 1: reliability.
-  parts.push(
-    `<rect x="${x0}" y="${y0}" width="${panel}" height="${panel}" fill="none" stroke="#888"/>`,
-  );
-  parts.push(
-    `<line x1="${x0}" y1="${sy(0)}" x2="${sx(1, x0)}" y2="${sy(1)}" stroke="#ccc" stroke-dasharray="3 3"/>`,
-  );
-  parts.push(`<text x="${x0}" y="${y0 - 6}">reliability (conf vs acc)</text>`);
-  if (bands && bands.length > 1) {
-    // Consistency band: lo edge left→right, hi edge right→left, closed and lightly filled.
-    const ordered = [...bands].sort((a, b) => a.meanConfidence - b.meanConfidence);
-    const loEdge = ordered.map(
-      (b, i) =>
-        `${i === 0 ? 'M' : 'L'}${sx(b.meanConfidence, x0).toFixed(1)},${sy(b.lo).toFixed(1)}`,
-    );
-    const hiEdge = [...ordered]
-      .reverse()
-      .map((b) => `L${sx(b.meanConfidence, x0).toFixed(1)},${sy(b.hi).toFixed(1)}`);
-    parts.push(
-      `<path d="${loEdge.join(' ')} ${hiEdge.join(' ')} Z" fill="#1f6feb" fill-opacity="0.12" stroke="none" data-role="consistency-band"/>`,
-    );
-  }
-  for (const d of dots) {
-    parts.push(
-      `<circle cx="${sx(d.conf, x0).toFixed(1)}" cy="${sy(d.acc).toFixed(1)}" r="2.5" fill="#1f6feb"/>`,
-    );
-  }
+  const ordered =
+    bands && bands.length > 1 ? [...bands].sort((a, b) => a.meanConfidence - b.meanConfidence) : [];
+  const reliability = plot({
+    ...frame,
+    marks: [
+      ...scaffold('confidence we served', 'share actually correct'),
+      Plot.areaY(ordered, {
+        x: 'meanConfidence',
+        y1: 'lo',
+        y2: 'hi',
+        fill: ACCENT,
+        fillOpacity: 0.14,
+        className: 'consistency-band',
+      }),
+      Plot.line(
+        [
+          [0, 0],
+          [1, 1],
+        ],
+        { stroke: INK_2, strokeDasharray: '3 3' },
+      ),
+      Plot.dot(dots, {
+        x: 'conf',
+        y: 'acc',
+        r: 4,
+        fill: ACCENT,
+        stroke: SURFACE,
+        strokeWidth: 2,
+        className: 'bin',
+      }),
+    ],
+  });
 
-  // Panel 2: risk-coverage.
-  const x1 = 2 * pad + panel;
-  parts.push(
-    `<rect x="${x1}" y="${y0}" width="${panel}" height="${panel}" fill="none" stroke="#888"/>`,
-  );
-  parts.push(`<text x="${x1}" y="${y0 - 6}">risk-coverage (cov vs err)</text>`);
-  if (rc.length === 1) {
-    // No-confidence arm: one honest dot, never a fake curve (FD-6; ANALYSIS-PLAN.md §6.5).
-    const p = rc[0]!;
-    parts.push(
-      `<circle cx="${sx(p.coverage, x1).toFixed(1)}" cy="${sy(p.error).toFixed(1)}" r="3.5" fill="#d29922" data-role="single-dot"/>`,
-    );
-    parts.push(`<text x="${x1 + 4}" y="${y0 + panel - 6}">no selective operation possible</text>`);
-  } else if (rc.length > 0) {
-    const path = rc
-      .map(
-        (p, i) =>
-          `${i === 0 ? 'M' : 'L'}${sx(p.coverage, x1).toFixed(1)},${sy(p.error).toFixed(1)}`,
-      )
-      .join(' ');
-    parts.push(`<path d="${path}" fill="none" stroke="#d29922" stroke-width="1.5"/>`);
-  }
+  // Panel 2: risk-coverage. A single point (no-confidence arm) is one honest dot, never a curve.
+  const single = rc.length === 1 ? rc : [];
+  const curve = rc.length > 1 ? rc : [];
+  const riskCoverage = plot({
+    ...frame,
+    marks: [
+      ...scaffold('share of fields used (most confident first)', 'share wrong among those'),
+      Plot.line(curve, {
+        x: 'coverage',
+        y: 'error',
+        stroke: ACCENT,
+        strokeWidth: 2,
+        className: 'rc-curve',
+      }),
+      Plot.dot(single, {
+        x: 'coverage',
+        y: 'error',
+        r: 5,
+        fill: ACCENT,
+        stroke: SURFACE,
+        strokeWidth: 2,
+        className: 'single-dot',
+      }),
+      Plot.text([null], {
+        frameAnchor: 'top-left',
+        dx: 6,
+        dy: 8,
+        text: () => 'fields with a served score; blanks excluded',
+        fill: INK_2,
+        fontSize: 10,
+        textAnchor: 'start',
+      }),
+      ...(single.length
+        ? [
+            Plot.text([null], {
+              frameAnchor: 'bottom-left',
+              dx: 6,
+              dy: -8,
+              text: () => 'no selective operation possible',
+              fill: INK_2,
+              fontSize: 10,
+              textAnchor: 'start',
+            }),
+          ]
+        : []),
+    ],
+  });
 
-  parts.push(`</svg>`);
-  return parts.join('\n');
+  const x0 = 12;
+  const x1 = x0 + PANEL + marginLeft + gap;
+  const top = 30;
+  const panelTitle = (x: number, t: string): string =>
+    `<text x="${x + marginLeft}" y="${top - 8}" font-size="13" font-weight="600" fill="${INK}">${t.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</text>`;
+  const extra = [
+    panelTitle(x0, opts.title ?? 'Reliability'),
+    panelTitle(x1, 'Use the most confident fields first'),
+  ];
+  return composeFigure({
+    width: W,
+    ariaLabel: 'reliability and risk-coverage',
+    panels: [
+      { svg: reliability, x: x0, y: top },
+      { svg: riskCoverage, x: x1, y: top },
+    ],
+    extra,
+    notes: [
+      ...(ordered.length ? ["Shaded: a perfectly reliable score's range at this n."] : []),
+      ...(opts.note ? [opts.note] : []),
+    ],
+  });
 }

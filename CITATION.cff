@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: 'If you use this benchmark, its probe set, or the published run data, please cite it as below.'
+type: dataset
+title: 'Fabrication on absent fields: a pre-registered six-arm document-extraction bake-off (round 1)'
+authors:
+  - name: Velrim
+    website: 'https://velrim.com'
+    email: hello@velrim.com
+doi: 10.5281/zenodo.22233430
+repository-code: 'https://github.com/velrimhq/velrim-eval'
+url: 'https://velrim.com/research/fabrication-on-absent-fields'
+license: Apache-2.0
+version: round-1
+date-released: '2026-09-02'
+keywords:
+  - document extraction
+  - information extraction
+  - hallucination
+  - fabrication
+  - confidence calibration
+  - benchmark

@@ -1,0 +1,7479 @@
+{
+  "version": 1,
+  "corpus": {
+    "docs": 48,
+    "leaves": 288,
+    "cells": {
+      "tp": 138,
+      "fp": 125,
+      "fn": 101
+    },
+    "precision": 0.5247148288973384,
+    "recall": 0.5774058577405857,
+    "f1": 0.5498007968127491,
+    "ece": 0.16371174767453756,
+    "brier": 0.21104378077083805,
+    "auroc": 0.7171142578125,
+    "riskCoverage": [
+      {
+        "coverage": 0,
+        "error": 0
+      },
+      {
+        "coverage": 0.006944444444444444,
+        "error": 0
+      },
+      {
+        "coverage": 0.027777777777777776,
+        "error": 0
+      },
+      {
+        "coverage": 0.034722222222222224,
+        "error": 0
+      },
+      {
+        "coverage": 0.041666666666666664,
+        "error": 0
+      },
+      {
+        "coverage": 0.04513888888888889,
+        "error": 0
+      },
+      {
+        "coverage": 0.04861111111111111,
+        "error": 0
+      },
+      {
+        "coverage": 0.052083333333333336,
+        "error": 0
+      },
+      {
+        "coverage": 0.05555555555555555,
+        "error": 0
+      },
+      {
+        "coverage": 0.059027777777777776,
+        "error": 0
+      },
+      {
+        "coverage": 0.06597222222222222,
+        "error": 0
+      },
+      {
+        "coverage": 0.08680555555555555,
+        "error": 0
+      },
+      {
+        "coverage": 0.10069444444444445,
+        "error": 0
+      },
+      {
+        "coverage": 0.1388888888888889,
+        "error": 0
+      },
+      {
+        "coverage": 0.1597222222222222,
+        "error": 0
+      },
+      {
+        "coverage": 0.16319444444444445,
+        "error": 0
+      },
+      {
+        "coverage": 0.1736111111111111,
+        "error": 0
+      },
+      {
+        "coverage": 0.17708333333333334,
+        "error": 0.0196078431372549
+      },
+      {
+        "coverage": 0.18055555555555555,
+        "error": 0.019230769230769232
+      },
+      {
+        "coverage": 0.1840277777777778,
+        "error": 0.018867924528301886
+      },
+      {
+        "coverage": 0.1875,
+        "error": 0.037037037037037035
+      },
+      {
+        "coverage": 0.1909722222222222,
+        "error": 0.03636363636363636
+      },
+      {
+        "coverage": 0.19444444444444445,
+        "error": 0.03571428571428571
+      },
+      {
+        "coverage": 0.19791666666666666,
+        "error": 0.03508771929824561
+      },
+      {
+        "coverage": 0.2013888888888889,
+        "error": 0.05172413793103448
+      },
+      {
+        "coverage": 0.2048611111111111,
+        "error": 0.05084745762711865
+      },
+      {
+        "coverage": 0.20833333333333334,
+        "error": 0.05
+      },
+      {
+        "coverage": 0.21180555555555555,
+        "error": 0.04918032786885246
+      },
+      {
+        "coverage": 0.2152777777777778,
+        "error": 0.04838709677419355
+      },
+      {
+        "coverage": 0.21875,
+        "error": 0.06349206349206349
+      },
+      {
+        "coverage": 0.2222222222222222,
+        "error": 0.078125
+      },
+      {
+        "coverage": 0.22569444444444445,
+        "error": 0.07692307692307693
+      },
+      {
+        "coverage": 0.22916666666666666,
+        "error": 0.07575757575757576
+      },
+      {
+        "coverage": 0.2326388888888889,
+        "error": 0.07462686567164178
+      },
+      {
+        "coverage": 0.2361111111111111,
+        "error": 0.08823529411764706
+      },
+      {
+        "coverage": 0.23958333333333334,
+        "error": 0.08695652173913043
+      },
+      {
+        "coverage": 0.24305555555555555,
+        "error": 0.08571428571428572
+      },
+      {
+        "coverage": 0.2465277777777778,
+        "error": 0.08450704225352113
+      },
+      {
+        "coverage": 0.25,
+        "error": 0.09722222222222222
+      },
+      {
+        "coverage": 0.2569444444444444,
+        "error": 0.0945945945945946
+      },
+      {
+        "coverage": 0.2604166666666667,
+        "error": 0.09333333333333334
+      },
+      {
+        "coverage": 0.2638888888888889,
+        "error": 0.10526315789473684
+      },
+      {
+        "coverage": 0.2673611111111111,
+        "error": 0.1038961038961039
+      },
+      {
+        "coverage": 0.2708333333333333,
+        "error": 0.10256410256410256
+      },
+      {
+        "coverage": 0.2743055555555556,
+        "error": 0.11392405063291139
+      },
+      {
+        "coverage": 0.2777777777777778,
+        "error": 0.1125
+      },
+      {
+        "coverage": 0.28125,
+        "error": 0.1111111111111111
+      },
+      {
+        "coverage": 0.2847222222222222,
+        "error": 0.12195121951219512
+      },
+      {
+        "coverage": 0.2881944444444444,
+        "error": 0.12048192771084337
+      },
+      {
+        "coverage": 0.2916666666666667,
+        "error": 0.11904761904761904
+      },
+      {
+        "coverage": 0.2951388888888889,
+        "error": 0.12941176470588237
+      },
+      {
+        "coverage": 0.2986111111111111,
+        "error": 0.13953488372093023
+      },
+      {
+        "coverage": 0.3020833333333333,
+        "error": 0.14942528735632185
+      },
+      {
+        "coverage": 0.3055555555555556,
+        "error": 0.14772727272727273
+      },
+      {
+        "coverage": 0.3090277777777778,
+        "error": 0.14606741573033707
+      },
+      {
+        "coverage": 0.3125,
+        "error": 0.15555555555555556
+      },
+      {
+        "coverage": 0.3159722222222222,
+        "error": 0.16483516483516483
+      },
+      {
+        "coverage": 0.3194444444444444,
+        "error": 0.16304347826086957
+      },
+      {
+        "coverage": 0.3229166666666667,
+        "error": 0.16129032258064516
+      },
+      {
+        "coverage": 0.3263888888888889,
+        "error": 0.1702127659574468
+      },
+      {
+        "coverage": 0.3298611111111111,
+        "error": 0.16842105263157894
+      },
+      {
+        "coverage": 0.3368055555555556,
+        "error": 0.18556701030927836
+      },
+      {
+        "coverage": 0.3402777777777778,
+        "error": 0.19387755102040816
+      },
+      {
+        "coverage": 0.34375,
+        "error": 0.20202020202020202
+      },
+      {
+        "coverage": 0.3472222222222222,
+        "error": 0.2
+      },
+      {
+        "coverage": 0.3506944444444444,
+        "error": 0.19801980198019803
+      },
+      {
+        "coverage": 0.3576388888888889,
+        "error": 0.21359223300970873
+      },
+      {
+        "coverage": 0.3680555555555556,
+        "error": 0.2358490566037736
+      },
+      {
+        "coverage": 0.3715277777777778,
+        "error": 0.2336448598130841
+      },
+      {
+        "coverage": 0.375,
+        "error": 0.24074074074074073
+      },
+      {
+        "coverage": 0.3784722222222222,
+        "error": 0.24770642201834864
+      },
+      {
+        "coverage": 0.3819444444444444,
+        "error": 0.2545454545454545
+      },
+      {
+        "coverage": 0.3854166666666667,
+        "error": 0.26126126126126126
+      },
+      {
+        "coverage": 0.3888888888888889,
+        "error": 0.26785714285714285
+      },
+      {
+        "coverage": 0.3923611111111111,
+        "error": 0.2743362831858407
+      },
+      {
+        "coverage": 0.3958333333333333,
+        "error": 0.2719298245614035
+      },
+      {
+        "coverage": 0.3993055555555556,
+        "error": 0.2782608695652174
+      },
+      {
+        "coverage": 0.4027777777777778,
+        "error": 0.28448275862068967
+      },
+      {
+        "coverage": 0.40625,
+        "error": 0.2905982905982906
+      },
+      {
+        "coverage": 0.4097222222222222,
+        "error": 0.2966101694915254
+      },
+      {
+        "coverage": 0.4201388888888889,
+        "error": 0.3140495867768595
+      },
+      {
+        "coverage": 0.4236111111111111,
+        "error": 0.319672131147541
+      },
+      {
+        "coverage": 0.4270833333333333,
+        "error": 0.3252032520325203
+      },
+      {
+        "coverage": 0.4305555555555556,
+        "error": 0.3225806451612903
+      },
+      {
+        "coverage": 0.4340277777777778,
+        "error": 0.328
+      },
+      {
+        "coverage": 0.4375,
+        "error": 0.3253968253968254
+      },
+      {
+        "coverage": 0.4409722222222222,
+        "error": 0.3228346456692913
+      },
+      {
+        "coverage": 0.4444444444444444,
+        "error": 0.328125
+      },
+      {
+        "coverage": 0.4479166666666667,
+        "error": 0.3333333333333333
+      },
+      {
+        "coverage": 0.4513888888888889,
+        "error": 0.33076923076923076
+      },
+      {
+        "coverage": 0.4548611111111111,
+        "error": 0.33587786259541985
+      },
+      {
+        "coverage": 0.4583333333333333,
+        "error": 0.3409090909090909
+      },
+      {
+        "coverage": 0.4618055555555556,
+        "error": 0.3458646616541353
+      },
+      {
+        "coverage": 0.4652777777777778,
+        "error": 0.35074626865671643
+      },
+      {
+        "coverage": 0.46875,
+        "error": 0.35555555555555557
+      },
+      {
+        "coverage": 0.4722222222222222,
+        "error": 0.3602941176470588
+      },
+      {
+        "coverage": 0.4756944444444444,
+        "error": 0.35766423357664234
+      },
+      {
+        "coverage": 0.4826388888888889,
+        "error": 0.3597122302158273
+      },
+      {
+        "coverage": 0.4895833333333333,
+        "error": 0.3546099290780142
+      },
+      {
+        "coverage": 0.4930555555555556,
+        "error": 0.352112676056338
+      },
+      {
+        "coverage": 0.5798611111111112,
+        "error": 0.31736526946107785
+      },
+      {
+        "coverage": 0.5833333333333334,
+        "error": 0.32142857142857145
+      },
+      {
+        "coverage": 0.5868055555555556,
+        "error": 0.31952662721893493
+      },
+      {
+        "coverage": 0.5902777777777778,
+        "error": 0.3176470588235294
+      },
+      {
+        "coverage": 0.59375,
+        "error": 0.3157894736842105
+      },
+      {
+        "coverage": 0.5972222222222222,
+        "error": 0.313953488372093
+      },
+      {
+        "coverage": 0.6006944444444444,
+        "error": 0.3179190751445087
+      },
+      {
+        "coverage": 0.6041666666666666,
+        "error": 0.3160919540229885
+      },
+      {
+        "coverage": 0.6076388888888888,
+        "error": 0.32
+      },
+      {
+        "coverage": 0.6111111111111112,
+        "error": 0.32386363636363635
+      },
+      {
+        "coverage": 0.6145833333333334,
+        "error": 0.3220338983050847
+      },
+      {
+        "coverage": 0.6180555555555556,
+        "error": 0.3258426966292135
+      },
+      {
+        "coverage": 0.6215277777777778,
+        "error": 0.329608938547486
+      },
+      {
+        "coverage": 0.625,
+        "error": 0.3333333333333333
+      },
+      {
+        "coverage": 0.6284722222222222,
+        "error": 0.3314917127071823
+      },
+      {
+        "coverage": 0.6354166666666666,
+        "error": 0.33879781420765026
+      },
+      {
+        "coverage": 0.6388888888888888,
+        "error": 0.3423913043478261
+      },
+      {
+        "coverage": 0.6423611111111112,
+        "error": 0.34594594594594597
+      },
+      {
+        "coverage": 0.6458333333333334,
+        "error": 0.34408602150537637
+      },
+      {
+        "coverage": 0.6493055555555556,
+        "error": 0.3422459893048128
+      },
+      {
+        "coverage": 0.6527777777777778,
+        "error": 0.34574468085106386
+      },
+      {
+        "coverage": 0.65625,
+        "error": 0.3439153439153439
+      },
+      {
+        "coverage": 0.6597222222222222,
+        "error": 0.34210526315789475
+      },
+      {
+        "coverage": 0.6631944444444444,
+        "error": 0.34554973821989526
+      },
+      {
+        "coverage": 0.6666666666666666,
+        "error": 0.3489583333333333
+      },
+      {
+        "coverage": 0.6701388888888888,
+        "error": 0.3471502590673575
+      },
+      {
+        "coverage": 0.6840277777777778,
+        "error": 0.34517766497461927
+      },
+      {
+        "coverage": 0.6875,
+        "error": 0.3484848484848485
+      },
+      {
+        "coverage": 0.6909722222222222,
+        "error": 0.35175879396984927
+      },
+      {
+        "coverage": 0.6944444444444444,
+        "error": 0.355
+      },
+      {
+        "coverage": 0.6979166666666666,
+        "error": 0.35323383084577115
+      },
+      {
+        "coverage": 0.7013888888888888,
+        "error": 0.3564356435643564
+      },
+      {
+        "coverage": 0.7083333333333334,
+        "error": 0.3627450980392157
+      },
+      {
+        "coverage": 0.7118055555555556,
+        "error": 0.36585365853658536
+      },
+      {
+        "coverage": 0.7152777777777778,
+        "error": 0.36893203883495146
+      },
+      {
+        "coverage": 0.71875,
+        "error": 0.3719806763285024
+      },
+      {
+        "coverage": 0.7222222222222222,
+        "error": 0.3701923076923077
+      },
+      {
+        "coverage": 0.7256944444444444,
+        "error": 0.37320574162679426
+      },
+      {
+        "coverage": 0.7291666666666666,
+        "error": 0.3761904761904762
+      },
+      {
+        "coverage": 0.7326388888888888,
+        "error": 0.3744075829383886
+      },
+      {
+        "coverage": 0.7361111111111112,
+        "error": 0.37264150943396224
+      },
+      {
+        "coverage": 0.7395833333333334,
+        "error": 0.37089201877934275
+      },
+      {
+        "coverage": 0.7430555555555556,
+        "error": 0.37383177570093457
+      },
+      {
+        "coverage": 0.7465277777777778,
+        "error": 0.3767441860465116
+      },
+      {
+        "coverage": 0.75,
+        "error": 0.37962962962962965
+      },
+      {
+        "coverage": 0.7534722222222222,
+        "error": 0.3824884792626728
+      },
+      {
+        "coverage": 0.7569444444444444,
+        "error": 0.38073394495412843
+      },
+      {
+        "coverage": 0.7604166666666666,
+        "error": 0.3835616438356164
+      },
+      {
+        "coverage": 0.7638888888888888,
+        "error": 0.38636363636363635
+      },
+      {
+        "coverage": 0.7673611111111112,
+        "error": 0.3891402714932127
+      },
+      {
+        "coverage": 0.7708333333333334,
+        "error": 0.3918918918918919
+      },
+      {
+        "coverage": 0.7743055555555556,
+        "error": 0.39461883408071746
+      },
+      {
+        "coverage": 0.7777777777777778,
+        "error": 0.39732142857142855
+      },
+      {
+        "coverage": 0.78125,
+        "error": 0.39555555555555555
+      },
+      {
+        "coverage": 0.7847222222222222,
+        "error": 0.3938053097345133
+      },
+      {
+        "coverage": 0.7881944444444444,
+        "error": 0.3964757709251101
+      },
+      {
+        "coverage": 0.7916666666666666,
+        "error": 0.3991228070175439
+      },
+      {
+        "coverage": 0.7951388888888888,
+        "error": 0.4017467248908297
+      },
+      {
+        "coverage": 0.7986111111111112,
+        "error": 0.4
+      },
+      {
+        "coverage": 0.8020833333333334,
+        "error": 0.39826839826839827
+      },
+      {
+        "coverage": 0.8055555555555556,
+        "error": 0.40086206896551724
+      },
+      {
+        "coverage": 0.8090277777777778,
+        "error": 0.39914163090128757
+      },
+      {
+        "coverage": 0.8125,
+        "error": 0.3974358974358974
+      },
+      {
+        "coverage": 0.8159722222222222,
+        "error": 0.39574468085106385
+      },
+      {
+        "coverage": 0.8194444444444444,
+        "error": 0.3983050847457627
+      },
+      {
+        "coverage": 0.8229166666666666,
+        "error": 0.4008438818565401
+      },
+      {
+        "coverage": 0.8263888888888888,
+        "error": 0.39915966386554624
+      },
+      {
+        "coverage": 0.8298611111111112,
+        "error": 0.401673640167364
+      },
+      {
+        "coverage": 0.8368055555555556,
+        "error": 0.4066390041493776
+      },
+      {
+        "coverage": 0.8402777777777778,
+        "error": 0.4090909090909091
+      },
+      {
+        "coverage": 0.84375,
+        "error": 0.411522633744856
+      },
+      {
+        "coverage": 0.8472222222222222,
+        "error": 0.4139344262295082
+      },
+      {
+        "coverage": 0.8506944444444444,
+        "error": 0.4163265306122449
+      },
+      {
+        "coverage": 0.8541666666666666,
+        "error": 0.4146341463414634
+      },
+      {
+        "coverage": 0.8576388888888888,
+        "error": 0.41700404858299595
+      },
+      {
+        "coverage": 0.8611111111111112,
+        "error": 0.41935483870967744
+      },
+      {
+        "coverage": 0.8645833333333334,
+        "error": 0.42168674698795183
+      },
+      {
+        "coverage": 0.8680555555555556,
+        "error": 0.42
+      },
+      {
+        "coverage": 0.875,
+        "error": 0.4166666666666667
+      },
+      {
+        "coverage": 0.8784722222222222,
+        "error": 0.4189723320158103
+      },
+      {
+        "coverage": 0.8958333333333334,
+        "error": 0.4108527131782946
+      },
+      {
+        "coverage": 0.8993055555555556,
+        "error": 0.41312741312741313
+      },
+      {
+        "coverage": 0.90625,
+        "error": 0.4099616858237548
+      },
+      {
+        "coverage": 0.9131944444444444,
+        "error": 0.4144486692015209
+      },
+      {
+        "coverage": 0.9270833333333334,
+        "error": 0.41198501872659177
+      },
+      {
+        "coverage": 0.9305555555555556,
+        "error": 0.4141791044776119
+      },
+      {
+        "coverage": 0.9340277777777778,
+        "error": 0.41263940520446096
+      },
+      {
+        "coverage": 0.9375,
+        "error": 0.4148148148148148
+      },
+      {
+        "coverage": 0.9409722222222222,
+        "error": 0.41697416974169743
+      },
+      {
+        "coverage": 0.9444444444444444,
+        "error": 0.41911764705882354
+      },
+      {
+        "coverage": 0.9479166666666666,
+        "error": 0.4175824175824176
+      },
+      {
+        "coverage": 0.9513888888888888,
+        "error": 0.4197080291970803
+      },
+      {
+        "coverage": 0.9548611111111112,
+        "error": 0.4218181818181818
+      },
+      {
+        "coverage": 0.9583333333333334,
+        "error": 0.42391304347826086
+      },
+      {
+        "coverage": 0.9618055555555556,
+        "error": 0.4223826714801444
+      },
+      {
+        "coverage": 0.96875,
+        "error": 0.4265232974910394
+      },
+      {
+        "coverage": 0.9722222222222222,
+        "error": 0.42857142857142855
+      },
+      {
+        "coverage": 0.9826388888888888,
+        "error": 0.43462897526501765
+      },
+      {
+        "coverage": 0.9861111111111112,
+        "error": 0.43661971830985913
+      },
+      {
+        "coverage": 0.9895833333333334,
+        "error": 0.43859649122807015
+      },
+      {
+        "coverage": 0.9930555555555556,
+        "error": 0.4405594405594406
+      },
+      {
+        "coverage": 0.9965277777777778,
+        "error": 0.4425087108013937
+      },
+      {
+        "coverage": 1,
+        "error": 0.4444444444444444
+      }
+    ]
+  },
+  "points": [
+    {
+      "confidence": 0.2001354409090727,
+      "correct": true
+    },
+    {
+      "confidence": 0.3266590191008089,
+      "correct": false
+    },
+    {
+      "confidence": 0.7865735361557524,
+      "correct": true
+    },
+    {
+      "confidence": 0.8320619937024378,
+      "correct": true
+    },
+    {
+      "confidence": 0.5046869852484537,
+      "correct": false
+    },
+    {
+      "confidence": 0.803927898099851,
+      "correct": false
+    },
+    {
+      "confidence": 0.20068418680710728,
+      "correct": false
+    },
+    {
+      "confidence": 0.2217116002278357,
+      "correct": true
+    },
+    {
+      "confidence": 0.726223080355368,
+      "correct": false
+    },
+    {
+      "confidence": 0.8266437896287568,
+      "correct": true
+    },
+    {
+      "confidence": 0.39754677748849704,
+      "correct": true
+    },
+    {
+      "confidence": 0.700106616084858,
+      "correct": false
+    },
+    {
+      "confidence": 0.6257446264006463,
+      "correct": false
+    },
+    {
+      "confidence": 0.5534029633202773,
+      "correct": false
+    },
+    {
+      "confidence": 0.5434477002893416,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.2953816140432921,
+      "correct": true
+    },
+    {
+      "confidence": 0.7948385021073674,
+      "correct": true
+    },
+    {
+      "confidence": 0.3001653079637372,
+      "correct": false
+    },
+    {
+      "confidence": 0.5534029633202773,
+      "correct": false
+    },
+    {
+      "confidence": 0.6264593397407526,
+      "correct": false
+    },
+    {
+      "confidence": 0.823404501750613,
+      "correct": false
+    },
+    {
+      "confidence": 0.28667362189485884,
+      "correct": false
+    },
+    {
+      "confidence": 0.7843748619315483,
+      "correct": true
+    },
+    {
+      "confidence": 0.2510888444084646,
+      "correct": false
+    },
+    {
+      "confidence": 0.332813490675982,
+      "correct": false
+    },
+    {
+      "confidence": 0.40656775821982116,
+      "correct": false
+    },
+    {
+      "confidence": 0.4858618584364132,
+      "correct": true
+    },
+    {
+      "confidence": 0.2887701810005386,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.37260195431213344,
+      "correct": false
+    },
+    {
+      "confidence": 0.5085480830384548,
+      "correct": false
+    },
+    {
+      "confidence": 0.6067026839754562,
+      "correct": false
+    },
+    {
+      "confidence": 0.9229997201249598,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.10647269266699402,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.6587264190671754,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.49512707683202084,
+      "correct": true
+    },
+    {
+      "confidence": 0.6031778714264441,
+      "correct": true
+    },
+    {
+      "confidence": 0.21492102322921255,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5972450364536508,
+      "correct": false
+    },
+    {
+      "confidence": 0.9229997201249598,
+      "correct": true
+    },
+    {
+      "confidence": 0.7315567490222747,
+      "correct": true
+    },
+    {
+      "confidence": 0.5221679561289458,
+      "correct": false
+    },
+    {
+      "confidence": 0.10956822553128383,
+      "correct": false
+    },
+    {
+      "confidence": 0.287570248389069,
+      "correct": false
+    },
+    {
+      "confidence": 0.4639339366292937,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.5010394042725597,
+      "correct": true
+    },
+    {
+      "confidence": 0.8012154752963513,
+      "correct": true
+    },
+    {
+      "confidence": 0.1825005410039669,
+      "correct": false
+    },
+    {
+      "confidence": 0.5575631927464152,
+      "correct": false
+    },
+    {
+      "confidence": 0.5982860921336673,
+      "correct": false
+    },
+    {
+      "confidence": 0.9200940052824057,
+      "correct": true
+    },
+    {
+      "confidence": 0.7674243068819055,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.10806192716304053,
+      "correct": false
+    },
+    {
+      "confidence": 0.3548888753756851,
+      "correct": false
+    },
+    {
+      "confidence": 0.5950128582825293,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.26557072078182936,
+      "correct": true
+    },
+    {
+      "confidence": 0.6929102244537362,
+      "correct": true
+    },
+    {
+      "confidence": 0.7944208170889554,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.6482970455096682,
+      "correct": false
+    },
+    {
+      "confidence": 0.9203161777886688,
+      "correct": true
+    },
+    {
+      "confidence": 0.7183401583134271,
+      "correct": false
+    },
+    {
+      "confidence": 0.730622642081431,
+      "correct": true
+    },
+    {
+      "confidence": 0.1894541665657153,
+      "correct": false
+    },
+    {
+      "confidence": 0.15437239334057878,
+      "correct": false
+    },
+    {
+      "confidence": 0.4154187340239062,
+      "correct": false
+    },
+    {
+      "confidence": 0.8320619937024378,
+      "correct": true
+    },
+    {
+      "confidence": 0.39754677748849704,
+      "correct": false
+    },
+    {
+      "confidence": 0.6184354700934204,
+      "correct": false
+    },
+    {
+      "confidence": 0.25207927951633036,
+      "correct": false
+    },
+    {
+      "confidence": 0.5534029633202773,
+      "correct": false
+    },
+    {
+      "confidence": 0.5982860921336673,
+      "correct": false
+    },
+    {
+      "confidence": 0.9203161777886688,
+      "correct": true
+    },
+    {
+      "confidence": 0.8540668338209176,
+      "correct": true
+    },
+    {
+      "confidence": 0.9318659870758615,
+      "correct": true
+    },
+    {
+      "confidence": 0.5339806173177826,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5972450364536508,
+      "correct": false
+    },
+    {
+      "confidence": 0.9229997201249598,
+      "correct": true
+    },
+    {
+      "confidence": 0.8008544706602194,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.6676868946912011,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.527345930740875,
+      "correct": true
+    },
+    {
+      "confidence": 0.9223378020667269,
+      "correct": true
+    },
+    {
+      "confidence": 0.7376120222276136,
+      "correct": true
+    },
+    {
+      "confidence": 0.8227777130058019,
+      "correct": true
+    },
+    {
+      "confidence": 0.10647269266699402,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.48109893012106175,
+      "correct": false
+    },
+    {
+      "confidence": 0.8273652535416687,
+      "correct": true
+    },
+    {
+      "confidence": 0.3470511843622923,
+      "correct": true
+    },
+    {
+      "confidence": 0.4925681206788056,
+      "correct": true
+    },
+    {
+      "confidence": 0.10327488934788669,
+      "correct": false
+    },
+    {
+      "confidence": 0.30251261948924235,
+      "correct": false
+    },
+    {
+      "confidence": 0.6092763676653513,
+      "correct": false
+    },
+    {
+      "confidence": 0.8332331081906854,
+      "correct": true
+    },
+    {
+      "confidence": 0.39053031893733137,
+      "correct": true
+    },
+    {
+      "confidence": 0.6244979185683168,
+      "correct": true
+    },
+    {
+      "confidence": 0.10578875080250856,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.7821121353196645,
+      "correct": false
+    },
+    {
+      "confidence": 0.8241728569201456,
+      "correct": true
+    },
+    {
+      "confidence": 0.30478606758771276,
+      "correct": false
+    },
+    {
+      "confidence": 0.4848230833323556,
+      "correct": false
+    },
+    {
+      "confidence": 0.10647269266699402,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5641187501692095,
+      "correct": false
+    },
+    {
+      "confidence": 0.8273652535416687,
+      "correct": true
+    },
+    {
+      "confidence": 0.2505025117246339,
+      "correct": true
+    },
+    {
+      "confidence": 0.43934282821574244,
+      "correct": false
+    },
+    {
+      "confidence": 0.1212247718771728,
+      "correct": false
+    },
+    {
+      "confidence": 0.2475030958926503,
+      "correct": false
+    },
+    {
+      "confidence": 0.5524677551643575,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.2482149950401546,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.7811684510280764,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.7368218017694753,
+      "correct": false
+    },
+    {
+      "confidence": 0.9229997201249598,
+      "correct": true
+    },
+    {
+      "confidence": 0.5150875172435733,
+      "correct": false
+    },
+    {
+      "confidence": 0.6614320209989962,
+      "correct": true
+    },
+    {
+      "confidence": 0.06297354626005165,
+      "correct": false
+    },
+    {
+      "confidence": 0.17657136616555819,
+      "correct": false
+    },
+    {
+      "confidence": 0.5722331512693077,
+      "correct": false
+    },
+    {
+      "confidence": 0.8241728569201456,
+      "correct": true
+    },
+    {
+      "confidence": 0.3976024118089054,
+      "correct": true
+    },
+    {
+      "confidence": 0.4651635210017536,
+      "correct": false
+    },
+    {
+      "confidence": 0.1259530288402449,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.7926565103607484,
+      "correct": true
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.39754677748849704,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.20369089624470962,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5765115200040473,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.39754677748849704,
+      "correct": true
+    },
+    {
+      "confidence": 0.49383601279826667,
+      "correct": true
+    },
+    {
+      "confidence": 0.2001354409090727,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.6092763676653513,
+      "correct": false
+    },
+    {
+      "confidence": 0.8332331081906854,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.21041829516165622,
+      "correct": true
+    },
+    {
+      "confidence": 0.2978136789544706,
+      "correct": false
+    },
+    {
+      "confidence": 0.577299458061354,
+      "correct": false
+    },
+    {
+      "confidence": 0.8332331081906854,
+      "correct": true
+    },
+    {
+      "confidence": 0.5660935488531263,
+      "correct": true
+    },
+    {
+      "confidence": 0.5005486471028561,
+      "correct": true
+    },
+    {
+      "confidence": 0.20727036122444414,
+      "correct": true
+    },
+    {
+      "confidence": 0.3336737088056708,
+      "correct": false
+    },
+    {
+      "confidence": 0.3916172006885596,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.4133870651667646,
+      "correct": true
+    },
+    {
+      "confidence": 0.7164401331828746,
+      "correct": true
+    },
+    {
+      "confidence": 0.8188122951115411,
+      "correct": true
+    },
+    {
+      "confidence": 0.5720240236425422,
+      "correct": false
+    },
+    {
+      "confidence": 0.5156183753505893,
+      "correct": false
+    },
+    {
+      "confidence": 0.9229997201249598,
+      "correct": true
+    },
+    {
+      "confidence": 0.7332785954780989,
+      "correct": true
+    },
+    {
+      "confidence": 0.8819823869945654,
+      "correct": true
+    },
+    {
+      "confidence": 0.20727036122444414,
+      "correct": true
+    },
+    {
+      "confidence": 0.1990803889364469,
+      "correct": false
+    },
+    {
+      "confidence": 0.49928480667595887,
+      "correct": false
+    },
+    {
+      "confidence": 0.8320619937024378,
+      "correct": true
+    },
+    {
+      "confidence": 0.5501181371021422,
+      "correct": true
+    },
+    {
+      "confidence": 0.7260013313575656,
+      "correct": true
+    },
+    {
+      "confidence": 0.5594871827853625,
+      "correct": false
+    },
+    {
+      "confidence": 0.3361545430924762,
+      "correct": false
+    },
+    {
+      "confidence": 0.5513085715688093,
+      "correct": false
+    },
+    {
+      "confidence": 0.9223378020667269,
+      "correct": true
+    },
+    {
+      "confidence": 0.8546921993176426,
+      "correct": true
+    },
+    {
+      "confidence": 0.9318659870758615,
+      "correct": true
+    },
+    {
+      "confidence": 0.1178737534070619,
+      "correct": true
+    },
+    {
+      "confidence": 0.21711014223496594,
+      "correct": false
+    },
+    {
+      "confidence": 0.4488649324408637,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.4494935149139687,
+      "correct": true
+    },
+    {
+      "confidence": 0.623809641204769,
+      "correct": true
+    },
+    {
+      "confidence": 0.20727036122444414,
+      "correct": true
+    },
+    {
+      "confidence": 0.3886614621759795,
+      "correct": false
+    },
+    {
+      "confidence": 0.40558079844381645,
+      "correct": false
+    },
+    {
+      "confidence": 0.8273652535416687,
+      "correct": true
+    },
+    {
+      "confidence": 0.33931655420080953,
+      "correct": true
+    },
+    {
+      "confidence": 0.6296831121267558,
+      "correct": true
+    },
+    {
+      "confidence": 0.2001354409090727,
+      "correct": true
+    },
+    {
+      "confidence": 0.24812336032845633,
+      "correct": false
+    },
+    {
+      "confidence": 0.49026263090730654,
+      "correct": false
+    },
+    {
+      "confidence": 0.8273652535416687,
+      "correct": true
+    },
+    {
+      "confidence": 0.5046869852484537,
+      "correct": true
+    },
+    {
+      "confidence": 0.707796765653215,
+      "correct": true
+    },
+    {
+      "confidence": 0.20727036122444414,
+      "correct": true
+    },
+    {
+      "confidence": 0.24303635642014898,
+      "correct": false
+    },
+    {
+      "confidence": 0.38681091894574804,
+      "correct": false
+    },
+    {
+      "confidence": 0.8320619937024378,
+      "correct": true
+    },
+    {
+      "confidence": 0.4085450066855148,
+      "correct": true
+    },
+    {
+      "confidence": 0.3362539357701001,
+      "correct": true
+    },
+    {
+      "confidence": 0.09886022919258168,
+      "correct": false
+    },
+    {
+      "confidence": 0.376953487115239,
+      "correct": false
+    },
+    {
+      "confidence": 0.7634712994659403,
+      "correct": true
+    },
+    {
+      "confidence": 0.8273652535416687,
+      "correct": true
+    },
+    {
+      "confidence": 0.2803773192911968,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.2006926597135866,
+      "correct": true
+    },
+    {
+      "confidence": 0.39535393444665806,
+      "correct": false
+    },
+    {
+      "confidence": 0.5062950907628944,
+      "correct": false
+    },
+    {
+      "confidence": 0.8368577504350748,
+      "correct": true
+    },
+    {
+      "confidence": 0.2864481574321494,
+      "correct": true
+    },
+    {
+      "confidence": 0.42636358462781104,
+      "correct": true
+    },
+    {
+      "confidence": 0.20727036122444414,
+      "correct": true
+    },
+    {
+      "confidence": 0.393164749128833,
+      "correct": false
+    },
+    {
+      "confidence": 0.4488649324408637,
+      "correct": false
+    },
+    {
+      "confidence": 0.8332331081906854,
+      "correct": true
+    },
+    {
+      "confidence": 0.32461435590012067,
+      "correct": true
+    },
+    {
+      "confidence": 0.613517673035057,
+      "correct": true
+    },
+    {
+      "confidence": 0.27671108466239996,
+      "correct": true
+    },
+    {
+      "confidence": 0.35334101889742836,
+      "correct": false
+    },
+    {
+      "confidence": 0.5972450364536508,
+      "correct": false
+    },
+    {
+      "confidence": 0.9229997201249598,
+      "correct": true
+    },
+    {
+      "confidence": 0.6480369177082238,
+      "correct": true
+    },
+    {
+      "confidence": 0.6608009980176586,
+      "correct": false
+    },
+    {
+      "confidence": 0.10956822553128383,
+      "correct": false
+    },
+    {
+      "confidence": 0.21695244164050545,
+      "correct": false
+    },
+    {
+      "confidence": 0.38681091894574804,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.2001354409090727,
+      "correct": true
+    },
+    {
+      "confidence": 0.29561933671725177,
+      "correct": false
+    },
+    {
+      "confidence": 0.5863765531943659,
+      "correct": false
+    },
+    {
+      "confidence": 0.8273652535416687,
+      "correct": true
+    },
+    {
+      "confidence": 0.35937447178318555,
+      "correct": true
+    },
+    {
+      "confidence": 0.5997895672451237,
+      "correct": true
+    },
+    {
+      "confidence": 0.21041829516165622,
+      "correct": true
+    },
+    {
+      "confidence": 0.2649620150055207,
+      "correct": true
+    },
+    {
+      "confidence": 0.5329075092672839,
+      "correct": false
+    },
+    {
+      "confidence": 0.8332331081906854,
+      "correct": true
+    },
+    {
+      "confidence": 0.5052371141638607,
+      "correct": true
+    },
+    {
+      "confidence": 0.7260013313575656,
+      "correct": true
+    },
+    {
+      "confidence": 0.28788400326317526,
+      "correct": false
+    },
+    {
+      "confidence": 0.5648284764373425,
+      "correct": false
+    },
+    {
+      "confidence": 0.45703189880476486,
+      "correct": false
+    },
+    {
+      "confidence": 0.9182614720810776,
+      "correct": true
+    },
+    {
+      "confidence": 0.5969946715340556,
+      "correct": true
+    },
+    {
+      "confidence": 0.4786370979165541,
+      "correct": true
+    },
+    {
+      "confidence": 0.21188421348074665,
+      "correct": true
+    },
+    {
+      "confidence": 0.22258190066002453,
+      "correct": false
+    },
+    {
+      "confidence": 0.5141956443040527,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.5430264234730172,
+      "correct": true
+    },
+    {
+      "confidence": 0.7234095329067439,
+      "correct": true
+    },
+    {
+      "confidence": 0.0860597253731889,
+      "correct": false
+    },
+    {
+      "confidence": 0.20943863327729492,
+      "correct": false
+    },
+    {
+      "confidence": 0.3144236665522238,
+      "correct": false
+    },
+    {
+      "confidence": 0.8241728569201456,
+      "correct": true
+    },
+    {
+      "confidence": 0.5010394042725597,
+      "correct": true
+    },
+    {
+      "confidence": 0.6976715587956341,
+      "correct": true
+    },
+    {
+      "confidence": 0.20068418680710728,
+      "correct": false
+    },
+    {
+      "confidence": 0.2268941500493682,
+      "correct": false
+    },
+    {
+      "confidence": 0.6067937714545574,
+      "correct": false
+    },
+    {
+      "confidence": 0.8277557846672152,
+      "correct": true
+    },
+    {
+      "confidence": 0.5373606644438,
+      "correct": true
+    },
+    {
+      "confidence": 0.7874131919495575,
+      "correct": true
+    },
+    {
+      "confidence": 0.19897519882698883,
+      "correct": true
+    },
+    {
+      "confidence": 0.24812336032845633,
+      "correct": false
+    },
+    {
+      "confidence": 0.43028012001565685,
+      "correct": false
+    },
+    {
+      "confidence": 0.8332331081906854,
+      "correct": true
+    },
+    {
+      "confidence": 0.4157529960210156,
+      "correct": true
+    },
+    {
+      "confidence": 0.6626904019863661,
+      "correct": true
+    },
+    {
+      "confidence": 0.2006926597135866,
+      "correct": true
+    },
+    {
+      "confidence": 0.1558213042944909,
+      "correct": true
+    },
+    {
+      "confidence": 0.37852473233809447,
+      "correct": false
+    },
+    {
+      "confidence": 0.8368577504350748,
+      "correct": true
+    },
+    {
+      "confidence": 0.28165842581982264,
+      "correct": true
+    },
+    {
+      "confidence": 0.4991231774078613,
+      "correct": true
+    }
+  ],
+  "perDoc": [
+    {
+      "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        }
+      },
+      "ece": 0.4694171552803084,
+      "auroc": 0.5555555555555556,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          }
+        },
+        "ece": 0.4694171552803084,
+        "auroc": 0.5555555555555556
+      }
+    },
+    {
+      "doc": "19631101_Tourism_Australia_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.5301852859837073,
+      "auroc": 0.5555555555555556,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.5301852859837073,
+        "auroc": 0.5555555555555556
+      }
+    },
+    {
+      "doc": "19650901_Arab_Information_Center_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5220625289766009,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.507579962213487,
+        "auroc": 0.4444444444444444
+      }
+    },
+    {
+      "doc": "19670801_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.46762181212311504,
+      "auroc": 0.8,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.46762181212311504,
+        "auroc": 0.8
+      }
+    },
+    {
+      "doc": "19670901_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.45263967564455265,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.45263967564455265,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4274755002001808,
+      "auroc": 0.5555555555555556,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4274755002001808,
+        "auroc": 0.5555555555555556
+      }
+    },
+    {
+      "doc": "19711201_Tourism_Australia_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3898563964680815,
+      "auroc": 0.625,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.33694759011235637,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19760701_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.36329625777742913,
+      "auroc": 0.7777777777777778,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.36329625777742913,
+        "auroc": 0.7777777777777778
+      }
+    },
+    {
+      "doc": "19770101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.28851029105225334,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.28851029105225334,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19770401_World_Zionist_Organization_-_American_Section,_Inc._Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.35847191895328967,
+      "auroc": 0.7777777777777778,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.35847191895328967,
+        "auroc": 0.7777777777777778
+      }
+    },
+    {
+      "doc": "19770501_Korea_National_Tourism_Organization,_New_Jersey_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.378621155153079,
+      "auroc": 0.7777777777777778,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.378621155153079,
+        "auroc": 0.7777777777777778
+      }
+    },
+    {
+      "doc": "19781201_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5016865335069918,
+      "auroc": 0.5555555555555556,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.45225418500376907,
+        "auroc": 0.375
+      }
+    },
+    {
+      "doc": "19790101_IDA_Ireland_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.32386092463494665,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.32386092463494665,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19790101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2829198893808045,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2829198893808045,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19800101_Italian_Government_Travel_Office,_Chicago_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.40122857716437565,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.40122857716437565,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19800301_Quebec_Government_Office_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3596022377750306,
+      "auroc": 0.6,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3596022377750306,
+        "auroc": 0.6
+      }
+    },
+    {
+      "doc": "19820801_St._Lucia_Tourist_Board_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.40343117736754813,
+      "auroc": 0.875,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.40343117736754813,
+        "auroc": 0.875
+      }
+    },
+    {
+      "doc": "19830301_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.36113375513435775,
+      "auroc": 0.8888888888888888,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.36113375513435775,
+        "auroc": 0.8888888888888888
+      }
+    },
+    {
+      "doc": "19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        }
+      },
+      "ece": 0.3922228633536826,
+      "auroc": 0.875,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          }
+        },
+        "ece": 0.29818548491379443,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19841001_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        }
+      },
+      "ece": 0.4220110842976072,
+      "auroc": 0.6666666666666666,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          }
+        },
+        "ece": 0.4220110842976072,
+        "auroc": 0.6666666666666666
+      }
+    },
+    {
+      "doc": "19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3069424722178533,
+      "auroc": 0.875,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3069424722178533,
+        "auroc": 0.875
+      }
+    },
+    {
+      "doc": "19870302_FCB_New_York_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4914410048195281,
+      "auroc": 0.4444444444444444,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3187775872203442,
+        "auroc": 0.8
+      }
+    },
+    {
+      "doc": "19880501_Akin,_Gump,_Strauss,_Hauer___Feld,_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.3425277193279367,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.3425277193279367,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "19890201_Arnold___Porter_Kaye_Scholer,_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.35133232605396403,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.35133232605396403,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19890501_Singapore_Tourism_Board_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4268439735491296,
+      "auroc": 0.625,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4268439735491296,
+        "auroc": 0.625
+      }
+    },
+    {
+      "doc": "19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4126964500639564,
+      "auroc": 0.625,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4126964500639564,
+        "auroc": 0.625
+      }
+    },
+    {
+      "doc": "19910101_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4608032562845834,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4608032562845834,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.42673959420882196,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.46286719397930204,
+        "auroc": 0.8
+      }
+    },
+    {
+      "doc": "19910601_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2884282335473277,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2832221084304646,
+        "auroc": 0.8
+      }
+    },
+    {
+      "doc": "19910601_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3971522287043026,
+      "auroc": 0.875,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3971522287043026,
+        "auroc": 0.875
+      }
+    },
+    {
+      "doc": "19910601_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.2896757181644028,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.2896757181644028,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19910801_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4411737300804691,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4582187526001812,
+        "auroc": 0.8
+      }
+    },
+    {
+      "doc": "19910801_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.46510116325435297,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49657423043974747,
+        "auroc": 0.6
+      }
+    },
+    {
+      "doc": "19910801_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4164002576472254,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4164002576472254,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "19911001_Arnold___Porter_Kaye_Scholer,_LLP_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.47428599633056673,
+      "auroc": 0.625,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5120156900153173,
+        "auroc": 0.8
+      }
+    },
+    {
+      "doc": "19911001_Kobe_Trade_Information_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.27755908043190136,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.27755908043190136,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19911101_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5252144788334884,
+      "auroc": 0.375,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5252144788334884,
+        "auroc": 0.375
+      }
+    },
+    {
+      "doc": "19911201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4772323638698982,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49427738638961033,
+        "auroc": 0.6
+      }
+    },
+    {
+      "doc": "19911201_KOTRA_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.4606065551455257,
+      "auroc": 0.5555555555555556,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.40700622247297286,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.3142626335750537,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.3519923272598043,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19920301_Far_East_Trade_Services,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.48255519273876113,
+      "auroc": 0.625,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.48255519273876113,
+        "auroc": 0.625
+      }
+    },
+    {
+      "doc": "19920301_Hill_and_Knowlton_Strategies,_LLC_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4988426075646658,
+      "auroc": 0.4,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4988426075646658,
+        "auroc": 0.4
+      }
+    },
+    {
+      "doc": "19920301_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.38597518949559917,
+      "auroc": 0.8888888888888888,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.4710032221396192,
+        "auroc": 0.4
+      }
+    },
+    {
+      "doc": "19920301_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.40511693173939234,
+      "auroc": 0.75,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.40511693173939234,
+        "auroc": 0.75
+      }
+    },
+    {
+      "doc": "19920301_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.264506367535728,
+      "auroc": 1,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.264506367535728,
+        "auroc": 1
+      }
+    },
+    {
+      "doc": "19920501_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.31364041120841,
+      "auroc": 0.8888888888888888,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.31364041120841,
+        "auroc": 0.8888888888888888
+      }
+    },
+    {
+      "doc": "19920501_Scottish_Enterprise_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.4279586292198429,
+      "auroc": 0.625,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.45119858921462397,
+        "auroc": 0.8
+      }
+    },
+    {
+      "doc": "19920501_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.5673952357778763,
+      "auroc": 0.4,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.5673952357778763,
+        "auroc": 0.4
+      }
+    }
+  ],
+  "normalized": {
+    "docClass": "vrdu-registration",
+    "tableSha256": "12efe2771959839d251da5b61eb813c77cc06a8c5db21a04983fc980a9844ea0",
+    "corpus": {
+      "docs": 48,
+      "leaves": 288,
+      "cells": {
+        "tp": 155,
+        "fp": 108,
+        "fn": 84
+      },
+      "precision": 0.5893536121673004,
+      "recall": 0.6485355648535565,
+      "f1": 0.6175298804780877,
+      "ece": 0.18069720406061132,
+      "brier": 0.20777476236569328,
+      "auroc": 0.7258360054970224,
+      "riskCoverage": [
+        {
+          "coverage": 0,
+          "error": 0
+        },
+        {
+          "coverage": 0.006944444444444444,
+          "error": 0
+        },
+        {
+          "coverage": 0.027777777777777776,
+          "error": 0
+        },
+        {
+          "coverage": 0.034722222222222224,
+          "error": 0
+        },
+        {
+          "coverage": 0.041666666666666664,
+          "error": 0
+        },
+        {
+          "coverage": 0.04513888888888889,
+          "error": 0
+        },
+        {
+          "coverage": 0.04861111111111111,
+          "error": 0
+        },
+        {
+          "coverage": 0.052083333333333336,
+          "error": 0
+        },
+        {
+          "coverage": 0.05555555555555555,
+          "error": 0
+        },
+        {
+          "coverage": 0.059027777777777776,
+          "error": 0
+        },
+        {
+          "coverage": 0.06597222222222222,
+          "error": 0
+        },
+        {
+          "coverage": 0.08680555555555555,
+          "error": 0
+        },
+        {
+          "coverage": 0.10069444444444445,
+          "error": 0
+        },
+        {
+          "coverage": 0.1388888888888889,
+          "error": 0
+        },
+        {
+          "coverage": 0.1597222222222222,
+          "error": 0
+        },
+        {
+          "coverage": 0.16319444444444445,
+          "error": 0
+        },
+        {
+          "coverage": 0.1736111111111111,
+          "error": 0
+        },
+        {
+          "coverage": 0.17708333333333334,
+          "error": 0.0196078431372549
+        },
+        {
+          "coverage": 0.18055555555555555,
+          "error": 0.019230769230769232
+        },
+        {
+          "coverage": 0.1840277777777778,
+          "error": 0.018867924528301886
+        },
+        {
+          "coverage": 0.1875,
+          "error": 0.037037037037037035
+        },
+        {
+          "coverage": 0.1909722222222222,
+          "error": 0.03636363636363636
+        },
+        {
+          "coverage": 0.19444444444444445,
+          "error": 0.03571428571428571
+        },
+        {
+          "coverage": 0.19791666666666666,
+          "error": 0.03508771929824561
+        },
+        {
+          "coverage": 0.2013888888888889,
+          "error": 0.05172413793103448
+        },
+        {
+          "coverage": 0.2048611111111111,
+          "error": 0.05084745762711865
+        },
+        {
+          "coverage": 0.20833333333333334,
+          "error": 0.05
+        },
+        {
+          "coverage": 0.21180555555555555,
+          "error": 0.04918032786885246
+        },
+        {
+          "coverage": 0.2152777777777778,
+          "error": 0.04838709677419355
+        },
+        {
+          "coverage": 0.21875,
+          "error": 0.047619047619047616
+        },
+        {
+          "coverage": 0.2222222222222222,
+          "error": 0.046875
+        },
+        {
+          "coverage": 0.22569444444444445,
+          "error": 0.046153846153846156
+        },
+        {
+          "coverage": 0.22916666666666666,
+          "error": 0.045454545454545456
+        },
+        {
+          "coverage": 0.2326388888888889,
+          "error": 0.04477611940298507
+        },
+        {
+          "coverage": 0.2361111111111111,
+          "error": 0.04411764705882353
+        },
+        {
+          "coverage": 0.23958333333333334,
+          "error": 0.043478260869565216
+        },
+        {
+          "coverage": 0.24305555555555555,
+          "error": 0.04285714285714286
+        },
+        {
+          "coverage": 0.2465277777777778,
+          "error": 0.04225352112676056
+        },
+        {
+          "coverage": 0.25,
+          "error": 0.05555555555555555
+        },
+        {
+          "coverage": 0.2569444444444444,
+          "error": 0.05405405405405406
+        },
+        {
+          "coverage": 0.2604166666666667,
+          "error": 0.05333333333333334
+        },
+        {
+          "coverage": 0.2638888888888889,
+          "error": 0.06578947368421052
+        },
+        {
+          "coverage": 0.2673611111111111,
+          "error": 0.06493506493506493
+        },
+        {
+          "coverage": 0.2708333333333333,
+          "error": 0.0641025641025641
+        },
+        {
+          "coverage": 0.2743055555555556,
+          "error": 0.0759493670886076
+        },
+        {
+          "coverage": 0.2777777777777778,
+          "error": 0.075
+        },
+        {
+          "coverage": 0.28125,
+          "error": 0.07407407407407407
+        },
+        {
+          "coverage": 0.2847222222222222,
+          "error": 0.08536585365853659
+        },
+        {
+          "coverage": 0.2881944444444444,
+          "error": 0.08433734939759036
+        },
+        {
+          "coverage": 0.2916666666666667,
+          "error": 0.08333333333333333
+        },
+        {
+          "coverage": 0.2951388888888889,
+          "error": 0.08235294117647059
+        },
+        {
+          "coverage": 0.2986111111111111,
+          "error": 0.08139534883720931
+        },
+        {
+          "coverage": 0.3020833333333333,
+          "error": 0.08045977011494253
+        },
+        {
+          "coverage": 0.3055555555555556,
+          "error": 0.07954545454545454
+        },
+        {
+          "coverage": 0.3090277777777778,
+          "error": 0.07865168539325842
+        },
+        {
+          "coverage": 0.3125,
+          "error": 0.08888888888888889
+        },
+        {
+          "coverage": 0.3159722222222222,
+          "error": 0.0989010989010989
+        },
+        {
+          "coverage": 0.3194444444444444,
+          "error": 0.09782608695652174
+        },
+        {
+          "coverage": 0.3229166666666667,
+          "error": 0.0967741935483871
+        },
+        {
+          "coverage": 0.3263888888888889,
+          "error": 0.10638297872340426
+        },
+        {
+          "coverage": 0.3298611111111111,
+          "error": 0.10526315789473684
+        },
+        {
+          "coverage": 0.3368055555555556,
+          "error": 0.12371134020618557
+        },
+        {
+          "coverage": 0.3402777777777778,
+          "error": 0.1326530612244898
+        },
+        {
+          "coverage": 0.34375,
+          "error": 0.1414141414141414
+        },
+        {
+          "coverage": 0.3472222222222222,
+          "error": 0.14
+        },
+        {
+          "coverage": 0.3506944444444444,
+          "error": 0.13861386138613863
+        },
+        {
+          "coverage": 0.3576388888888889,
+          "error": 0.1553398058252427
+        },
+        {
+          "coverage": 0.3680555555555556,
+          "error": 0.1792452830188679
+        },
+        {
+          "coverage": 0.3715277777777778,
+          "error": 0.17757009345794392
+        },
+        {
+          "coverage": 0.375,
+          "error": 0.18518518518518517
+        },
+        {
+          "coverage": 0.3784722222222222,
+          "error": 0.1926605504587156
+        },
+        {
+          "coverage": 0.3819444444444444,
+          "error": 0.2
+        },
+        {
+          "coverage": 0.3854166666666667,
+          "error": 0.2072072072072072
+        },
+        {
+          "coverage": 0.3888888888888889,
+          "error": 0.21428571428571427
+        },
+        {
+          "coverage": 0.3923611111111111,
+          "error": 0.22123893805309736
+        },
+        {
+          "coverage": 0.3958333333333333,
+          "error": 0.21929824561403508
+        },
+        {
+          "coverage": 0.3993055555555556,
+          "error": 0.22608695652173913
+        },
+        {
+          "coverage": 0.4027777777777778,
+          "error": 0.23275862068965517
+        },
+        {
+          "coverage": 0.40625,
+          "error": 0.23931623931623933
+        },
+        {
+          "coverage": 0.4097222222222222,
+          "error": 0.2457627118644068
+        },
+        {
+          "coverage": 0.4201388888888889,
+          "error": 0.2644628099173554
+        },
+        {
+          "coverage": 0.4236111111111111,
+          "error": 0.27049180327868855
+        },
+        {
+          "coverage": 0.4270833333333333,
+          "error": 0.2764227642276423
+        },
+        {
+          "coverage": 0.4305555555555556,
+          "error": 0.27419354838709675
+        },
+        {
+          "coverage": 0.4340277777777778,
+          "error": 0.272
+        },
+        {
+          "coverage": 0.4375,
+          "error": 0.2698412698412698
+        },
+        {
+          "coverage": 0.4409722222222222,
+          "error": 0.2677165354330709
+        },
+        {
+          "coverage": 0.4444444444444444,
+          "error": 0.2734375
+        },
+        {
+          "coverage": 0.4479166666666667,
+          "error": 0.27906976744186046
+        },
+        {
+          "coverage": 0.4513888888888889,
+          "error": 0.27692307692307694
+        },
+        {
+          "coverage": 0.4548611111111111,
+          "error": 0.2824427480916031
+        },
+        {
+          "coverage": 0.4583333333333333,
+          "error": 0.2803030303030303
+        },
+        {
+          "coverage": 0.4618055555555556,
+          "error": 0.2857142857142857
+        },
+        {
+          "coverage": 0.4652777777777778,
+          "error": 0.291044776119403
+        },
+        {
+          "coverage": 0.46875,
+          "error": 0.2962962962962963
+        },
+        {
+          "coverage": 0.4722222222222222,
+          "error": 0.3014705882352941
+        },
+        {
+          "coverage": 0.4756944444444444,
+          "error": 0.29927007299270075
+        },
+        {
+          "coverage": 0.4826388888888889,
+          "error": 0.302158273381295
+        },
+        {
+          "coverage": 0.4895833333333333,
+          "error": 0.2978723404255319
+        },
+        {
+          "coverage": 0.4930555555555556,
+          "error": 0.29577464788732394
+        },
+        {
+          "coverage": 0.5798611111111112,
+          "error": 0.2694610778443114
+        },
+        {
+          "coverage": 0.5833333333333334,
+          "error": 0.27380952380952384
+        },
+        {
+          "coverage": 0.5868055555555556,
+          "error": 0.27218934911242604
+        },
+        {
+          "coverage": 0.5902777777777778,
+          "error": 0.27058823529411763
+        },
+        {
+          "coverage": 0.59375,
+          "error": 0.26900584795321636
+        },
+        {
+          "coverage": 0.5972222222222222,
+          "error": 0.26744186046511625
+        },
+        {
+          "coverage": 0.6006944444444444,
+          "error": 0.27167630057803466
+        },
+        {
+          "coverage": 0.6041666666666666,
+          "error": 0.27011494252873564
+        },
+        {
+          "coverage": 0.6076388888888888,
+          "error": 0.2742857142857143
+        },
+        {
+          "coverage": 0.6111111111111112,
+          "error": 0.2784090909090909
+        },
+        {
+          "coverage": 0.6145833333333334,
+          "error": 0.2768361581920904
+        },
+        {
+          "coverage": 0.6180555555555556,
+          "error": 0.2808988764044944
+        },
+        {
+          "coverage": 0.6215277777777778,
+          "error": 0.2849162011173184
+        },
+        {
+          "coverage": 0.625,
+          "error": 0.2833333333333333
+        },
+        {
+          "coverage": 0.6284722222222222,
+          "error": 0.281767955801105
+        },
+        {
+          "coverage": 0.6354166666666666,
+          "error": 0.2786885245901639
+        },
+        {
+          "coverage": 0.6388888888888888,
+          "error": 0.2826086956521739
+        },
+        {
+          "coverage": 0.6423611111111112,
+          "error": 0.2810810810810811
+        },
+        {
+          "coverage": 0.6458333333333334,
+          "error": 0.27956989247311825
+        },
+        {
+          "coverage": 0.6493055555555556,
+          "error": 0.27807486631016043
+        },
+        {
+          "coverage": 0.6527777777777778,
+          "error": 0.28191489361702127
+        },
+        {
+          "coverage": 0.65625,
+          "error": 0.2804232804232804
+        },
+        {
+          "coverage": 0.6597222222222222,
+          "error": 0.2789473684210526
+        },
+        {
+          "coverage": 0.6631944444444444,
+          "error": 0.28272251308900526
+        },
+        {
+          "coverage": 0.6666666666666666,
+          "error": 0.28125
+        },
+        {
+          "coverage": 0.6701388888888888,
+          "error": 0.27979274611398963
+        },
+        {
+          "coverage": 0.6840277777777778,
+          "error": 0.27918781725888325
+        },
+        {
+          "coverage": 0.6875,
+          "error": 0.2828282828282828
+        },
+        {
+          "coverage": 0.6909722222222222,
+          "error": 0.2864321608040201
+        },
+        {
+          "coverage": 0.6944444444444444,
+          "error": 0.285
+        },
+        {
+          "coverage": 0.6979166666666666,
+          "error": 0.2835820895522388
+        },
+        {
+          "coverage": 0.7013888888888888,
+          "error": 0.2871287128712871
+        },
+        {
+          "coverage": 0.7083333333333334,
+          "error": 0.28431372549019607
+        },
+        {
+          "coverage": 0.7118055555555556,
+          "error": 0.28780487804878047
+        },
+        {
+          "coverage": 0.7152777777777778,
+          "error": 0.2912621359223301
+        },
+        {
+          "coverage": 0.71875,
+          "error": 0.2946859903381642
+        },
+        {
+          "coverage": 0.7222222222222222,
+          "error": 0.2932692307692308
+        },
+        {
+          "coverage": 0.7256944444444444,
+          "error": 0.2966507177033493
+        },
+        {
+          "coverage": 0.7291666666666666,
+          "error": 0.3
+        },
+        {
+          "coverage": 0.7326388888888888,
+          "error": 0.2985781990521327
+        },
+        {
+          "coverage": 0.7361111111111112,
+          "error": 0.2971698113207547
+        },
+        {
+          "coverage": 0.7395833333333334,
+          "error": 0.29577464788732394
+        },
+        {
+          "coverage": 0.7430555555555556,
+          "error": 0.29906542056074764
+        },
+        {
+          "coverage": 0.7465277777777778,
+          "error": 0.3023255813953488
+        },
+        {
+          "coverage": 0.75,
+          "error": 0.3055555555555556
+        },
+        {
+          "coverage": 0.7534722222222222,
+          "error": 0.3087557603686636
+        },
+        {
+          "coverage": 0.7569444444444444,
+          "error": 0.3073394495412844
+        },
+        {
+          "coverage": 0.7604166666666666,
+          "error": 0.3105022831050228
+        },
+        {
+          "coverage": 0.7638888888888888,
+          "error": 0.31363636363636366
+        },
+        {
+          "coverage": 0.7673611111111112,
+          "error": 0.3167420814479638
+        },
+        {
+          "coverage": 0.7708333333333334,
+          "error": 0.31981981981981983
+        },
+        {
+          "coverage": 0.7743055555555556,
+          "error": 0.32286995515695066
+        },
+        {
+          "coverage": 0.7777777777777778,
+          "error": 0.32589285714285715
+        },
+        {
+          "coverage": 0.78125,
+          "error": 0.3244444444444444
+        },
+        {
+          "coverage": 0.7847222222222222,
+          "error": 0.3230088495575221
+        },
+        {
+          "coverage": 0.7881944444444444,
+          "error": 0.32158590308370044
+        },
+        {
+          "coverage": 0.7916666666666666,
+          "error": 0.32456140350877194
+        },
+        {
+          "coverage": 0.7951388888888888,
+          "error": 0.32751091703056767
+        },
+        {
+          "coverage": 0.7986111111111112,
+          "error": 0.32608695652173914
+        },
+        {
+          "coverage": 0.8020833333333334,
+          "error": 0.3246753246753247
+        },
+        {
+          "coverage": 0.8055555555555556,
+          "error": 0.3275862068965517
+        },
+        {
+          "coverage": 0.8090277777777778,
+          "error": 0.3261802575107296
+        },
+        {
+          "coverage": 0.8125,
+          "error": 0.3247863247863248
+        },
+        {
+          "coverage": 0.8159722222222222,
+          "error": 0.32340425531914896
+        },
+        {
+          "coverage": 0.8194444444444444,
+          "error": 0.326271186440678
+        },
+        {
+          "coverage": 0.8229166666666666,
+          "error": 0.3291139240506329
+        },
+        {
+          "coverage": 0.8263888888888888,
+          "error": 0.3277310924369748
+        },
+        {
+          "coverage": 0.8298611111111112,
+          "error": 0.3305439330543933
+        },
+        {
+          "coverage": 0.8368055555555556,
+          "error": 0.3360995850622407
+        },
+        {
+          "coverage": 0.8402777777777778,
+          "error": 0.33884297520661155
+        },
+        {
+          "coverage": 0.84375,
+          "error": 0.34156378600823045
+        },
+        {
+          "coverage": 0.8472222222222222,
+          "error": 0.3442622950819672
+        },
+        {
+          "coverage": 0.8506944444444444,
+          "error": 0.3469387755102041
+        },
+        {
+          "coverage": 0.8541666666666666,
+          "error": 0.34552845528455284
+        },
+        {
+          "coverage": 0.8576388888888888,
+          "error": 0.3481781376518219
+        },
+        {
+          "coverage": 0.8611111111111112,
+          "error": 0.35080645161290325
+        },
+        {
+          "coverage": 0.8645833333333334,
+          "error": 0.3534136546184739
+        },
+        {
+          "coverage": 0.8680555555555556,
+          "error": 0.352
+        },
+        {
+          "coverage": 0.875,
+          "error": 0.3492063492063492
+        },
+        {
+          "coverage": 0.8784722222222222,
+          "error": 0.35177865612648224
+        },
+        {
+          "coverage": 0.8958333333333334,
+          "error": 0.3449612403100775
+        },
+        {
+          "coverage": 0.8993055555555556,
+          "error": 0.3474903474903475
+        },
+        {
+          "coverage": 0.90625,
+          "error": 0.3448275862068966
+        },
+        {
+          "coverage": 0.9131944444444444,
+          "error": 0.34980988593155893
+        },
+        {
+          "coverage": 0.9270833333333334,
+          "error": 0.34831460674157305
+        },
+        {
+          "coverage": 0.9305555555555556,
+          "error": 0.35074626865671643
+        },
+        {
+          "coverage": 0.9340277777777778,
+          "error": 0.34944237918215615
+        },
+        {
+          "coverage": 0.9375,
+          "error": 0.35185185185185186
+        },
+        {
+          "coverage": 0.9409722222222222,
+          "error": 0.35424354243542433
+        },
+        {
+          "coverage": 0.9444444444444444,
+          "error": 0.35661764705882354
+        },
+        {
+          "coverage": 0.9479166666666666,
+          "error": 0.3553113553113553
+        },
+        {
+          "coverage": 0.9513888888888888,
+          "error": 0.35766423357664234
+        },
+        {
+          "coverage": 0.9548611111111112,
+          "error": 0.36
+        },
+        {
+          "coverage": 0.9583333333333334,
+          "error": 0.36231884057971014
+        },
+        {
+          "coverage": 0.9618055555555556,
+          "error": 0.36101083032490977
+        },
+        {
+          "coverage": 0.96875,
+          "error": 0.3655913978494624
+        },
+        {
+          "coverage": 0.9722222222222222,
+          "error": 0.3678571428571429
+        },
+        {
+          "coverage": 0.9826388888888888,
+          "error": 0.3745583038869258
+        },
+        {
+          "coverage": 0.9861111111111112,
+          "error": 0.3767605633802817
+        },
+        {
+          "coverage": 0.9895833333333334,
+          "error": 0.37894736842105264
+        },
+        {
+          "coverage": 0.9930555555555556,
+          "error": 0.3811188811188811
+        },
+        {
+          "coverage": 0.9965277777777778,
+          "error": 0.3832752613240418
+        },
+        {
+          "coverage": 1,
+          "error": 0.3854166666666667
+        }
+      ]
+    },
+    "points": [
+      {
+        "confidence": 0.2001354409090727,
+        "correct": true
+      },
+      {
+        "confidence": 0.3266590191008089,
+        "correct": false
+      },
+      {
+        "confidence": 0.7865735361557524,
+        "correct": true
+      },
+      {
+        "confidence": 0.8320619937024378,
+        "correct": true
+      },
+      {
+        "confidence": 0.5046869852484537,
+        "correct": false
+      },
+      {
+        "confidence": 0.803927898099851,
+        "correct": false
+      },
+      {
+        "confidence": 0.20068418680710728,
+        "correct": false
+      },
+      {
+        "confidence": 0.2217116002278357,
+        "correct": true
+      },
+      {
+        "confidence": 0.726223080355368,
+        "correct": false
+      },
+      {
+        "confidence": 0.8266437896287568,
+        "correct": true
+      },
+      {
+        "confidence": 0.39754677748849704,
+        "correct": true
+      },
+      {
+        "confidence": 0.700106616084858,
+        "correct": false
+      },
+      {
+        "confidence": 0.6257446264006463,
+        "correct": false
+      },
+      {
+        "confidence": 0.5534029633202773,
+        "correct": false
+      },
+      {
+        "confidence": 0.5434477002893416,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.2953816140432921,
+        "correct": true
+      },
+      {
+        "confidence": 0.7948385021073674,
+        "correct": true
+      },
+      {
+        "confidence": 0.3001653079637372,
+        "correct": false
+      },
+      {
+        "confidence": 0.5534029633202773,
+        "correct": false
+      },
+      {
+        "confidence": 0.6264593397407526,
+        "correct": false
+      },
+      {
+        "confidence": 0.823404501750613,
+        "correct": false
+      },
+      {
+        "confidence": 0.28667362189485884,
+        "correct": false
+      },
+      {
+        "confidence": 0.7843748619315483,
+        "correct": true
+      },
+      {
+        "confidence": 0.2510888444084646,
+        "correct": false
+      },
+      {
+        "confidence": 0.332813490675982,
+        "correct": false
+      },
+      {
+        "confidence": 0.40656775821982116,
+        "correct": false
+      },
+      {
+        "confidence": 0.4858618584364132,
+        "correct": true
+      },
+      {
+        "confidence": 0.2887701810005386,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.37260195431213344,
+        "correct": false
+      },
+      {
+        "confidence": 0.5085480830384548,
+        "correct": false
+      },
+      {
+        "confidence": 0.6067026839754562,
+        "correct": false
+      },
+      {
+        "confidence": 0.9229997201249598,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.10647269266699402,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.6587264190671754,
+        "correct": true
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.49512707683202084,
+        "correct": true
+      },
+      {
+        "confidence": 0.6031778714264441,
+        "correct": true
+      },
+      {
+        "confidence": 0.21492102322921255,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5972450364536508,
+        "correct": false
+      },
+      {
+        "confidence": 0.9229997201249598,
+        "correct": true
+      },
+      {
+        "confidence": 0.7315567490222747,
+        "correct": true
+      },
+      {
+        "confidence": 0.5221679561289458,
+        "correct": false
+      },
+      {
+        "confidence": 0.10956822553128383,
+        "correct": false
+      },
+      {
+        "confidence": 0.287570248389069,
+        "correct": false
+      },
+      {
+        "confidence": 0.4639339366292937,
+        "correct": false
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.5010394042725597,
+        "correct": true
+      },
+      {
+        "confidence": 0.8012154752963513,
+        "correct": true
+      },
+      {
+        "confidence": 0.1825005410039669,
+        "correct": false
+      },
+      {
+        "confidence": 0.5575631927464152,
+        "correct": false
+      },
+      {
+        "confidence": 0.5982860921336673,
+        "correct": false
+      },
+      {
+        "confidence": 0.9200940052824057,
+        "correct": true
+      },
+      {
+        "confidence": 0.7674243068819055,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.10806192716304053,
+        "correct": false
+      },
+      {
+        "confidence": 0.3548888753756851,
+        "correct": false
+      },
+      {
+        "confidence": 0.5950128582825293,
+        "correct": false
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.26557072078182936,
+        "correct": true
+      },
+      {
+        "confidence": 0.6929102244537362,
+        "correct": true
+      },
+      {
+        "confidence": 0.7944208170889554,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.6482970455096682,
+        "correct": true
+      },
+      {
+        "confidence": 0.9203161777886688,
+        "correct": true
+      },
+      {
+        "confidence": 0.7183401583134271,
+        "correct": false
+      },
+      {
+        "confidence": 0.730622642081431,
+        "correct": true
+      },
+      {
+        "confidence": 0.1894541665657153,
+        "correct": false
+      },
+      {
+        "confidence": 0.15437239334057878,
+        "correct": false
+      },
+      {
+        "confidence": 0.4154187340239062,
+        "correct": false
+      },
+      {
+        "confidence": 0.8320619937024378,
+        "correct": true
+      },
+      {
+        "confidence": 0.39754677748849704,
+        "correct": false
+      },
+      {
+        "confidence": 0.6184354700934204,
+        "correct": false
+      },
+      {
+        "confidence": 0.25207927951633036,
+        "correct": false
+      },
+      {
+        "confidence": 0.5534029633202773,
+        "correct": false
+      },
+      {
+        "confidence": 0.5982860921336673,
+        "correct": false
+      },
+      {
+        "confidence": 0.9203161777886688,
+        "correct": true
+      },
+      {
+        "confidence": 0.8540668338209176,
+        "correct": true
+      },
+      {
+        "confidence": 0.9318659870758615,
+        "correct": true
+      },
+      {
+        "confidence": 0.5339806173177826,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5972450364536508,
+        "correct": false
+      },
+      {
+        "confidence": 0.9229997201249598,
+        "correct": true
+      },
+      {
+        "confidence": 0.8008544706602194,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.6676868946912011,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.527345930740875,
+        "correct": true
+      },
+      {
+        "confidence": 0.9223378020667269,
+        "correct": true
+      },
+      {
+        "confidence": 0.7376120222276136,
+        "correct": true
+      },
+      {
+        "confidence": 0.8227777130058019,
+        "correct": true
+      },
+      {
+        "confidence": 0.10647269266699402,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.48109893012106175,
+        "correct": false
+      },
+      {
+        "confidence": 0.8273652535416687,
+        "correct": true
+      },
+      {
+        "confidence": 0.3470511843622923,
+        "correct": true
+      },
+      {
+        "confidence": 0.4925681206788056,
+        "correct": true
+      },
+      {
+        "confidence": 0.10327488934788669,
+        "correct": false
+      },
+      {
+        "confidence": 0.30251261948924235,
+        "correct": false
+      },
+      {
+        "confidence": 0.6092763676653513,
+        "correct": false
+      },
+      {
+        "confidence": 0.8332331081906854,
+        "correct": true
+      },
+      {
+        "confidence": 0.39053031893733137,
+        "correct": true
+      },
+      {
+        "confidence": 0.6244979185683168,
+        "correct": true
+      },
+      {
+        "confidence": 0.10578875080250856,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.7821121353196645,
+        "correct": true
+      },
+      {
+        "confidence": 0.8241728569201456,
+        "correct": true
+      },
+      {
+        "confidence": 0.30478606758771276,
+        "correct": false
+      },
+      {
+        "confidence": 0.4848230833323556,
+        "correct": false
+      },
+      {
+        "confidence": 0.10647269266699402,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5641187501692095,
+        "correct": false
+      },
+      {
+        "confidence": 0.8273652535416687,
+        "correct": true
+      },
+      {
+        "confidence": 0.2505025117246339,
+        "correct": true
+      },
+      {
+        "confidence": 0.43934282821574244,
+        "correct": false
+      },
+      {
+        "confidence": 0.1212247718771728,
+        "correct": false
+      },
+      {
+        "confidence": 0.2475030958926503,
+        "correct": false
+      },
+      {
+        "confidence": 0.5524677551643575,
+        "correct": false
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.2482149950401546,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.7811684510280764,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.7368218017694753,
+        "correct": true
+      },
+      {
+        "confidence": 0.9229997201249598,
+        "correct": true
+      },
+      {
+        "confidence": 0.5150875172435733,
+        "correct": false
+      },
+      {
+        "confidence": 0.6614320209989962,
+        "correct": true
+      },
+      {
+        "confidence": 0.06297354626005165,
+        "correct": false
+      },
+      {
+        "confidence": 0.17657136616555819,
+        "correct": false
+      },
+      {
+        "confidence": 0.5722331512693077,
+        "correct": false
+      },
+      {
+        "confidence": 0.8241728569201456,
+        "correct": true
+      },
+      {
+        "confidence": 0.3976024118089054,
+        "correct": true
+      },
+      {
+        "confidence": 0.4651635210017536,
+        "correct": false
+      },
+      {
+        "confidence": 0.1259530288402449,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.7926565103607484,
+        "correct": true
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.39754677748849704,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.20369089624470962,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5765115200040473,
+        "correct": false
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.39754677748849704,
+        "correct": true
+      },
+      {
+        "confidence": 0.49383601279826667,
+        "correct": true
+      },
+      {
+        "confidence": 0.2001354409090727,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.6092763676653513,
+        "correct": false
+      },
+      {
+        "confidence": 0.8332331081906854,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.21041829516165622,
+        "correct": true
+      },
+      {
+        "confidence": 0.2978136789544706,
+        "correct": false
+      },
+      {
+        "confidence": 0.577299458061354,
+        "correct": false
+      },
+      {
+        "confidence": 0.8332331081906854,
+        "correct": true
+      },
+      {
+        "confidence": 0.5660935488531263,
+        "correct": true
+      },
+      {
+        "confidence": 0.5005486471028561,
+        "correct": true
+      },
+      {
+        "confidence": 0.20727036122444414,
+        "correct": true
+      },
+      {
+        "confidence": 0.3336737088056708,
+        "correct": false
+      },
+      {
+        "confidence": 0.3916172006885596,
+        "correct": true
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.4133870651667646,
+        "correct": true
+      },
+      {
+        "confidence": 0.7164401331828746,
+        "correct": true
+      },
+      {
+        "confidence": 0.8188122951115411,
+        "correct": true
+      },
+      {
+        "confidence": 0.5720240236425422,
+        "correct": false
+      },
+      {
+        "confidence": 0.5156183753505893,
+        "correct": true
+      },
+      {
+        "confidence": 0.9229997201249598,
+        "correct": true
+      },
+      {
+        "confidence": 0.7332785954780989,
+        "correct": true
+      },
+      {
+        "confidence": 0.8819823869945654,
+        "correct": true
+      },
+      {
+        "confidence": 0.20727036122444414,
+        "correct": true
+      },
+      {
+        "confidence": 0.1990803889364469,
+        "correct": false
+      },
+      {
+        "confidence": 0.49928480667595887,
+        "correct": false
+      },
+      {
+        "confidence": 0.8320619937024378,
+        "correct": true
+      },
+      {
+        "confidence": 0.5501181371021422,
+        "correct": true
+      },
+      {
+        "confidence": 0.7260013313575656,
+        "correct": true
+      },
+      {
+        "confidence": 0.5594871827853625,
+        "correct": false
+      },
+      {
+        "confidence": 0.3361545430924762,
+        "correct": false
+      },
+      {
+        "confidence": 0.5513085715688093,
+        "correct": false
+      },
+      {
+        "confidence": 0.9223378020667269,
+        "correct": true
+      },
+      {
+        "confidence": 0.8546921993176426,
+        "correct": true
+      },
+      {
+        "confidence": 0.9318659870758615,
+        "correct": true
+      },
+      {
+        "confidence": 0.1178737534070619,
+        "correct": true
+      },
+      {
+        "confidence": 0.21711014223496594,
+        "correct": false
+      },
+      {
+        "confidence": 0.4488649324408637,
+        "correct": true
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.4494935149139687,
+        "correct": true
+      },
+      {
+        "confidence": 0.623809641204769,
+        "correct": true
+      },
+      {
+        "confidence": 0.20727036122444414,
+        "correct": true
+      },
+      {
+        "confidence": 0.3886614621759795,
+        "correct": false
+      },
+      {
+        "confidence": 0.40558079844381645,
+        "correct": true
+      },
+      {
+        "confidence": 0.8273652535416687,
+        "correct": true
+      },
+      {
+        "confidence": 0.33931655420080953,
+        "correct": true
+      },
+      {
+        "confidence": 0.6296831121267558,
+        "correct": true
+      },
+      {
+        "confidence": 0.2001354409090727,
+        "correct": true
+      },
+      {
+        "confidence": 0.24812336032845633,
+        "correct": false
+      },
+      {
+        "confidence": 0.49026263090730654,
+        "correct": false
+      },
+      {
+        "confidence": 0.8273652535416687,
+        "correct": true
+      },
+      {
+        "confidence": 0.5046869852484537,
+        "correct": true
+      },
+      {
+        "confidence": 0.707796765653215,
+        "correct": true
+      },
+      {
+        "confidence": 0.20727036122444414,
+        "correct": true
+      },
+      {
+        "confidence": 0.24303635642014898,
+        "correct": false
+      },
+      {
+        "confidence": 0.38681091894574804,
+        "correct": true
+      },
+      {
+        "confidence": 0.8320619937024378,
+        "correct": true
+      },
+      {
+        "confidence": 0.4085450066855148,
+        "correct": true
+      },
+      {
+        "confidence": 0.3362539357701001,
+        "correct": true
+      },
+      {
+        "confidence": 0.09886022919258168,
+        "correct": false
+      },
+      {
+        "confidence": 0.376953487115239,
+        "correct": false
+      },
+      {
+        "confidence": 0.7634712994659403,
+        "correct": true
+      },
+      {
+        "confidence": 0.8273652535416687,
+        "correct": true
+      },
+      {
+        "confidence": 0.2803773192911968,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.2006926597135866,
+        "correct": true
+      },
+      {
+        "confidence": 0.39535393444665806,
+        "correct": false
+      },
+      {
+        "confidence": 0.5062950907628944,
+        "correct": false
+      },
+      {
+        "confidence": 0.8368577504350748,
+        "correct": true
+      },
+      {
+        "confidence": 0.2864481574321494,
+        "correct": true
+      },
+      {
+        "confidence": 0.42636358462781104,
+        "correct": true
+      },
+      {
+        "confidence": 0.20727036122444414,
+        "correct": true
+      },
+      {
+        "confidence": 0.393164749128833,
+        "correct": false
+      },
+      {
+        "confidence": 0.4488649324408637,
+        "correct": true
+      },
+      {
+        "confidence": 0.8332331081906854,
+        "correct": true
+      },
+      {
+        "confidence": 0.32461435590012067,
+        "correct": true
+      },
+      {
+        "confidence": 0.613517673035057,
+        "correct": true
+      },
+      {
+        "confidence": 0.27671108466239996,
+        "correct": true
+      },
+      {
+        "confidence": 0.35334101889742836,
+        "correct": false
+      },
+      {
+        "confidence": 0.5972450364536508,
+        "correct": false
+      },
+      {
+        "confidence": 0.9229997201249598,
+        "correct": true
+      },
+      {
+        "confidence": 0.6480369177082238,
+        "correct": true
+      },
+      {
+        "confidence": 0.6608009980176586,
+        "correct": true
+      },
+      {
+        "confidence": 0.10956822553128383,
+        "correct": false
+      },
+      {
+        "confidence": 0.21695244164050545,
+        "correct": false
+      },
+      {
+        "confidence": 0.38681091894574804,
+        "correct": true
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.2001354409090727,
+        "correct": true
+      },
+      {
+        "confidence": 0.29561933671725177,
+        "correct": false
+      },
+      {
+        "confidence": 0.5863765531943659,
+        "correct": false
+      },
+      {
+        "confidence": 0.8273652535416687,
+        "correct": true
+      },
+      {
+        "confidence": 0.35937447178318555,
+        "correct": true
+      },
+      {
+        "confidence": 0.5997895672451237,
+        "correct": true
+      },
+      {
+        "confidence": 0.21041829516165622,
+        "correct": true
+      },
+      {
+        "confidence": 0.2649620150055207,
+        "correct": true
+      },
+      {
+        "confidence": 0.5329075092672839,
+        "correct": false
+      },
+      {
+        "confidence": 0.8332331081906854,
+        "correct": true
+      },
+      {
+        "confidence": 0.5052371141638607,
+        "correct": true
+      },
+      {
+        "confidence": 0.7260013313575656,
+        "correct": true
+      },
+      {
+        "confidence": 0.28788400326317526,
+        "correct": true
+      },
+      {
+        "confidence": 0.5648284764373425,
+        "correct": false
+      },
+      {
+        "confidence": 0.45703189880476486,
+        "correct": true
+      },
+      {
+        "confidence": 0.9182614720810776,
+        "correct": true
+      },
+      {
+        "confidence": 0.5969946715340556,
+        "correct": true
+      },
+      {
+        "confidence": 0.4786370979165541,
+        "correct": true
+      },
+      {
+        "confidence": 0.21188421348074665,
+        "correct": true
+      },
+      {
+        "confidence": 0.22258190066002453,
+        "correct": false
+      },
+      {
+        "confidence": 0.5141956443040527,
+        "correct": false
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.5430264234730172,
+        "correct": true
+      },
+      {
+        "confidence": 0.7234095329067439,
+        "correct": true
+      },
+      {
+        "confidence": 0.0860597253731889,
+        "correct": false
+      },
+      {
+        "confidence": 0.20943863327729492,
+        "correct": false
+      },
+      {
+        "confidence": 0.3144236665522238,
+        "correct": false
+      },
+      {
+        "confidence": 0.8241728569201456,
+        "correct": true
+      },
+      {
+        "confidence": 0.5010394042725597,
+        "correct": true
+      },
+      {
+        "confidence": 0.6976715587956341,
+        "correct": true
+      },
+      {
+        "confidence": 0.20068418680710728,
+        "correct": false
+      },
+      {
+        "confidence": 0.2268941500493682,
+        "correct": false
+      },
+      {
+        "confidence": 0.6067937714545574,
+        "correct": false
+      },
+      {
+        "confidence": 0.8277557846672152,
+        "correct": true
+      },
+      {
+        "confidence": 0.5373606644438,
+        "correct": true
+      },
+      {
+        "confidence": 0.7874131919495575,
+        "correct": true
+      },
+      {
+        "confidence": 0.19897519882698883,
+        "correct": true
+      },
+      {
+        "confidence": 0.24812336032845633,
+        "correct": false
+      },
+      {
+        "confidence": 0.43028012001565685,
+        "correct": true
+      },
+      {
+        "confidence": 0.8332331081906854,
+        "correct": true
+      },
+      {
+        "confidence": 0.4157529960210156,
+        "correct": true
+      },
+      {
+        "confidence": 0.6626904019863661,
+        "correct": true
+      },
+      {
+        "confidence": 0.2006926597135866,
+        "correct": true
+      },
+      {
+        "confidence": 0.1558213042944909,
+        "correct": true
+      },
+      {
+        "confidence": 0.37852473233809447,
+        "correct": false
+      },
+      {
+        "confidence": 0.8368577504350748,
+        "correct": true
+      },
+      {
+        "confidence": 0.28165842581982264,
+        "correct": true
+      },
+      {
+        "confidence": 0.4991231774078613,
+        "correct": true
+      }
+    ]
+  }
+}

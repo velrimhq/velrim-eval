@@ -1,0 +1,377 @@
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-08-18T16:13:47.546Z",
+  "live": true,
+  "config": {
+    "formatVersion": 1,
+    "capBranch": "cap-removed",
+    "classes": [
+      "cord-v2",
+      "deepform",
+      "vrdu-ad-buy",
+      "vrdu-registration"
+    ],
+    "repeats": 3,
+    "passes": [
+      "main",
+      "probe"
+    ],
+    "armModes": [
+      {
+        "id": "velrim",
+        "adapter": "velrim",
+        "spend": {
+          "usdPerDocRepeat": 0.052,
+          "basis": "Velrim list, USD 20 per 1k pages (velrim.com/pricing)",
+          "asOf": "2026-08-18"
+        }
+      },
+      {
+        "id": "gemini-free",
+        "adapter": "gemini",
+        "spend": {
+          "usdPerDocRepeat": 0.007,
+          "basis": "Gemini 2.5 Flash paid-tier token pricing, free-decode mode",
+          "asOf": "2026-08-18"
+        }
+      },
+      {
+        "id": "gemini-constrained",
+        "adapter": "gemini",
+        "extraArgs": [
+          "--structured-mode"
+        ],
+        "spend": {
+          "usdPerDocRepeat": 0.007,
+          "basis": "Gemini 2.5 Flash paid-tier token pricing, responseJsonSchema mode",
+          "asOf": "2026-08-18"
+        }
+      },
+      {
+        "id": "openai-free",
+        "adapter": "openai",
+        "spend": {
+          "usdPerDocRepeat": 0.02,
+          "basis": "OpenAI gpt-5.4-mini-2026-03-17 token pricing, free-decode mode",
+          "asOf": "2026-08-18"
+        }
+      },
+      {
+        "id": "openai-structured",
+        "adapter": "openai",
+        "extraArgs": [
+          "--structured-mode"
+        ],
+        "spend": {
+          "usdPerDocRepeat": 0.02,
+          "basis": "OpenAI gpt-5.4-mini-2026-03-17 token pricing, response_format json_schema strict",
+          "asOf": "2026-08-18"
+        }
+      },
+      {
+        "id": "mistral",
+        "adapter": "mistral",
+        "spend": {
+          "usdPerDocRepeat": 0.011,
+          "basis": "Mistral OCR 4 (mistral-ocr-4-0), USD 5 per 1k pages (mistral.ai/pricing)",
+          "asOf": "2026-08-18"
+        }
+      }
+    ],
+    "calTestManifests": {
+      "cord-v2": "../../velrim-run/manifests/cord-v2.manifest.json",
+      "deepform": "../../velrim-run/manifests/deepform.manifest.json",
+      "vrdu-ad-buy": "../../velrim-run/manifests/vrdu-ad-buy.manifest.json",
+      "vrdu-registration": "../../velrim-run/manifests/vrdu-registration.manifest.json"
+    }
+  },
+  "conditionalExclusions": [],
+  "cells": [
+    {
+      "cell": "velrim/cord-v2/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "velrim/cord-v2/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "velrim/deepform/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "velrim/deepform/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "velrim/vrdu-ad-buy/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "velrim/vrdu-ad-buy/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "velrim/vrdu-registration/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "velrim/vrdu-registration/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-free/cord-v2/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-free/cord-v2/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-free/deepform/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-free/deepform/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-free/vrdu-ad-buy/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-free/vrdu-ad-buy/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-free/vrdu-registration/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-free/vrdu-registration/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-constrained/cord-v2/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-constrained/cord-v2/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-constrained/deepform/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-constrained/deepform/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-constrained/vrdu-ad-buy/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-constrained/vrdu-ad-buy/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "gemini-constrained/vrdu-registration/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "gemini-constrained/vrdu-registration/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-free/cord-v2/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-free/cord-v2/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-free/deepform/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-free/deepform/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-free/vrdu-ad-buy/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-free/vrdu-ad-buy/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-free/vrdu-registration/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-free/vrdu-registration/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-structured/cord-v2/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-structured/cord-v2/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-structured/deepform/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-structured/deepform/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-structured/vrdu-ad-buy/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-structured/vrdu-ad-buy/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "openai-structured/vrdu-registration/main",
+      "status": "failed_or_paused",
+      "runExit": 1
+    },
+    {
+      "cell": "openai-structured/vrdu-registration/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "mistral/cord-v2/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "mistral/cord-v2/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "mistral/deepform/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "mistral/deepform/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "mistral/vrdu-ad-buy/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "mistral/vrdu-ad-buy/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    },
+    {
+      "cell": "mistral/vrdu-registration/main",
+      "status": "completed",
+      "runExit": 0
+    },
+    {
+      "cell": "mistral/vrdu-registration/probe",
+      "status": "failed_or_paused",
+      "runExit": 2
+    }
+  ],
+  "validation": {
+    "owner": "matrix-orchestrator",
+    "publicationReady": false,
+    "missingFields": [
+      "cells.velrim/cord-v2/probe.status=failed_or_paused",
+      "cells.velrim/deepform/probe.status=failed_or_paused",
+      "cells.velrim/vrdu-ad-buy/probe.status=failed_or_paused",
+      "cells.velrim/vrdu-registration/probe.status=failed_or_paused",
+      "cells.gemini-free/cord-v2/main.status=failed_or_paused",
+      "cells.gemini-free/cord-v2/probe.status=failed_or_paused",
+      "cells.gemini-free/deepform/main.status=failed_or_paused",
+      "cells.gemini-free/deepform/probe.status=failed_or_paused",
+      "cells.gemini-free/vrdu-ad-buy/main.status=failed_or_paused",
+      "cells.gemini-free/vrdu-ad-buy/probe.status=failed_or_paused",
+      "cells.gemini-free/vrdu-registration/main.status=failed_or_paused",
+      "cells.gemini-free/vrdu-registration/probe.status=failed_or_paused",
+      "cells.gemini-constrained/cord-v2/main.status=failed_or_paused",
+      "cells.gemini-constrained/cord-v2/probe.status=failed_or_paused",
+      "cells.gemini-constrained/deepform/main.status=failed_or_paused",
+      "cells.gemini-constrained/deepform/probe.status=failed_or_paused",
+      "cells.gemini-constrained/vrdu-ad-buy/main.status=failed_or_paused",
+      "cells.gemini-constrained/vrdu-ad-buy/probe.status=failed_or_paused",
+      "cells.gemini-constrained/vrdu-registration/main.status=failed_or_paused",
+      "cells.gemini-constrained/vrdu-registration/probe.status=failed_or_paused",
+      "cells.openai-free/cord-v2/main.status=failed_or_paused",
+      "cells.openai-free/cord-v2/probe.status=failed_or_paused",
+      "cells.openai-free/deepform/main.status=failed_or_paused",
+      "cells.openai-free/deepform/probe.status=failed_or_paused",
+      "cells.openai-free/vrdu-ad-buy/main.status=failed_or_paused",
+      "cells.openai-free/vrdu-ad-buy/probe.status=failed_or_paused",
+      "cells.openai-free/vrdu-registration/main.status=failed_or_paused",
+      "cells.openai-free/vrdu-registration/probe.status=failed_or_paused",
+      "cells.openai-structured/cord-v2/main.status=failed_or_paused",
+      "cells.openai-structured/cord-v2/probe.status=failed_or_paused",
+      "cells.openai-structured/deepform/main.status=failed_or_paused",
+      "cells.openai-structured/deepform/probe.status=failed_or_paused",
+      "cells.openai-structured/vrdu-ad-buy/main.status=failed_or_paused",
+      "cells.openai-structured/vrdu-ad-buy/probe.status=failed_or_paused",
+      "cells.openai-structured/vrdu-registration/main.status=failed_or_paused",
+      "cells.openai-structured/vrdu-registration/probe.status=failed_or_paused",
+      "cells.mistral/cord-v2/probe.status=failed_or_paused",
+      "cells.mistral/deepform/probe.status=failed_or_paused",
+      "cells.mistral/vrdu-ad-buy/probe.status=failed_or_paused",
+      "cells.mistral/vrdu-registration/probe.status=failed_or_paused"
+    ]
+  }
+}

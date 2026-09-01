@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "adapter": "velrim",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "requireFittedStamp": true,
+  "repeats": 3,
+  "status": "completed",
+  "golden": "corpora/golden.deepform.jsonl",
+  "docs": 39,
+  "docsPath": "<local-pdfs>/deepform",
+  "generatedAt": "2026-08-18T15:00:10.613Z",
+  "updatedAt": "2026-08-18T15:00:10.613Z",
+  "runWindow": {
+    "fingerprint": "653109d9136fe6cf425cc70a8de1aaf7318fbeb236927903316ff217c976d9e4",
+    "adapter": "velrim",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 3,
+    "startedAt": "2026-08-18T14:42:18.257Z",
+    "completedAt": "2026-08-18T15:00:10.612Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "velrim",
+    "mode": "live",
+    "docs": 39,
+    "repeats": 3,
+    "plannedDocRepeats": 117,
+    "remainingDocRepeats": 117,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 6.084,
+    "expectedRemainingUsd": 6.084,
+    "pricingBasis": "Velrim list, USD 20 per 1k pages (velrim.com/pricing)",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "653109d9136fe6cf425cc70a8de1aaf7318fbeb236927903316ff217c976d9e4",
+    "implementationHash": "762da9f423f891b782b50550922885a698f98b2335462ab5d67f3f591b09d813"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "velrim",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 117,
+    "aggregate": {
+      "attempted": 117,
+      "completed": 117,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 39,
+        "completed": 39,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 2,
+        "attempted": 39,
+        "completed": 39,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 3,
+        "attempted": 39,
+        "completed": 39,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 3,
+    "updatedAt": "2026-08-18T15:00:10.613Z"
+  }
+}

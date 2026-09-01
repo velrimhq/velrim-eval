@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "gemini",
+  "mode": "live",
+  "structuredMode": true,
+  "trimmedParams": [],
+  "geminiEndpointRoute": "vertex",
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/probes/golden.deepform.probe.jsonl",
+  "docs": 39,
+  "docsPath": "<local-pdfs>/deepform",
+  "generatedAt": "2026-08-18T20:16:00.089Z",
+  "updatedAt": "2026-08-18T20:16:00.089Z",
+  "runWindow": {
+    "fingerprint": "b3f88e95e0122d4ee80b15566c2782360e715470049e4188501cb5dbaa077753",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": true,
+    "repeats": 1,
+    "startedAt": "2026-08-18T20:12:51.269Z",
+    "completedAt": "2026-08-18T20:16:00.088Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "gemini",
+    "mode": "live",
+    "docs": 39,
+    "repeats": 1,
+    "plannedDocRepeats": 39,
+    "remainingDocRepeats": 39,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.273,
+    "expectedRemainingUsd": 0.273,
+    "pricingBasis": "Gemini 2.5 Flash paid-tier token pricing, responseJsonSchema mode",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "b3f88e95e0122d4ee80b15566c2782360e715470049e4188501cb5dbaa077753",
+    "implementationHash": "a558ba65815c909435eabf233fe4981f6aeb4e88b163eb07773457d40a4e0d7b"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "gemini",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 39,
+    "aggregate": {
+      "attempted": 39,
+      "completed": 28,
+      "transportFailures": 11,
+      "contractFailures": 0,
+      "availability": 0.717948717948718
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 39,
+        "completed": 28,
+        "transportFailures": 11,
+        "contractFailures": 0,
+        "availability": 0.717948717948718
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-18T20:16:00.089Z"
+  }
+}

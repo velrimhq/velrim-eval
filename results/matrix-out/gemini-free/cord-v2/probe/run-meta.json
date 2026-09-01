@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "gemini",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "geminiEndpointRoute": "vertex",
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/probes/golden.cord-v2.probe.jsonl",
+  "docs": 15,
+  "docsPath": "<local-pdfs>/cord-v2",
+  "generatedAt": "2026-08-18T18:57:30.603Z",
+  "updatedAt": "2026-08-18T18:57:30.603Z",
+  "runWindow": {
+    "fingerprint": "3ecacd3c8a5116026e5befa5c3750b26672e9d8bae6764e9fa40af3c6c36fe53",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-18T18:55:51.683Z",
+    "completedAt": "2026-08-18T18:57:30.603Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "gemini",
+    "mode": "live",
+    "docs": 15,
+    "repeats": 1,
+    "plannedDocRepeats": 15,
+    "remainingDocRepeats": 15,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.105,
+    "expectedRemainingUsd": 0.105,
+    "pricingBasis": "Gemini 2.5 Flash paid-tier token pricing, free-decode mode",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "3ecacd3c8a5116026e5befa5c3750b26672e9d8bae6764e9fa40af3c6c36fe53",
+    "implementationHash": "a558ba65815c909435eabf233fe4981f6aeb4e88b163eb07773457d40a4e0d7b"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "gemini",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 15,
+    "aggregate": {
+      "attempted": 15,
+      "completed": 15,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 15,
+        "completed": 15,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-18T18:57:30.603Z"
+  }
+}

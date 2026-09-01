@@ -1,0 +1,5871 @@
+{
+  "version": 1,
+  "corpus": {
+    "docs": 48,
+    "leaves": 288,
+    "cells": {
+      "tp": 124,
+      "fp": 75,
+      "fn": 115
+    },
+    "precision": 0.6231155778894473,
+    "recall": 0.5188284518828452,
+    "f1": 0.5662100456621004,
+    "ece": 0.15625000000000003,
+    "brier": 0.25,
+    "auroc": 0.5,
+    "riskCoverage": [
+      {
+        "coverage": 0,
+        "error": 0
+      },
+      {
+        "coverage": 1,
+        "error": 0.46875
+      }
+    ]
+  },
+  "points": [
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": true
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    },
+    {
+      "confidence": 0.5,
+      "correct": false
+    }
+  ],
+  "perDoc": [
+    {
+      "doc": "19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19631101_Tourism_Australia_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19650901_Arab_Information_Center_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19670801_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19670901_JETRO,_San_Francisco_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19711201_Tourism_Australia_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19760701_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19770101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19770401_World_Zionist_Organization_-_American_Section,_Inc._Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19770501_Korea_National_Tourism_Organization,_New_Jersey_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19781201_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19790101_IDA_Ireland_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19790101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19800101_Italian_Government_Travel_Office,_Chicago_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19800301_Quebec_Government_Office_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19820801_St._Lucia_Tourist_Board_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19830301_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19841001_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19870302_FCB_New_York_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19880501_Akin,_Gump,_Strauss,_Hauer___Feld,_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19890201_Arnold___Porter_Kaye_Scholer,_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19890501_Singapore_Tourism_Board_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910101_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910601_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910601_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910601_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910801_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910801_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19910801_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19911001_Arnold___Porter_Kaye_Scholer,_LLP_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19911001_Kobe_Trade_Information_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19911101_JETRO,_Atlanta_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19911201_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19911201_KOTRA_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 0,
+          "recall": 1,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 0,
+            "recall": 1,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920301_Far_East_Trade_Services,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920301_Hill_and_Knowlton_Strategies,_LLC_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920301_JETRO,_Houston_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920301_Quebec_Government_Office_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920301_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920501_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registrant_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920501_Scottish_Enterprise_Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/foreign_principal_name": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    },
+    {
+      "doc": "19920501_World_Zionist_Organization_-_American_Section,_Inc._Dissemination_Report_Dissemination_Report.pdf",
+      "perField": {
+        "/file_date": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/foreign_principal_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registrant_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/registration_num": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_name": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        },
+        "/signer_title": {
+          "precision": 1,
+          "recall": 0,
+          "f1": 0
+        }
+      },
+      "ece": 0.49999999999999994,
+      "auroc": 0.5,
+      "normalized": {
+        "perField": {
+          "/file_date": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/foreign_principal_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registrant_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/registration_num": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_name": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          },
+          "/signer_title": {
+            "precision": 1,
+            "recall": 0,
+            "f1": 0
+          }
+        },
+        "ece": 0.49999999999999994,
+        "auroc": 0.5
+      }
+    }
+  ],
+  "normalized": {
+    "docClass": "vrdu-registration",
+    "tableSha256": "12efe2771959839d251da5b61eb813c77cc06a8c5db21a04983fc980a9844ea0",
+    "corpus": {
+      "docs": 48,
+      "leaves": 288,
+      "cells": {
+        "tp": 136,
+        "fp": 63,
+        "fn": 103
+      },
+      "precision": 0.6834170854271356,
+      "recall": 0.5690376569037657,
+      "f1": 0.6210045662100456,
+      "ece": 0.19097222222222224,
+      "brier": 0.25,
+      "auroc": 0.5,
+      "riskCoverage": [
+        {
+          "coverage": 0,
+          "error": 0
+        },
+        {
+          "coverage": 1,
+          "error": 0.4270833333333333
+        }
+      ]
+    },
+    "points": [
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": true
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      },
+      {
+        "confidence": 0.5,
+        "correct": false
+      }
+    ]
+  }
+}

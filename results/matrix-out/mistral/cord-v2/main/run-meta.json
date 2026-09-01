@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "adapter": "mistral",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "pageCapBranch": "cap-removed",
+  "repeats": 3,
+  "status": "completed",
+  "golden": "corpora/golden.cord-v2.jsonl",
+  "docs": 15,
+  "docsPath": "<local-pdfs>/cord-v2",
+  "generatedAt": "2026-08-18T15:44:00.687Z",
+  "updatedAt": "2026-08-18T15:44:00.687Z",
+  "runWindow": {
+    "fingerprint": "8d5f40d387ae4d6f916ef8664928d0704907454978e016e74430f63909d3bf26",
+    "adapter": "mistral",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 3,
+    "startedAt": "2026-08-18T15:42:26.403Z",
+    "completedAt": "2026-08-18T15:44:00.687Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 3,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "mistral",
+    "mode": "live",
+    "docs": 15,
+    "repeats": 3,
+    "plannedDocRepeats": 45,
+    "remainingDocRepeats": 45,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.495,
+    "expectedRemainingUsd": 0.495,
+    "pricingBasis": "Mistral OCR 4 (mistral-ocr-4-0), USD 5 per 1k pages (mistral.ai/pricing)",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "8d5f40d387ae4d6f916ef8664928d0704907454978e016e74430f63909d3bf26",
+    "implementationHash": "dc8db3aed26879197309b0ac1846d6b9ccb031a8ccfc26fc60b3bee997da6473"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "mistral",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 45,
+    "aggregate": {
+      "attempted": 45,
+      "completed": 45,
+      "transportFailures": 0,
+      "contractFailures": 0,
+      "availability": 1
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 15,
+        "completed": 15,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 2,
+        "attempted": 15,
+        "completed": 15,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      },
+      {
+        "repeat": 3,
+        "attempted": 15,
+        "completed": 15,
+        "transportFailures": 0,
+        "contractFailures": 0,
+        "availability": 1
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 3,
+    "updatedAt": "2026-08-18T15:44:00.687Z"
+  }
+}

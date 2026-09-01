@@ -5,7 +5,7 @@ hand-labeled datasets that pre-date this project. Full provenance, per class:
 
 ## CORD-v2 — receipts (scans)
 
-- **License:** CC BY 4.0
+- **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - **Creator:** NAVER CLOVA — Park et al., _"CORD: A Consolidated Receipt Dataset for
   Post-OCR Parsing"_, Workshop on Document Intelligence at NeurIPS 2019.
 - **Source:** the `naver-clova-ix/cord-v2` dataset (Hugging Face). Receipt images are
@@ -14,7 +14,7 @@ hand-labeled datasets that pre-date this project. Full provenance, per class:
 
 ## VRDU ad-buy + VRDU registration — FCC TV ad contracts / US DOJ FARA forms
 
-- **License:** CC BY 4.0. The VRDU repository ships no LICENSE file; the grant is in Google
+- **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The VRDU repository ships no LICENSE file; the grant is in Google
   Research's release announcement, _"Advances in document understanding"_ (2023-08-09):
   _"We are excited to announce the public release of the VRDU dataset and evaluation code
   under a Creative Commons license"_, where the "Creative Commons license" link resolves to

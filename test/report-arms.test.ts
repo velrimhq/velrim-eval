@@ -203,6 +203,6 @@ describe('SVG: consistency bands + single-dot risk-coverage', () => {
     const svg = renderReliabilitySvg(pts, [{ coverage: 1, error: 0.25 }]);
     expect(svg).toContain('data-role="single-dot"');
     expect(svg).toContain('no selective operation possible');
-    expect(svg).not.toContain('<path d="M'); // no curve path in the rc panel
+    expect(svg).not.toContain('data-role="rc-curve"'); // no curve in the rc panel
   });
 });

@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "adapter": "gemini",
+  "mode": "live",
+  "structuredMode": false,
+  "trimmedParams": [],
+  "geminiEndpointRoute": "vertex",
+  "repeats": 1,
+  "status": "completed",
+  "golden": "corpora/probes/golden.deepform.probe.jsonl",
+  "docs": 39,
+  "docsPath": "<local-pdfs>/deepform",
+  "generatedAt": "2026-08-18T19:11:57.514Z",
+  "updatedAt": "2026-08-18T19:11:57.514Z",
+  "runWindow": {
+    "fingerprint": "592ef668c4e24e779b9b4df54f03acc4a1d4e9c58becc87e401231084ce90d1d",
+    "adapter": "gemini",
+    "mode": "live",
+    "structuredMode": false,
+    "repeats": 1,
+    "startedAt": "2026-08-18T19:07:42.938Z",
+    "completedAt": "2026-08-18T19:11:57.514Z",
+    "startedDate": "2026-08-18",
+    "completedDate": "2026-08-18"
+  },
+  "policy": {
+    "docTimeoutMs": 300000,
+    "maxTransportRetries": 2,
+    "contractFailureLimit": 1,
+    "retryBackoffMs": [
+      500,
+      1000
+    ]
+  },
+  "spendPreflight": {
+    "adapter": "gemini",
+    "mode": "live",
+    "docs": 39,
+    "repeats": 1,
+    "plannedDocRepeats": 39,
+    "remainingDocRepeats": 39,
+    "maxTransportRetriesPerDocRepeat": 2,
+    "expectedFullRunUsd": 0.273,
+    "expectedRemainingUsd": 0.273,
+    "pricingBasis": "Gemini 2.5 Flash paid-tier token pricing, free-decode mode",
+    "pricingAsOf": "2026-08-18"
+  },
+  "runManifest": {
+    "path": "run-manifest.json",
+    "fingerprint": "592ef668c4e24e779b9b4df54f03acc4a1d4e9c58becc87e401231084ce90d1d",
+    "implementationHash": "a558ba65815c909435eabf233fe4981f6aeb4e88b163eb07773457d40a4e0d7b"
+  },
+  "events": [],
+  "health": {
+    "version": 1,
+    "adapter": "gemini",
+    "unit": "doc-repeat",
+    "status": "completed",
+    "planned": 39,
+    "aggregate": {
+      "attempted": 39,
+      "completed": 35,
+      "transportFailures": 4,
+      "contractFailures": 0,
+      "availability": 0.8974358974358975
+    },
+    "repeats": [
+      {
+        "repeat": 1,
+        "attempted": 39,
+        "completed": 35,
+        "transportFailures": 4,
+        "contractFailures": 0,
+        "availability": 0.8974358974358975
+      }
+    ],
+    "consecutiveContractFailures": 0,
+    "contractFailureLimit": 1,
+    "updatedAt": "2026-08-18T19:11:57.514Z"
+  }
+}

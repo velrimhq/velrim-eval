@@ -41,7 +41,7 @@
     "maxTransportRetriesPerDocRepeat": 2,
     "expectedFullRunUsd": 0.25,
     "expectedRemainingUsd": 0.25,
-    "pricingBasis": "ANALYSIS-PLAN ・ゑｽｧ9 reference list prices (re-verified at smoke)",
+    "pricingBasis": "ANALYSIS-PLAN ﾂｧ9 reference list prices (re-verified at smoke)",
     "pricingAsOf": "2026-08-13"
   },
   "runManifest": {

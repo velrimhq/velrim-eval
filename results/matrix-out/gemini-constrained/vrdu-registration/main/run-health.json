@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "adapter": "gemini",
+  "unit": "doc-repeat",
+  "status": "completed",
+  "planned": 144,
+  "aggregate": {
+    "attempted": 144,
+    "completed": 127,
+    "transportFailures": 17,
+    "contractFailures": 0,
+    "availability": 0.8819444444444444
+  },
+  "repeats": [
+    {
+      "repeat": 1,
+      "attempted": 48,
+      "completed": 47,
+      "transportFailures": 1,
+      "contractFailures": 0,
+      "availability": 0.9791666666666666
+    },
+    {
+      "repeat": 2,
+      "attempted": 48,
+      "completed": 43,
+      "transportFailures": 5,
+      "contractFailures": 0,
+      "availability": 0.8958333333333334
+    },
+    {
+      "repeat": 3,
+      "attempted": 48,
+      "completed": 37,
+      "transportFailures": 11,
+      "contractFailures": 0,
+      "availability": 0.7708333333333334
+    }
+  ],
+  "consecutiveContractFailures": 0,
+  "contractFailureLimit": 3,
+  "updatedAt": "2026-08-18T20:53:51.921Z"
+}
