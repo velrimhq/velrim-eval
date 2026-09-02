@@ -13,6 +13,8 @@ COMMANDS
   run        Run an adapter over a golden set (fixture default; --live) -> predictions.jsonl + run-meta.json
   matrix     Orchestrate the full arm-mode x class x pass run matrix (composes run + score) -> cost-log.json
   score      Score predictions x golden -> scores.json + corpus aggregate (no model calls)
+  fabrication
+             Judge predictions x golden for fabrication on absent fields -> fabrication.json (no model calls)
   report     Render per-field P/R/F1 + reliability/risk-coverage curves (+ ECE/AUROC/Brier)
   ci         Gate a report against thresholds (and an optional --baseline); exit 0/1/2
   calibrate  Fit a generic 1-D Platt logistic on (confidence, correct) -> reliability curve + tau
@@ -148,6 +150,34 @@ OPTIONS
 
 Runs scoreAgainstGolden (from @velrim/scoring) per doc, then micro-averages across the corpus.
 Writes <out>/scores.json. Never calls a model.
+`;
+
+export const FABRICATION_HELP = `velrim-eval fabrication — judge predictions against a golden set for fabrication on absent fields (NO model calls).
+
+USAGE
+  velrim-eval fabrication --predictions <predictions.jsonl> [--predictions <more>] --golden <golden.jsonl> [--golden <more>] --out <dir> [options]
+  velrim-eval fabrication --arm-dir <matrix-out/<arm>> --corpora <corpora-dir> --out <dir> [options]
+
+OPTIONS
+  --predictions <path>  predictions.repeat-NNN.jsonl from \`velrim-eval run\` (repeat the flag, one per repeat)
+  --golden <path>       golden.jsonl (repeat the flag, one per document class)
+  --arm-dir <dir>       instead of --predictions: read <dir>/<class>/<pass>/predictions.repeat-NNN.jsonl
+  --corpora <dir>       instead of --golden: read <dir>/golden.<class>.jsonl (main) or
+                        <dir>/probes/golden.<class>.probe.jsonl (probe)
+  --pass <main|probe>   which pass --arm-dir and --corpora resolve (default main)
+  --strikes <path>      natural-strikes.json: absent labels struck from the denominator for every
+                        arm identically (golden bytes are never edited)
+  --seed <n>            bootstrap seed (default 20260712, the published seed)
+  --resamples <n>       bootstrap resamples (default 10000)
+  --out <dir>           output dir for fabrication.json [required]
+  -h, --help            Show this help
+
+The judge is a function of (golden state, output value) alone: an absent field answered with a
+substantive value is one fabrication; null, an omitted key, "", whitespace and the frozen token
+list (n/a, not present, not applicable, none, unknown) count as declining. Writes the pooled
+rate with a doc-clustered 95% interval, the strict rule, the all-attempted rule, the
+answered-when-present rate, completed/attempted, per-class rows, and (when the output carries
+a confidence) the mean confidence on the arm's own fabrications.
 `;
 
 export const REPORT_HELP = `velrim-eval report — render per-field P/R/F1 + reliability/risk-coverage curves.

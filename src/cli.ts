@@ -21,6 +21,7 @@ const VERBS: Record<string, () => Promise<Verb>> = {
   run: async () => (await import('./commands/run.js')).run,
   matrix: async () => (await import('./commands/matrix.js')).matrix,
   score: async () => (await import('./commands/score.js')).score,
+  fabrication: async () => (await import('./commands/fabrication.js')).fabrication,
   report: async () => (await import('./commands/report.js')).report,
   ci: async () => (await import('./commands/ci.js')).ci,
   calibrate: async () => (await import('./commands/calibrate.js')).calibrate,

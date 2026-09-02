@@ -28,6 +28,13 @@ npx velrim-eval score --predictions results/matrix-out/mistral/cord-v2/main/pred
   --golden corpora/golden.cord-v2.jsonl --normalizers corpora/normalizers.cord-v2.json --out rescored/mistral-cord-v2
 ```
 
+Judge one of the published arms for fabrication on absent fields, with the audit strikes applied the way the write-up applies them:
+
+```sh
+npx velrim-eval fabrication --arm-dir results/matrix-out/mistral --corpora corpora \
+  --strikes corpora/natural-strikes.json --out rescored/mistral-fabrication
+```
+
 Score your own extraction against your own documents:
 
 ```sh
@@ -80,6 +87,7 @@ The scoring math (per-field precision, recall and F1, ECE, AUROC, Brier, risk-co
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
 | `run`       | runs an adapter over a golden set and writes per-repeat predictions plus health and meta files                                                         | 0, non-zero on error           |
 | `score`     | compares `predictions.jsonl` with `golden.jsonl` and writes `scores.json`, per document and corpus micro-average. Makes no model calls.                 | 0, non-zero on malformed input |
+| `fabrication` | judges `predictions.jsonl` against `golden.jsonl` for fabrication on absent fields and writes `fabrication.json`: the pooled rate with its interval, the strict and all-attempted rules, the answered-when-present rate, per-class rows. Makes no model calls. The definition is at [velrim.com/research/fabrication-on-absent-fields-metric](https://velrim.com/research/fabrication-on-absent-fields-metric). | 0, 2 on malformed input        |
 | `report`    | renders per-field P/R/F1, reliability and risk-coverage curves, ECE, AUROC and Brier. `--baseline` adds a delta.                                       | 0, 2 on missing input          |
 | `ci`        | gates `scores.json` against `--min-f1` and `--max-ece`, with an optional `--baseline` no-regression check                                              | 0 pass, 1 fail, 2 usage or IO  |
 | `calibrate` | fits a 1-D Platt curve on your `(confidence, correct)` points from a `scores.json` and writes the reliability curve and a selective-prediction threshold | 0, 3 on absent or empty input  |

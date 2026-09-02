@@ -1,0 +1,12 @@
+{"doc_class":"cord-v2","field":"contract_num","source_class":"vrdu-ad-buy","rank":1,"struck":false,"visible_docs":0}
+{"doc_class":"cord-v2","field":"property","source_class":"vrdu-ad-buy","rank":2,"struck":false,"visible_docs":0}
+{"doc_class":"cord-v2","field":"flight_from","source_class":"deepform","rank":3,"struck":false,"visible_docs":0}
+{"doc_class":"deepform","field":"agency","source_class":"vrdu-ad-buy","rank":1,"struck":true,"visible_docs":38}
+{"doc_class":"deepform","field":"registration_num","source_class":"vrdu-registration","rank":2,"struck":false,"visible_docs":0}
+{"doc_class":"deepform","field":"property","source_class":"vrdu-ad-buy","rank":3,"struck":true,"visible_docs":39}
+{"doc_class":"vrdu-ad-buy","field":"discount","source_class":"cord-v2","rank":1,"struck":false,"visible_docs":0}
+{"doc_class":"vrdu-ad-buy","field":"credit_card","source_class":"cord-v2","rank":2,"struck":false,"visible_docs":0}
+{"doc_class":"vrdu-ad-buy","field":"tax","source_class":"cord-v2","rank":3,"struck":false,"visible_docs":0}
+{"doc_class":"vrdu-registration","field":"tv_address","source_class":"vrdu-ad-buy","rank":1,"struck":false,"visible_docs":0}
+{"doc_class":"vrdu-registration","field":"flight_from","source_class":"deepform","rank":2,"struck":true,"visible_docs":4}
+{"doc_class":"vrdu-registration","field":"agency","source_class":"vrdu-ad-buy","rank":3,"struck":true,"visible_docs":4}

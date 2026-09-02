@@ -1,0 +1,142 @@
+{"doc_class":"cord-v2","doc":"cord-011.pdf","field":"/subtotal","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-011.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-011.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-011.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-011.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-015.pdf","field":"/subtotal","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-015.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-015.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-015.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-015.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-025.pdf","field":"/subtotal","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-025.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-025.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-025.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-025.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-027.pdf","field":"/change","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-027.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-027.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-027.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-044.pdf","field":"/subtotal","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-044.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-044.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-044.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-044.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-047.pdf","field":"/credit_card","verdict":"unverifiable","page":1,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-047.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-047.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-056.pdf","field":"/cash","verdict":"visible","page":1,"seen":"100,000"}
+{"doc_class":"cord-v2","doc":"cord-056.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-056.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-056.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-066.pdf","field":"/subtotal","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-066.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-066.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-066.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-066.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-068.pdf","field":"/cash","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-068.pdf","field":"/change","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-068.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-068.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-073.pdf","field":"/cash","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-073.pdf","field":"/change","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-073.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-073.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-073.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-076.pdf","field":"/subtotal","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-076.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-076.pdf","field":"/change","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-076.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-076.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-076.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-084.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-084.pdf","field":"/cash","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-084.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-084.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-086.pdf","field":"/change","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-086.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-086.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-086.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-087.pdf","field":"/subtotal","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-087.pdf","field":"/tax","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-087.pdf","field":"/credit_card","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-087.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-087.pdf","field":"/discount","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"cord-v2","doc":"cord-095.pdf","field":"/tax","verdict":"visible","page":1,"seen":"6,818"}
+{"doc_class":"cord-v2","doc":"cord-095.pdf","field":"/service_charge","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"deepform","doc":"deepform-50e20ed6-1232-4272-a28a-4632d68679fc.pdf","field":"/contract_number","verdict":"visible","page":1,"seen":"89015 (top edge clipped; last digit 3/5 ambiguous)"}
+{"doc_class":"vrdu-ad-buy","doc":"0189d309-8f8e-3064-d9fd-52009ba3d5cb.pdf","field":"/tv_address","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-ad-buy","doc":"030a8ffe-9abb-57ad-2e82-58312730c0f6.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Canal Partners Media / POL"}
+{"doc_class":"vrdu-ad-buy","doc":"030f7df7-6d1d-b6c7-3a36-39edb0725603.pdf","field":"/property","verdict":"visible","page":1,"seen":"WHP"}
+{"doc_class":"vrdu-ad-buy","doc":"0719de4c-5538-0fe8-123b-f0aca437b53d.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Grassroots Media LLC"}
+{"doc_class":"vrdu-ad-buy","doc":"07bfa311-9fc7-c3d2-4e7a-94d7fd412599.pdf","field":"/tv_address","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-ad-buy","doc":"08fe4888-65a4-3254-b5d2-dad9186a9694.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Amplify Media"}
+{"doc_class":"vrdu-ad-buy","doc":"103ccc17-356a-5f99-9c3b-920fc2dd023e.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Adelstein and Associates"}
+{"doc_class":"vrdu-ad-buy","doc":"15262fcf-40c4-1ee6-6719-6ae834d12a4e.pdf","field":"/agency","verdict":"visible","page":1,"seen":"AL Media"}
+{"doc_class":"vrdu-ad-buy","doc":"15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Matrix LLC"}
+{"doc_class":"vrdu-ad-buy","doc":"15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf","field":"/flight_from","verdict":"visible","page":1,"seen":"03/31/20"}
+{"doc_class":"vrdu-ad-buy","doc":"15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf","field":"/flight_to","verdict":"visible","page":1,"seen":"04/03/20"}
+{"doc_class":"vrdu-ad-buy","doc":"15c06d79-8d29-0a6f-3edc-f57d54da3ea7.pdf","field":"/product","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-ad-buy","doc":"1672687e-ddc6-ce1d-8ab1-46acdc04953f.pdf","field":"/flight_from","verdict":"visible","page":1,"seen":"11/25/2019"}
+{"doc_class":"vrdu-ad-buy","doc":"1672687e-ddc6-ce1d-8ab1-46acdc04953f.pdf","field":"/flight_to","verdict":"visible","page":1,"seen":"12/29/2019"}
+{"doc_class":"vrdu-ad-buy","doc":"1a8e7b10-6823-dfdf-d398-0cd7740b9699.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Medium Buying LLC"}
+{"doc_class":"vrdu-ad-buy","doc":"1af023e1-3d51-7fe6-f8f1-70656181f5f1.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Waterfront Strategies"}
+{"doc_class":"vrdu-ad-buy","doc":"1ddf64fb-65ba-f3db-eb89-8cb9a2802a5a.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Buying Time LLC"}
+{"doc_class":"vrdu-ad-buy","doc":"1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Assembly"}
+{"doc_class":"vrdu-ad-buy","doc":"1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf","field":"/flight_from","verdict":"visible","page":1,"seen":"02/10/20"}
+{"doc_class":"vrdu-ad-buy","doc":"1ecc29f7-3929-b19e-1ac9-fc5be0688708.pdf","field":"/flight_to","verdict":"visible","page":1,"seen":"02/21/20"}
+{"doc_class":"vrdu-ad-buy","doc":"2093ee21-d0ee-3641-03b4-3025ae441836.pdf","field":"/flight_to","verdict":"visible","page":1,"seen":"06/09/20"}
+{"doc_class":"vrdu-ad-buy","doc":"2093ee21-d0ee-3641-03b4-3025ae441836.pdf","field":"/tv_address","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-ad-buy","doc":"2aac88c6-7849-4aa6-5315-5ceeabbdcf73.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Canal Partners Media LLC"}
+{"doc_class":"vrdu-ad-buy","doc":"348812cb-8af7-56bc-8a19-c3c4f6682392.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Assembly Media"}
+{"doc_class":"vrdu-ad-buy","doc":"3874b015-8c4f-2a34-b461-ce049874dc07.pdf","field":"/agency","verdict":"visible","page":1,"seen":"American Media and Advocacy Group"}
+{"doc_class":"vrdu-ad-buy","doc":"38f02241-0fda-abeb-bdf9-032f40279e89.pdf","field":"/agency","verdict":"visible","page":1,"seen":"Canal Partners Media"}
+{"doc_class":"vrdu-registration","doc":"19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"Government of the Republic of Turkey"}
+{"doc_class":"vrdu-registration","doc":"19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf","field":"/signer_name","verdict":"visible","page":2,"seen":"John Zentay"}
+{"doc_class":"vrdu-registration","doc":"19410222_DLA_Piper_US_LLP_Amendment_Amendment.pdf","field":"/signer_title","verdict":"visible","page":2,"seen":"Partner"}
+{"doc_class":"vrdu-registration","doc":"19631101_Tourism_Australia_Amendment_Amendment.pdf","field":"/file_date","verdict":"visible","page":1,"seen":"November 4, 1963"}
+{"doc_class":"vrdu-registration","doc":"19670801_JETRO,_San_Francisco_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"Japan External Trade Organization, Tokyo"}
+{"doc_class":"vrdu-registration","doc":"19670901_JETRO,_San_Francisco_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"JETRO, Tokyo"}
+{"doc_class":"vrdu-registration","doc":"19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf","field":"/signer_name","verdict":"unverifiable","page":1,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19710401_Netherlands_Board_of_Tourism_and_Conventions_(NBTC)_Amendment_Amendment.pdf","field":"/signer_title","verdict":"unverifiable","page":1,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19711201_Tourism_Australia_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19760701_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19770101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19770401_World_Zionist_Organization_-_American_Section,_Inc._Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":2,"seen":"World Zionist Organization (W.Z.O.)"}
+{"doc_class":"vrdu-registration","doc":"19770401_World_Zionist_Organization_-_American_Section,_Inc._Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19770501_Korea_National_Tourism_Organization,_New_Jersey_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19781201_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19790101_IDA_Ireland_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"Industrial Development Authority Ireland, Dublin Ireland"}
+{"doc_class":"vrdu-registration","doc":"19790101_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19800101_Italian_Government_Travel_Office,_Chicago_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19800101_Italian_Government_Travel_Office,_Chicago_Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19800301_Quebec_Government_Office_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19820801_St._Lucia_Tourist_Board_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19830301_Tourism_Authority_of_Thailand,_New_York_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"Tourism Authority of Thailand, Bangkok, Thailand"}
+{"doc_class":"vrdu-registration","doc":"19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf","field":"/signer_name","verdict":"unverifiable","page":1,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19830801_British_Virgin_Islands_Tourist_Board_Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19841001_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19841001_Cayman_Islands_Department_of_Tourism_Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"the Republic of Greece"}
+{"doc_class":"vrdu-registration","doc":"19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf","field":"/signer_name","verdict":"visible","page":2,"seen":"Stephen K. Cook"}
+{"doc_class":"vrdu-registration","doc":"19850306_Daniel_J._Edelman,_Inc._Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19870302_FCB_New_York_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19870302_FCB_New_York_Amendment_Amendment.pdf","field":"/signer_name","verdict":"unverifiable","page":2,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19880501_Akin,_Gump,_Strauss,_Hauer___Feld,_LLP_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"Tate & Lyle, PLC"}
+{"doc_class":"vrdu-registration","doc":"19890201_Arnold___Porter_Kaye_Scholer,_LLP_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"Banco Central do Brasil; Government of Brazil"}
+{"doc_class":"vrdu-registration","doc":"19890201_Arnold___Porter_Kaye_Scholer,_LLP_Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19890501_Singapore_Tourism_Board_Amendment_Amendment.pdf","field":"/file_date","verdict":"visible","page":2,"seen":"May 1, 1989"}
+{"doc_class":"vrdu-registration","doc":"19890501_Singapore_Tourism_Board_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf","field":"/file_date","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf","field":"/signer_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19900401_Tourism_Authority_of_Thailand,_Los_Angeles_Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19910601_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19910801_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf","field":"/foreign_principal_name","verdict":"visible","page":1,"seen":"Moscow Narodny Bank; Government of the Cayman Islands"}
+{"doc_class":"vrdu-registration","doc":"19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf","field":"/signer_name","verdict":"unverifiable","page":2,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19920201_Sidley_Austin,_LLP_Amendment_Amendment.pdf","field":"/signer_title","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19920301_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}
+{"doc_class":"vrdu-registration","doc":"19920501_Representative_of_the_Turkish_Republic_of_Northern_Cyprus_Dissemination_Report_Dissemination_Report.pdf","field":"/foreign_principal_name","verdict":"confirmed","page":null,"seen":null}

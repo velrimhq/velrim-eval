@@ -23,6 +23,7 @@
     "prepare": "npm run build",
     "corpora:convert": "npm run build && node dist/corpora-cli.js",
     "probes": "npm run build && node dist/probes-cli.js",
+    "hf-dataset": "npm run build && node dist/hf-dataset-cli.js",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "lint": "eslint ."
