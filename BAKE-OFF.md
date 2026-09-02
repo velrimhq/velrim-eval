@@ -141,13 +141,13 @@ git clone https://github.com/velrimhq/velrim-eval
 cd velrim-eval && npm install && npm test
 
 # re-score any published arm from its raw outputs (no keys, $0); every cell of the tables re-derives this way:
-velrim-eval score --predictions results/matrix-out/mistral/cord-v2/main/predictions.repeat-001.jsonl \
+npx velrim-eval score --predictions results/matrix-out/mistral/cord-v2/main/predictions.repeat-001.jsonl \
   --golden corpora/golden.cord-v2.jsonl --normalizers corpora/normalizers.cord-v2.json --out rescored/mistral-cord-v2
 
 # fit the open confidence refit on our published scores (or on your own scores.json):
-velrim-eval calibrate --scores results/matrix-out/velrim/cord-v2/main/score.repeat-001/scores.json
+npx velrim-eval calibrate --scores results/matrix-out/velrim/cord-v2/main/score.repeat-001/scores.json
 
-# re-run an arm live (your keys, your spend): see README, "Adapters & the --live path".
+# re-run an arm live (your keys, your spend): see README, "Adapters and live runs".
 # Every live command prints the expected cost first and refuses without --confirm-spend.
 ```
 
@@ -175,3 +175,7 @@ Round 2 was announced before round 1 ran, with the following planned:
 - five repeats instead of three.
 
 I ran this to find out whether I am a Gemini reseller. The accuracy column says yes. The confidence column says not quite. That being said, the only ones who get to judge that are actual customers. We'll keep running this until the confidence column is the reason you buy, and we'll publish every run on our way there, including the ones we lose.
+
+## Changelog
+
+- 2026-09-02: the reproduce commands call `npx velrim-eval`, and `npm install` now builds the CLI.

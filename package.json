@@ -20,6 +20,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
     "corpora:convert": "npm run build && node dist/corpora-cli.js",
     "probes": "npm run build && node dist/probes-cli.js",
     "typecheck": "tsc --noEmit",
