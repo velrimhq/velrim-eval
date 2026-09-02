@@ -55,6 +55,7 @@ How often does an extraction API invent a value for a field that isn't in the do
 - [SALT.md](./SALT.md) lets you verify that the held-out split was fixed in June, before the comparison was designed.
 - [RIGHT-OF-REPLY.md](./RIGHT-OF-REPLY.md) is the vendor policy. If we're calling your API wrong, open a PR against the adapter and we re-run and re-publish.
 - The archived copy has a DOI, [10.5281/zenodo.22233430](https://doi.org/10.5281/zenodo.22233430). Citation details are in [CITATION.cff](./CITATION.cff).
+- The per-field outputs, the probe set and the label audit are on Hugging Face as [velrim/fabrication-on-absent-fields](https://huggingface.co/datasets/velrim/fabrication-on-absent-fields), generated from `results/` by `npm run hf-dataset`.
 
 ### Run data
 

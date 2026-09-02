@@ -151,7 +151,7 @@ npx velrim-eval calibrate --scores results/matrix-out/velrim/cord-v2/main/score.
 # Every live command prints the expected cost first and refuses without --confirm-spend.
 ```
 
-Scoring the published outputs is free and needs no keys. Anything that spends money prints the expected cost first and refuses to run without an explicit --confirm-spend. And --golden points the whole harness at your own labeled documents instead of ours.
+Scoring the published outputs is free and needs no keys. The per-field outputs, the probe set and the label audit are also on Hugging Face as [velrim/fabrication-on-absent-fields](https://huggingface.co/datasets/velrim/fabrication-on-absent-fields). Anything that spends money prints the expected cost first and refuses to run without an explicit --confirm-spend. And --golden points the whole harness at your own labeled documents instead of ours.
 
 ## Every disclosure
 
@@ -179,3 +179,4 @@ I ran this to find out whether I am a Gemini reseller. The accuracy column says 
 ## Changelog
 
 - 2026-09-02: the reproduce commands call `npx velrim-eval`, and `npm install` now builds the CLI.
+- 2026-09-02: the per-field outputs are published as a Hugging Face dataset, linked from the reproduce section.
